@@ -1,4 +1,4 @@
-library units;
+library conversion_units;
 
 export 'src/angle.dart';
 export 'src/area.dart';
