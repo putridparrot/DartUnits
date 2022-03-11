@@ -1,4 +1,4 @@
-name: units
+name: conversion_units
 description: Unit of measurements conversions
 version: 0.1.0
 homepage: https://github.com/putridparrot/DartUnits

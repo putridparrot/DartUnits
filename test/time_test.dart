@@ -5,7 +5,7 @@
 // </auto-generated>
 
 import 'package:test/test.dart';
-import 'package:units/units.dart';
+import 'package:conversion_units/conversion_units.dart';
 
 void main() {
     group('Time Tests', () {
