@@ -1,6 +1,6 @@
 # DartUnits
 
-[![Build Package](https://github.com/putridparrot/DartUnits/actions/workflows/build-package.yaml/badge.svg)](https://github.com/putridparrot/DartUnits/actions/workflows/build-package.yaml)
+[![Build](https://github.com/putridparrot/DartUnits/actions/workflows/build.yml/badge.svg)](https://github.com/putridparrot/DartUnits/actions/workflows/build.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/putridparrot/DartUnits/blob/master/LICENSE.md)
 [![GitHub Releases](https://img.shields.io/github/release/putridparrot/DartUnits.svg)](https://github.com/putridparrot/DartUnits/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/putridparrot/DartUnits.svg)](https://github.com/putridparrot/DartUnits/issues)
