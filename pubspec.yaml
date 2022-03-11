@@ -1,0 +1,8 @@
+name: units
+description: Unit of measurements conversions
+version: 0.0.7
+homepage: https://github.com/putridparrot/DartUnits
+author: Mark Timmings <mark.timmings@putridparrot.com>
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
