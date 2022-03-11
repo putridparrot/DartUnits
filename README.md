@@ -26,7 +26,7 @@ _Note: I am not proficient in the preferred idioms or design paradigms of Swift 
 Example of usage:
 
 ```
-import 'package:units/units.dart';
+import 'package:conversion_units/conversion_units.dart';
 
 var fahrenheit = Celsius.toFahrenheit(12.0);
 ```
