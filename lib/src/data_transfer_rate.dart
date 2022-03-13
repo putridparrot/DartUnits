@@ -4,255 +4,387 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
+/// Bits Per Second conversion functions
 class BitsPerSecond {
-	static double toKiloBitsPerSecond(double value) =>
-		value / 1000.0;
-	static double toMegaBitsPerSecond(double value) =>
-		value / 1e+6;
-	static double toGigaBitsPerSecond(double value) =>
-		value / 1e+9;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 1e+12;
-	static double toKiloBytesPerSecond(double value) =>
-		value / 8000.0;
-	static double toMegaBytesPerSecond(double value) =>
-		value / 8e+6;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 8e+9;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 8e+12;
-	static double toKibibitsPerSecond(double value) =>
-		value / 1024.0;
-	static double toMebibitsPerSecond(double value) =>
-		value / 1048576.0;
+  BitsPerSecond._() {}
+
+  /// Converts the supplied Bits Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value / 1000.0;
+
+  /// Converts the supplied Bits Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value / 1e+6;
+
+  /// Converts the supplied Bits Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value / 1e+9;
+
+  /// Converts the supplied Bits Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 1e+12;
+
+  /// Converts the supplied Bits Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value / 8000.0;
+
+  /// Converts the supplied Bits Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value / 8e+6;
+
+  /// Converts the supplied Bits Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 8e+9;
+
+  /// Converts the supplied Bits Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 8e+12;
+
+  /// Converts the supplied Bits Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value / 1024.0;
+
+  /// Converts the supplied Bits Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value / 1048576.0;
 }
 
+/// GigaBits Per Second conversion functions
 class GigaBitsPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 1e+9;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 1e+6;
-	static double toMegaBitsPerSecond(double value) =>
-		value * 1000.0;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 1000.0;
-	static double toKiloBytesPerSecond(double value) =>
-		value * 125000.0;
-	static double toMegaBytesPerSecond(double value) =>
-		value * 125.0;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 8.0;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 8000.0;
-	static double toKibibitsPerSecond(double value) =>
-		value * 976562.5;
-	static double toMebibitsPerSecond(double value) =>
-		value * 953.67431640625;
+  GigaBitsPerSecond._() {}
+
+  /// Converts the supplied GigaBits Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 1e+9;
+
+  /// Converts the supplied GigaBits Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 1e+6;
+
+  /// Converts the supplied GigaBits Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value * 1000.0;
+
+  /// Converts the supplied GigaBits Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 1000.0;
+
+  /// Converts the supplied GigaBits Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value * 125000.0;
+
+  /// Converts the supplied GigaBits Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value * 125.0;
+
+  /// Converts the supplied GigaBits Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 8.0;
+
+  /// Converts the supplied GigaBits Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 8000.0;
+
+  /// Converts the supplied GigaBits Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 976562.5;
+
+  /// Converts the supplied GigaBits Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value * 953.67431640625;
 }
 
+/// GigaBytes Per Second conversion functions
 class GigaBytesPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 8e+9;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 8e+6;
-	static double toMegaBitsPerSecond(double value) =>
-		value * 8000.0;
-	static double toGigaBitsPerSecond(double value) =>
-		value * 8.0;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 125.0;
-	static double toKiloBytesPerSecond(double value) =>
-		value * 1e+6;
-	static double toMegaBytesPerSecond(double value) =>
-		value * 1000.0;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 1000.0;
-	static double toKibibitsPerSecond(double value) =>
-		value * 7812500.0;
-	static double toMebibitsPerSecond(double value) =>
-		value * 7629.39;
+  GigaBytesPerSecond._() {}
+
+  /// Converts the supplied GigaBytes Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 8e+9;
+
+  /// Converts the supplied GigaBytes Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 8e+6;
+
+  /// Converts the supplied GigaBytes Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value * 8000.0;
+
+  /// Converts the supplied GigaBytes Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value * 8.0;
+
+  /// Converts the supplied GigaBytes Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 125.0;
+
+  /// Converts the supplied GigaBytes Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value * 1e+6;
+
+  /// Converts the supplied GigaBytes Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value * 1000.0;
+
+  /// Converts the supplied GigaBytes Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 1000.0;
+
+  /// Converts the supplied GigaBytes Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 7812500.0;
+
+  /// Converts the supplied GigaBytes Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value * 7629.39;
 }
 
+/// Kibibits Per Second conversion functions
 class KibibitsPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 1024.0;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 1.024;
-	static double toMegaBitsPerSecond(double value) =>
-		value / 976.563;
-	static double toGigaBitsPerSecond(double value) =>
-		value / 976562.5;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 976562500.0;
-	static double toKiloBytesPerSecond(double value) =>
-		value / 7.8125;
-	static double toMegaBytesPerSecond(double value) =>
-		value / 7812.5;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 7812500.0;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 7812500000.0;
-	static double toMebibitsPerSecond(double value) =>
-		value / 1024.0;
+  KibibitsPerSecond._() {}
+
+  /// Converts the supplied Kibibits Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 1024.0;
+
+  /// Converts the supplied Kibibits Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 1.024;
+
+  /// Converts the supplied Kibibits Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value / 976.563;
+
+  /// Converts the supplied Kibibits Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value / 976562.5;
+
+  /// Converts the supplied Kibibits Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 976562500.0;
+
+  /// Converts the supplied Kibibits Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value / 7.8125;
+
+  /// Converts the supplied Kibibits Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value / 7812.5;
+
+  /// Converts the supplied Kibibits Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 7812500.0;
+
+  /// Converts the supplied Kibibits Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 7812500000.0;
+
+  /// Converts the supplied Kibibits Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value / 1024.0;
 }
 
+/// KiloBits Per Second conversion functions
 class KiloBitsPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 1000.0;
-	static double toMegaBitsPerSecond(double value) =>
-		value / 1000.0;
-	static double toGigaBitsPerSecond(double value) =>
-		value / 1e+6;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 1e+9;
-	static double toKiloBytesPerSecond(double value) =>
-		value / 8.0;
-	static double toMegaBytesPerSecond(double value) =>
-		value / 8000.0;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 8e+6;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 8e+9;
-	static double toKibibitsPerSecond(double value) =>
-		value / 1.024;
-	static double toMebibitsPerSecond(double value) =>
-		value / 1048.58;
+  KiloBitsPerSecond._() {}
+
+  /// Converts the supplied KiloBits Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 1000.0;
+
+  /// Converts the supplied KiloBits Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value / 1000.0;
+
+  /// Converts the supplied KiloBits Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value / 1e+6;
+
+  /// Converts the supplied KiloBits Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 1e+9;
+
+  /// Converts the supplied KiloBits Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value / 8.0;
+
+  /// Converts the supplied KiloBits Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value / 8000.0;
+
+  /// Converts the supplied KiloBits Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 8e+6;
+
+  /// Converts the supplied KiloBits Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 8e+9;
+
+  /// Converts the supplied KiloBits Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value / 1.024;
+
+  /// Converts the supplied KiloBits Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value / 1048.58;
 }
 
+/// KiloBytes Per Second conversion functions
 class KiloBytesPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 8000.0;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 8.0;
-	static double toMegaBitsPerSecond(double value) =>
-		value / 125.0;
-	static double toGigaBitsPerSecond(double value) =>
-		value / 125000.0;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 1.25e+8;
-	static double toMegaBytesPerSecond(double value) =>
-		value / 1000.0;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 1e+6;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 1e+9;
-	static double toKibibitsPerSecond(double value) =>
-		value * 7.8125;
-	static double toMebibitsPerSecond(double value) =>
-		value * 0.00762939;
+  KiloBytesPerSecond._() {}
+
+  /// Converts the supplied KiloBytes Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 8000.0;
+
+  /// Converts the supplied KiloBytes Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 8.0;
+
+  /// Converts the supplied KiloBytes Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value / 125.0;
+
+  /// Converts the supplied KiloBytes Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value / 125000.0;
+
+  /// Converts the supplied KiloBytes Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 1.25e+8;
+
+  /// Converts the supplied KiloBytes Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value / 1000.0;
+
+  /// Converts the supplied KiloBytes Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 1e+6;
+
+  /// Converts the supplied KiloBytes Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 1e+9;
+
+  /// Converts the supplied KiloBytes Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 7.8125;
+
+  /// Converts the supplied KiloBytes Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value * 0.00762939;
 }
 
+/// Mebibits Per Second conversion functions
 class MebibitsPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 1048576.0;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 1048.58;
-	static double toMegaBitsPerSecond(double value) =>
-		value * 1.04858;
-	static double toGigaBitsPerSecond(double value) =>
-		value / 953.67431640625;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 953674.0;
-	static double toKiloBytesPerSecond(double value) =>
-		value / 0.00762939;
-	static double toMegaBytesPerSecond(double value) =>
-		value / 7.62939;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 7629.39;
-	static double toTeraBytesPerSecond(double value) =>
-		value * 0.000000131072;
-	static double toKibibitsPerSecond(double value) =>
-		value * 1024.0;
+  MebibitsPerSecond._() {}
+
+  /// Converts the supplied Mebibits Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 1048576.0;
+
+  /// Converts the supplied Mebibits Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 1048.58;
+
+  /// Converts the supplied Mebibits Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value * 1.04858;
+
+  /// Converts the supplied Mebibits Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value / 953.67431640625;
+
+  /// Converts the supplied Mebibits Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 953674.0;
+
+  /// Converts the supplied Mebibits Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value / 0.00762939;
+
+  /// Converts the supplied Mebibits Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value / 7.62939;
+
+  /// Converts the supplied Mebibits Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 7629.39;
+
+  /// Converts the supplied Mebibits Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value * 0.000000131072;
+
+  /// Converts the supplied Mebibits Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 1024.0;
 }
 
+/// MegaBits Per Second conversion functions
 class MegaBitsPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 1e+6;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 1000.0;
-	static double toGigaBitsPerSecond(double value) =>
-		value / 1000.0;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 1e+6;
-	static double toKiloBytesPerSecond(double value) =>
-		value * 125.0;
-	static double toMegaBytesPerSecond(double value) =>
-		value / 8.0;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 8000.0;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 8e+6;
-	static double toKibibitsPerSecond(double value) =>
-		value * 976.563;
-	static double toMebibitsPerSecond(double value) =>
-		value / 1.04858;
+  MegaBitsPerSecond._() {}
+
+  /// Converts the supplied MegaBits Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 1e+6;
+
+  /// Converts the supplied MegaBits Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 1000.0;
+
+  /// Converts the supplied MegaBits Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value / 1000.0;
+
+  /// Converts the supplied MegaBits Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 1e+6;
+
+  /// Converts the supplied MegaBits Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value * 125.0;
+
+  /// Converts the supplied MegaBits Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value / 8.0;
+
+  /// Converts the supplied MegaBits Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 8000.0;
+
+  /// Converts the supplied MegaBits Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 8e+6;
+
+  /// Converts the supplied MegaBits Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 976.563;
+
+  /// Converts the supplied MegaBits Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value / 1.04858;
 }
 
+/// MegaBytes Per Second conversion functions
 class MegaBytesPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 8e+6;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 8000.0;
-	static double toMegaBitsPerSecond(double value) =>
-		value * 8.0;
-	static double toGigaBitsPerSecond(double value) =>
-		value / 125.0;
-	static double toTeraBitsPerSecond(double value) =>
-		value / 125000.0;
-	static double toKiloBytesPerSecond(double value) =>
-		value * 1000.0;
-	static double toGigaBytesPerSecond(double value) =>
-		value / 1000.0;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 1e+6;
-	static double toKibibitsPerSecond(double value) =>
-		value * 7812.5;
-	static double toMebibitsPerSecond(double value) =>
-		value * 7.62939;
+  MegaBytesPerSecond._() {}
+
+  /// Converts the supplied MegaBytes Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 8e+6;
+
+  /// Converts the supplied MegaBytes Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 8000.0;
+
+  /// Converts the supplied MegaBytes Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value * 8.0;
+
+  /// Converts the supplied MegaBytes Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value / 125.0;
+
+  /// Converts the supplied MegaBytes Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value / 125000.0;
+
+  /// Converts the supplied MegaBytes Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value * 1000.0;
+
+  /// Converts the supplied MegaBytes Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value / 1000.0;
+
+  /// Converts the supplied MegaBytes Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 1e+6;
+
+  /// Converts the supplied MegaBytes Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 7812.5;
+
+  /// Converts the supplied MegaBytes Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value * 7.62939;
 }
 
+/// TeraBits Per Second conversion functions
 class TeraBitsPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 1e+12;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 1e+9;
-	static double toMegaBitsPerSecond(double value) =>
-		value * 1e+6;
-	static double toGigaBitsPerSecond(double value) =>
-		value * 1000.0;
-	static double toKiloBytesPerSecond(double value) =>
-		value * 1.25e+8;
-	static double toMegaBytesPerSecond(double value) =>
-		value * 125000.0;
-	static double toGigaBytesPerSecond(double value) =>
-		value * 125.0;
-	static double toTeraBytesPerSecond(double value) =>
-		value / 8.0;
-	static double toKibibitsPerSecond(double value) =>
-		value * 976562500.0;
-	static double toMebibitsPerSecond(double value) =>
-		value * 953674.0;
+  TeraBitsPerSecond._() {}
+
+  /// Converts the supplied TeraBits Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 1e+12;
+
+  /// Converts the supplied TeraBits Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 1e+9;
+
+  /// Converts the supplied TeraBits Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value * 1e+6;
+
+  /// Converts the supplied TeraBits Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value * 1000.0;
+
+  /// Converts the supplied TeraBits Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value * 1.25e+8;
+
+  /// Converts the supplied TeraBits Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value * 125000.0;
+
+  /// Converts the supplied TeraBits Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value * 125.0;
+
+  /// Converts the supplied TeraBits Per Second value to TeraBytes Per Second
+  static double toTeraBytesPerSecond(double value) => value / 8.0;
+
+  /// Converts the supplied TeraBits Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 976562500.0;
+
+  /// Converts the supplied TeraBits Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value * 953674.0;
 }
 
+/// TeraBytes Per Second conversion functions
 class TeraBytesPerSecond {
-	static double toBitsPerSecond(double value) =>
-		value * 8e+12;
-	static double toKiloBitsPerSecond(double value) =>
-		value * 8e+9;
-	static double toMegaBitsPerSecond(double value) =>
-		value * 8e+6;
-	static double toGigaBitsPerSecond(double value) =>
-		value * 8000.0;
-	static double toTeraBitsPerSecond(double value) =>
-		value * 8.0;
-	static double toKiloBytesPerSecond(double value) =>
-		value * 1e+9;
-	static double toMegaBytesPerSecond(double value) =>
-		value * 1e+6;
-	static double toGigaBytesPerSecond(double value) =>
-		value * 1000.0;
-	static double toKibibitsPerSecond(double value) =>
-		value * 7812500000.0;
-	static double toMebibitsPerSecond(double value) =>
-		value / 0.000000131072;
+  TeraBytesPerSecond._() {}
+
+  /// Converts the supplied TeraBytes Per Second value to Bits Per Second
+  static double toBitsPerSecond(double value) => value * 8e+12;
+
+  /// Converts the supplied TeraBytes Per Second value to KiloBits Per Second
+  static double toKiloBitsPerSecond(double value) => value * 8e+9;
+
+  /// Converts the supplied TeraBytes Per Second value to MegaBits Per Second
+  static double toMegaBitsPerSecond(double value) => value * 8e+6;
+
+  /// Converts the supplied TeraBytes Per Second value to GigaBits Per Second
+  static double toGigaBitsPerSecond(double value) => value * 8000.0;
+
+  /// Converts the supplied TeraBytes Per Second value to TeraBits Per Second
+  static double toTeraBitsPerSecond(double value) => value * 8.0;
+
+  /// Converts the supplied TeraBytes Per Second value to KiloBytes Per Second
+  static double toKiloBytesPerSecond(double value) => value * 1e+9;
+
+  /// Converts the supplied TeraBytes Per Second value to MegaBytes Per Second
+  static double toMegaBytesPerSecond(double value) => value * 1e+6;
+
+  /// Converts the supplied TeraBytes Per Second value to GigaBytes Per Second
+  static double toGigaBytesPerSecond(double value) => value * 1000.0;
+
+  /// Converts the supplied TeraBytes Per Second value to Kibibits Per Second
+  static double toKibibitsPerSecond(double value) => value * 7812500000.0;
+
+  /// Converts the supplied TeraBytes Per Second value to Mebibits Per Second
+  static double toMebibitsPerSecond(double value) => value / 0.000000131072;
 }

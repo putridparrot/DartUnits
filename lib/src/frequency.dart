@@ -4,38 +4,58 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
+/// Gigahertz conversion functions
 class Gigahertz {
-	static double toHertz(double value) =>
-		value * 1e+9;
-	static double toKilohertz(double value) =>
-		value * 1e+6;
-	static double toMegahertz(double value) =>
-		value * 1000.0;
+  Gigahertz._() {}
+
+  /// Converts the supplied Gigahertz value to Hertz
+  static double toHertz(double value) => value * 1e+9;
+
+  /// Converts the supplied Gigahertz value to Kilohertz
+  static double toKilohertz(double value) => value * 1e+6;
+
+  /// Converts the supplied Gigahertz value to Megahertz
+  static double toMegahertz(double value) => value * 1000.0;
 }
 
+/// Hertz conversion functions
 class Hertz {
-	static double toKilohertz(double value) =>
-		value / 1000.0;
-	static double toMegahertz(double value) =>
-		value / 1e+6;
-	static double toGigahertz(double value) =>
-		value / 1e+9;
+  Hertz._() {}
+
+  /// Converts the supplied Hertz value to Kilohertz
+  static double toKilohertz(double value) => value / 1000.0;
+
+  /// Converts the supplied Hertz value to Megahertz
+  static double toMegahertz(double value) => value / 1e+6;
+
+  /// Converts the supplied Hertz value to Gigahertz
+  static double toGigahertz(double value) => value / 1e+9;
 }
 
+/// Kilohertz conversion functions
 class Kilohertz {
-	static double toHertz(double value) =>
-		value * 1000.0;
-	static double toMegahertz(double value) =>
-		value / 1000.0;
-	static double toGigahertz(double value) =>
-		value / 1e+6;
+  Kilohertz._() {}
+
+  /// Converts the supplied Kilohertz value to Hertz
+  static double toHertz(double value) => value * 1000.0;
+
+  /// Converts the supplied Kilohertz value to Megahertz
+  static double toMegahertz(double value) => value / 1000.0;
+
+  /// Converts the supplied Kilohertz value to Gigahertz
+  static double toGigahertz(double value) => value / 1e+6;
 }
 
+/// Megahertz conversion functions
 class Megahertz {
-	static double toHertz(double value) =>
-		value * 1e+6;
-	static double toKilohertz(double value) =>
-		value * 1000.0;
-	static double toGigahertz(double value) =>
-		value / 1000.0;
+  Megahertz._() {}
+
+  /// Converts the supplied Megahertz value to Hertz
+  static double toHertz(double value) => value * 1e+6;
+
+  /// Converts the supplied Megahertz value to Kilohertz
+  static double toKilohertz(double value) => value * 1000.0;
+
+  /// Converts the supplied Megahertz value to Gigahertz
+  static double toGigahertz(double value) => value / 1000.0;
 }

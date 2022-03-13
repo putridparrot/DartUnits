@@ -8,78 +8,99 @@ import 'package:test/test.dart';
 import 'package:conversion_units/conversion_units.dart';
 
 void main() {
-    group('Fuel Economy Tests', () {
-        test('Convert known Kilometre Per Litre to US Miles Per Gallon', () {
-            expect(KilometrePerLitre.toUSMilesPerGallon(109.0), closeTo(256.384, 0.01));
-            expect(KilometrePerLitre.toUSMilesPerGallon(9.4), closeTo(22.1102, 0.01));
-            expect(KilometrePerLitre.toUSMilesPerGallon(1.3), closeTo(3.05779, 0.01));
-        });
-
-        test('Convert known Kilometre Per Litre to Miles Per Gallon', () {
-            expect(KilometrePerLitre.toMilesPerGallon(5.0), closeTo(14.124, 0.01));
-            expect(KilometrePerLitre.toMilesPerGallon(180.0), closeTo(508.466, 0.01));
-            expect(KilometrePerLitre.toMilesPerGallon(5.4), closeTo(15.254, 0.01));
-        });
-
-        test('Convert known Kilometre Per Litre to Litres Per 100 Kilometres', () {
-            expect(KilometrePerLitre.toLitresPer100Kilometres(109.0), closeTo(0.917431, 0.01));
-            expect(KilometrePerLitre.toLitresPer100Kilometres(0.8), closeTo(125.0, 0.01));
-            expect(KilometrePerLitre.toLitresPer100Kilometres(2.3), closeTo(43.4783, 0.01));
-        });
-
-        test('Convert known Litres Per 100 Kilometres to Kilometre Per Litre', () {
-            expect(LitresPer100Kilometres.toKilometrePerLitre(0.7), closeTo(142.857, 0.01));
-            expect(LitresPer100Kilometres.toKilometrePerLitre(109.0), closeTo(0.917431, 0.01));
-            expect(LitresPer100Kilometres.toKilometrePerLitre(0.012), closeTo(8333.3333, 0.01));
-        });
-
-        test('Convert known Litres Per 100 Kilometres to Miles Per Gallon', () {
-            expect(LitresPer100Kilometres.toMilesPerGallon(107.0), closeTo(2.64001, 0.01));
-            expect(LitresPer100Kilometres.toMilesPerGallon(0.8), closeTo(353.101, 0.01));
-            expect(LitresPer100Kilometres.toMilesPerGallon(0.02), closeTo(14124.05, 0.01));
-        });
-
-        test('Convert known Litres Per 100 Kilometres to US Miles Per Gallon', () {
-            expect(LitresPer100Kilometres.toUSMilesPerGallon(12.0), closeTo(19.6012, 0.01));
-            expect(LitresPer100Kilometres.toUSMilesPerGallon(0.3), closeTo(784.049, 0.01));
-            expect(LitresPer100Kilometres.toUSMilesPerGallon(1.5), closeTo(156.81, 0.01));
-        });
-
-        test('Convert known Miles Per Gallon to Kilometre Per Litre', () {
-            expect(MilesPerGallon.toKilometrePerLitre(12.0), closeTo(4.24807, 0.01));
-            expect(MilesPerGallon.toKilometrePerLitre(8.2), closeTo(2.90285, 0.01));
-            expect(MilesPerGallon.toKilometrePerLitre(0.5), closeTo(0.177003, 0.01));
-        });
-
-        test('Convert known Miles Per Gallon to US Miles Per Gallon', () {
-            expect(MilesPerGallon.toUSMilesPerGallon(1.4), closeTo(1.16574, 0.01));
-            expect(MilesPerGallon.toUSMilesPerGallon(1008.0), closeTo(839.3356, 0.01));
-            expect(MilesPerGallon.toUSMilesPerGallon(0.8), closeTo(0.666139, 0.01));
-        });
-
-        test('Convert known Miles Per Gallon to Litres Per 100 Kilometres', () {
-            expect(MilesPerGallon.toLitresPer100Kilometres(22.3), closeTo(12.66731, 0.01));
-            expect(MilesPerGallon.toLitresPer100Kilometres(0.4), closeTo(706.202, 0.01));
-            expect(MilesPerGallon.toLitresPer100Kilometres(5.2), closeTo(54.3233, 0.01));
-        });
-
-        test('Convert known US Miles Per Gallon to Kilometre Per Litre', () {
-            expect(USMilesPerGallon.toKilometrePerLitre(23.0), closeTo(9.77831, 0.01));
-            expect(USMilesPerGallon.toKilometrePerLitre(7.0), closeTo(2.97601, 0.01));
-            expect(USMilesPerGallon.toKilometrePerLitre(0.9), closeTo(0.382629, 0.01));
-        });
-
-        test('Convert known US Miles Per Gallon to Miles Per Gallon', () {
-            expect(USMilesPerGallon.toMilesPerGallon(109.0), closeTo(130.9036, 0.01));
-            expect(USMilesPerGallon.toMilesPerGallon(78.2), closeTo(93.91432, 0.01));
-            expect(USMilesPerGallon.toMilesPerGallon(0.9), closeTo(1.08086, 0.01));
-        });
-
-        test('Convert known US Miles Per Gallon to Litres Per 100 Kilometres', () {
-            expect(USMilesPerGallon.toLitresPer100Kilometres(111.0), closeTo(2.11905, 0.01));
-            expect(USMilesPerGallon.toLitresPer100Kilometres(0.4), closeTo(588.036, 0.01));
-            expect(USMilesPerGallon.toLitresPer100Kilometres(5.2), closeTo(45.2336, 0.01));
-        });
-
+  group('Fuel Economy Tests', () {
+    test('Convert known Kilometre Per Litre to US Miles Per Gallon', () {
+      expect(
+          KilometrePerLitre.toUSMilesPerGallon(109.0), closeTo(256.384, 0.01));
+      expect(KilometrePerLitre.toUSMilesPerGallon(9.4), closeTo(22.1102, 0.01));
+      expect(KilometrePerLitre.toUSMilesPerGallon(1.3), closeTo(3.05779, 0.01));
     });
+
+    test('Convert known Kilometre Per Litre to Miles Per Gallon', () {
+      expect(KilometrePerLitre.toMilesPerGallon(5.0), closeTo(14.124, 0.01));
+      expect(KilometrePerLitre.toMilesPerGallon(180.0), closeTo(508.466, 0.01));
+      expect(KilometrePerLitre.toMilesPerGallon(5.4), closeTo(15.254, 0.01));
+    });
+
+    test('Convert known Kilometre Per Litre to Litres Per 100 Kilometres', () {
+      expect(KilometrePerLitre.toLitresPer100Kilometres(109.0),
+          closeTo(0.917431, 0.01));
+      expect(KilometrePerLitre.toLitresPer100Kilometres(0.8),
+          closeTo(125.0, 0.01));
+      expect(KilometrePerLitre.toLitresPer100Kilometres(2.3),
+          closeTo(43.4783, 0.01));
+    });
+
+    test('Convert known Litres Per 100 Kilometres to Kilometre Per Litre', () {
+      expect(LitresPer100Kilometres.toKilometrePerLitre(0.7),
+          closeTo(142.857, 0.01));
+      expect(LitresPer100Kilometres.toKilometrePerLitre(109.0),
+          closeTo(0.917431, 0.01));
+      expect(LitresPer100Kilometres.toKilometrePerLitre(0.012),
+          closeTo(8333.3333, 0.01));
+    });
+
+    test('Convert known Litres Per 100 Kilometres to Miles Per Gallon', () {
+      expect(LitresPer100Kilometres.toMilesPerGallon(107.0),
+          closeTo(2.64001, 0.01));
+      expect(
+          LitresPer100Kilometres.toMilesPerGallon(0.8), closeTo(353.101, 0.01));
+      expect(LitresPer100Kilometres.toMilesPerGallon(0.02),
+          closeTo(14124.05, 0.01));
+    });
+
+    test('Convert known Litres Per 100 Kilometres to US Miles Per Gallon', () {
+      expect(LitresPer100Kilometres.toUSMilesPerGallon(12.0),
+          closeTo(19.6012, 0.01));
+      expect(LitresPer100Kilometres.toUSMilesPerGallon(0.3),
+          closeTo(784.049, 0.01));
+      expect(LitresPer100Kilometres.toUSMilesPerGallon(1.5),
+          closeTo(156.81, 0.01));
+    });
+
+    test('Convert known Miles Per Gallon to Kilometre Per Litre', () {
+      expect(MilesPerGallon.toKilometrePerLitre(12.0), closeTo(4.24807, 0.01));
+      expect(MilesPerGallon.toKilometrePerLitre(8.2), closeTo(2.90285, 0.01));
+      expect(MilesPerGallon.toKilometrePerLitre(0.5), closeTo(0.177003, 0.01));
+    });
+
+    test('Convert known Miles Per Gallon to US Miles Per Gallon', () {
+      expect(MilesPerGallon.toUSMilesPerGallon(1.4), closeTo(1.16574, 0.01));
+      expect(
+          MilesPerGallon.toUSMilesPerGallon(1008.0), closeTo(839.3356, 0.01));
+      expect(MilesPerGallon.toUSMilesPerGallon(0.8), closeTo(0.666139, 0.01));
+    });
+
+    test('Convert known Miles Per Gallon to Litres Per 100 Kilometres', () {
+      expect(MilesPerGallon.toLitresPer100Kilometres(22.3),
+          closeTo(12.66731, 0.01));
+      expect(
+          MilesPerGallon.toLitresPer100Kilometres(0.4), closeTo(706.202, 0.01));
+      expect(
+          MilesPerGallon.toLitresPer100Kilometres(5.2), closeTo(54.3233, 0.01));
+    });
+
+    test('Convert known US Miles Per Gallon to Kilometre Per Litre', () {
+      expect(
+          USMilesPerGallon.toKilometrePerLitre(23.0), closeTo(9.77831, 0.01));
+      expect(USMilesPerGallon.toKilometrePerLitre(7.0), closeTo(2.97601, 0.01));
+      expect(
+          USMilesPerGallon.toKilometrePerLitre(0.9), closeTo(0.382629, 0.01));
+    });
+
+    test('Convert known US Miles Per Gallon to Miles Per Gallon', () {
+      expect(USMilesPerGallon.toMilesPerGallon(109.0), closeTo(130.9036, 0.01));
+      expect(USMilesPerGallon.toMilesPerGallon(78.2), closeTo(93.91432, 0.01));
+      expect(USMilesPerGallon.toMilesPerGallon(0.9), closeTo(1.08086, 0.01));
+    });
+
+    test('Convert known US Miles Per Gallon to Litres Per 100 Kilometres', () {
+      expect(USMilesPerGallon.toLitresPer100Kilometres(111.0),
+          closeTo(2.11905, 0.01));
+      expect(USMilesPerGallon.toLitresPer100Kilometres(0.4),
+          closeTo(588.036, 0.01));
+      expect(USMilesPerGallon.toLitresPer100Kilometres(5.2),
+          closeTo(45.2336, 0.01));
+    });
+  });
 }

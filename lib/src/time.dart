@@ -4,173 +4,263 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
+/// Centuries conversion functions
 class Centuries {
-	static double toSeconds(double value) =>
-		value * 3.154e+9;
-	static double toMinutes(double value) =>
-		value * 5.256e+7;
-	static double toHours(double value) =>
-		value * 876000.0;
-	static double toDays(double value) =>
-		value * 36500.0;
-	static double toWeeks(double value) =>
-		value * 5214.29;
-	static double toMonths(double value) =>
-		value * 1200.0;
-	static double toYears(double value) =>
-		value * 100.0;
-	static double toDecades(double value) =>
-		value * 10.0;
+  Centuries._() {}
+
+  /// Converts the supplied Centuries value to Seconds
+  static double toSeconds(double value) => value * 3.154e+9;
+
+  /// Converts the supplied Centuries value to Minutes
+  static double toMinutes(double value) => value * 5.256e+7;
+
+  /// Converts the supplied Centuries value to Hours
+  static double toHours(double value) => value * 876000.0;
+
+  /// Converts the supplied Centuries value to Days
+  static double toDays(double value) => value * 36500.0;
+
+  /// Converts the supplied Centuries value to Weeks
+  static double toWeeks(double value) => value * 5214.29;
+
+  /// Converts the supplied Centuries value to Months
+  static double toMonths(double value) => value * 1200.0;
+
+  /// Converts the supplied Centuries value to Years
+  static double toYears(double value) => value * 100.0;
+
+  /// Converts the supplied Centuries value to Decades
+  static double toDecades(double value) => value * 10.0;
 }
 
+/// Days conversion functions
 class Days {
-	static double toSeconds(double value) =>
-		value * 86400.0;
-	static double toMinutes(double value) =>
-		value * 1440.0;
-	static double toHours(double value) =>
-		value * 24.0;
-	static double toWeeks(double value) =>
-		value / 7.0;
-	static double toMonths(double value) =>
-		value / 30.4167;
-	static double toYears(double value) =>
-		value / 365.0;
-	static double toDecades(double value) =>
-		value / 3650.0;
-	static double toCenturies(double value) =>
-		value / 36500.0;
+  Days._() {}
+
+  /// Converts the supplied Days value to Seconds
+  static double toSeconds(double value) => value * 86400.0;
+
+  /// Converts the supplied Days value to Minutes
+  static double toMinutes(double value) => value * 1440.0;
+
+  /// Converts the supplied Days value to Hours
+  static double toHours(double value) => value * 24.0;
+
+  /// Converts the supplied Days value to Weeks
+  static double toWeeks(double value) => value / 7.0;
+
+  /// Converts the supplied Days value to Months
+  static double toMonths(double value) => value / 30.4167;
+
+  /// Converts the supplied Days value to Years
+  static double toYears(double value) => value / 365.0;
+
+  /// Converts the supplied Days value to Decades
+  static double toDecades(double value) => value / 3650.0;
+
+  /// Converts the supplied Days value to Centuries
+  static double toCenturies(double value) => value / 36500.0;
 }
 
+/// Decades conversion functions
 class Decades {
-	static double toSeconds(double value) =>
-		value * 3.154e+8;
-	static double toMinutes(double value) =>
-		value * 5.256e+6;
-	static double toHours(double value) =>
-		value * 87600.0;
-	static double toDays(double value) =>
-		value * 3650.0;
-	static double toWeeks(double value) =>
-		value * 521.429;
-	static double toMonths(double value) =>
-		value * 120.0;
-	static double toYears(double value) =>
-		value * 10.0;
-	static double toCenturies(double value) =>
-		value / 10.0;
+  Decades._() {}
+
+  /// Converts the supplied Decades value to Seconds
+  static double toSeconds(double value) => value * 3.154e+8;
+
+  /// Converts the supplied Decades value to Minutes
+  static double toMinutes(double value) => value * 5.256e+6;
+
+  /// Converts the supplied Decades value to Hours
+  static double toHours(double value) => value * 87600.0;
+
+  /// Converts the supplied Decades value to Days
+  static double toDays(double value) => value * 3650.0;
+
+  /// Converts the supplied Decades value to Weeks
+  static double toWeeks(double value) => value * 521.429;
+
+  /// Converts the supplied Decades value to Months
+  static double toMonths(double value) => value * 120.0;
+
+  /// Converts the supplied Decades value to Years
+  static double toYears(double value) => value * 10.0;
+
+  /// Converts the supplied Decades value to Centuries
+  static double toCenturies(double value) => value / 10.0;
 }
 
+/// Hours conversion functions
 class Hours {
-	static double toSeconds(double value) =>
-		value * 3600.0;
-	static double toMinutes(double value) =>
-		value * 60.0;
-	static double toDays(double value) =>
-		value / 24.0;
-	static double toWeeks(double value) =>
-		value / 168.0;
-	static double toMonths(double value) =>
-		value / 730.001;
-	static double toYears(double value) =>
-		value / 8760.0;
-	static double toDecades(double value) =>
-		value / 87600.0;
-	static double toCenturies(double value) =>
-		value / 876000.0;
+  Hours._() {}
+
+  /// Converts the supplied Hours value to Seconds
+  static double toSeconds(double value) => value * 3600.0;
+
+  /// Converts the supplied Hours value to Minutes
+  static double toMinutes(double value) => value * 60.0;
+
+  /// Converts the supplied Hours value to Days
+  static double toDays(double value) => value / 24.0;
+
+  /// Converts the supplied Hours value to Weeks
+  static double toWeeks(double value) => value / 168.0;
+
+  /// Converts the supplied Hours value to Months
+  static double toMonths(double value) => value / 730.001;
+
+  /// Converts the supplied Hours value to Years
+  static double toYears(double value) => value / 8760.0;
+
+  /// Converts the supplied Hours value to Decades
+  static double toDecades(double value) => value / 87600.0;
+
+  /// Converts the supplied Hours value to Centuries
+  static double toCenturies(double value) => value / 876000.0;
 }
 
+/// Minutes conversion functions
 class Minutes {
-	static double toSeconds(double value) =>
-		value * 60.0;
-	static double toHours(double value) =>
-		value / 60.0;
-	static double toDays(double value) =>
-		value / 1440.0;
-	static double toWeeks(double value) =>
-		value / 10080.0;
-	static double toMonths(double value) =>
-		value / 43800.0;
-	static double toYears(double value) =>
-		value / 525600.0;
-	static double toDecades(double value) =>
-		value / 5.256e+6;
-	static double toCenturies(double value) =>
-		value / 5.256e+7;
+  Minutes._() {}
+
+  /// Converts the supplied Minutes value to Seconds
+  static double toSeconds(double value) => value * 60.0;
+
+  /// Converts the supplied Minutes value to Hours
+  static double toHours(double value) => value / 60.0;
+
+  /// Converts the supplied Minutes value to Days
+  static double toDays(double value) => value / 1440.0;
+
+  /// Converts the supplied Minutes value to Weeks
+  static double toWeeks(double value) => value / 10080.0;
+
+  /// Converts the supplied Minutes value to Months
+  static double toMonths(double value) => value / 43800.0;
+
+  /// Converts the supplied Minutes value to Years
+  static double toYears(double value) => value / 525600.0;
+
+  /// Converts the supplied Minutes value to Decades
+  static double toDecades(double value) => value / 5.256e+6;
+
+  /// Converts the supplied Minutes value to Centuries
+  static double toCenturies(double value) => value / 5.256e+7;
 }
 
+/// Months conversion functions
 class Months {
-	static double toSeconds(double value) =>
-		value * 2.628e+6;
-	static double toMinutes(double value) =>
-		value * 43800.0;
-	static double toHours(double value) =>
-		value * 730.001;
-	static double toDays(double value) =>
-		value * 30.4167;
-	static double toWeeks(double value) =>
-		value * 4.34524;
-	static double toYears(double value) =>
-		value / 12.0;
-	static double toDecades(double value) =>
-		value / 120.0;
-	static double toCenturies(double value) =>
-		value / 1200.0;
+  Months._() {}
+
+  /// Converts the supplied Months value to Seconds
+  static double toSeconds(double value) => value * 2.628e+6;
+
+  /// Converts the supplied Months value to Minutes
+  static double toMinutes(double value) => value * 43800.0;
+
+  /// Converts the supplied Months value to Hours
+  static double toHours(double value) => value * 730.001;
+
+  /// Converts the supplied Months value to Days
+  static double toDays(double value) => value * 30.4167;
+
+  /// Converts the supplied Months value to Weeks
+  static double toWeeks(double value) => value * 4.34524;
+
+  /// Converts the supplied Months value to Years
+  static double toYears(double value) => value / 12.0;
+
+  /// Converts the supplied Months value to Decades
+  static double toDecades(double value) => value / 120.0;
+
+  /// Converts the supplied Months value to Centuries
+  static double toCenturies(double value) => value / 1200.0;
 }
 
+/// Seconds conversion functions
 class Seconds {
-	static double toMinutes(double value) =>
-		value / 60.0;
-	static double toHours(double value) =>
-		value / 3600.0;
-	static double toDays(double value) =>
-		value / 86400.0;
-	static double toWeeks(double value) =>
-		value / 604800.0;
-	static double toMonths(double value) =>
-		value / 2.628e+6;
-	static double toYears(double value) =>
-		value / 3.1536e+7;
-	static double toDecades(double value) =>
-		value / 3.154e+8;
-	static double toCenturies(double value) =>
-		value / 3.154e+9;
+  Seconds._() {}
+
+  /// Converts the supplied Seconds value to Minutes
+  static double toMinutes(double value) => value / 60.0;
+
+  /// Converts the supplied Seconds value to Hours
+  static double toHours(double value) => value / 3600.0;
+
+  /// Converts the supplied Seconds value to Days
+  static double toDays(double value) => value / 86400.0;
+
+  /// Converts the supplied Seconds value to Weeks
+  static double toWeeks(double value) => value / 604800.0;
+
+  /// Converts the supplied Seconds value to Months
+  static double toMonths(double value) => value / 2.628e+6;
+
+  /// Converts the supplied Seconds value to Years
+  static double toYears(double value) => value / 3.1536e+7;
+
+  /// Converts the supplied Seconds value to Decades
+  static double toDecades(double value) => value / 3.154e+8;
+
+  /// Converts the supplied Seconds value to Centuries
+  static double toCenturies(double value) => value / 3.154e+9;
 }
 
+/// Weeks conversion functions
 class Weeks {
-	static double toSeconds(double value) =>
-		value * 604800.0;
-	static double toMinutes(double value) =>
-		value * 10080.0;
-	static double toHours(double value) =>
-		value * 168.0;
-	static double toDays(double value) =>
-		value * 7.0;
-	static double toMonths(double value) =>
-		value / 4.34524;
-	static double toYears(double value) =>
-		value / 52.143;
-	static double toDecades(double value) =>
-		value / 521.429;
-	static double toCenturies(double value) =>
-		value / 5214.29;
+  Weeks._() {}
+
+  /// Converts the supplied Weeks value to Seconds
+  static double toSeconds(double value) => value * 604800.0;
+
+  /// Converts the supplied Weeks value to Minutes
+  static double toMinutes(double value) => value * 10080.0;
+
+  /// Converts the supplied Weeks value to Hours
+  static double toHours(double value) => value * 168.0;
+
+  /// Converts the supplied Weeks value to Days
+  static double toDays(double value) => value * 7.0;
+
+  /// Converts the supplied Weeks value to Months
+  static double toMonths(double value) => value / 4.34524;
+
+  /// Converts the supplied Weeks value to Years
+  static double toYears(double value) => value / 52.143;
+
+  /// Converts the supplied Weeks value to Decades
+  static double toDecades(double value) => value / 521.429;
+
+  /// Converts the supplied Weeks value to Centuries
+  static double toCenturies(double value) => value / 5214.29;
 }
 
+/// Years conversion functions
 class Years {
-	static double toSeconds(double value) =>
-		value * 3.1536e+7;
-	static double toMinutes(double value) =>
-		value * 525600.0;
-	static double toHours(double value) =>
-		value * 8760.0;
-	static double toDays(double value) =>
-		value * 365.0;
-	static double toWeeks(double value) =>
-		value * 52.143;
-	static double toMonths(double value) =>
-		value * 12.0;
-	static double toDecades(double value) =>
-		value / 10.0;
-	static double toCenturies(double value) =>
-		value / 100.0;
+  Years._() {}
+
+  /// Converts the supplied Years value to Seconds
+  static double toSeconds(double value) => value * 3.1536e+7;
+
+  /// Converts the supplied Years value to Minutes
+  static double toMinutes(double value) => value * 525600.0;
+
+  /// Converts the supplied Years value to Hours
+  static double toHours(double value) => value * 8760.0;
+
+  /// Converts the supplied Years value to Days
+  static double toDays(double value) => value * 365.0;
+
+  /// Converts the supplied Years value to Weeks
+  static double toWeeks(double value) => value * 52.143;
+
+  /// Converts the supplied Years value to Months
+  static double toMonths(double value) => value * 12.0;
+
+  /// Converts the supplied Years value to Decades
+  static double toDecades(double value) => value / 10.0;
+
+  /// Converts the supplied Years value to Centuries
+  static double toCenturies(double value) => value / 100.0;
 }

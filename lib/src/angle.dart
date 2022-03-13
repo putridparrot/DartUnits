@@ -6,80 +6,117 @@
 
 import 'dart:math' as math;
 
+/// Degrees conversion functions
 class Degrees {
-	static double toRadians(double value) =>
-		value * math.pi/180.0;
-	static double toGradians(double value) =>
-		value * 200.0/180.0;
-	static double toMilliradians(double value) =>
-		value * (1000.0 * math.pi)/180.0;
-	static double toMinuteOfArc(double value) =>
-		value * 60.0;
-	static double toSecondsOfArc(double value) =>
-		value * 3600.0;
+  /// Converts the supplied Degrees value to Radians
+  static double toRadians(double value) => value * math.pi / 180.0;
+
+  /// Converts the supplied Degrees value to Gradians
+  static double toGradians(double value) => value * 200.0 / 180.0;
+
+  /// Converts the supplied Degrees value to Milliradians
+  static double toMilliradians(double value) =>
+      value * (1000.0 * math.pi) / 180.0;
+
+  /// Converts the supplied Degrees value to Minute Of Arc
+  static double toMinuteOfArc(double value) => value * 60.0;
+
+  /// Converts the supplied Degrees value to Seconds Of Arc
+  static double toSecondsOfArc(double value) => value * 3600.0;
 }
 
+/// Gradians conversion functions
 class Gradians {
-	static double toDegrees(double value) =>
-		value * 180.0/200.0;
-	static double toRadians(double value) =>
-		value * math.pi/200.0;
-	static double toMilliradians(double value) =>
-		value * (1000.0*math.pi)/200.0;
-	static double toMinuteOfArc(double value) =>
-		value * 54.0;
-	static double toSecondsOfArc(double value) =>
-		value * 3240.0;
+  /// Converts the supplied Gradians value to Degrees
+  static double toDegrees(double value) => value * 180.0 / 200.0;
+
+  /// Converts the supplied Gradians value to Radians
+  static double toRadians(double value) => value * math.pi / 200.0;
+
+  /// Converts the supplied Gradians value to Milliradians
+  static double toMilliradians(double value) =>
+      value * (1000.0 * math.pi) / 200.0;
+
+  /// Converts the supplied Gradians value to Minute Of Arc
+  static double toMinuteOfArc(double value) => value * 54.0;
+
+  /// Converts the supplied Gradians value to Seconds Of Arc
+  static double toSecondsOfArc(double value) => value * 3240.0;
 }
 
+/// Milliradians conversion functions
 class Milliradians {
-	static double toDegrees(double value) =>
-		value * 180.0/(1000.0 * math.pi);
-	static double toRadians(double value) =>
-		value / 1000.0;
-	static double toGradians(double value) =>
-		value * 200.0/(1000.0 * math.pi);
-	static double toMinuteOfArc(double value) =>
-		value * (60.0 * 180.0)/(1000.0 * math.pi);
-	static double toSecondsOfArc(double value) =>
-		value * (3600.0 * 180.0)/(1000.0 * math.pi);
+  /// Converts the supplied Milliradians value to Degrees
+  static double toDegrees(double value) => value * 180.0 / (1000.0 * math.pi);
+
+  /// Converts the supplied Milliradians value to Radians
+  static double toRadians(double value) => value / 1000.0;
+
+  /// Converts the supplied Milliradians value to Gradians
+  static double toGradians(double value) => value * 200.0 / (1000.0 * math.pi);
+
+  /// Converts the supplied Milliradians value to Minute Of Arc
+  static double toMinuteOfArc(double value) =>
+      value * (60.0 * 180.0) / (1000.0 * math.pi);
+
+  /// Converts the supplied Milliradians value to Seconds Of Arc
+  static double toSecondsOfArc(double value) =>
+      value * (3600.0 * 180.0) / (1000.0 * math.pi);
 }
 
+/// Minute Of Arc conversion functions
 class MinuteOfArc {
-	static double toDegrees(double value) =>
-		value / 60.0;
-	static double toRadians(double value) =>
-		value * math.pi/(60.0 * 180.0);
-	static double toGradians(double value) =>
-		value / 54.0;
-	static double toMilliradians(double value) =>
-		value * (1000.0 * math.pi) / (60.0 * 180.0);
-	static double toSecondsOfArc(double value) =>
-		value * 60.0;
+  /// Converts the supplied Minute Of Arc value to Degrees
+  static double toDegrees(double value) => value / 60.0;
+
+  /// Converts the supplied Minute Of Arc value to Radians
+  static double toRadians(double value) => value * math.pi / (60.0 * 180.0);
+
+  /// Converts the supplied Minute Of Arc value to Gradians
+  static double toGradians(double value) => value / 54.0;
+
+  /// Converts the supplied Minute Of Arc value to Milliradians
+  static double toMilliradians(double value) =>
+      value * (1000.0 * math.pi) / (60.0 * 180.0);
+
+  /// Converts the supplied Minute Of Arc value to Seconds Of Arc
+  static double toSecondsOfArc(double value) => value * 60.0;
 }
 
+/// Radians conversion functions
 class Radians {
-	static double toDegrees(double value) =>
-		value * 180.0/math.pi;
-	static double toGradians(double value) =>
-		value * 200.0/math.pi;
-	static double toMilliradians(double value) =>
-		value * 1000.0;
-	static double toMinuteOfArc(double value) =>
-		value * (60.0 * 180.0)/math.pi;
-	static double toSecondsOfArc(double value) =>
-		value * (3600.0 * 180.0)/math.pi;
+  /// Converts the supplied Radians value to Degrees
+  static double toDegrees(double value) => value * 180.0 / math.pi;
+
+  /// Converts the supplied Radians value to Gradians
+  static double toGradians(double value) => value * 200.0 / math.pi;
+
+  /// Converts the supplied Radians value to Milliradians
+  static double toMilliradians(double value) => value * 1000.0;
+
+  /// Converts the supplied Radians value to Minute Of Arc
+  static double toMinuteOfArc(double value) => value * (60.0 * 180.0) / math.pi;
+
+  /// Converts the supplied Radians value to Seconds Of Arc
+  static double toSecondsOfArc(double value) =>
+      value * (3600.0 * 180.0) / math.pi;
 }
 
+/// Seconds Of Arc conversion functions
 class SecondsOfArc {
-	static double toDegrees(double value) =>
-		value / 3600.0;
-	static double toRadians(double value) =>
-		value * math.pi/(180.0 * 3600.0);
-	static double toGradians(double value) =>
-		value / 3240.0;
-	static double toMilliradians(double value) =>
-		value * (1000.0 * math.pi) / (180.0 * 3600.0);
-	static double toMinuteOfArc(double value) =>
-		value / 60.0;
+  /// Converts the supplied Seconds Of Arc value to Degrees
+  static double toDegrees(double value) => value / 3600.0;
+
+  /// Converts the supplied Seconds Of Arc value to Radians
+  static double toRadians(double value) => value * math.pi / (180.0 * 3600.0);
+
+  /// Converts the supplied Seconds Of Arc value to Gradians
+  static double toGradians(double value) => value / 3240.0;
+
+  /// Converts the supplied Seconds Of Arc value to Milliradians
+  static double toMilliradians(double value) =>
+      value * (1000.0 * math.pi) / (180.0 * 3600.0);
+
+  /// Converts the supplied Seconds Of Arc value to Minute Of Arc
+  static double toMinuteOfArc(double value) => value / 60.0;
 }

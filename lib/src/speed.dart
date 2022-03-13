@@ -4,57 +4,87 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
+/// Feet Per Second conversion functions
 class FeetPerSecond {
-	static double toMilesPerHour(double value) =>
-		value / 1.46667;
-	static double toKilometresPerHour(double value) =>
-		value * 1.09728;
-	static double toMetresPerSecond(double value) =>
-		value / 3.28084;
-	static double toKnots(double value) =>
-		value / 1.68781;
+  FeetPerSecond._() {}
+
+  /// Converts the supplied Feet Per Second value to Miles Per Hour
+  static double toMilesPerHour(double value) => value / 1.46667;
+
+  /// Converts the supplied Feet Per Second value to Kilometres Per Hour
+  static double toKilometresPerHour(double value) => value * 1.09728;
+
+  /// Converts the supplied Feet Per Second value to Metres Per Second
+  static double toMetresPerSecond(double value) => value / 3.28084;
+
+  /// Converts the supplied Feet Per Second value to Knots
+  static double toKnots(double value) => value / 1.68781;
 }
 
+/// Kilometres Per Hour conversion functions
 class KilometresPerHour {
-	static double toMilesPerHour(double value) =>
-		value / 1.60934;
-	static double toFeetPerSecond(double value) =>
-		value / 1.09728;
-	static double toMetresPerSecond(double value) =>
-		value / 3.6;
-	static double toKnots(double value) =>
-		value / 1.852;
+  KilometresPerHour._() {}
+
+  /// Converts the supplied Kilometres Per Hour value to Miles Per Hour
+  static double toMilesPerHour(double value) => value / 1.60934;
+
+  /// Converts the supplied Kilometres Per Hour value to Feet Per Second
+  static double toFeetPerSecond(double value) => value / 1.09728;
+
+  /// Converts the supplied Kilometres Per Hour value to Metres Per Second
+  static double toMetresPerSecond(double value) => value / 3.6;
+
+  /// Converts the supplied Kilometres Per Hour value to Knots
+  static double toKnots(double value) => value / 1.852;
 }
 
+/// Knots conversion functions
 class Knots {
-	static double toMilesPerHour(double value) =>
-		value * 1.15078;
-	static double toKilometresPerHour(double value) =>
-		value * 1.852;
-	static double toFeetPerSecond(double value) =>
-		value * 1.68781;
-	static double toMetresPerSecond(double value) =>
-		value / 1.94384;
+  Knots._() {}
+
+  /// Converts the supplied Knots value to Miles Per Hour
+  static double toMilesPerHour(double value) => value * 1.15078;
+
+  /// Converts the supplied Knots value to Kilometres Per Hour
+  static double toKilometresPerHour(double value) => value * 1.852;
+
+  /// Converts the supplied Knots value to Feet Per Second
+  static double toFeetPerSecond(double value) => value * 1.68781;
+
+  /// Converts the supplied Knots value to Metres Per Second
+  static double toMetresPerSecond(double value) => value / 1.94384;
 }
 
+/// Metres Per Second conversion functions
 class MetresPerSecond {
-	static double toMilesPerHour(double value) =>
-		value * 2.23694;
-	static double toKilometresPerHour(double value) =>
-		value * 3.6;
-	static double toFeetPerSecond(double value) =>
-		value * 3.28084;
-	static double toKnots(double value) =>
-		value * 1.94384;
+  MetresPerSecond._() {}
+
+  /// Converts the supplied Metres Per Second value to Miles Per Hour
+  static double toMilesPerHour(double value) => value * 2.23694;
+
+  /// Converts the supplied Metres Per Second value to Kilometres Per Hour
+  static double toKilometresPerHour(double value) => value * 3.6;
+
+  /// Converts the supplied Metres Per Second value to Feet Per Second
+  static double toFeetPerSecond(double value) => value * 3.28084;
+
+  /// Converts the supplied Metres Per Second value to Knots
+  static double toKnots(double value) => value * 1.94384;
 }
 
+/// Miles Per Hour conversion functions
 class MilesPerHour {
-	static double toKilometresPerHour(double value) =>
-		value * 1.60934;
-	static double toFeetPerSecond(double value) =>
-		value * 1.46667;
-	static double toMetresPerSecond(double value) =>
-		value / 2.23694;
-	static double toKnots(double value) =>
-		value / 1.15078;
+  MilesPerHour._() {}
+
+  /// Converts the supplied Miles Per Hour value to Kilometres Per Hour
+  static double toKilometresPerHour(double value) => value * 1.60934;
+
+  /// Converts the supplied Miles Per Hour value to Feet Per Second
+  static double toFeetPerSecond(double value) => value * 1.46667;
+
+  /// Converts the supplied Miles Per Hour value to Metres Per Second
+  static double toMetresPerSecond(double value) => value / 2.23694;
+
+  /// Converts the supplied Miles Per Hour value to Knots
+  static double toKnots(double value) => value / 1.15078;
 }

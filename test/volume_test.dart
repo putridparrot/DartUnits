@@ -8,1446 +8,1445 @@ import 'package:test/test.dart';
 import 'package:conversion_units/conversion_units.dart';
 
 void main() {
-    group('Volume Tests', () {
-        test('Convert known Fluid Ounces to Millilitres', () {
-            expect(FluidOunces.toMillilitres(12.0), closeTo(340.957, 0.01));
-            expect(FluidOunces.toMillilitres(6.01), closeTo(170.7625, 0.01));
-            expect(FluidOunces.toMillilitres(0.78), closeTo(22.16219, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to Litres', () {
-            expect(FluidOunces.toLitres(800.0), closeTo(22.7305, 0.01));
-            expect(FluidOunces.toLitres(4.5), closeTo(0.127859, 0.01));
-            expect(FluidOunces.toLitres(109.0), closeTo(3.09702, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to Kilolitres', () {
-            expect(FluidOunces.toKilolitres(56909.0), closeTo(1.616959, 0.01));
-            expect(FluidOunces.toKilolitres(9009.0), closeTo(0.2559733, 0.01));
-            expect(FluidOunces.toKilolitres(123456.0), closeTo(3.50776304, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to Teaspoons', () {
-            expect(FluidOunces.toTeaspoons(123.0), closeTo(590.4, 0.01));
-            expect(FluidOunces.toTeaspoons(9.12), closeTo(43.77598, 0.01));
-            expect(FluidOunces.toTeaspoons(0.2), closeTo(0.96, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to Tablespoons', () {
-            expect(FluidOunces.toTablespoons(7.0), closeTo(11.2, 0.01));
-            expect(FluidOunces.toTablespoons(165.4), closeTo(264.63989, 0.01));
-            expect(FluidOunces.toTablespoons(80.1), closeTo(128.1599, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to Quarts', () {
-            expect(FluidOunces.toQuarts(89.0), closeTo(2.225, 0.01));
-            expect(FluidOunces.toQuarts(5.9), closeTo(0.1475, 0.01));
-            expect(FluidOunces.toQuarts(1300.0), closeTo(32.5, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to Pints', () {
-            expect(FluidOunces.toPints(1300.0), closeTo(65.0, 0.01));
-            expect(FluidOunces.toPints(5.7), closeTo(0.285, 0.01));
-            expect(FluidOunces.toPints(1900.0), closeTo(95.0, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to Gallons', () {
-            expect(FluidOunces.toGallons(1900.0), closeTo(11.875, 0.01));
-            expect(FluidOunces.toGallons(5.6), closeTo(0.035, 0.01));
-            expect(FluidOunces.toGallons(12345.0), closeTo(77.15625, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to US Teaspoons', () {
-            expect(FluidOunces.toUSTeaspoons(12345.0), closeTo(71163.512, 0.01));
-            expect(FluidOunces.toUSTeaspoons(8.9), closeTo(51.3046, 0.01));
-            expect(FluidOunces.toUSTeaspoons(0.005), closeTo(0.028822808, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to US Tablespoons', () {
-            expect(FluidOunces.toUSTablespoons(190.0), closeTo(365.089, 0.01));
-            expect(FluidOunces.toUSTablespoons(6.8), closeTo(13.0663, 0.01));
-            expect(FluidOunces.toUSTablespoons(2340.0), closeTo(4496.357, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to US Quarts', () {
-            expect(FluidOunces.toUSQuarts(45.0), closeTo(1.35107, 0.01));
-            expect(FluidOunces.toUSQuarts(1090.0), closeTo(32.72589, 0.01));
-            expect(FluidOunces.toUSQuarts(777.0), closeTo(23.3285, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to US Pints', () {
-            expect(FluidOunces.toUSPints(678.0), closeTo(40.7122, 0.01));
-            expect(FluidOunces.toUSPints(4.5), closeTo(0.270214, 0.01));
-            expect(FluidOunces.toUSPints(1900.0), closeTo(114.0902, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to US Gallons', () {
-            expect(FluidOunces.toUSGallons(1890.0), closeTo(14.18622, 0.01));
-            expect(FluidOunces.toUSGallons(5.8), closeTo(0.0435344, 0.01));
-            expect(FluidOunces.toUSGallons(10090.0), closeTo(75.734905, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to US Fluid Ounces', () {
-            expect(FluidOunces.toUSFluidOunces(190.0), closeTo(182.544, 0.01));
-            expect(FluidOunces.toUSFluidOunces(54.8), closeTo(52.64964, 0.01));
-            expect(FluidOunces.toUSFluidOunces(1.7), closeTo(1.63329, 0.01));
-        });
-
-        test('Convert known Fluid Ounces to US Cups', () {
-            expect(FluidOunces.toUSCups(6.0), closeTo(0.72057, 0.01));
-            expect(FluidOunces.toUSCups(1800.0), closeTo(216.171, 0.01));
-            expect(FluidOunces.toUSCups(6.9), closeTo(0.828655, 0.01));
-        });
-
-        test('Convert known Gallons to Millilitres', () {
-            expect(Gallons.toMillilitres(1.3), closeTo(5909.92, 0.01));
-            expect(Gallons.toMillilitres(0.45), closeTo(2045.741, 0.01));
-            expect(Gallons.toMillilitres(1.8), closeTo(8182.96, 0.01));
-        });
-
-        test('Convert known Gallons to Litres', () {
-            expect(Gallons.toLitres(123.0), closeTo(559.169, 0.01));
-            expect(Gallons.toLitres(9.3), closeTo(42.2786, 0.01));
-            expect(Gallons.toLitres(0.67), closeTo(3.04588, 0.01));
-        });
-
-        test('Convert known Gallons to Kilolitres', () {
-            expect(Gallons.toKilolitres(1009.0), closeTo(4.587005, 0.01));
-            expect(Gallons.toKilolitres(9.6), closeTo(0.0436425, 0.01));
-            expect(Gallons.toKilolitres(123456.0), closeTo(561.242087, 0.01));
-        });
-
-        test('Convert known Gallons to Teaspoons', () {
-            expect(Gallons.toTeaspoons(6.0), closeTo(4608.0, 0.01));
-            expect(Gallons.toTeaspoons(78.12), closeTo(59996.16, 0.01));
-            expect(Gallons.toTeaspoons(0.34), closeTo(261.1199, 0.01));
-        });
-
-        test('Convert known Gallons to Tablespoons', () {
-            expect(Gallons.toTablespoons(0.9), closeTo(230.4, 0.01));
-            expect(Gallons.toTablespoons(1.6), closeTo(409.6, 0.01));
-            expect(Gallons.toTablespoons(0.33), closeTo(84.47997, 0.01));
-        });
-
-        test('Convert known Gallons to Quarts', () {
-            expect(Gallons.toQuarts(109.0), closeTo(436.0, 0.01));
-            expect(Gallons.toQuarts(5.8), closeTo(23.2, 0.01));
-            expect(Gallons.toQuarts(0.23), closeTo(0.92, 0.01));
-        });
-
-        test('Convert known Gallons to Pints', () {
-            expect(Gallons.toPints(0.23), closeTo(1.84, 0.01));
-            expect(Gallons.toPints(190.0), closeTo(1520.0, 0.01));
-            expect(Gallons.toPints(24.7), closeTo(197.6, 0.01));
-        });
-
-        test('Convert known Gallons to Fluid Ounces', () {
-            expect(Gallons.toFluidOunces(24.7), closeTo(3952.0, 0.01));
-            expect(Gallons.toFluidOunces(13.09), closeTo(2094.4, 0.01));
-            expect(Gallons.toFluidOunces(5.8), closeTo(928.0, 0.01));
-        });
-
-        test('Convert known Gallons to US Teaspoons', () {
-            expect(Gallons.toUSTeaspoons(5.8), closeTo(5349.51, 0.01));
-            expect(Gallons.toUSTeaspoons(0.44), closeTo(405.8251, 0.01));
-            expect(Gallons.toUSTeaspoons(1.9), closeTo(1752.43, 0.01));
-        });
-
-        test('Convert known Gallons to US Tablespoons', () {
-            expect(Gallons.toUSTablespoons(1.8), closeTo(553.398, 0.01));
-            expect(Gallons.toUSTablespoons(0.33), closeTo(101.4562, 0.01));
-            expect(Gallons.toUSTablespoons(100.0), closeTo(30744.33080, 0.01));
-        });
-
-        test('Convert known Gallons to US Quarts', () {
-            expect(Gallons.toUSQuarts(78.0), closeTo(374.696, 0.01));
-            expect(Gallons.toUSQuarts(1.7), closeTo(8.16646, 0.01));
-            expect(Gallons.toUSQuarts(16.9), closeTo(81.18421, 0.01));
-        });
-
-        test('Convert known Gallons to US Pints', () {
-            expect(Gallons.toUSPints(13.4), closeTo(128.7418, 0.01));
-            expect(Gallons.toUSPints(8.12), closeTo(78.01371, 0.01));
-            expect(Gallons.toUSPints(0.99), closeTo(9.511523, 0.01));
-        });
-
-        test('Convert known Gallons to US Gallons', () {
-            expect(Gallons.toUSGallons(1.5), closeTo(1.80142, 0.01));
-            expect(Gallons.toUSGallons(0.78), closeTo(0.9367409, 0.01));
-            expect(Gallons.toUSGallons(103.0), closeTo(123.698, 0.01));
-        });
-
-        test('Convert known Gallons to US Fluid Ounces', () {
-            expect(Gallons.toUSFluidOunces(111.0), closeTo(17063.1, 0.01));
-            expect(Gallons.toUSFluidOunces(89.9), closeTo(13819.57, 0.01));
-            expect(Gallons.toUSFluidOunces(1.2), closeTo(184.466, 0.01));
-        });
-
-        test('Convert known Gallons to US Cups', () {
-            expect(Gallons.toUSCups(1.2), closeTo(23.0582, 0.01));
-            expect(Gallons.toUSCups(0.55), closeTo(10.56836, 0.01));
-            expect(Gallons.toUSCups(890.0), closeTo(17101.534007630, 0.01));
-        });
-
-        test('Convert known Kilolitres to Millilitres', () {
-            expect(Kilolitres.toMillilitres(0.09), closeTo(90000.0, 0.01));
-            expect(Kilolitres.toMillilitres(0.00123), closeTo(1230.0, 0.01));
-            expect(Kilolitres.toMillilitres(1.2), closeTo(1.2e+6, 0.01));
-        });
-
-        test('Convert known Kilolitres to Litres', () {
-            expect(Kilolitres.toLitres(1.2), closeTo(1200.0, 0.01));
-            expect(Kilolitres.toLitres(0.8), closeTo(800.0, 0.01));
-            expect(Kilolitres.toLitres(456.0), closeTo(456000.0, 0.01));
-        });
-
-        test('Convert known Kilolitres to Teaspoons', () {
-            expect(Kilolitres.toTeaspoons(0.7), closeTo(118255.41900799, 0.01));
-            expect(Kilolitres.toTeaspoons(0.01), closeTo(1689.363, 0.01));
-            expect(Kilolitres.toTeaspoons(4.5), closeTo(760213.407908, 0.01));
-        });
-
-        test('Convert known Kilolitres to Tablespoons', () {
-            expect(Kilolitres.toTablespoons(0.3), closeTo(16893.631286856, 0.01));
-            expect(Kilolitres.toTablespoons(2.9), closeTo(163305.10243961, 0.01));
-            expect(Kilolitres.toTablespoons(0.067), closeTo(3772.911, 0.01));
-        });
-
-        test('Convert known Kilolitres to Quarts', () {
-            expect(Kilolitres.toQuarts(0.09), closeTo(79.18893, 0.01));
-            expect(Kilolitres.toQuarts(2.3), closeTo(2023.72, 0.01));
-            expect(Kilolitres.toQuarts(0.67), closeTo(589.5176, 0.01));
-        });
-
-        test('Convert known Kilolitres to Pints', () {
-            expect(Kilolitres.toPints(0.4), closeTo(703.902, 0.01));
-            expect(Kilolitres.toPints(67.0), closeTo(117903.46835618, 0.01));
-            expect(Kilolitres.toPints(9.3), closeTo(16365.7, 0.01));
-        });
-
-        test('Convert known Kilolitres to Gallons', () {
-            expect(Kilolitres.toGallons(109.0), closeTo(23976.638149, 0.01));
-            expect(Kilolitres.toGallons(7.2), closeTo(1583.78, 0.01));
-            expect(Kilolitres.toGallons(0.4), closeTo(87.9877, 0.01));
-        });
-
-        test('Convert known Kilolitres to Fluid Ounces', () {
-            expect(Kilolitres.toFluidOunces(0.2), closeTo(7039.02, 0.01));
-            expect(Kilolitres.toFluidOunces(4.8), closeTo(168936.31286856, 0.01));
-            expect(Kilolitres.toFluidOunces(6.0), closeTo(211170.391085, 0.01));
-        });
-
-        test('Convert known Kilolitres to US Teaspoons', () {
-            expect(Kilolitres.toUSTeaspoons(4.0), closeTo(811536.5448442, 0.01));
-            expect(Kilolitres.toUSTeaspoons(0.2), closeTo(40576.82724221160, 0.01));
-            expect(Kilolitres.toUSTeaspoons(2.4), closeTo(486921.92690653, 0.01));
-        });
-
-        test('Convert known Kilolitres to US Tablespoons', () {
-            expect(Kilolitres.toUSTablespoons(1.3), closeTo(87916.45902479, 0.01));
-            expect(Kilolitres.toUSTablespoons(0.6), closeTo(40576.82724221, 0.01));
-            expect(Kilolitres.toUSTablespoons(0.03), closeTo(2028.841, 0.01));
-        });
-
-        test('Convert known Kilolitres to US Quarts', () {
-            expect(Kilolitres.toUSQuarts(0.09), closeTo(95.10194, 0.01));
-            expect(Kilolitres.toUSQuarts(2.5), closeTo(2641.72, 0.01));
-            expect(Kilolitres.toUSQuarts(178.9), closeTo(189041.52, 0.01));
-        });
-
-        test('Convert known Kilolitres to US Pints', () {
-            expect(Kilolitres.toUSPints(67.0), closeTo(141596.2200639, 0.01));
-            expect(Kilolitres.toUSPints(4.7), closeTo(9932.87, 0.01));
-            expect(Kilolitres.toUSPints(108.9), closeTo(230146.69, 0.01));
-        });
-
-        test('Convert known Kilolitres to US Gallons', () {
-            expect(Kilolitres.toUSGallons(1.6), closeTo(422.675, 0.01));
-            expect(Kilolitres.toUSGallons(57.0), closeTo(15057.8, 0.01));
-            expect(Kilolitres.toUSGallons(0.88), closeTo(232.4714, 0.01));
-        });
-
-        test('Convert known Kilolitres to US Fluid Ounces', () {
-            expect(Kilolitres.toUSFluidOunces(0.07), closeTo(2366.982, 0.01));
-            expect(Kilolitres.toUSFluidOunces(4.2), closeTo(142018.89516765, 0.01));
-            expect(Kilolitres.toUSFluidOunces(12.0), closeTo(405768.27190759, 0.01));
-        });
-
-        test('Convert known Kilolitres to US Cups', () {
-            expect(Kilolitres.toUSCups(12.0), closeTo(50721.03405276, 0.01));
-            expect(Kilolitres.toUSCups(0.8), closeTo(3381.4, 0.01));
-            expect(Kilolitres.toUSCups(6.2), closeTo(26205.86759392, 0.01));
-        });
-
-        test('Convert known Litres to Millilitres', () {
-            expect(Litres.toMillilitres(34.0), closeTo(34000.0, 0.01));
-            expect(Litres.toMillilitres(0.67), closeTo(670.0, 0.01));
-            expect(Litres.toMillilitres(1.09), closeTo(1090.0, 0.01));
-        });
-
-        test('Convert known Litres to Kilolitres', () {
-            expect(Litres.toKilolitres(200.0), closeTo(0.2, 0.01));
-            expect(Litres.toKilolitres(12345.0), closeTo(12.345, 0.01));
-            expect(Litres.toKilolitres(80.0), closeTo(0.08, 0.01));
-        });
-
-        test('Convert known Litres to Teaspoons', () {
-            expect(Litres.toTeaspoons(3.0), closeTo(506.809, 0.01));
-            expect(Litres.toTeaspoons(0.2), closeTo(33.7873, 0.01));
-            expect(Litres.toTeaspoons(4.2), closeTo(709.533, 0.01));
-        });
-
-        test('Convert known Litres to Tablespoons', () {
-            expect(Litres.toTablespoons(3.0), closeTo(168.936, 0.01));
-            expect(Litres.toTablespoons(0.4), closeTo(22.5248, 0.01));
-            expect(Litres.toTablespoons(67.0), closeTo(3772.91, 0.01));
-        });
-
-        test('Convert known Litres to Quarts', () {
-            expect(Litres.toQuarts(54.0), closeTo(47.5134, 0.01));
-            expect(Litres.toQuarts(2.0), closeTo(1.75975, 0.01));
-            expect(Litres.toQuarts(0.7), closeTo(0.615914, 0.01));
-        });
-
-        test('Convert known Litres to Pints', () {
-            expect(Litres.toPints(0.5), closeTo(0.879877, 0.01));
-            expect(Litres.toPints(145.0), closeTo(255.164, 0.01));
-            expect(Litres.toPints(9.1), closeTo(16.0138, 0.01));
-        });
-
-        test('Convert known Litres to Gallons', () {
-            expect(Litres.toGallons(12.9), closeTo(2.837603, 0.01));
-            expect(Litres.toGallons(109.0), closeTo(23.9766, 0.01));
-            expect(Litres.toGallons(67.0), closeTo(14.7379, 0.01));
-        });
-
-        test('Convert known Litres to Fluid Ounces', () {
-            expect(Litres.toFluidOunces(5.0), closeTo(175.975, 0.01));
-            expect(Litres.toFluidOunces(0.3), closeTo(10.5585, 0.01));
-            expect(Litres.toFluidOunces(1.1), closeTo(38.7146, 0.01));
-        });
-
-        test('Convert known Litres to US Teaspoons', () {
-            expect(Litres.toUSTeaspoons(12.0), closeTo(2434.61, 0.01));
-            expect(Litres.toUSTeaspoons(0.7), closeTo(142.019, 0.01));
-            expect(Litres.toUSTeaspoons(89.9), closeTo(18239.29, 0.01));
-        });
-
-        test('Convert known Litres to US Tablespoons', () {
-            expect(Litres.toUSTablespoons(12.0), closeTo(811.537, 0.01));
-            expect(Litres.toUSTablespoons(5.6), closeTo(378.717, 0.01));
-            expect(Litres.toUSTablespoons(0.5), closeTo(33.814, 0.01));
-        });
-
-        test('Convert known Litres to US Quarts', () {
-            expect(Litres.toUSQuarts(12.0), closeTo(12.6803, 0.01));
-            expect(Litres.toUSQuarts(1.09), closeTo(1.15179, 0.01));
-            expect(Litres.toUSQuarts(5.5), closeTo(5.81179, 0.01));
-        });
-
-        test('Convert known Litres to US Pints', () {
-            expect(Litres.toUSPints(3.4), closeTo(7.18548, 0.01));
-            expect(Litres.toUSPints(0.8), closeTo(1.6907, 0.01));
-            expect(Litres.toUSPints(3000.0), closeTo(6340.129, 0.01));
-        });
-
-        test('Convert known Litres to US Gallons', () {
-            expect(Litres.toUSGallons(109.1), closeTo(28.821171, 0.01));
-            expect(Litres.toUSGallons(41.5), closeTo(10.96314, 0.01));
-            expect(Litres.toUSGallons(0.8), closeTo(0.211338, 0.01));
-        });
-
-        test('Convert known Litres to US Fluid Ounces', () {
-            expect(Litres.toUSFluidOunces(81.0), closeTo(2738.94, 0.01));
-            expect(Litres.toUSFluidOunces(7.3), closeTo(246.842, 0.01));
-            expect(Litres.toUSFluidOunces(0.65), closeTo(21.97911, 0.01));
-        });
-
-        test('Convert known Litres to US Cups', () {
-            expect(Litres.toUSCups(0.9), closeTo(3.80408, 0.01));
-            expect(Litres.toUSCups(103.9), closeTo(439.15962, 0.01));
-            expect(Litres.toUSCups(71.6), closeTo(302.6355, 0.01));
-        });
-
-        test('Convert known Millilitres to Litres', () {
-            expect(Millilitres.toLitres(1900.0), closeTo(1.9, 0.01));
-            expect(Millilitres.toLitres(56789.0), closeTo(56.789, 0.01));
-            expect(Millilitres.toLitres(567.0), closeTo(0.567, 0.01));
-        });
-
-        test('Convert known Millilitres to Kilolitres', () {
-            expect(Millilitres.toKilolitres(10060000.0), closeTo(10.06, 0.01));
-            expect(Millilitres.toKilolitres(987654.0), closeTo(0.987654, 0.01));
-            expect(Millilitres.toKilolitres(405000.0), closeTo(0.405, 0.01));
-        });
-
-        test('Convert known Millilitres to Teaspoons', () {
-            expect(Millilitres.toTeaspoons(1.0), closeTo(0.168936, 0.01));
-            expect(Millilitres.toTeaspoons(56.0), closeTo(9.46043, 0.01));
-            expect(Millilitres.toTeaspoons(12.3), closeTo(2.077917, 0.01));
-        });
-
-        test('Convert known Millilitres to Tablespoons', () {
-            expect(Millilitres.toTablespoons(109.0), closeTo(6.13802, 0.01));
-            expect(Millilitres.toTablespoons(88.0), closeTo(4.95547, 0.01));
-            expect(Millilitres.toTablespoons(12.0), closeTo(0.675745, 0.01));
-        });
-
-        test('Convert known Millilitres to Quarts', () {
-            expect(Millilitres.toQuarts(890.0), closeTo(0.783091, 0.01));
-            expect(Millilitres.toQuarts(12345.0), closeTo(10.862081, 0.01));
-            expect(Millilitres.toQuarts(129.0), closeTo(0.113504, 0.01));
-        });
-
-        test('Convert known Millilitres to Pints', () {
-            expect(Millilitres.toPints(124.0), closeTo(0.218209, 0.01));
-            expect(Millilitres.toPints(99.0), closeTo(0.174216, 0.01));
-            expect(Millilitres.toPints(607.3), closeTo(1.0686986, 0.01));
-        });
-
-        test('Convert known Millilitres to Gallons', () {
-            expect(Millilitres.toGallons(1234.0), closeTo(0.2714421, 0.01));
-            expect(Millilitres.toGallons(9000.0), closeTo(1.979723, 0.01));
-            expect(Millilitres.toGallons(10209.98), closeTo(2.2458816257, 0.01));
-        });
-
-        test('Convert known Millilitres to Fluid Ounces', () {
-            expect(Millilitres.toFluidOunces(78.0), closeTo(2.74522, 0.01));
-            expect(Millilitres.toFluidOunces(12.9), closeTo(0.4540165, 0.01));
-            expect(Millilitres.toFluidOunces(1009.0), closeTo(35.51184, 0.01));
-        });
-
-        test('Convert known Millilitres to US Teaspoons', () {
-            expect(Millilitres.toUSTeaspoons(100.0), closeTo(20.2884, 0.01));
-            expect(Millilitres.toUSTeaspoons(12.3), closeTo(2.495476, 0.01));
-            expect(Millilitres.toUSTeaspoons(69.0), closeTo(13.999, 0.01));
-        });
-
-        test('Convert known Millilitres to US Tablespoons', () {
-            expect(Millilitres.toUSTablespoons(38.0), closeTo(2.56987, 0.01));
-            expect(Millilitres.toUSTablespoons(1023.0), closeTo(69.18349, 0.01));
-            expect(Millilitres.toUSTablespoons(88.8), closeTo(6.00537, 0.01));
-        });
-
-        test('Convert known Millilitres to US Quarts', () {
-            expect(Millilitres.toUSQuarts(1009.0), closeTo(1.066198, 0.01));
-            expect(Millilitres.toUSQuarts(4567.0), closeTo(4.825895, 0.01));
-            expect(Millilitres.toUSQuarts(8009.0), closeTo(8.463016, 0.01));
-        });
-
-        test('Convert known Millilitres to US Pints', () {
-            expect(Millilitres.toUSPints(110.0), closeTo(0.232471, 0.01));
-            expect(Millilitres.toUSPints(2032.0), closeTo(4.294381, 0.01));
-            expect(Millilitres.toUSPints(1000.9), closeTo(2.11527846, 0.01));
-        });
-
-        test('Convert known Millilitres to US Gallons', () {
-            expect(Millilitres.toUSGallons(5000.0), closeTo(1.32086, 0.01));
-            expect(Millilitres.toUSGallons(123456.0), closeTo(32.6136249, 0.01));
-            expect(Millilitres.toUSGallons(900.0), closeTo(0.237755, 0.01));
-        });
-
-        test('Convert known Millilitres to US Fluid Ounces', () {
-            expect(Millilitres.toUSFluidOunces(67.0), closeTo(2.26554, 0.01));
-            expect(Millilitres.toUSFluidOunces(12.6), closeTo(0.4260567, 0.01));
-            expect(Millilitres.toUSFluidOunces(11009.0), closeTo(372.25858, 0.01));
-        });
-
-        test('Convert known Millilitres to US Cups', () {
-            expect(Millilitres.toUSCups(348.0), closeTo(1.47091, 0.01));
-            expect(Millilitres.toUSCups(12.9), closeTo(0.05452511, 0.01));
-            expect(Millilitres.toUSCups(700.0), closeTo(2.95873, 0.01));
-        });
-
-        test('Convert known Pints to Millilitres', () {
-            expect(Pints.toMillilitres(0.7), closeTo(397.783, 0.01));
-            expect(Pints.toMillilitres(5.6), closeTo(3182.26, 0.01));
-            expect(Pints.toMillilitres(6.0), closeTo(3409.57, 0.01));
-        });
-
-        test('Convert known Pints to Litres', () {
-            expect(Pints.toLitres(6.0), closeTo(3.40957, 0.01));
-            expect(Pints.toLitres(0.123), closeTo(0.069896134, 0.01));
-            expect(Pints.toLitres(45.9), closeTo(26.08319, 0.01));
-        });
-
-        test('Convert known Pints to Kilolitres', () {
-            expect(Pints.toKilolitres(456.0), closeTo(0.259127, 0.01));
-            expect(Pints.toKilolitres(10450.0), closeTo(5.9383301, 0.01));
-            expect(Pints.toKilolitres(9000.9), closeTo(5.11486269, 0.01));
-        });
-
-        test('Convert known Pints to Teaspoons', () {
-            expect(Pints.toTeaspoons(5.0), closeTo(480.0, 0.01));
-            expect(Pints.toTeaspoons(0.3), closeTo(28.8, 0.01));
-            expect(Pints.toTeaspoons(190.0), closeTo(18240.0, 0.01));
-        });
-
-        test('Convert known Pints to Tablespoons', () {
-            expect(Pints.toTablespoons(187.0), closeTo(5984.0, 0.01));
-            expect(Pints.toTablespoons(54.5), closeTo(1743.999, 0.01));
-            expect(Pints.toTablespoons(0.33), closeTo(10.56, 0.01));
-        });
-
-        test('Convert known Pints to Quarts', () {
-            expect(Pints.toQuarts(5.6), closeTo(2.8, 0.01));
-            expect(Pints.toQuarts(109.0), closeTo(54.5, 0.01));
-            expect(Pints.toQuarts(0.3), closeTo(0.15, 0.01));
-        });
-
-        test('Convert known Pints to Gallons', () {
-            expect(Pints.toGallons(0.3), closeTo(0.0375, 0.01));
-            expect(Pints.toGallons(800.0), closeTo(100.0, 0.01));
-            expect(Pints.toGallons(1.5), closeTo(0.1875, 0.01));
-        });
-
-        test('Convert known Pints to Fluid Ounces', () {
-            expect(Pints.toFluidOunces(1.5), closeTo(30.0, 0.01));
-            expect(Pints.toFluidOunces(789.0), closeTo(15780.0, 0.01));
-            expect(Pints.toFluidOunces(1020.8), closeTo(20416.0, 0.01));
-        });
-
-        test('Convert known Pints to US Teaspoons', () {
-            expect(Pints.toUSTeaspoons(1020.8), closeTo(117689.298303295, 0.01));
-            expect(Pints.toUSTeaspoons(0.4), closeTo(46.1165, 0.01));
-            expect(Pints.toUSTeaspoons(104.0), closeTo(11990.2890120912, 0.01));
-        });
-
-        test('Convert known Pints to US Tablespoons', () {
-            expect(Pints.toUSTablespoons(104.0), closeTo(3996.76, 0.01));
-            expect(Pints.toUSTablespoons(5.6), closeTo(215.21, 0.01));
-            expect(Pints.toUSTablespoons(0.4), closeTo(15.3722, 0.01));
-        });
-
-        test('Convert known Pints to US Quarts', () {
-            expect(Pints.toUSQuarts(0.55), closeTo(0.3302612, 0.01));
-            expect(Pints.toUSQuarts(80.6), closeTo(48.39828, 0.01));
-            expect(Pints.toUSQuarts(12.0), closeTo(7.2057, 0.01));
-        });
-
-        test('Convert known Pints to US Pints', () {
-            expect(Pints.toUSPints(12.0), closeTo(14.4114, 0.01));
-            expect(Pints.toUSPints(4.7), closeTo(5.64446, 0.01));
-            expect(Pints.toUSPints(0.44), closeTo(0.528418, 0.01));
-        });
-
-        test('Convert known Pints to US Gallons', () {
-            expect(Pints.toUSGallons(1.2), closeTo(0.180142, 0.01));
-            expect(Pints.toUSGallons(9000.0), closeTo(1351.069, 0.01));
-            expect(Pints.toUSGallons(108.4), closeTo(16.272871, 0.01));
-        });
-
-        test('Convert known Pints to US Fluid Ounces', () {
-            expect(Pints.toUSFluidOunces(108.0), closeTo(2075.24, 0.01));
-            expect(Pints.toUSFluidOunces(23.4), closeTo(449.6357, 0.01));
-            expect(Pints.toUSFluidOunces(8.65), closeTo(166.2115, 0.01));
-        });
-
-        test('Convert known Pints to US Cups', () {
-            expect(Pints.toUSCups(23.0), closeTo(55.2437, 0.01));
-            expect(Pints.toUSCups(3.0), closeTo(7.2057, 0.01));
-            expect(Pints.toUSCups(50.6), closeTo(121.5361, 0.01));
-        });
-
-        test('Convert known Quarts to Millilitres', () {
-            expect(Quarts.toMillilitres(1.4), closeTo(1591.13, 0.01));
-            expect(Quarts.toMillilitres(800.0), closeTo(909218.37579999, 0.01));
-            expect(Quarts.toMillilitres(0.7), closeTo(795.566, 0.01));
-        });
-
-        test('Convert known Quarts to Litres', () {
-            expect(Quarts.toLitres(675.0), closeTo(767.153, 0.01));
-            expect(Quarts.toLitres(45.8), closeTo(52.05273, 0.01));
-            expect(Quarts.toLitres(0.8), closeTo(0.909218, 0.01));
-        });
-
-        test('Convert known Quarts to Kilolitres', () {
-            expect(Quarts.toKilolitres(8009.0), closeTo(9.102409, 0.01));
-            expect(Quarts.toKilolitres(12345.0), closeTo(14.03037, 0.01));
-            expect(Quarts.toKilolitres(601.0), closeTo(0.68305, 0.01));
-        });
-
-        test('Convert known Quarts to Teaspoons', () {
-            expect(Quarts.toTeaspoons(6.0), closeTo(1152.0, 0.01));
-            expect(Quarts.toTeaspoons(0.9), closeTo(172.8, 0.01));
-            expect(Quarts.toTeaspoons(0.03), closeTo(5.759998, 0.01));
-        });
-
-        test('Convert known Quarts to Tablespoons', () {
-            expect(Quarts.toTablespoons(5.9), closeTo(377.6, 0.01));
-            expect(Quarts.toTablespoons(0.34), closeTo(21.75999, 0.01));
-            expect(Quarts.toTablespoons(2.9), closeTo(185.6, 0.01));
-        });
-
-        test('Convert known Quarts to Pints', () {
-            expect(Quarts.toPints(4.5), closeTo(9.0, 0.01));
-            expect(Quarts.toPints(102.8), closeTo(205.6, 0.01));
-            expect(Quarts.toPints(0.46), closeTo(0.92, 0.01));
-        });
-
-        test('Convert known Quarts to Gallons', () {
-            expect(Quarts.toGallons(0.46), closeTo(0.115, 0.01));
-            expect(Quarts.toGallons(190.0), closeTo(47.5, 0.01));
-            expect(Quarts.toGallons(67.6), closeTo(16.9, 0.01));
-        });
-
-        test('Convert known Quarts to Fluid Ounces', () {
-            expect(Quarts.toFluidOunces(67.6), closeTo(2704.0, 0.01));
-            expect(Quarts.toFluidOunces(1009.0), closeTo(40360.0, 0.01));
-            expect(Quarts.toFluidOunces(6.2), closeTo(248.0, 0.01));
-        });
-
-        test('Convert known Quarts to US Teaspoons', () {
-            expect(Quarts.toUSTeaspoons(6.2), closeTo(1429.61, 0.01));
-            expect(Quarts.toUSTeaspoons(0.7), closeTo(161.408, 0.01));
-            expect(Quarts.toUSTeaspoons(80.3), closeTo(18515.77, 0.01));
-        });
-
-        test('Convert known Quarts to US Tablespoons', () {
-            expect(Quarts.toUSTablespoons(80.0), closeTo(6148.86, 0.01));
-            expect(Quarts.toUSTablespoons(5.7), closeTo(438.107, 0.01));
-            expect(Quarts.toUSTablespoons(0.44), closeTo(33.81875, 0.01));
-        });
-
-        test('Convert known Quarts to US Quarts', () {
-            expect(Quarts.toUSQuarts(0.44), closeTo(0.528418, 0.01));
-            expect(Quarts.toUSQuarts(12.7), closeTo(15.25206, 0.01));
-            expect(Quarts.toUSQuarts(109.0), closeTo(130.904, 0.01));
-        });
-
-        test('Convert known Quarts to US Pints', () {
-            expect(Quarts.toUSPints(18.0), closeTo(43.2342, 0.01));
-            expect(Quarts.toUSPints(2.5), closeTo(6.00475, 0.01));
-            expect(Quarts.toUSPints(0.4), closeTo(0.96076, 0.01));
-        });
-
-        test('Convert known Quarts to US Gallons', () {
-            expect(Quarts.toUSGallons(4.8), closeTo(1.44114, 0.01));
-            expect(Quarts.toUSGallons(0.3), closeTo(0.0900712, 0.01));
-            expect(Quarts.toUSGallons(1.5), closeTo(0.450356, 0.01));
-        });
-
-        test('Convert known Quarts to US Fluid Ounces', () {
-            expect(Quarts.toUSFluidOunces(6.0), closeTo(230.582, 0.01));
-            expect(Quarts.toUSFluidOunces(0.46), closeTo(17.67798, 0.01));
-            expect(Quarts.toUSFluidOunces(2.0), closeTo(76.8608, 0.01));
-        });
-
-        test('Convert known Quarts to US Cups', () {
-            expect(Quarts.toUSCups(2.0), closeTo(9.6076, 0.01));
-            expect(Quarts.toUSCups(800.9), closeTo(3847.3632, 0.01));
-            expect(Quarts.toUSCups(0.23), closeTo(1.104874, 0.01));
-        });
-
-        test('Convert known Tablespoons to Millilitres', () {
-            expect(Tablespoons.toMillilitres(2.7), closeTo(47.9471, 0.01));
-            expect(Tablespoons.toMillilitres(0.65), closeTo(11.54281, 0.01));
-            expect(Tablespoons.toMillilitres(80.1), closeTo(1422.43, 0.01));
-        });
-
-        test('Convert known Tablespoons to Litres', () {
-            expect(Tablespoons.toLitres(55.0), closeTo(0.976699, 0.01));
-            expect(Tablespoons.toLitres(190.0), closeTo(3.37405, 0.01));
-            expect(Tablespoons.toLitres(4000.0), closeTo(71.0397889, 0.01));
-        });
-
-        test('Convert known Tablespoons to Kilolitres', () {
-            expect(Tablespoons.toKilolitres(10000.0), closeTo(0.1775817, 0.01));
-            expect(Tablespoons.toKilolitres(98765.0), closeTo(1.7538858, 0.01));
-            expect(Tablespoons.toKilolitres(666999.0), closeTo(11.8446826, 0.01));
-        });
-
-        test('Convert known Tablespoons to Teaspoons', () {
-            expect(Tablespoons.toTeaspoons(12.0), closeTo(36.0, 0.01));
-            expect(Tablespoons.toTeaspoons(0.24), closeTo(0.72, 0.01));
-            expect(Tablespoons.toTeaspoons(19.9), closeTo(59.7, 0.01));
-        });
-
-        test('Convert known Tablespoons to Quarts', () {
-            expect(Tablespoons.toQuarts(190.0), closeTo(2.96875, 0.01));
-            expect(Tablespoons.toQuarts(9.0), closeTo(0.140625, 0.01));
-            expect(Tablespoons.toQuarts(3.7), closeTo(0.0578125, 0.01));
-        });
-
-        test('Convert known Tablespoons to Pints', () {
-            expect(Tablespoons.toPints(4.7), closeTo(0.146875, 0.01));
-            expect(Tablespoons.toPints(190.0), closeTo(5.9375, 0.01));
-            expect(Tablespoons.toPints(1090.9), closeTo(34.0906391, 0.01));
-        });
-
-        test('Convert known Tablespoons to Gallons', () {
-            expect(Tablespoons.toGallons(8000.0), closeTo(31.25001, 0.01));
-            expect(Tablespoons.toGallons(54.0), closeTo(0.210938, 0.01));
-            expect(Tablespoons.toGallons(99.3), closeTo(0.3878908, 0.01));
-        });
-
-        test('Convert known Tablespoons to Fluid Ounces', () {
-            expect(Tablespoons.toFluidOunces(80.8), closeTo(50.50002, 0.01));
-            expect(Tablespoons.toFluidOunces(9009.0), closeTo(5630.627, 0.01));
-            expect(Tablespoons.toFluidOunces(12.6), closeTo(7.875003, 0.01));
-        });
-
-        test('Convert known Tablespoons to US Teaspoons', () {
-            expect(Tablespoons.toUSTeaspoons(12.0), closeTo(43.2342, 0.01));
-            expect(Tablespoons.toUSTeaspoons(0.6), closeTo(2.16171, 0.01));
-            expect(Tablespoons.toUSTeaspoons(52.9), closeTo(190.5909, 0.01));
-        });
-
-        test('Convert known Tablespoons to US Tablespoons', () {
-            expect(Tablespoons.toUSTablespoons(67.0), closeTo(80.4637, 0.01));
-            expect(Tablespoons.toUSTablespoons(5.8), closeTo(6.96551, 0.01));
-            expect(Tablespoons.toUSTablespoons(0.23), closeTo(0.2762186, 0.01));
-        });
-
-        test('Convert known Tablespoons to US Quarts', () {
-            expect(Tablespoons.toUSQuarts(54.0), closeTo(1.0133, 0.01));
-            expect(Tablespoons.toUSQuarts(1005.9), closeTo(18.875563, 0.01));
-            expect(Tablespoons.toUSQuarts(0.9), closeTo(0.0168884, 0.01));
-        });
-
-        test('Convert known Tablespoons to US Pints', () {
-            expect(Tablespoons.toUSPints(34.0), closeTo(1.27601, 0.01));
-            expect(Tablespoons.toUSPints(109.3), closeTo(4.1019963, 0.01));
-            expect(Tablespoons.toUSPints(190.0), closeTo(7.13064, 0.01));
-        });
-
-        test('Convert known Tablespoons to US Gallons', () {
-            expect(Tablespoons.toUSGallons(900.0), closeTo(4.22209, 0.01));
-            expect(Tablespoons.toUSGallons(2.8), closeTo(0.0131354, 0.01));
-            expect(Tablespoons.toUSGallons(1469.0), closeTo(6.891391, 0.01));
-        });
-
-        test('Convert known Tablespoons to US Fluid Ounces', () {
-            expect(Tablespoons.toUSFluidOunces(1009.0), closeTo(605.8795, 0.01));
-            expect(Tablespoons.toUSFluidOunces(8.2), closeTo(4.9239, 0.01));
-            expect(Tablespoons.toUSFluidOunces(190.5), closeTo(114.39053, 0.01));
-        });
-
-        test('Convert known Tablespoons to US Cups', () {
-            expect(Tablespoons.toUSCups(109.0), closeTo(8.18147, 0.01));
-            expect(Tablespoons.toUSCups(3.4), closeTo(0.255202, 0.01));
-            expect(Tablespoons.toUSCups(1000.0), closeTo(75.0594, 0.01));
-        });
-
-        test('Convert known Teaspoons to Millilitres', () {
-            expect(Teaspoons.toMillilitres(0.6), closeTo(3.55163, 0.01));
-            expect(Teaspoons.toMillilitres(1.3), closeTo(7.69521, 0.01));
-            expect(Teaspoons.toMillilitres(0.07), closeTo(0.4143573, 0.01));
-        });
-
-        test('Convert known Teaspoons to Litres', () {
-            expect(Teaspoons.toLitres(32.0), closeTo(0.18942, 0.01));
-            expect(Teaspoons.toLitres(180.0), closeTo(1.06549, 0.01));
-            expect(Teaspoons.toLitres(4567.0), closeTo(27.03386, 0.01));
-        });
-
-        test('Convert known Teaspoons to Kilolitres', () {
-            expect(Teaspoons.toKilolitres(236511.0), closeTo(1.4, 0.01));
-            expect(Teaspoons.toKilolitres(33787.3), closeTo(0.2, 0.01));
-            expect(Teaspoons.toKilolitres(1689.363), closeTo(0.01, 0.01));
-        });
-
-        test('Convert known Teaspoons to Tablespoons', () {
-            expect(Teaspoons.toTablespoons(12.0), closeTo(4.0, 0.01));
-            expect(Teaspoons.toTablespoons(900.8), closeTo(300.26667, 0.01));
-            expect(Teaspoons.toTablespoons(1.23), closeTo(0.41, 0.01));
-        });
-
-        test('Convert known Teaspoons to Quarts', () {
-            expect(Teaspoons.toQuarts(109.0), closeTo(0.567709, 0.01));
-            expect(Teaspoons.toQuarts(4500.0), closeTo(23.43751, 0.01));
-            expect(Teaspoons.toQuarts(89.0), closeTo(0.463542, 0.01));
-        });
-
-        test('Convert known Teaspoons to Pints', () {
-            expect(Teaspoons.toPints(678.0), closeTo(7.0625, 0.01));
-            expect(Teaspoons.toPints(109.0), closeTo(1.13542, 0.01));
-            expect(Teaspoons.toPints(12.5), closeTo(0.1302084, 0.01));
-        });
-
-        test('Convert known Teaspoons to Gallons', () {
-            expect(Teaspoons.toGallons(190.0), closeTo(0.247396, 0.01));
-            expect(Teaspoons.toGallons(8090.0), closeTo(10.53386, 0.01));
-            expect(Teaspoons.toGallons(238.9), closeTo(0.31106784, 0.01));
-        });
-
-        test('Convert known Teaspoons to Fluid Ounces', () {
-            expect(Teaspoons.toFluidOunces(109.0), closeTo(22.7083, 0.01));
-            expect(Teaspoons.toFluidOunces(55.7), closeTo(11.60417, 0.01));
-            expect(Teaspoons.toFluidOunces(609.0), closeTo(126.875, 0.01));
-        });
-
-        test('Convert known Teaspoons to US Teaspoons', () {
-            expect(Teaspoons.toUSTeaspoons(90.0), closeTo(108.086, 0.01));
-            expect(Teaspoons.toUSTeaspoons(1.45), closeTo(1.741379, 0.01));
-            expect(Teaspoons.toUSTeaspoons(80.1), closeTo(96.19616, 0.01));
-        });
-
-        test('Convert known Teaspoons to US Tablespoons', () {
-            expect(Teaspoons.toUSTablespoons(56.0), closeTo(22.4177, 0.01));
-            expect(Teaspoons.toUSTablespoons(7.0), closeTo(2.80222, 0.01));
-            expect(Teaspoons.toUSTablespoons(109.0), closeTo(43.6345, 0.01));
-        });
-
-        test('Convert known Teaspoons to US Quarts', () {
-            expect(Teaspoons.toUSQuarts(199.0), closeTo(1.24474, 0.01));
-            expect(Teaspoons.toUSQuarts(5.9), closeTo(0.0369042, 0.01));
-            expect(Teaspoons.toUSQuarts(23.0), closeTo(0.143864, 0.01));
-        });
-
-        test('Convert known Teaspoons to US Pints', () {
-            expect(Teaspoons.toUSPints(106.0), closeTo(1.32605, 0.01));
-            expect(Teaspoons.toUSPints(34.0), closeTo(0.425337, 0.01));
-            expect(Teaspoons.toUSPints(6.21), closeTo(0.07656059, 0.01));
-        });
-
-        test('Convert known Teaspoons to US Gallons', () {
-            expect(Teaspoons.toUSGallons(900.0), closeTo(1.40736, 0.01));
-            expect(Teaspoons.toUSGallons(1234.6), closeTo(1.93059035, 0.01));
-            expect(Teaspoons.toUSGallons(88.0), closeTo(0.137609, 0.01));
-        });
-
-        test('Convert known Teaspoons to US Fluid Ounces', () {
-            expect(Teaspoons.toUSFluidOunces(56.0), closeTo(11.2089, 0.01));
-            expect(Teaspoons.toUSFluidOunces(2.9), closeTo(0.580459, 0.01));
-            expect(Teaspoons.toUSFluidOunces(1020.0), closeTo(204.1616, 0.01));
-        });
-
-        test('Convert known Teaspoons to US Cups', () {
-            expect(Teaspoons.toUSCups(8000.0), closeTo(200.1584, 0.01));
-            expect(Teaspoons.toUSCups(34.0), closeTo(0.850673, 0.01));
-            expect(Teaspoons.toUSCups(109.9), closeTo(2.7496761, 0.01));
-        });
-
-        test('Convert known US Cups to Millilitres', () {
-            expect(USCups.toMillilitres(11.0), closeTo(2602.47, 0.01));
-            expect(USCups.toMillilitres(109.0), closeTo(25788.1177, 0.01));
-            expect(USCups.toMillilitres(4.5), closeTo(1064.65, 0.01));
-        });
-
-        test('Convert known US Cups to Litres', () {
-            expect(USCups.toLitres(56.0), closeTo(13.2489, 0.01));
-            expect(USCups.toLitres(4.1), closeTo(0.970012, 0.01));
-            expect(USCups.toLitres(399.0), closeTo(94.3987, 0.01));
-        });
-
-        test('Convert known US Cups to Kilolitres', () {
-            expect(USCups.toKilolitres(67.0), closeTo(0.0158514, 0.01));
-            expect(USCups.toKilolitres(1009.7), closeTo(0.238883142, 0.01));
-            expect(USCups.toKilolitres(918273.0), closeTo(217.25259, 0.01));
-        });
-
-        test('Convert known US Cups to Teaspoons', () {
-            expect(USCups.toTeaspoons(4.0), closeTo(159.873, 0.01));
-            expect(USCups.toTeaspoons(0.2), closeTo(7.99367, 0.01));
-            expect(USCups.toTeaspoons(6.12), closeTo(244.6063, 0.01));
-        });
-
-        test('Convert known US Cups to Tablespoons', () {
-            expect(USCups.toTablespoons(4.3), closeTo(57.288, 0.01));
-            expect(USCups.toTablespoons(120.6), closeTo(1606.7274, 0.01));
-            expect(USCups.toTablespoons(0.66), closeTo(8.793036, 0.01));
-        });
-
-        test('Convert known US Cups to Quarts', () {
-            expect(USCups.toQuarts(1009.0), closeTo(210.0421, 0.01));
-            expect(USCups.toQuarts(66.98), closeTo(13.943129, 0.01));
-            expect(USCups.toQuarts(0.123), closeTo(0.025604731, 0.01));
-        });
-
-        test('Convert known US Cups to Pints', () {
-            expect(USCups.toPints(5.0), closeTo(2.08169, 0.01));
-            expect(USCups.toPints(0.43), closeTo(0.1790249, 0.01));
-            expect(USCups.toPints(800.4), closeTo(333.23621, 0.01));
-        });
-
-        test('Convert known US Cups to Gallons', () {
-            expect(USCups.toGallons(56.0), closeTo(2.91436, 0.01));
-            expect(USCups.toGallons(104.12), closeTo(5.41862726, 0.01));
-            expect(USCups.toGallons(6.1), closeTo(0.317457, 0.01));
-        });
-
-        test('Convert known US Cups to Fluid Ounces', () {
-            expect(USCups.toFluidOunces(55.0), closeTo(457.971, 0.01));
-            expect(USCups.toFluidOunces(0.4), closeTo(3.3307, 0.01));
-            expect(USCups.toFluidOunces(88.4), closeTo(736.084, 0.01));
-        });
-
-        test('Convert known US Cups to US Teaspoons', () {
-            expect(USCups.toUSTeaspoons(12.0), closeTo(576.0, 0.01));
-            expect(USCups.toUSTeaspoons(5.12), closeTo(245.7601, 0.01));
-            expect(USCups.toUSTeaspoons(6701.0), closeTo(321648.0, 0.01));
-        });
-
-        test('Convert known US Cups to US Tablespoons', () {
-            expect(USCups.toUSTablespoons(677.0), closeTo(10832.0, 0.01));
-            expect(USCups.toUSTablespoons(1.9), closeTo(30.4, 0.01));
-            expect(USCups.toUSTablespoons(800.8), closeTo(12812.8, 0.01));
-        });
-
-        test('Convert known US Cups to US Quarts', () {
-            expect(USCups.toUSQuarts(800.8), closeTo(200.2, 0.01));
-            expect(USCups.toUSQuarts(4.84), closeTo(1.21, 0.01));
-            expect(USCups.toUSQuarts(0.99), closeTo(0.2475, 0.01));
-        });
-
-        test('Convert known US Cups to US Pints', () {
-            expect(USCups.toUSPints(0.99), closeTo(0.495, 0.01));
-            expect(USCups.toUSPints(358.9), closeTo(179.45, 0.01));
-            expect(USCups.toUSPints(1000.0), closeTo(500.0, 0.01));
-        });
-
-        test('Convert known US Cups to US Gallons', () {
-            expect(USCups.toUSGallons(1000.0), closeTo(62.5, 0.01));
-            expect(USCups.toUSGallons(0.78), closeTo(0.04875, 0.01));
-            expect(USCups.toUSGallons(123.123), closeTo(7.6951875, 0.01));
-        });
-
-        test('Convert known US Cups to US Fluid Ounces', () {
-            expect(USCups.toUSFluidOunces(123.123), closeTo(984.984, 0.01));
-            expect(USCups.toUSFluidOunces(4.0), closeTo(32.0, 0.01));
-            expect(USCups.toUSFluidOunces(0.9), closeTo(7.2, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Millilitres', () {
-            expect(USFluidOunces.toMillilitres(0.98), closeTo(28.98206, 0.01));
-            expect(USFluidOunces.toMillilitres(8.2), closeTo(242.503, 0.01));
-            expect(USFluidOunces.toMillilitres(100.3), closeTo(2966.225, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Litres', () {
-            expect(USFluidOunces.toLitres(12.0), closeTo(0.354882, 0.01));
-            expect(USFluidOunces.toLitres(150.6), closeTo(4.4537736, 0.01));
-            expect(USFluidOunces.toLitres(5.9), closeTo(0.174484, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Kilolitres', () {
-            expect(USFluidOunces.toKilolitres(34.0), closeTo(0.0010055, 0.01));
-            expect(USFluidOunces.toKilolitres(109.1), closeTo(0.0032264721, 0.01));
-            expect(USFluidOunces.toKilolitres(45678.0), closeTo(1.3508597, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Teaspoons', () {
-            expect(USFluidOunces.toTeaspoons(4.0), closeTo(19.9842, 0.01));
-            expect(USFluidOunces.toTeaspoons(0.12), closeTo(0.5995252, 0.01));
-            expect(USFluidOunces.toTeaspoons(2.99), closeTo(14.93817, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Tablespoons', () {
-            expect(USFluidOunces.toTablespoons(800.0), closeTo(1332.28, 0.01));
-            expect(USFluidOunces.toTablespoons(0.02), closeTo(0.03330695, 0.01));
-            expect(USFluidOunces.toTablespoons(2.7), closeTo(4.49644, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Quarts', () {
-            expect(USFluidOunces.toQuarts(3.5), closeTo(0.0910737, 0.01));
-            expect(USFluidOunces.toQuarts(0.76), closeTo(0.01977601, 0.01));
-            expect(USFluidOunces.toQuarts(2.0), closeTo(0.0520421, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Pints', () {
-            expect(USFluidOunces.toPints(12.0), closeTo(0.624506, 0.01));
-            expect(USFluidOunces.toPints(0.4), closeTo(0.0208169, 0.01));
-            expect(USFluidOunces.toPints(1.99), closeTo(0.1035639, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Gallons', () {
-            expect(USFluidOunces.toGallons(3.0), closeTo(0.0195158, 0.01));
-            expect(USFluidOunces.toGallons(100.5), closeTo(0.65377934, 0.01));
-            expect(USFluidOunces.toGallons(0.9), closeTo(0.00585474, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to Fluid Ounces', () {
-            expect(USFluidOunces.toFluidOunces(0.6), closeTo(0.624506, 0.01));
-            expect(USFluidOunces.toFluidOunces(123.0), closeTo(128.024, 0.01));
-            expect(USFluidOunces.toFluidOunces(8009.0), closeTo(8336.109, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to US Teaspoons', () {
-            expect(USFluidOunces.toUSTeaspoons(45.0), closeTo(270.0, 0.01));
-            expect(USFluidOunces.toUSTeaspoons(1.5), closeTo(9.0, 0.01));
-            expect(USFluidOunces.toUSTeaspoons(400.8), closeTo(2404.8008, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to US Tablespoons', () {
-            expect(USFluidOunces.toUSTablespoons(4.0), closeTo(8.0, 0.01));
-            expect(USFluidOunces.toUSTablespoons(170.2), closeTo(340.4, 0.01));
-            expect(USFluidOunces.toUSTablespoons(8811.0), closeTo(17622.0, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to US Quarts', () {
-            expect(USFluidOunces.toUSQuarts(8811.0), closeTo(275.3438, 0.01));
-            expect(USFluidOunces.toUSQuarts(4.2), closeTo(0.13125, 0.01));
-            expect(USFluidOunces.toUSQuarts(109.0), closeTo(3.40625, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to US Pints', () {
-            expect(USFluidOunces.toUSPints(109.0), closeTo(6.8125, 0.01));
-            expect(USFluidOunces.toUSPints(77.09), closeTo(4.818125, 0.01));
-            expect(USFluidOunces.toUSPints(180.4), closeTo(11.275, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to US Gallons', () {
-            expect(USFluidOunces.toUSGallons(45.0), closeTo(0.351563, 0.01));
-            expect(USFluidOunces.toUSGallons(1.8), closeTo(0.0140625, 0.01));
-            expect(USFluidOunces.toUSGallons(778.9), closeTo(6.0851562, 0.01));
-        });
-
-        test('Convert known US Fluid Ounces to US Cups', () {
-            expect(USFluidOunces.toUSCups(45.0), closeTo(5.625, 0.01));
-            expect(USFluidOunces.toUSCups(66.9), closeTo(8.3625, 0.01));
-            expect(USFluidOunces.toUSCups(0.29), closeTo(0.03625, 0.01));
-        });
-
-        test('Convert known US Gallons to Millilitres', () {
-            expect(USGallons.toMillilitres(2.0), closeTo(7570.82, 0.01));
-            expect(USGallons.toMillilitres(0.1), closeTo(378.541, 0.01));
-            expect(USGallons.toMillilitres(56.0), closeTo(211983.0599039, 0.01));
-        });
-
-        test('Convert known US Gallons to Litres', () {
-            expect(USGallons.toLitres(56.0), closeTo(211.983, 0.01));
-            expect(USGallons.toLitres(5.1), closeTo(19.3056, 0.01));
-            expect(USGallons.toLitres(2.5), closeTo(9.46353, 0.01));
-        });
-
-        test('Convert known US Gallons to Kilolitres', () {
-            expect(USGallons.toKilolitres(111.0), closeTo(0.420181, 0.01));
-            expect(USGallons.toKilolitres(9090.0), closeTo(34.40939, 0.01));
-            expect(USGallons.toKilolitres(12345.0), closeTo(46.730908, 0.01));
-        });
-
-        test('Convert known US Gallons to Teaspoons', () {
-            expect(USGallons.toTeaspoons(5.0), closeTo(3197.47, 0.01));
-            expect(USGallons.toTeaspoons(0.4), closeTo(255.797, 0.01));
-            expect(USGallons.toTeaspoons(8000.0), closeTo(5115948.07582550, 0.01));
-        });
-
-        test('Convert known US Gallons to Tablespoons', () {
-            expect(USGallons.toTablespoons(79.0), closeTo(16840.0, 0.01));
-            expect(USGallons.toTablespoons(12.67), closeTo(2700.7943, 0.01));
-            expect(USGallons.toTablespoons(55.1), closeTo(11745.36, 0.01));
-        });
-
-        test('Convert known US Gallons to Quarts', () {
-            expect(USGallons.toQuarts(54.0), closeTo(179.858, 0.01));
-            expect(USGallons.toQuarts(2.9), closeTo(9.65902, 0.01));
-            expect(USGallons.toQuarts(0.2), closeTo(0.666139, 0.01));
-        });
-
-        test('Convert known US Gallons to Pints', () {
-            expect(USGallons.toPints(2.0), closeTo(13.3228, 0.01));
-            expect(USGallons.toPints(0.12), closeTo(0.7993672, 0.01));
-            expect(USGallons.toPints(500.0), closeTo(3330.7, 0.01));
-        });
-
-        test('Convert known US Gallons to Gallons', () {
-            expect(USGallons.toGallons(23.0), closeTo(19.1515, 0.01));
-            expect(USGallons.toGallons(8.2), closeTo(6.82793, 0.01));
-            expect(USGallons.toGallons(1.09), closeTo(0.9076149, 0.01));
-        });
-
-        test('Convert known US Gallons to Fluid Ounces', () {
-            expect(USGallons.toFluidOunces(1.09), closeTo(145.2184, 0.01));
-            expect(USGallons.toFluidOunces(34.0), closeTo(4529.75, 0.01));
-            expect(USGallons.toFluidOunces(666.0), closeTo(88729.724440098, 0.01));
-        });
-
-        test('Convert known US Gallons to US Teaspoons', () {
-            expect(USGallons.toUSTeaspoons(4.0), closeTo(3072.0, 0.01));
-            expect(USGallons.toUSTeaspoons(1.28), closeTo(983.0403, 0.01));
-            expect(USGallons.toUSTeaspoons(6.99), closeTo(5368.322, 0.01));
-        });
-
-        test('Convert known US Gallons to US Tablespoons', () {
-            expect(USGallons.toUSTablespoons(34.0), closeTo(8704.0, 0.01));
-            expect(USGallons.toUSTablespoons(8.4), closeTo(2150.4, 0.01));
-            expect(USGallons.toUSTablespoons(0.091), closeTo(23.296, 0.01));
-        });
-
-        test('Convert known US Gallons to US Quarts', () {
-            expect(USGallons.toUSQuarts(0.091), closeTo(0.364, 0.01));
-            expect(USGallons.toUSQuarts(23.0), closeTo(92.0, 0.01));
-            expect(USGallons.toUSQuarts(1000.8), closeTo(4003.2, 0.01));
-        });
-
-        test('Convert known US Gallons to US Pints', () {
-            expect(USGallons.toUSPints(1000.8), closeTo(8006.4, 0.01));
-            expect(USGallons.toUSPints(23.6), closeTo(188.8, 0.01));
-            expect(USGallons.toUSPints(0.71), closeTo(5.68, 0.01));
-        });
-
-        test('Convert known US Gallons to US Fluid Ounces', () {
-            expect(USGallons.toUSFluidOunces(0.71), closeTo(90.88, 0.01));
-            expect(USGallons.toUSFluidOunces(83.2), closeTo(10649.6, 0.01));
-            expect(USGallons.toUSFluidOunces(777.0), closeTo(99456.0, 0.01));
-        });
-
-        test('Convert known US Gallons to US Cups', () {
-            expect(USGallons.toUSCups(777.0), closeTo(12432.0, 0.01));
-            expect(USGallons.toUSCups(5.71), closeTo(91.36, 0.01));
-            expect(USGallons.toUSCups(0.98), closeTo(15.68, 0.01));
-        });
-
-        test('Convert known US Pints to Millilitres', () {
-            expect(USPints.toMillilitres(0.66), closeTo(312.2965, 0.01));
-            expect(USPints.toMillilitres(9.1), closeTo(4305.91, 0.01));
-            expect(USPints.toMillilitres(0.8), closeTo(378.541, 0.01));
-        });
-
-        test('Convert known US Pints to Litres', () {
-            expect(USPints.toLitres(1.5), closeTo(0.709765, 0.01));
-            expect(USPints.toLitres(0.6), closeTo(0.283906, 0.01));
-            expect(USPints.toLitres(1367.0), closeTo(646.8322, 0.01));
-        });
-
-        test('Convert known US Pints to Kilolitres', () {
-            expect(USPints.toKilolitres(1900.0), closeTo(0.8990353, 0.01));
-            expect(USPints.toKilolitres(8888.0), closeTo(4.205592, 0.01));
-            expect(USPints.toKilolitres(123456.0), closeTo(58.4164747, 0.01));
-        });
-
-        test('Convert known US Pints to Teaspoons', () {
-            expect(USPints.toTeaspoons(6.0), closeTo(479.62, 0.01));
-            expect(USPints.toTeaspoons(0.08), closeTo(6.394935, 0.01));
-            expect(USPints.toTeaspoons(3.1), closeTo(247.804, 0.01));
-        });
-
-        test('Convert known US Pints to Tablespoons', () {
-            expect(USPints.toTablespoons(2.0), closeTo(53.2911, 0.01));
-            expect(USPints.toTablespoons(0.09), closeTo(2.398101, 0.01));
-            expect(USPints.toTablespoons(1678.0), closeTo(44711.25, 0.01));
-        });
-
-        test('Convert known US Pints to Quarts', () {
-            expect(USPints.toQuarts(12.0), closeTo(4.99605, 0.01));
-            expect(USPints.toQuarts(503.8), closeTo(209.75063, 0.01));
-            expect(USPints.toQuarts(0.65), closeTo(0.2706191, 0.01));
-        });
-
-        test('Convert known US Pints to Pints', () {
-            expect(USPints.toPints(0.9), closeTo(0.749407, 0.01));
-            expect(USPints.toPints(102.0), closeTo(84.9328, 0.01));
-            expect(USPints.toPints(8000.7), closeTo(6661.97635, 0.01));
-        });
-
-        test('Convert known US Pints to Gallons', () {
-            expect(USPints.toGallons(80.0), closeTo(8.32674, 0.01));
-            expect(USPints.toGallons(6.2), closeTo(0.645322, 0.01));
-            expect(USPints.toGallons(0.7), closeTo(0.072859, 0.01));
-        });
-
-        test('Convert known US Pints to Fluid Ounces', () {
-            expect(USPints.toFluidOunces(12.0), closeTo(199.842, 0.01));
-            expect(USPints.toFluidOunces(9.7), closeTo(161.539, 0.01));
-            expect(USPints.toFluidOunces(124.0), closeTo(2065.03, 0.01));
-        });
-
-        test('Convert known US Pints to US Teaspoons', () {
-            expect(USPints.toUSTeaspoons(4.0), closeTo(384.0, 0.01));
-            expect(USPints.toUSTeaspoons(2.5), closeTo(240.0, 0.01));
-            expect(USPints.toUSTeaspoons(8001.9), closeTo(768182.4, 0.01));
-        });
-
-        test('Convert known US Pints to US Tablespoons', () {
-            expect(USPints.toUSTablespoons(80.0), closeTo(2560.0, 0.01));
-            expect(USPints.toUSTablespoons(12.7), closeTo(406.4, 0.01));
-            expect(USPints.toUSTablespoons(0.6), closeTo(19.2, 0.01));
-        });
-
-        test('Convert known US Pints to US Quarts', () {
-            expect(USPints.toUSQuarts(0.6), closeTo(0.3, 0.01));
-            expect(USPints.toUSQuarts(10090.0), closeTo(5045.0, 0.01));
-            expect(USPints.toUSQuarts(4.56), closeTo(2.28, 0.01));
-        });
-
-        test('Convert known US Pints to US Gallons', () {
-            expect(USPints.toUSGallons(4.56), closeTo(0.57, 0.01));
-            expect(USPints.toUSGallons(9000.0), closeTo(1125.0, 0.01));
-            expect(USPints.toUSGallons(47.2), closeTo(5.9, 0.01));
-        });
-
-        test('Convert known US Pints to US Fluid Ounces', () {
-            expect(USPints.toUSFluidOunces(47.2), closeTo(755.2, 0.01));
-            expect(USPints.toUSFluidOunces(1001.0), closeTo(16016.0, 0.01));
-            expect(USPints.toUSFluidOunces(23.9), closeTo(382.4, 0.01));
-        });
-
-        test('Convert known US Pints to US Cups', () {
-            expect(USPints.toUSCups(23.9), closeTo(47.8, 0.01));
-            expect(USPints.toUSCups(1009.0), closeTo(2018.0, 0.01));
-            expect(USPints.toUSCups(45.9), closeTo(91.8, 0.01));
-        });
-
-        test('Convert known US Quarts to Millilitres', () {
-            expect(USQuarts.toMillilitres(9000.0), closeTo(8517176.51400, 0.01));
-            expect(USQuarts.toMillilitres(5.0), closeTo(4731.76, 0.01));
-            expect(USQuarts.toMillilitres(0.7), closeTo(662.447, 0.01));
-        });
-
-        test('Convert known US Quarts to Litres', () {
-            expect(USQuarts.toLitres(9.0), closeTo(8.51718, 0.01));
-            expect(USQuarts.toLitres(1024.0), closeTo(969.0654, 0.01));
-            expect(USQuarts.toLitres(0.8), closeTo(0.757082, 0.01));
-        });
-
-        test('Convert known US Quarts to Kilolitres', () {
-            expect(USQuarts.toKilolitres(1000.0), closeTo(0.946353, 0.01));
-            expect(USQuarts.toKilolitres(6789.0), closeTo(6.42479, 0.01));
-            expect(USQuarts.toKilolitres(45.0), closeTo(0.0425859, 0.01));
-        });
-
-        test('Convert known US Quarts to Teaspoons', () {
-            expect(USQuarts.toTeaspoons(45.0), closeTo(7194.3, 0.01));
-            expect(USQuarts.toTeaspoons(6.5), closeTo(1039.18, 0.01));
-            expect(USQuarts.toTeaspoons(0.9), closeTo(143.886, 0.01));
-        });
-
-        test('Convert known US Quarts to Tablespoons', () {
-            expect(USQuarts.toTablespoons(6.0), closeTo(319.747, 0.01));
-            expect(USQuarts.toTablespoons(89.4), closeTo(4764.227, 0.01));
-            expect(USQuarts.toTablespoons(4.67), closeTo(248.8696, 0.01));
-        });
-
-        test('Convert known US Quarts to Quarts', () {
-            expect(USQuarts.toQuarts(4.6), closeTo(3.8303, 0.01));
-            expect(USQuarts.toQuarts(0.9), closeTo(0.749407, 0.01));
-            expect(USQuarts.toQuarts(134.0), closeTo(111.578, 0.01));
-        });
-
-        test('Convert known US Quarts to Pints', () {
-            expect(USQuarts.toPints(123.0), closeTo(204.838, 0.01));
-            expect(USQuarts.toPints(1090.9), closeTo(1816.72854, 0.01));
-            expect(USQuarts.toPints(56.0), closeTo(93.2595, 0.01));
-        });
-
-        test('Convert known US Quarts to Gallons', () {
-            expect(USQuarts.toGallons(56.0), closeTo(11.6574, 0.01));
-            expect(USQuarts.toGallons(7.12), closeTo(1.48216, 0.01));
-            expect(USQuarts.toGallons(800.0), closeTo(166.535, 0.01));
-        });
-
-        test('Convert known US Quarts to Fluid Ounces', () {
-            expect(USQuarts.toFluidOunces(800.0), closeTo(26645.56289492, 0.01));
-            expect(USQuarts.toFluidOunces(6.8), closeTo(226.487, 0.01));
-            expect(USQuarts.toFluidOunces(0.9), closeTo(29.9763, 0.01));
-        });
-
-        test('Convert known US Quarts to US Teaspoons', () {
-            expect(USQuarts.toUSTeaspoons(3.0), closeTo(576.0, 0.01));
-            expect(USQuarts.toUSTeaspoons(0.12), closeTo(23.04001, 0.01));
-            expect(USQuarts.toUSTeaspoons(4.5), closeTo(864.0, 0.01));
-        });
-
-        test('Convert known US Quarts to US Tablespoons', () {
-            expect(USQuarts.toUSTablespoons(4.5), closeTo(288.0, 0.01));
-            expect(USQuarts.toUSTablespoons(0.777), closeTo(49.728, 0.01));
-            expect(USQuarts.toUSTablespoons(1.8), closeTo(115.2, 0.01));
-        });
-
-        test('Convert known US Quarts to US Pints', () {
-            expect(USQuarts.toUSPints(1.8), closeTo(3.6, 0.01));
-            expect(USQuarts.toUSPints(900.0), closeTo(1800.0, 0.01));
-            expect(USQuarts.toUSPints(12.45), closeTo(24.9, 0.01));
-        });
-
-        test('Convert known US Quarts to US Gallons', () {
-            expect(USQuarts.toUSGallons(12.45), closeTo(3.1125, 0.01));
-            expect(USQuarts.toUSGallons(0.8), closeTo(0.2, 0.01));
-            expect(USQuarts.toUSGallons(100.9), closeTo(25.225, 0.01));
-        });
-
-        test('Convert known US Quarts to US Fluid Ounces', () {
-            expect(USQuarts.toUSFluidOunces(100.9), closeTo(3228.8, 0.01));
-            expect(USQuarts.toUSFluidOunces(12345.0), closeTo(395040.0, 0.01));
-            expect(USQuarts.toUSFluidOunces(8.7), closeTo(278.4, 0.01));
-        });
-
-        test('Convert known US Quarts to US Cups', () {
-            expect(USQuarts.toUSCups(8.7), closeTo(34.8, 0.01));
-            expect(USQuarts.toUSCups(123.9), closeTo(495.6, 0.01));
-            expect(USQuarts.toUSCups(0.66), closeTo(2.64, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Millilitres', () {
-            expect(USTablespoons.toMillilitres(12.0), closeTo(177.441, 0.01));
-            expect(USTablespoons.toMillilitres(0.8), closeTo(11.8294, 0.01));
-            expect(USTablespoons.toMillilitres(4500.0), closeTo(66540.44, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Litres', () {
-            expect(USTablespoons.toLitres(567.0), closeTo(8.3841, 0.01));
-            expect(USTablespoons.toLitres(80.9), closeTo(1.196249, 0.01));
-            expect(USTablespoons.toLitres(10000.0), closeTo(147.8676, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Kilolitres', () {
-            expect(USTablespoons.toKilolitres(9900.0), closeTo(0.146389, 0.01));
-            expect(USTablespoons.toKilolitres(123456.0), closeTo(1.82551483, 0.01));
-            expect(USTablespoons.toKilolitres(18009.0), closeTo(0.26629485, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Teaspoons', () {
-            expect(USTablespoons.toTeaspoons(14.0), closeTo(34.9723, 0.01));
-            expect(USTablespoons.toTeaspoons(0.9), closeTo(2.24822, 0.01));
-            expect(USTablespoons.toTeaspoons(180.0), closeTo(449.644, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Tablespoons', () {
-            expect(USTablespoons.toTablespoons(109.0), closeTo(90.7614, 0.01));
-            expect(USTablespoons.toTablespoons(89.0), closeTo(74.108, 0.01));
-            expect(USTablespoons.toTablespoons(5.2), closeTo(4.3299, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Quarts', () {
-            expect(USTablespoons.toQuarts(345.0), closeTo(4.48863, 0.01));
-            expect(USTablespoons.toQuarts(89.9), closeTo(1.169647, 0.01));
-            expect(USTablespoons.toQuarts(12.88), closeTo(0.16757568, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Pints', () {
-            expect(USTablespoons.toPints(12.0), closeTo(0.312253, 0.01));
-            expect(USTablespoons.toPints(809.7), closeTo(21.069259, 0.01));
-            expect(USTablespoons.toPints(0.4), closeTo(0.0104084, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Gallons', () {
-            expect(USTablespoons.toGallons(400.0), closeTo(1.30105, 0.01));
-            expect(USTablespoons.toGallons(1200.9), closeTo(3.90608761, 0.01));
-            expect(USTablespoons.toGallons(8.0), closeTo(0.0260211, 0.01));
-        });
-
-        test('Convert known US Tablespoons to Fluid Ounces', () {
-            expect(USTablespoons.toFluidOunces(4.0), closeTo(2.08169, 0.01));
-            expect(USTablespoons.toFluidOunces(50.9), closeTo(26.48945, 0.01));
-            expect(USTablespoons.toFluidOunces(123.0), closeTo(64.0118, 0.01));
-        });
-
-        test('Convert known US Tablespoons to US Teaspoons', () {
-            expect(USTablespoons.toUSTeaspoons(90.0), closeTo(270.0, 0.01));
-            expect(USTablespoons.toUSTeaspoons(4.5), closeTo(13.5, 0.01));
-            expect(USTablespoons.toUSTeaspoons(4608.0), closeTo(13824.0, 0.01));
-        });
-
-        test('Convert known US Tablespoons to US Quarts', () {
-            expect(USTablespoons.toUSQuarts(456.0), closeTo(7.125, 0.01));
-            expect(USTablespoons.toUSQuarts(7.12), closeTo(0.11125, 0.01));
-            expect(USTablespoons.toUSQuarts(194.9), closeTo(3.0453125, 0.01));
-        });
-
-        test('Convert known US Tablespoons to US Pints', () {
-            expect(USTablespoons.toUSPints(194.9), closeTo(6.090625, 0.01));
-            expect(USTablespoons.toUSPints(2000.0), closeTo(62.5, 0.01));
-            expect(USTablespoons.toUSPints(18.7), closeTo(0.584375, 0.01));
-        });
-
-        test('Convert known US Tablespoons to US Gallons', () {
-            expect(USTablespoons.toUSGallons(18.7), closeTo(0.07304687, 0.01));
-            expect(USTablespoons.toUSGallons(1900.0), closeTo(7.421875, 0.01));
-            expect(USTablespoons.toUSGallons(12345.0), closeTo(48.222656, 0.01));
-        });
-
-        test('Convert known US Tablespoons to US Fluid Ounces', () {
-            expect(USTablespoons.toUSFluidOunces(1234.0), closeTo(617.0, 0.01));
-            expect(USTablespoons.toUSFluidOunces(89.3), closeTo(44.65, 0.01));
-            expect(USTablespoons.toUSFluidOunces(90.99), closeTo(45.495, 0.01));
-        });
-
-        test('Convert known US Tablespoons to US Cups', () {
-            expect(USTablespoons.toUSCups(90.99), closeTo(5.686875, 0.01));
-            expect(USTablespoons.toUSCups(1230.0), closeTo(76.875, 0.01));
-            expect(USTablespoons.toUSCups(9000.9), closeTo(562.55625, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Millilitres', () {
-            expect(USTeaspoons.toMillilitres(6.9), closeTo(34.0095, 0.01));
-            expect(USTeaspoons.toMillilitres(1.6), closeTo(7.88627, 0.01));
-            expect(USTeaspoons.toMillilitres(800.0), closeTo(3943.14, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Litres', () {
-            expect(USTeaspoons.toLitres(7.0), closeTo(0.0345024, 0.01));
-            expect(USTeaspoons.toLitres(90.0), closeTo(0.443603, 0.01));
-            expect(USTeaspoons.toLitres(56.7), closeTo(0.2794698, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Kilolitres', () {
-            expect(USTeaspoons.toKilolitres(10009000.0), closeTo(49.33356028, 0.01));
-            expect(USTeaspoons.toKilolitres(1234567.8), closeTo(6.08508592078, 0.01));
-            expect(USTeaspoons.toKilolitres(9800.0), closeTo(0.04830342, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Teaspoons', () {
-            expect(USTeaspoons.toTeaspoons(122.0), closeTo(101.586, 0.01));
-            expect(USTeaspoons.toTeaspoons(89.2), closeTo(74.27448, 0.01));
-            expect(USTeaspoons.toTeaspoons(900.0), closeTo(749.406, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Tablespoons', () {
-            expect(USTeaspoons.toTablespoons(500.0), closeTo(138.779, 0.01));
-            expect(USTeaspoons.toTablespoons(12.34), closeTo(3.425064, 0.01));
-            expect(USTeaspoons.toTablespoons(667.0), closeTo(185.131, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Quarts', () {
-            expect(USTeaspoons.toQuarts(78.0), closeTo(0.338274, 0.01));
-            expect(USTeaspoons.toQuarts(900.1), closeTo(3.9035927, 0.01));
-            expect(USTeaspoons.toQuarts(116.9), closeTo(0.50697698, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Pints', () {
-            expect(USTeaspoons.toPints(116.0), closeTo(1.00615, 0.01));
-            expect(USTeaspoons.toPints(59.5), closeTo(0.5160844, 0.01));
-            expect(USTeaspoons.toPints(1900.0), closeTo(16.48, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Gallons', () {
-            expect(USTeaspoons.toGallons(199.0), closeTo(0.215758, 0.01));
-            expect(USTeaspoons.toGallons(12345.0), closeTo(13.384583, 0.01));
-            expect(USTeaspoons.toGallons(90001.0), closeTo(97.580059, 0.01));
-        });
-
-        test('Convert known US Teaspoons to Fluid Ounces', () {
-            expect(USTeaspoons.toFluidOunces(123.0), closeTo(21.3373, 0.01));
-            expect(USTeaspoons.toFluidOunces(89.0), closeTo(15.4392, 0.01));
-            expect(USTeaspoons.toFluidOunces(1009.0), closeTo(175.035, 0.01));
-        });
-
-        test('Convert known US Teaspoons to US Tablespoons', () {
-            expect(USTeaspoons.toUSTablespoons(190.0), closeTo(63.3333, 0.01));
-            expect(USTeaspoons.toUSTablespoons(5.6), closeTo(1.86667, 0.01));
-            expect(USTeaspoons.toUSTablespoons(0.7), closeTo(0.233333, 0.01));
-        });
-
-        test('Convert known US Teaspoons to US Quarts', () {
-            expect(USTeaspoons.toUSQuarts(100.4), closeTo(0.5229165, 0.01));
-            expect(USTeaspoons.toUSQuarts(9000.0), closeTo(46.87498, 0.01));
-            expect(USTeaspoons.toUSQuarts(1234.0), closeTo(6.427081, 0.01));
-        });
-
-        test('Convert known US Teaspoons to US Pints', () {
-            expect(USTeaspoons.toUSPints(109.0), closeTo(1.13542, 0.01));
-            expect(USTeaspoons.toUSPints(3400.0), closeTo(35.41666, 0.01));
-            expect(USTeaspoons.toUSPints(10.7), closeTo(0.1114583, 0.01));
-        });
-
-        test('Convert known US Teaspoons to US Gallons', () {
-            expect(USTeaspoons.toUSGallons(109.0), closeTo(0.141927, 0.01));
-            expect(USTeaspoons.toUSGallons(9876.0), closeTo(12.85937, 0.01));
-            expect(USTeaspoons.toUSGallons(10900.0), closeTo(14.192704, 0.01));
-        });
-
-        test('Convert known US Teaspoons to US Fluid Ounces', () {
-            expect(USTeaspoons.toUSFluidOunces(180.0), closeTo(30.0, 0.01));
-            expect(USTeaspoons.toUSFluidOunces(5.6), closeTo(0.933333, 0.01));
-            expect(USTeaspoons.toUSFluidOunces(900.5), closeTo(150.08328, 0.01));
-        });
-
-        test('Convert known US Teaspoons to US Cups', () {
-            expect(USTeaspoons.toUSCups(90.0), closeTo(1.875, 0.01));
-            expect(USTeaspoons.toUSCups(4500.8), closeTo(93.7666363, 0.01));
-            expect(USTeaspoons.toUSCups(0.9), closeTo(0.01875, 0.01));
-        });
-
+  group('Volume Tests', () {
+    test('Convert known Fluid Ounces to Millilitres', () {
+      expect(FluidOunces.toMillilitres(12.0), closeTo(340.957, 0.01));
+      expect(FluidOunces.toMillilitres(6.01), closeTo(170.7625, 0.01));
+      expect(FluidOunces.toMillilitres(0.78), closeTo(22.16219, 0.01));
     });
+
+    test('Convert known Fluid Ounces to Litres', () {
+      expect(FluidOunces.toLitres(800.0), closeTo(22.7305, 0.01));
+      expect(FluidOunces.toLitres(4.5), closeTo(0.127859, 0.01));
+      expect(FluidOunces.toLitres(109.0), closeTo(3.09702, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to Kilolitres', () {
+      expect(FluidOunces.toKilolitres(56909.0), closeTo(1.616959, 0.01));
+      expect(FluidOunces.toKilolitres(9009.0), closeTo(0.2559733, 0.01));
+      expect(FluidOunces.toKilolitres(123456.0), closeTo(3.50776304, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to Teaspoons', () {
+      expect(FluidOunces.toTeaspoons(123.0), closeTo(590.4, 0.01));
+      expect(FluidOunces.toTeaspoons(9.12), closeTo(43.77598, 0.01));
+      expect(FluidOunces.toTeaspoons(0.2), closeTo(0.96, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to Tablespoons', () {
+      expect(FluidOunces.toTablespoons(7.0), closeTo(11.2, 0.01));
+      expect(FluidOunces.toTablespoons(165.4), closeTo(264.63989, 0.01));
+      expect(FluidOunces.toTablespoons(80.1), closeTo(128.1599, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to Quarts', () {
+      expect(FluidOunces.toQuarts(89.0), closeTo(2.225, 0.01));
+      expect(FluidOunces.toQuarts(5.9), closeTo(0.1475, 0.01));
+      expect(FluidOunces.toQuarts(1300.0), closeTo(32.5, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to Pints', () {
+      expect(FluidOunces.toPints(1300.0), closeTo(65.0, 0.01));
+      expect(FluidOunces.toPints(5.7), closeTo(0.285, 0.01));
+      expect(FluidOunces.toPints(1900.0), closeTo(95.0, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to Gallons', () {
+      expect(FluidOunces.toGallons(1900.0), closeTo(11.875, 0.01));
+      expect(FluidOunces.toGallons(5.6), closeTo(0.035, 0.01));
+      expect(FluidOunces.toGallons(12345.0), closeTo(77.15625, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to US Teaspoons', () {
+      expect(FluidOunces.toUSTeaspoons(12345.0), closeTo(71163.512, 0.01));
+      expect(FluidOunces.toUSTeaspoons(8.9), closeTo(51.3046, 0.01));
+      expect(FluidOunces.toUSTeaspoons(0.005), closeTo(0.028822808, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to US Tablespoons', () {
+      expect(FluidOunces.toUSTablespoons(190.0), closeTo(365.089, 0.01));
+      expect(FluidOunces.toUSTablespoons(6.8), closeTo(13.0663, 0.01));
+      expect(FluidOunces.toUSTablespoons(2340.0), closeTo(4496.357, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to US Quarts', () {
+      expect(FluidOunces.toUSQuarts(45.0), closeTo(1.35107, 0.01));
+      expect(FluidOunces.toUSQuarts(1090.0), closeTo(32.72589, 0.01));
+      expect(FluidOunces.toUSQuarts(777.0), closeTo(23.3285, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to US Pints', () {
+      expect(FluidOunces.toUSPints(678.0), closeTo(40.7122, 0.01));
+      expect(FluidOunces.toUSPints(4.5), closeTo(0.270214, 0.01));
+      expect(FluidOunces.toUSPints(1900.0), closeTo(114.0902, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to US Gallons', () {
+      expect(FluidOunces.toUSGallons(1890.0), closeTo(14.18622, 0.01));
+      expect(FluidOunces.toUSGallons(5.8), closeTo(0.0435344, 0.01));
+      expect(FluidOunces.toUSGallons(10090.0), closeTo(75.734905, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to US Fluid Ounces', () {
+      expect(FluidOunces.toUSFluidOunces(190.0), closeTo(182.544, 0.01));
+      expect(FluidOunces.toUSFluidOunces(54.8), closeTo(52.64964, 0.01));
+      expect(FluidOunces.toUSFluidOunces(1.7), closeTo(1.63329, 0.01));
+    });
+
+    test('Convert known Fluid Ounces to US Cups', () {
+      expect(FluidOunces.toUSCups(6.0), closeTo(0.72057, 0.01));
+      expect(FluidOunces.toUSCups(1800.0), closeTo(216.171, 0.01));
+      expect(FluidOunces.toUSCups(6.9), closeTo(0.828655, 0.01));
+    });
+
+    test('Convert known Gallons to Millilitres', () {
+      expect(Gallons.toMillilitres(1.3), closeTo(5909.92, 0.01));
+      expect(Gallons.toMillilitres(0.45), closeTo(2045.741, 0.01));
+      expect(Gallons.toMillilitres(1.8), closeTo(8182.96, 0.01));
+    });
+
+    test('Convert known Gallons to Litres', () {
+      expect(Gallons.toLitres(123.0), closeTo(559.169, 0.01));
+      expect(Gallons.toLitres(9.3), closeTo(42.2786, 0.01));
+      expect(Gallons.toLitres(0.67), closeTo(3.04588, 0.01));
+    });
+
+    test('Convert known Gallons to Kilolitres', () {
+      expect(Gallons.toKilolitres(1009.0), closeTo(4.587005, 0.01));
+      expect(Gallons.toKilolitres(9.6), closeTo(0.0436425, 0.01));
+      expect(Gallons.toKilolitres(123456.0), closeTo(561.242087, 0.01));
+    });
+
+    test('Convert known Gallons to Teaspoons', () {
+      expect(Gallons.toTeaspoons(6.0), closeTo(4608.0, 0.01));
+      expect(Gallons.toTeaspoons(78.12), closeTo(59996.16, 0.01));
+      expect(Gallons.toTeaspoons(0.34), closeTo(261.1199, 0.01));
+    });
+
+    test('Convert known Gallons to Tablespoons', () {
+      expect(Gallons.toTablespoons(0.9), closeTo(230.4, 0.01));
+      expect(Gallons.toTablespoons(1.6), closeTo(409.6, 0.01));
+      expect(Gallons.toTablespoons(0.33), closeTo(84.47997, 0.01));
+    });
+
+    test('Convert known Gallons to Quarts', () {
+      expect(Gallons.toQuarts(109.0), closeTo(436.0, 0.01));
+      expect(Gallons.toQuarts(5.8), closeTo(23.2, 0.01));
+      expect(Gallons.toQuarts(0.23), closeTo(0.92, 0.01));
+    });
+
+    test('Convert known Gallons to Pints', () {
+      expect(Gallons.toPints(0.23), closeTo(1.84, 0.01));
+      expect(Gallons.toPints(190.0), closeTo(1520.0, 0.01));
+      expect(Gallons.toPints(24.7), closeTo(197.6, 0.01));
+    });
+
+    test('Convert known Gallons to Fluid Ounces', () {
+      expect(Gallons.toFluidOunces(24.7), closeTo(3952.0, 0.01));
+      expect(Gallons.toFluidOunces(13.09), closeTo(2094.4, 0.01));
+      expect(Gallons.toFluidOunces(5.8), closeTo(928.0, 0.01));
+    });
+
+    test('Convert known Gallons to US Teaspoons', () {
+      expect(Gallons.toUSTeaspoons(5.8), closeTo(5349.51, 0.01));
+      expect(Gallons.toUSTeaspoons(0.44), closeTo(405.8251, 0.01));
+      expect(Gallons.toUSTeaspoons(1.9), closeTo(1752.43, 0.01));
+    });
+
+    test('Convert known Gallons to US Tablespoons', () {
+      expect(Gallons.toUSTablespoons(1.8), closeTo(553.398, 0.01));
+      expect(Gallons.toUSTablespoons(0.33), closeTo(101.4562, 0.01));
+      expect(Gallons.toUSTablespoons(100.0), closeTo(30744.33080, 0.01));
+    });
+
+    test('Convert known Gallons to US Quarts', () {
+      expect(Gallons.toUSQuarts(78.0), closeTo(374.696, 0.01));
+      expect(Gallons.toUSQuarts(1.7), closeTo(8.16646, 0.01));
+      expect(Gallons.toUSQuarts(16.9), closeTo(81.18421, 0.01));
+    });
+
+    test('Convert known Gallons to US Pints', () {
+      expect(Gallons.toUSPints(13.4), closeTo(128.7418, 0.01));
+      expect(Gallons.toUSPints(8.12), closeTo(78.01371, 0.01));
+      expect(Gallons.toUSPints(0.99), closeTo(9.511523, 0.01));
+    });
+
+    test('Convert known Gallons to US Gallons', () {
+      expect(Gallons.toUSGallons(1.5), closeTo(1.80142, 0.01));
+      expect(Gallons.toUSGallons(0.78), closeTo(0.9367409, 0.01));
+      expect(Gallons.toUSGallons(103.0), closeTo(123.698, 0.01));
+    });
+
+    test('Convert known Gallons to US Fluid Ounces', () {
+      expect(Gallons.toUSFluidOunces(111.0), closeTo(17063.1, 0.01));
+      expect(Gallons.toUSFluidOunces(89.9), closeTo(13819.57, 0.01));
+      expect(Gallons.toUSFluidOunces(1.2), closeTo(184.466, 0.01));
+    });
+
+    test('Convert known Gallons to US Cups', () {
+      expect(Gallons.toUSCups(1.2), closeTo(23.0582, 0.01));
+      expect(Gallons.toUSCups(0.55), closeTo(10.56836, 0.01));
+      expect(Gallons.toUSCups(890.0), closeTo(17101.534007630, 0.01));
+    });
+
+    test('Convert known Kilolitres to Millilitres', () {
+      expect(Kilolitres.toMillilitres(0.09), closeTo(90000.0, 0.01));
+      expect(Kilolitres.toMillilitres(0.00123), closeTo(1230.0, 0.01));
+      expect(Kilolitres.toMillilitres(1.2), closeTo(1.2e+6, 0.01));
+    });
+
+    test('Convert known Kilolitres to Litres', () {
+      expect(Kilolitres.toLitres(1.2), closeTo(1200.0, 0.01));
+      expect(Kilolitres.toLitres(0.8), closeTo(800.0, 0.01));
+      expect(Kilolitres.toLitres(456.0), closeTo(456000.0, 0.01));
+    });
+
+    test('Convert known Kilolitres to Teaspoons', () {
+      expect(Kilolitres.toTeaspoons(0.7), closeTo(118255.41900799, 0.01));
+      expect(Kilolitres.toTeaspoons(0.01), closeTo(1689.363, 0.01));
+      expect(Kilolitres.toTeaspoons(4.5), closeTo(760213.407908, 0.01));
+    });
+
+    test('Convert known Kilolitres to Tablespoons', () {
+      expect(Kilolitres.toTablespoons(0.3), closeTo(16893.631286856, 0.01));
+      expect(Kilolitres.toTablespoons(2.9), closeTo(163305.10243961, 0.01));
+      expect(Kilolitres.toTablespoons(0.067), closeTo(3772.911, 0.01));
+    });
+
+    test('Convert known Kilolitres to Quarts', () {
+      expect(Kilolitres.toQuarts(0.09), closeTo(79.18893, 0.01));
+      expect(Kilolitres.toQuarts(2.3), closeTo(2023.72, 0.01));
+      expect(Kilolitres.toQuarts(0.67), closeTo(589.5176, 0.01));
+    });
+
+    test('Convert known Kilolitres to Pints', () {
+      expect(Kilolitres.toPints(0.4), closeTo(703.902, 0.01));
+      expect(Kilolitres.toPints(67.0), closeTo(117903.46835618, 0.01));
+      expect(Kilolitres.toPints(9.3), closeTo(16365.7, 0.01));
+    });
+
+    test('Convert known Kilolitres to Gallons', () {
+      expect(Kilolitres.toGallons(109.0), closeTo(23976.638149, 0.01));
+      expect(Kilolitres.toGallons(7.2), closeTo(1583.78, 0.01));
+      expect(Kilolitres.toGallons(0.4), closeTo(87.9877, 0.01));
+    });
+
+    test('Convert known Kilolitres to Fluid Ounces', () {
+      expect(Kilolitres.toFluidOunces(0.2), closeTo(7039.02, 0.01));
+      expect(Kilolitres.toFluidOunces(4.8), closeTo(168936.31286856, 0.01));
+      expect(Kilolitres.toFluidOunces(6.0), closeTo(211170.391085, 0.01));
+    });
+
+    test('Convert known Kilolitres to US Teaspoons', () {
+      expect(Kilolitres.toUSTeaspoons(4.0), closeTo(811536.5448442, 0.01));
+      expect(Kilolitres.toUSTeaspoons(0.2), closeTo(40576.82724221160, 0.01));
+      expect(Kilolitres.toUSTeaspoons(2.4), closeTo(486921.92690653, 0.01));
+    });
+
+    test('Convert known Kilolitres to US Tablespoons', () {
+      expect(Kilolitres.toUSTablespoons(1.3), closeTo(87916.45902479, 0.01));
+      expect(Kilolitres.toUSTablespoons(0.6), closeTo(40576.82724221, 0.01));
+      expect(Kilolitres.toUSTablespoons(0.03), closeTo(2028.841, 0.01));
+    });
+
+    test('Convert known Kilolitres to US Quarts', () {
+      expect(Kilolitres.toUSQuarts(0.09), closeTo(95.10194, 0.01));
+      expect(Kilolitres.toUSQuarts(2.5), closeTo(2641.72, 0.01));
+      expect(Kilolitres.toUSQuarts(178.9), closeTo(189041.52, 0.01));
+    });
+
+    test('Convert known Kilolitres to US Pints', () {
+      expect(Kilolitres.toUSPints(67.0), closeTo(141596.2200639, 0.01));
+      expect(Kilolitres.toUSPints(4.7), closeTo(9932.87, 0.01));
+      expect(Kilolitres.toUSPints(108.9), closeTo(230146.69, 0.01));
+    });
+
+    test('Convert known Kilolitres to US Gallons', () {
+      expect(Kilolitres.toUSGallons(1.6), closeTo(422.675, 0.01));
+      expect(Kilolitres.toUSGallons(57.0), closeTo(15057.8, 0.01));
+      expect(Kilolitres.toUSGallons(0.88), closeTo(232.4714, 0.01));
+    });
+
+    test('Convert known Kilolitres to US Fluid Ounces', () {
+      expect(Kilolitres.toUSFluidOunces(0.07), closeTo(2366.982, 0.01));
+      expect(Kilolitres.toUSFluidOunces(4.2), closeTo(142018.89516765, 0.01));
+      expect(Kilolitres.toUSFluidOunces(12.0), closeTo(405768.27190759, 0.01));
+    });
+
+    test('Convert known Kilolitres to US Cups', () {
+      expect(Kilolitres.toUSCups(12.0), closeTo(50721.03405276, 0.01));
+      expect(Kilolitres.toUSCups(0.8), closeTo(3381.4, 0.01));
+      expect(Kilolitres.toUSCups(6.2), closeTo(26205.86759392, 0.01));
+    });
+
+    test('Convert known Litres to Millilitres', () {
+      expect(Litres.toMillilitres(34.0), closeTo(34000.0, 0.01));
+      expect(Litres.toMillilitres(0.67), closeTo(670.0, 0.01));
+      expect(Litres.toMillilitres(1.09), closeTo(1090.0, 0.01));
+    });
+
+    test('Convert known Litres to Kilolitres', () {
+      expect(Litres.toKilolitres(200.0), closeTo(0.2, 0.01));
+      expect(Litres.toKilolitres(12345.0), closeTo(12.345, 0.01));
+      expect(Litres.toKilolitres(80.0), closeTo(0.08, 0.01));
+    });
+
+    test('Convert known Litres to Teaspoons', () {
+      expect(Litres.toTeaspoons(3.0), closeTo(506.809, 0.01));
+      expect(Litres.toTeaspoons(0.2), closeTo(33.7873, 0.01));
+      expect(Litres.toTeaspoons(4.2), closeTo(709.533, 0.01));
+    });
+
+    test('Convert known Litres to Tablespoons', () {
+      expect(Litres.toTablespoons(3.0), closeTo(168.936, 0.01));
+      expect(Litres.toTablespoons(0.4), closeTo(22.5248, 0.01));
+      expect(Litres.toTablespoons(67.0), closeTo(3772.91, 0.01));
+    });
+
+    test('Convert known Litres to Quarts', () {
+      expect(Litres.toQuarts(54.0), closeTo(47.5134, 0.01));
+      expect(Litres.toQuarts(2.0), closeTo(1.75975, 0.01));
+      expect(Litres.toQuarts(0.7), closeTo(0.615914, 0.01));
+    });
+
+    test('Convert known Litres to Pints', () {
+      expect(Litres.toPints(0.5), closeTo(0.879877, 0.01));
+      expect(Litres.toPints(145.0), closeTo(255.164, 0.01));
+      expect(Litres.toPints(9.1), closeTo(16.0138, 0.01));
+    });
+
+    test('Convert known Litres to Gallons', () {
+      expect(Litres.toGallons(12.9), closeTo(2.837603, 0.01));
+      expect(Litres.toGallons(109.0), closeTo(23.9766, 0.01));
+      expect(Litres.toGallons(67.0), closeTo(14.7379, 0.01));
+    });
+
+    test('Convert known Litres to Fluid Ounces', () {
+      expect(Litres.toFluidOunces(5.0), closeTo(175.975, 0.01));
+      expect(Litres.toFluidOunces(0.3), closeTo(10.5585, 0.01));
+      expect(Litres.toFluidOunces(1.1), closeTo(38.7146, 0.01));
+    });
+
+    test('Convert known Litres to US Teaspoons', () {
+      expect(Litres.toUSTeaspoons(12.0), closeTo(2434.61, 0.01));
+      expect(Litres.toUSTeaspoons(0.7), closeTo(142.019, 0.01));
+      expect(Litres.toUSTeaspoons(89.9), closeTo(18239.29, 0.01));
+    });
+
+    test('Convert known Litres to US Tablespoons', () {
+      expect(Litres.toUSTablespoons(12.0), closeTo(811.537, 0.01));
+      expect(Litres.toUSTablespoons(5.6), closeTo(378.717, 0.01));
+      expect(Litres.toUSTablespoons(0.5), closeTo(33.814, 0.01));
+    });
+
+    test('Convert known Litres to US Quarts', () {
+      expect(Litres.toUSQuarts(12.0), closeTo(12.6803, 0.01));
+      expect(Litres.toUSQuarts(1.09), closeTo(1.15179, 0.01));
+      expect(Litres.toUSQuarts(5.5), closeTo(5.81179, 0.01));
+    });
+
+    test('Convert known Litres to US Pints', () {
+      expect(Litres.toUSPints(3.4), closeTo(7.18548, 0.01));
+      expect(Litres.toUSPints(0.8), closeTo(1.6907, 0.01));
+      expect(Litres.toUSPints(3000.0), closeTo(6340.129, 0.01));
+    });
+
+    test('Convert known Litres to US Gallons', () {
+      expect(Litres.toUSGallons(109.1), closeTo(28.821171, 0.01));
+      expect(Litres.toUSGallons(41.5), closeTo(10.96314, 0.01));
+      expect(Litres.toUSGallons(0.8), closeTo(0.211338, 0.01));
+    });
+
+    test('Convert known Litres to US Fluid Ounces', () {
+      expect(Litres.toUSFluidOunces(81.0), closeTo(2738.94, 0.01));
+      expect(Litres.toUSFluidOunces(7.3), closeTo(246.842, 0.01));
+      expect(Litres.toUSFluidOunces(0.65), closeTo(21.97911, 0.01));
+    });
+
+    test('Convert known Litres to US Cups', () {
+      expect(Litres.toUSCups(0.9), closeTo(3.80408, 0.01));
+      expect(Litres.toUSCups(103.9), closeTo(439.15962, 0.01));
+      expect(Litres.toUSCups(71.6), closeTo(302.6355, 0.01));
+    });
+
+    test('Convert known Millilitres to Litres', () {
+      expect(Millilitres.toLitres(1900.0), closeTo(1.9, 0.01));
+      expect(Millilitres.toLitres(56789.0), closeTo(56.789, 0.01));
+      expect(Millilitres.toLitres(567.0), closeTo(0.567, 0.01));
+    });
+
+    test('Convert known Millilitres to Kilolitres', () {
+      expect(Millilitres.toKilolitres(10060000.0), closeTo(10.06, 0.01));
+      expect(Millilitres.toKilolitres(987654.0), closeTo(0.987654, 0.01));
+      expect(Millilitres.toKilolitres(405000.0), closeTo(0.405, 0.01));
+    });
+
+    test('Convert known Millilitres to Teaspoons', () {
+      expect(Millilitres.toTeaspoons(1.0), closeTo(0.168936, 0.01));
+      expect(Millilitres.toTeaspoons(56.0), closeTo(9.46043, 0.01));
+      expect(Millilitres.toTeaspoons(12.3), closeTo(2.077917, 0.01));
+    });
+
+    test('Convert known Millilitres to Tablespoons', () {
+      expect(Millilitres.toTablespoons(109.0), closeTo(6.13802, 0.01));
+      expect(Millilitres.toTablespoons(88.0), closeTo(4.95547, 0.01));
+      expect(Millilitres.toTablespoons(12.0), closeTo(0.675745, 0.01));
+    });
+
+    test('Convert known Millilitres to Quarts', () {
+      expect(Millilitres.toQuarts(890.0), closeTo(0.783091, 0.01));
+      expect(Millilitres.toQuarts(12345.0), closeTo(10.862081, 0.01));
+      expect(Millilitres.toQuarts(129.0), closeTo(0.113504, 0.01));
+    });
+
+    test('Convert known Millilitres to Pints', () {
+      expect(Millilitres.toPints(124.0), closeTo(0.218209, 0.01));
+      expect(Millilitres.toPints(99.0), closeTo(0.174216, 0.01));
+      expect(Millilitres.toPints(607.3), closeTo(1.0686986, 0.01));
+    });
+
+    test('Convert known Millilitres to Gallons', () {
+      expect(Millilitres.toGallons(1234.0), closeTo(0.2714421, 0.01));
+      expect(Millilitres.toGallons(9000.0), closeTo(1.979723, 0.01));
+      expect(Millilitres.toGallons(10209.98), closeTo(2.2458816257, 0.01));
+    });
+
+    test('Convert known Millilitres to Fluid Ounces', () {
+      expect(Millilitres.toFluidOunces(78.0), closeTo(2.74522, 0.01));
+      expect(Millilitres.toFluidOunces(12.9), closeTo(0.4540165, 0.01));
+      expect(Millilitres.toFluidOunces(1009.0), closeTo(35.51184, 0.01));
+    });
+
+    test('Convert known Millilitres to US Teaspoons', () {
+      expect(Millilitres.toUSTeaspoons(100.0), closeTo(20.2884, 0.01));
+      expect(Millilitres.toUSTeaspoons(12.3), closeTo(2.495476, 0.01));
+      expect(Millilitres.toUSTeaspoons(69.0), closeTo(13.999, 0.01));
+    });
+
+    test('Convert known Millilitres to US Tablespoons', () {
+      expect(Millilitres.toUSTablespoons(38.0), closeTo(2.56987, 0.01));
+      expect(Millilitres.toUSTablespoons(1023.0), closeTo(69.18349, 0.01));
+      expect(Millilitres.toUSTablespoons(88.8), closeTo(6.00537, 0.01));
+    });
+
+    test('Convert known Millilitres to US Quarts', () {
+      expect(Millilitres.toUSQuarts(1009.0), closeTo(1.066198, 0.01));
+      expect(Millilitres.toUSQuarts(4567.0), closeTo(4.825895, 0.01));
+      expect(Millilitres.toUSQuarts(8009.0), closeTo(8.463016, 0.01));
+    });
+
+    test('Convert known Millilitres to US Pints', () {
+      expect(Millilitres.toUSPints(110.0), closeTo(0.232471, 0.01));
+      expect(Millilitres.toUSPints(2032.0), closeTo(4.294381, 0.01));
+      expect(Millilitres.toUSPints(1000.9), closeTo(2.11527846, 0.01));
+    });
+
+    test('Convert known Millilitres to US Gallons', () {
+      expect(Millilitres.toUSGallons(5000.0), closeTo(1.32086, 0.01));
+      expect(Millilitres.toUSGallons(123456.0), closeTo(32.6136249, 0.01));
+      expect(Millilitres.toUSGallons(900.0), closeTo(0.237755, 0.01));
+    });
+
+    test('Convert known Millilitres to US Fluid Ounces', () {
+      expect(Millilitres.toUSFluidOunces(67.0), closeTo(2.26554, 0.01));
+      expect(Millilitres.toUSFluidOunces(12.6), closeTo(0.4260567, 0.01));
+      expect(Millilitres.toUSFluidOunces(11009.0), closeTo(372.25858, 0.01));
+    });
+
+    test('Convert known Millilitres to US Cups', () {
+      expect(Millilitres.toUSCups(348.0), closeTo(1.47091, 0.01));
+      expect(Millilitres.toUSCups(12.9), closeTo(0.05452511, 0.01));
+      expect(Millilitres.toUSCups(700.0), closeTo(2.95873, 0.01));
+    });
+
+    test('Convert known Pints to Millilitres', () {
+      expect(Pints.toMillilitres(0.7), closeTo(397.783, 0.01));
+      expect(Pints.toMillilitres(5.6), closeTo(3182.26, 0.01));
+      expect(Pints.toMillilitres(6.0), closeTo(3409.57, 0.01));
+    });
+
+    test('Convert known Pints to Litres', () {
+      expect(Pints.toLitres(6.0), closeTo(3.40957, 0.01));
+      expect(Pints.toLitres(0.123), closeTo(0.069896134, 0.01));
+      expect(Pints.toLitres(45.9), closeTo(26.08319, 0.01));
+    });
+
+    test('Convert known Pints to Kilolitres', () {
+      expect(Pints.toKilolitres(456.0), closeTo(0.259127, 0.01));
+      expect(Pints.toKilolitres(10450.0), closeTo(5.9383301, 0.01));
+      expect(Pints.toKilolitres(9000.9), closeTo(5.11486269, 0.01));
+    });
+
+    test('Convert known Pints to Teaspoons', () {
+      expect(Pints.toTeaspoons(5.0), closeTo(480.0, 0.01));
+      expect(Pints.toTeaspoons(0.3), closeTo(28.8, 0.01));
+      expect(Pints.toTeaspoons(190.0), closeTo(18240.0, 0.01));
+    });
+
+    test('Convert known Pints to Tablespoons', () {
+      expect(Pints.toTablespoons(187.0), closeTo(5984.0, 0.01));
+      expect(Pints.toTablespoons(54.5), closeTo(1743.999, 0.01));
+      expect(Pints.toTablespoons(0.33), closeTo(10.56, 0.01));
+    });
+
+    test('Convert known Pints to Quarts', () {
+      expect(Pints.toQuarts(5.6), closeTo(2.8, 0.01));
+      expect(Pints.toQuarts(109.0), closeTo(54.5, 0.01));
+      expect(Pints.toQuarts(0.3), closeTo(0.15, 0.01));
+    });
+
+    test('Convert known Pints to Gallons', () {
+      expect(Pints.toGallons(0.3), closeTo(0.0375, 0.01));
+      expect(Pints.toGallons(800.0), closeTo(100.0, 0.01));
+      expect(Pints.toGallons(1.5), closeTo(0.1875, 0.01));
+    });
+
+    test('Convert known Pints to Fluid Ounces', () {
+      expect(Pints.toFluidOunces(1.5), closeTo(30.0, 0.01));
+      expect(Pints.toFluidOunces(789.0), closeTo(15780.0, 0.01));
+      expect(Pints.toFluidOunces(1020.8), closeTo(20416.0, 0.01));
+    });
+
+    test('Convert known Pints to US Teaspoons', () {
+      expect(Pints.toUSTeaspoons(1020.8), closeTo(117689.298303295, 0.01));
+      expect(Pints.toUSTeaspoons(0.4), closeTo(46.1165, 0.01));
+      expect(Pints.toUSTeaspoons(104.0), closeTo(11990.2890120912, 0.01));
+    });
+
+    test('Convert known Pints to US Tablespoons', () {
+      expect(Pints.toUSTablespoons(104.0), closeTo(3996.76, 0.01));
+      expect(Pints.toUSTablespoons(5.6), closeTo(215.21, 0.01));
+      expect(Pints.toUSTablespoons(0.4), closeTo(15.3722, 0.01));
+    });
+
+    test('Convert known Pints to US Quarts', () {
+      expect(Pints.toUSQuarts(0.55), closeTo(0.3302612, 0.01));
+      expect(Pints.toUSQuarts(80.6), closeTo(48.39828, 0.01));
+      expect(Pints.toUSQuarts(12.0), closeTo(7.2057, 0.01));
+    });
+
+    test('Convert known Pints to US Pints', () {
+      expect(Pints.toUSPints(12.0), closeTo(14.4114, 0.01));
+      expect(Pints.toUSPints(4.7), closeTo(5.64446, 0.01));
+      expect(Pints.toUSPints(0.44), closeTo(0.528418, 0.01));
+    });
+
+    test('Convert known Pints to US Gallons', () {
+      expect(Pints.toUSGallons(1.2), closeTo(0.180142, 0.01));
+      expect(Pints.toUSGallons(9000.0), closeTo(1351.069, 0.01));
+      expect(Pints.toUSGallons(108.4), closeTo(16.272871, 0.01));
+    });
+
+    test('Convert known Pints to US Fluid Ounces', () {
+      expect(Pints.toUSFluidOunces(108.0), closeTo(2075.24, 0.01));
+      expect(Pints.toUSFluidOunces(23.4), closeTo(449.6357, 0.01));
+      expect(Pints.toUSFluidOunces(8.65), closeTo(166.2115, 0.01));
+    });
+
+    test('Convert known Pints to US Cups', () {
+      expect(Pints.toUSCups(23.0), closeTo(55.2437, 0.01));
+      expect(Pints.toUSCups(3.0), closeTo(7.2057, 0.01));
+      expect(Pints.toUSCups(50.6), closeTo(121.5361, 0.01));
+    });
+
+    test('Convert known Quarts to Millilitres', () {
+      expect(Quarts.toMillilitres(1.4), closeTo(1591.13, 0.01));
+      expect(Quarts.toMillilitres(800.0), closeTo(909218.37579999, 0.01));
+      expect(Quarts.toMillilitres(0.7), closeTo(795.566, 0.01));
+    });
+
+    test('Convert known Quarts to Litres', () {
+      expect(Quarts.toLitres(675.0), closeTo(767.153, 0.01));
+      expect(Quarts.toLitres(45.8), closeTo(52.05273, 0.01));
+      expect(Quarts.toLitres(0.8), closeTo(0.909218, 0.01));
+    });
+
+    test('Convert known Quarts to Kilolitres', () {
+      expect(Quarts.toKilolitres(8009.0), closeTo(9.102409, 0.01));
+      expect(Quarts.toKilolitres(12345.0), closeTo(14.03037, 0.01));
+      expect(Quarts.toKilolitres(601.0), closeTo(0.68305, 0.01));
+    });
+
+    test('Convert known Quarts to Teaspoons', () {
+      expect(Quarts.toTeaspoons(6.0), closeTo(1152.0, 0.01));
+      expect(Quarts.toTeaspoons(0.9), closeTo(172.8, 0.01));
+      expect(Quarts.toTeaspoons(0.03), closeTo(5.759998, 0.01));
+    });
+
+    test('Convert known Quarts to Tablespoons', () {
+      expect(Quarts.toTablespoons(5.9), closeTo(377.6, 0.01));
+      expect(Quarts.toTablespoons(0.34), closeTo(21.75999, 0.01));
+      expect(Quarts.toTablespoons(2.9), closeTo(185.6, 0.01));
+    });
+
+    test('Convert known Quarts to Pints', () {
+      expect(Quarts.toPints(4.5), closeTo(9.0, 0.01));
+      expect(Quarts.toPints(102.8), closeTo(205.6, 0.01));
+      expect(Quarts.toPints(0.46), closeTo(0.92, 0.01));
+    });
+
+    test('Convert known Quarts to Gallons', () {
+      expect(Quarts.toGallons(0.46), closeTo(0.115, 0.01));
+      expect(Quarts.toGallons(190.0), closeTo(47.5, 0.01));
+      expect(Quarts.toGallons(67.6), closeTo(16.9, 0.01));
+    });
+
+    test('Convert known Quarts to Fluid Ounces', () {
+      expect(Quarts.toFluidOunces(67.6), closeTo(2704.0, 0.01));
+      expect(Quarts.toFluidOunces(1009.0), closeTo(40360.0, 0.01));
+      expect(Quarts.toFluidOunces(6.2), closeTo(248.0, 0.01));
+    });
+
+    test('Convert known Quarts to US Teaspoons', () {
+      expect(Quarts.toUSTeaspoons(6.2), closeTo(1429.61, 0.01));
+      expect(Quarts.toUSTeaspoons(0.7), closeTo(161.408, 0.01));
+      expect(Quarts.toUSTeaspoons(80.3), closeTo(18515.77, 0.01));
+    });
+
+    test('Convert known Quarts to US Tablespoons', () {
+      expect(Quarts.toUSTablespoons(80.0), closeTo(6148.86, 0.01));
+      expect(Quarts.toUSTablespoons(5.7), closeTo(438.107, 0.01));
+      expect(Quarts.toUSTablespoons(0.44), closeTo(33.81875, 0.01));
+    });
+
+    test('Convert known Quarts to US Quarts', () {
+      expect(Quarts.toUSQuarts(0.44), closeTo(0.528418, 0.01));
+      expect(Quarts.toUSQuarts(12.7), closeTo(15.25206, 0.01));
+      expect(Quarts.toUSQuarts(109.0), closeTo(130.904, 0.01));
+    });
+
+    test('Convert known Quarts to US Pints', () {
+      expect(Quarts.toUSPints(18.0), closeTo(43.2342, 0.01));
+      expect(Quarts.toUSPints(2.5), closeTo(6.00475, 0.01));
+      expect(Quarts.toUSPints(0.4), closeTo(0.96076, 0.01));
+    });
+
+    test('Convert known Quarts to US Gallons', () {
+      expect(Quarts.toUSGallons(4.8), closeTo(1.44114, 0.01));
+      expect(Quarts.toUSGallons(0.3), closeTo(0.0900712, 0.01));
+      expect(Quarts.toUSGallons(1.5), closeTo(0.450356, 0.01));
+    });
+
+    test('Convert known Quarts to US Fluid Ounces', () {
+      expect(Quarts.toUSFluidOunces(6.0), closeTo(230.582, 0.01));
+      expect(Quarts.toUSFluidOunces(0.46), closeTo(17.67798, 0.01));
+      expect(Quarts.toUSFluidOunces(2.0), closeTo(76.8608, 0.01));
+    });
+
+    test('Convert known Quarts to US Cups', () {
+      expect(Quarts.toUSCups(2.0), closeTo(9.6076, 0.01));
+      expect(Quarts.toUSCups(800.9), closeTo(3847.3632, 0.01));
+      expect(Quarts.toUSCups(0.23), closeTo(1.104874, 0.01));
+    });
+
+    test('Convert known Tablespoons to Millilitres', () {
+      expect(Tablespoons.toMillilitres(2.7), closeTo(47.9471, 0.01));
+      expect(Tablespoons.toMillilitres(0.65), closeTo(11.54281, 0.01));
+      expect(Tablespoons.toMillilitres(80.1), closeTo(1422.43, 0.01));
+    });
+
+    test('Convert known Tablespoons to Litres', () {
+      expect(Tablespoons.toLitres(55.0), closeTo(0.976699, 0.01));
+      expect(Tablespoons.toLitres(190.0), closeTo(3.37405, 0.01));
+      expect(Tablespoons.toLitres(4000.0), closeTo(71.0397889, 0.01));
+    });
+
+    test('Convert known Tablespoons to Kilolitres', () {
+      expect(Tablespoons.toKilolitres(10000.0), closeTo(0.1775817, 0.01));
+      expect(Tablespoons.toKilolitres(98765.0), closeTo(1.7538858, 0.01));
+      expect(Tablespoons.toKilolitres(666999.0), closeTo(11.8446826, 0.01));
+    });
+
+    test('Convert known Tablespoons to Teaspoons', () {
+      expect(Tablespoons.toTeaspoons(12.0), closeTo(36.0, 0.01));
+      expect(Tablespoons.toTeaspoons(0.24), closeTo(0.72, 0.01));
+      expect(Tablespoons.toTeaspoons(19.9), closeTo(59.7, 0.01));
+    });
+
+    test('Convert known Tablespoons to Quarts', () {
+      expect(Tablespoons.toQuarts(190.0), closeTo(2.96875, 0.01));
+      expect(Tablespoons.toQuarts(9.0), closeTo(0.140625, 0.01));
+      expect(Tablespoons.toQuarts(3.7), closeTo(0.0578125, 0.01));
+    });
+
+    test('Convert known Tablespoons to Pints', () {
+      expect(Tablespoons.toPints(4.7), closeTo(0.146875, 0.01));
+      expect(Tablespoons.toPints(190.0), closeTo(5.9375, 0.01));
+      expect(Tablespoons.toPints(1090.9), closeTo(34.0906391, 0.01));
+    });
+
+    test('Convert known Tablespoons to Gallons', () {
+      expect(Tablespoons.toGallons(8000.0), closeTo(31.25001, 0.01));
+      expect(Tablespoons.toGallons(54.0), closeTo(0.210938, 0.01));
+      expect(Tablespoons.toGallons(99.3), closeTo(0.3878908, 0.01));
+    });
+
+    test('Convert known Tablespoons to Fluid Ounces', () {
+      expect(Tablespoons.toFluidOunces(80.8), closeTo(50.50002, 0.01));
+      expect(Tablespoons.toFluidOunces(9009.0), closeTo(5630.627, 0.01));
+      expect(Tablespoons.toFluidOunces(12.6), closeTo(7.875003, 0.01));
+    });
+
+    test('Convert known Tablespoons to US Teaspoons', () {
+      expect(Tablespoons.toUSTeaspoons(12.0), closeTo(43.2342, 0.01));
+      expect(Tablespoons.toUSTeaspoons(0.6), closeTo(2.16171, 0.01));
+      expect(Tablespoons.toUSTeaspoons(52.9), closeTo(190.5909, 0.01));
+    });
+
+    test('Convert known Tablespoons to US Tablespoons', () {
+      expect(Tablespoons.toUSTablespoons(67.0), closeTo(80.4637, 0.01));
+      expect(Tablespoons.toUSTablespoons(5.8), closeTo(6.96551, 0.01));
+      expect(Tablespoons.toUSTablespoons(0.23), closeTo(0.2762186, 0.01));
+    });
+
+    test('Convert known Tablespoons to US Quarts', () {
+      expect(Tablespoons.toUSQuarts(54.0), closeTo(1.0133, 0.01));
+      expect(Tablespoons.toUSQuarts(1005.9), closeTo(18.875563, 0.01));
+      expect(Tablespoons.toUSQuarts(0.9), closeTo(0.0168884, 0.01));
+    });
+
+    test('Convert known Tablespoons to US Pints', () {
+      expect(Tablespoons.toUSPints(34.0), closeTo(1.27601, 0.01));
+      expect(Tablespoons.toUSPints(109.3), closeTo(4.1019963, 0.01));
+      expect(Tablespoons.toUSPints(190.0), closeTo(7.13064, 0.01));
+    });
+
+    test('Convert known Tablespoons to US Gallons', () {
+      expect(Tablespoons.toUSGallons(900.0), closeTo(4.22209, 0.01));
+      expect(Tablespoons.toUSGallons(2.8), closeTo(0.0131354, 0.01));
+      expect(Tablespoons.toUSGallons(1469.0), closeTo(6.891391, 0.01));
+    });
+
+    test('Convert known Tablespoons to US Fluid Ounces', () {
+      expect(Tablespoons.toUSFluidOunces(1009.0), closeTo(605.8795, 0.01));
+      expect(Tablespoons.toUSFluidOunces(8.2), closeTo(4.9239, 0.01));
+      expect(Tablespoons.toUSFluidOunces(190.5), closeTo(114.39053, 0.01));
+    });
+
+    test('Convert known Tablespoons to US Cups', () {
+      expect(Tablespoons.toUSCups(109.0), closeTo(8.18147, 0.01));
+      expect(Tablespoons.toUSCups(3.4), closeTo(0.255202, 0.01));
+      expect(Tablespoons.toUSCups(1000.0), closeTo(75.0594, 0.01));
+    });
+
+    test('Convert known Teaspoons to Millilitres', () {
+      expect(Teaspoons.toMillilitres(0.6), closeTo(3.55163, 0.01));
+      expect(Teaspoons.toMillilitres(1.3), closeTo(7.69521, 0.01));
+      expect(Teaspoons.toMillilitres(0.07), closeTo(0.4143573, 0.01));
+    });
+
+    test('Convert known Teaspoons to Litres', () {
+      expect(Teaspoons.toLitres(32.0), closeTo(0.18942, 0.01));
+      expect(Teaspoons.toLitres(180.0), closeTo(1.06549, 0.01));
+      expect(Teaspoons.toLitres(4567.0), closeTo(27.03386, 0.01));
+    });
+
+    test('Convert known Teaspoons to Kilolitres', () {
+      expect(Teaspoons.toKilolitres(236511.0), closeTo(1.4, 0.01));
+      expect(Teaspoons.toKilolitres(33787.3), closeTo(0.2, 0.01));
+      expect(Teaspoons.toKilolitres(1689.363), closeTo(0.01, 0.01));
+    });
+
+    test('Convert known Teaspoons to Tablespoons', () {
+      expect(Teaspoons.toTablespoons(12.0), closeTo(4.0, 0.01));
+      expect(Teaspoons.toTablespoons(900.8), closeTo(300.26667, 0.01));
+      expect(Teaspoons.toTablespoons(1.23), closeTo(0.41, 0.01));
+    });
+
+    test('Convert known Teaspoons to Quarts', () {
+      expect(Teaspoons.toQuarts(109.0), closeTo(0.567709, 0.01));
+      expect(Teaspoons.toQuarts(4500.0), closeTo(23.43751, 0.01));
+      expect(Teaspoons.toQuarts(89.0), closeTo(0.463542, 0.01));
+    });
+
+    test('Convert known Teaspoons to Pints', () {
+      expect(Teaspoons.toPints(678.0), closeTo(7.0625, 0.01));
+      expect(Teaspoons.toPints(109.0), closeTo(1.13542, 0.01));
+      expect(Teaspoons.toPints(12.5), closeTo(0.1302084, 0.01));
+    });
+
+    test('Convert known Teaspoons to Gallons', () {
+      expect(Teaspoons.toGallons(190.0), closeTo(0.247396, 0.01));
+      expect(Teaspoons.toGallons(8090.0), closeTo(10.53386, 0.01));
+      expect(Teaspoons.toGallons(238.9), closeTo(0.31106784, 0.01));
+    });
+
+    test('Convert known Teaspoons to Fluid Ounces', () {
+      expect(Teaspoons.toFluidOunces(109.0), closeTo(22.7083, 0.01));
+      expect(Teaspoons.toFluidOunces(55.7), closeTo(11.60417, 0.01));
+      expect(Teaspoons.toFluidOunces(609.0), closeTo(126.875, 0.01));
+    });
+
+    test('Convert known Teaspoons to US Teaspoons', () {
+      expect(Teaspoons.toUSTeaspoons(90.0), closeTo(108.086, 0.01));
+      expect(Teaspoons.toUSTeaspoons(1.45), closeTo(1.741379, 0.01));
+      expect(Teaspoons.toUSTeaspoons(80.1), closeTo(96.19616, 0.01));
+    });
+
+    test('Convert known Teaspoons to US Tablespoons', () {
+      expect(Teaspoons.toUSTablespoons(56.0), closeTo(22.4177, 0.01));
+      expect(Teaspoons.toUSTablespoons(7.0), closeTo(2.80222, 0.01));
+      expect(Teaspoons.toUSTablespoons(109.0), closeTo(43.6345, 0.01));
+    });
+
+    test('Convert known Teaspoons to US Quarts', () {
+      expect(Teaspoons.toUSQuarts(199.0), closeTo(1.24474, 0.01));
+      expect(Teaspoons.toUSQuarts(5.9), closeTo(0.0369042, 0.01));
+      expect(Teaspoons.toUSQuarts(23.0), closeTo(0.143864, 0.01));
+    });
+
+    test('Convert known Teaspoons to US Pints', () {
+      expect(Teaspoons.toUSPints(106.0), closeTo(1.32605, 0.01));
+      expect(Teaspoons.toUSPints(34.0), closeTo(0.425337, 0.01));
+      expect(Teaspoons.toUSPints(6.21), closeTo(0.07656059, 0.01));
+    });
+
+    test('Convert known Teaspoons to US Gallons', () {
+      expect(Teaspoons.toUSGallons(900.0), closeTo(1.40736, 0.01));
+      expect(Teaspoons.toUSGallons(1234.6), closeTo(1.93059035, 0.01));
+      expect(Teaspoons.toUSGallons(88.0), closeTo(0.137609, 0.01));
+    });
+
+    test('Convert known Teaspoons to US Fluid Ounces', () {
+      expect(Teaspoons.toUSFluidOunces(56.0), closeTo(11.2089, 0.01));
+      expect(Teaspoons.toUSFluidOunces(2.9), closeTo(0.580459, 0.01));
+      expect(Teaspoons.toUSFluidOunces(1020.0), closeTo(204.1616, 0.01));
+    });
+
+    test('Convert known Teaspoons to US Cups', () {
+      expect(Teaspoons.toUSCups(8000.0), closeTo(200.1584, 0.01));
+      expect(Teaspoons.toUSCups(34.0), closeTo(0.850673, 0.01));
+      expect(Teaspoons.toUSCups(109.9), closeTo(2.7496761, 0.01));
+    });
+
+    test('Convert known US Cups to Millilitres', () {
+      expect(USCups.toMillilitres(11.0), closeTo(2602.47, 0.01));
+      expect(USCups.toMillilitres(109.0), closeTo(25788.1177, 0.01));
+      expect(USCups.toMillilitres(4.5), closeTo(1064.65, 0.01));
+    });
+
+    test('Convert known US Cups to Litres', () {
+      expect(USCups.toLitres(56.0), closeTo(13.2489, 0.01));
+      expect(USCups.toLitres(4.1), closeTo(0.970012, 0.01));
+      expect(USCups.toLitres(399.0), closeTo(94.3987, 0.01));
+    });
+
+    test('Convert known US Cups to Kilolitres', () {
+      expect(USCups.toKilolitres(67.0), closeTo(0.0158514, 0.01));
+      expect(USCups.toKilolitres(1009.7), closeTo(0.238883142, 0.01));
+      expect(USCups.toKilolitres(918273.0), closeTo(217.25259, 0.01));
+    });
+
+    test('Convert known US Cups to Teaspoons', () {
+      expect(USCups.toTeaspoons(4.0), closeTo(159.873, 0.01));
+      expect(USCups.toTeaspoons(0.2), closeTo(7.99367, 0.01));
+      expect(USCups.toTeaspoons(6.12), closeTo(244.6063, 0.01));
+    });
+
+    test('Convert known US Cups to Tablespoons', () {
+      expect(USCups.toTablespoons(4.3), closeTo(57.288, 0.01));
+      expect(USCups.toTablespoons(120.6), closeTo(1606.7274, 0.01));
+      expect(USCups.toTablespoons(0.66), closeTo(8.793036, 0.01));
+    });
+
+    test('Convert known US Cups to Quarts', () {
+      expect(USCups.toQuarts(1009.0), closeTo(210.0421, 0.01));
+      expect(USCups.toQuarts(66.98), closeTo(13.943129, 0.01));
+      expect(USCups.toQuarts(0.123), closeTo(0.025604731, 0.01));
+    });
+
+    test('Convert known US Cups to Pints', () {
+      expect(USCups.toPints(5.0), closeTo(2.08169, 0.01));
+      expect(USCups.toPints(0.43), closeTo(0.1790249, 0.01));
+      expect(USCups.toPints(800.4), closeTo(333.23621, 0.01));
+    });
+
+    test('Convert known US Cups to Gallons', () {
+      expect(USCups.toGallons(56.0), closeTo(2.91436, 0.01));
+      expect(USCups.toGallons(104.12), closeTo(5.41862726, 0.01));
+      expect(USCups.toGallons(6.1), closeTo(0.317457, 0.01));
+    });
+
+    test('Convert known US Cups to Fluid Ounces', () {
+      expect(USCups.toFluidOunces(55.0), closeTo(457.971, 0.01));
+      expect(USCups.toFluidOunces(0.4), closeTo(3.3307, 0.01));
+      expect(USCups.toFluidOunces(88.4), closeTo(736.084, 0.01));
+    });
+
+    test('Convert known US Cups to US Teaspoons', () {
+      expect(USCups.toUSTeaspoons(12.0), closeTo(576.0, 0.01));
+      expect(USCups.toUSTeaspoons(5.12), closeTo(245.7601, 0.01));
+      expect(USCups.toUSTeaspoons(6701.0), closeTo(321648.0, 0.01));
+    });
+
+    test('Convert known US Cups to US Tablespoons', () {
+      expect(USCups.toUSTablespoons(677.0), closeTo(10832.0, 0.01));
+      expect(USCups.toUSTablespoons(1.9), closeTo(30.4, 0.01));
+      expect(USCups.toUSTablespoons(800.8), closeTo(12812.8, 0.01));
+    });
+
+    test('Convert known US Cups to US Quarts', () {
+      expect(USCups.toUSQuarts(800.8), closeTo(200.2, 0.01));
+      expect(USCups.toUSQuarts(4.84), closeTo(1.21, 0.01));
+      expect(USCups.toUSQuarts(0.99), closeTo(0.2475, 0.01));
+    });
+
+    test('Convert known US Cups to US Pints', () {
+      expect(USCups.toUSPints(0.99), closeTo(0.495, 0.01));
+      expect(USCups.toUSPints(358.9), closeTo(179.45, 0.01));
+      expect(USCups.toUSPints(1000.0), closeTo(500.0, 0.01));
+    });
+
+    test('Convert known US Cups to US Gallons', () {
+      expect(USCups.toUSGallons(1000.0), closeTo(62.5, 0.01));
+      expect(USCups.toUSGallons(0.78), closeTo(0.04875, 0.01));
+      expect(USCups.toUSGallons(123.123), closeTo(7.6951875, 0.01));
+    });
+
+    test('Convert known US Cups to US Fluid Ounces', () {
+      expect(USCups.toUSFluidOunces(123.123), closeTo(984.984, 0.01));
+      expect(USCups.toUSFluidOunces(4.0), closeTo(32.0, 0.01));
+      expect(USCups.toUSFluidOunces(0.9), closeTo(7.2, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Millilitres', () {
+      expect(USFluidOunces.toMillilitres(0.98), closeTo(28.98206, 0.01));
+      expect(USFluidOunces.toMillilitres(8.2), closeTo(242.503, 0.01));
+      expect(USFluidOunces.toMillilitres(100.3), closeTo(2966.225, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Litres', () {
+      expect(USFluidOunces.toLitres(12.0), closeTo(0.354882, 0.01));
+      expect(USFluidOunces.toLitres(150.6), closeTo(4.4537736, 0.01));
+      expect(USFluidOunces.toLitres(5.9), closeTo(0.174484, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Kilolitres', () {
+      expect(USFluidOunces.toKilolitres(34.0), closeTo(0.0010055, 0.01));
+      expect(USFluidOunces.toKilolitres(109.1), closeTo(0.0032264721, 0.01));
+      expect(USFluidOunces.toKilolitres(45678.0), closeTo(1.3508597, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Teaspoons', () {
+      expect(USFluidOunces.toTeaspoons(4.0), closeTo(19.9842, 0.01));
+      expect(USFluidOunces.toTeaspoons(0.12), closeTo(0.5995252, 0.01));
+      expect(USFluidOunces.toTeaspoons(2.99), closeTo(14.93817, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Tablespoons', () {
+      expect(USFluidOunces.toTablespoons(800.0), closeTo(1332.28, 0.01));
+      expect(USFluidOunces.toTablespoons(0.02), closeTo(0.03330695, 0.01));
+      expect(USFluidOunces.toTablespoons(2.7), closeTo(4.49644, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Quarts', () {
+      expect(USFluidOunces.toQuarts(3.5), closeTo(0.0910737, 0.01));
+      expect(USFluidOunces.toQuarts(0.76), closeTo(0.01977601, 0.01));
+      expect(USFluidOunces.toQuarts(2.0), closeTo(0.0520421, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Pints', () {
+      expect(USFluidOunces.toPints(12.0), closeTo(0.624506, 0.01));
+      expect(USFluidOunces.toPints(0.4), closeTo(0.0208169, 0.01));
+      expect(USFluidOunces.toPints(1.99), closeTo(0.1035639, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Gallons', () {
+      expect(USFluidOunces.toGallons(3.0), closeTo(0.0195158, 0.01));
+      expect(USFluidOunces.toGallons(100.5), closeTo(0.65377934, 0.01));
+      expect(USFluidOunces.toGallons(0.9), closeTo(0.00585474, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to Fluid Ounces', () {
+      expect(USFluidOunces.toFluidOunces(0.6), closeTo(0.624506, 0.01));
+      expect(USFluidOunces.toFluidOunces(123.0), closeTo(128.024, 0.01));
+      expect(USFluidOunces.toFluidOunces(8009.0), closeTo(8336.109, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to US Teaspoons', () {
+      expect(USFluidOunces.toUSTeaspoons(45.0), closeTo(270.0, 0.01));
+      expect(USFluidOunces.toUSTeaspoons(1.5), closeTo(9.0, 0.01));
+      expect(USFluidOunces.toUSTeaspoons(400.8), closeTo(2404.8008, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to US Tablespoons', () {
+      expect(USFluidOunces.toUSTablespoons(4.0), closeTo(8.0, 0.01));
+      expect(USFluidOunces.toUSTablespoons(170.2), closeTo(340.4, 0.01));
+      expect(USFluidOunces.toUSTablespoons(8811.0), closeTo(17622.0, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to US Quarts', () {
+      expect(USFluidOunces.toUSQuarts(8811.0), closeTo(275.3438, 0.01));
+      expect(USFluidOunces.toUSQuarts(4.2), closeTo(0.13125, 0.01));
+      expect(USFluidOunces.toUSQuarts(109.0), closeTo(3.40625, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to US Pints', () {
+      expect(USFluidOunces.toUSPints(109.0), closeTo(6.8125, 0.01));
+      expect(USFluidOunces.toUSPints(77.09), closeTo(4.818125, 0.01));
+      expect(USFluidOunces.toUSPints(180.4), closeTo(11.275, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to US Gallons', () {
+      expect(USFluidOunces.toUSGallons(45.0), closeTo(0.351563, 0.01));
+      expect(USFluidOunces.toUSGallons(1.8), closeTo(0.0140625, 0.01));
+      expect(USFluidOunces.toUSGallons(778.9), closeTo(6.0851562, 0.01));
+    });
+
+    test('Convert known US Fluid Ounces to US Cups', () {
+      expect(USFluidOunces.toUSCups(45.0), closeTo(5.625, 0.01));
+      expect(USFluidOunces.toUSCups(66.9), closeTo(8.3625, 0.01));
+      expect(USFluidOunces.toUSCups(0.29), closeTo(0.03625, 0.01));
+    });
+
+    test('Convert known US Gallons to Millilitres', () {
+      expect(USGallons.toMillilitres(2.0), closeTo(7570.82, 0.01));
+      expect(USGallons.toMillilitres(0.1), closeTo(378.541, 0.01));
+      expect(USGallons.toMillilitres(56.0), closeTo(211983.0599039, 0.01));
+    });
+
+    test('Convert known US Gallons to Litres', () {
+      expect(USGallons.toLitres(56.0), closeTo(211.983, 0.01));
+      expect(USGallons.toLitres(5.1), closeTo(19.3056, 0.01));
+      expect(USGallons.toLitres(2.5), closeTo(9.46353, 0.01));
+    });
+
+    test('Convert known US Gallons to Kilolitres', () {
+      expect(USGallons.toKilolitres(111.0), closeTo(0.420181, 0.01));
+      expect(USGallons.toKilolitres(9090.0), closeTo(34.40939, 0.01));
+      expect(USGallons.toKilolitres(12345.0), closeTo(46.730908, 0.01));
+    });
+
+    test('Convert known US Gallons to Teaspoons', () {
+      expect(USGallons.toTeaspoons(5.0), closeTo(3197.47, 0.01));
+      expect(USGallons.toTeaspoons(0.4), closeTo(255.797, 0.01));
+      expect(USGallons.toTeaspoons(8000.0), closeTo(5115948.07582550, 0.01));
+    });
+
+    test('Convert known US Gallons to Tablespoons', () {
+      expect(USGallons.toTablespoons(79.0), closeTo(16840.0, 0.01));
+      expect(USGallons.toTablespoons(12.67), closeTo(2700.7943, 0.01));
+      expect(USGallons.toTablespoons(55.1), closeTo(11745.36, 0.01));
+    });
+
+    test('Convert known US Gallons to Quarts', () {
+      expect(USGallons.toQuarts(54.0), closeTo(179.858, 0.01));
+      expect(USGallons.toQuarts(2.9), closeTo(9.65902, 0.01));
+      expect(USGallons.toQuarts(0.2), closeTo(0.666139, 0.01));
+    });
+
+    test('Convert known US Gallons to Pints', () {
+      expect(USGallons.toPints(2.0), closeTo(13.3228, 0.01));
+      expect(USGallons.toPints(0.12), closeTo(0.7993672, 0.01));
+      expect(USGallons.toPints(500.0), closeTo(3330.7, 0.01));
+    });
+
+    test('Convert known US Gallons to Gallons', () {
+      expect(USGallons.toGallons(23.0), closeTo(19.1515, 0.01));
+      expect(USGallons.toGallons(8.2), closeTo(6.82793, 0.01));
+      expect(USGallons.toGallons(1.09), closeTo(0.9076149, 0.01));
+    });
+
+    test('Convert known US Gallons to Fluid Ounces', () {
+      expect(USGallons.toFluidOunces(1.09), closeTo(145.2184, 0.01));
+      expect(USGallons.toFluidOunces(34.0), closeTo(4529.75, 0.01));
+      expect(USGallons.toFluidOunces(666.0), closeTo(88729.724440098, 0.01));
+    });
+
+    test('Convert known US Gallons to US Teaspoons', () {
+      expect(USGallons.toUSTeaspoons(4.0), closeTo(3072.0, 0.01));
+      expect(USGallons.toUSTeaspoons(1.28), closeTo(983.0403, 0.01));
+      expect(USGallons.toUSTeaspoons(6.99), closeTo(5368.322, 0.01));
+    });
+
+    test('Convert known US Gallons to US Tablespoons', () {
+      expect(USGallons.toUSTablespoons(34.0), closeTo(8704.0, 0.01));
+      expect(USGallons.toUSTablespoons(8.4), closeTo(2150.4, 0.01));
+      expect(USGallons.toUSTablespoons(0.091), closeTo(23.296, 0.01));
+    });
+
+    test('Convert known US Gallons to US Quarts', () {
+      expect(USGallons.toUSQuarts(0.091), closeTo(0.364, 0.01));
+      expect(USGallons.toUSQuarts(23.0), closeTo(92.0, 0.01));
+      expect(USGallons.toUSQuarts(1000.8), closeTo(4003.2, 0.01));
+    });
+
+    test('Convert known US Gallons to US Pints', () {
+      expect(USGallons.toUSPints(1000.8), closeTo(8006.4, 0.01));
+      expect(USGallons.toUSPints(23.6), closeTo(188.8, 0.01));
+      expect(USGallons.toUSPints(0.71), closeTo(5.68, 0.01));
+    });
+
+    test('Convert known US Gallons to US Fluid Ounces', () {
+      expect(USGallons.toUSFluidOunces(0.71), closeTo(90.88, 0.01));
+      expect(USGallons.toUSFluidOunces(83.2), closeTo(10649.6, 0.01));
+      expect(USGallons.toUSFluidOunces(777.0), closeTo(99456.0, 0.01));
+    });
+
+    test('Convert known US Gallons to US Cups', () {
+      expect(USGallons.toUSCups(777.0), closeTo(12432.0, 0.01));
+      expect(USGallons.toUSCups(5.71), closeTo(91.36, 0.01));
+      expect(USGallons.toUSCups(0.98), closeTo(15.68, 0.01));
+    });
+
+    test('Convert known US Pints to Millilitres', () {
+      expect(USPints.toMillilitres(0.66), closeTo(312.2965, 0.01));
+      expect(USPints.toMillilitres(9.1), closeTo(4305.91, 0.01));
+      expect(USPints.toMillilitres(0.8), closeTo(378.541, 0.01));
+    });
+
+    test('Convert known US Pints to Litres', () {
+      expect(USPints.toLitres(1.5), closeTo(0.709765, 0.01));
+      expect(USPints.toLitres(0.6), closeTo(0.283906, 0.01));
+      expect(USPints.toLitres(1367.0), closeTo(646.8322, 0.01));
+    });
+
+    test('Convert known US Pints to Kilolitres', () {
+      expect(USPints.toKilolitres(1900.0), closeTo(0.8990353, 0.01));
+      expect(USPints.toKilolitres(8888.0), closeTo(4.205592, 0.01));
+      expect(USPints.toKilolitres(123456.0), closeTo(58.4164747, 0.01));
+    });
+
+    test('Convert known US Pints to Teaspoons', () {
+      expect(USPints.toTeaspoons(6.0), closeTo(479.62, 0.01));
+      expect(USPints.toTeaspoons(0.08), closeTo(6.394935, 0.01));
+      expect(USPints.toTeaspoons(3.1), closeTo(247.804, 0.01));
+    });
+
+    test('Convert known US Pints to Tablespoons', () {
+      expect(USPints.toTablespoons(2.0), closeTo(53.2911, 0.01));
+      expect(USPints.toTablespoons(0.09), closeTo(2.398101, 0.01));
+      expect(USPints.toTablespoons(1678.0), closeTo(44711.25, 0.01));
+    });
+
+    test('Convert known US Pints to Quarts', () {
+      expect(USPints.toQuarts(12.0), closeTo(4.99605, 0.01));
+      expect(USPints.toQuarts(503.8), closeTo(209.75063, 0.01));
+      expect(USPints.toQuarts(0.65), closeTo(0.2706191, 0.01));
+    });
+
+    test('Convert known US Pints to Pints', () {
+      expect(USPints.toPints(0.9), closeTo(0.749407, 0.01));
+      expect(USPints.toPints(102.0), closeTo(84.9328, 0.01));
+      expect(USPints.toPints(8000.7), closeTo(6661.97635, 0.01));
+    });
+
+    test('Convert known US Pints to Gallons', () {
+      expect(USPints.toGallons(80.0), closeTo(8.32674, 0.01));
+      expect(USPints.toGallons(6.2), closeTo(0.645322, 0.01));
+      expect(USPints.toGallons(0.7), closeTo(0.072859, 0.01));
+    });
+
+    test('Convert known US Pints to Fluid Ounces', () {
+      expect(USPints.toFluidOunces(12.0), closeTo(199.842, 0.01));
+      expect(USPints.toFluidOunces(9.7), closeTo(161.539, 0.01));
+      expect(USPints.toFluidOunces(124.0), closeTo(2065.03, 0.01));
+    });
+
+    test('Convert known US Pints to US Teaspoons', () {
+      expect(USPints.toUSTeaspoons(4.0), closeTo(384.0, 0.01));
+      expect(USPints.toUSTeaspoons(2.5), closeTo(240.0, 0.01));
+      expect(USPints.toUSTeaspoons(8001.9), closeTo(768182.4, 0.01));
+    });
+
+    test('Convert known US Pints to US Tablespoons', () {
+      expect(USPints.toUSTablespoons(80.0), closeTo(2560.0, 0.01));
+      expect(USPints.toUSTablespoons(12.7), closeTo(406.4, 0.01));
+      expect(USPints.toUSTablespoons(0.6), closeTo(19.2, 0.01));
+    });
+
+    test('Convert known US Pints to US Quarts', () {
+      expect(USPints.toUSQuarts(0.6), closeTo(0.3, 0.01));
+      expect(USPints.toUSQuarts(10090.0), closeTo(5045.0, 0.01));
+      expect(USPints.toUSQuarts(4.56), closeTo(2.28, 0.01));
+    });
+
+    test('Convert known US Pints to US Gallons', () {
+      expect(USPints.toUSGallons(4.56), closeTo(0.57, 0.01));
+      expect(USPints.toUSGallons(9000.0), closeTo(1125.0, 0.01));
+      expect(USPints.toUSGallons(47.2), closeTo(5.9, 0.01));
+    });
+
+    test('Convert known US Pints to US Fluid Ounces', () {
+      expect(USPints.toUSFluidOunces(47.2), closeTo(755.2, 0.01));
+      expect(USPints.toUSFluidOunces(1001.0), closeTo(16016.0, 0.01));
+      expect(USPints.toUSFluidOunces(23.9), closeTo(382.4, 0.01));
+    });
+
+    test('Convert known US Pints to US Cups', () {
+      expect(USPints.toUSCups(23.9), closeTo(47.8, 0.01));
+      expect(USPints.toUSCups(1009.0), closeTo(2018.0, 0.01));
+      expect(USPints.toUSCups(45.9), closeTo(91.8, 0.01));
+    });
+
+    test('Convert known US Quarts to Millilitres', () {
+      expect(USQuarts.toMillilitres(9000.0), closeTo(8517176.51400, 0.01));
+      expect(USQuarts.toMillilitres(5.0), closeTo(4731.76, 0.01));
+      expect(USQuarts.toMillilitres(0.7), closeTo(662.447, 0.01));
+    });
+
+    test('Convert known US Quarts to Litres', () {
+      expect(USQuarts.toLitres(9.0), closeTo(8.51718, 0.01));
+      expect(USQuarts.toLitres(1024.0), closeTo(969.0654, 0.01));
+      expect(USQuarts.toLitres(0.8), closeTo(0.757082, 0.01));
+    });
+
+    test('Convert known US Quarts to Kilolitres', () {
+      expect(USQuarts.toKilolitres(1000.0), closeTo(0.946353, 0.01));
+      expect(USQuarts.toKilolitres(6789.0), closeTo(6.42479, 0.01));
+      expect(USQuarts.toKilolitres(45.0), closeTo(0.0425859, 0.01));
+    });
+
+    test('Convert known US Quarts to Teaspoons', () {
+      expect(USQuarts.toTeaspoons(45.0), closeTo(7194.3, 0.01));
+      expect(USQuarts.toTeaspoons(6.5), closeTo(1039.18, 0.01));
+      expect(USQuarts.toTeaspoons(0.9), closeTo(143.886, 0.01));
+    });
+
+    test('Convert known US Quarts to Tablespoons', () {
+      expect(USQuarts.toTablespoons(6.0), closeTo(319.747, 0.01));
+      expect(USQuarts.toTablespoons(89.4), closeTo(4764.227, 0.01));
+      expect(USQuarts.toTablespoons(4.67), closeTo(248.8696, 0.01));
+    });
+
+    test('Convert known US Quarts to Quarts', () {
+      expect(USQuarts.toQuarts(4.6), closeTo(3.8303, 0.01));
+      expect(USQuarts.toQuarts(0.9), closeTo(0.749407, 0.01));
+      expect(USQuarts.toQuarts(134.0), closeTo(111.578, 0.01));
+    });
+
+    test('Convert known US Quarts to Pints', () {
+      expect(USQuarts.toPints(123.0), closeTo(204.838, 0.01));
+      expect(USQuarts.toPints(1090.9), closeTo(1816.72854, 0.01));
+      expect(USQuarts.toPints(56.0), closeTo(93.2595, 0.01));
+    });
+
+    test('Convert known US Quarts to Gallons', () {
+      expect(USQuarts.toGallons(56.0), closeTo(11.6574, 0.01));
+      expect(USQuarts.toGallons(7.12), closeTo(1.48216, 0.01));
+      expect(USQuarts.toGallons(800.0), closeTo(166.535, 0.01));
+    });
+
+    test('Convert known US Quarts to Fluid Ounces', () {
+      expect(USQuarts.toFluidOunces(800.0), closeTo(26645.56289492, 0.01));
+      expect(USQuarts.toFluidOunces(6.8), closeTo(226.487, 0.01));
+      expect(USQuarts.toFluidOunces(0.9), closeTo(29.9763, 0.01));
+    });
+
+    test('Convert known US Quarts to US Teaspoons', () {
+      expect(USQuarts.toUSTeaspoons(3.0), closeTo(576.0, 0.01));
+      expect(USQuarts.toUSTeaspoons(0.12), closeTo(23.04001, 0.01));
+      expect(USQuarts.toUSTeaspoons(4.5), closeTo(864.0, 0.01));
+    });
+
+    test('Convert known US Quarts to US Tablespoons', () {
+      expect(USQuarts.toUSTablespoons(4.5), closeTo(288.0, 0.01));
+      expect(USQuarts.toUSTablespoons(0.777), closeTo(49.728, 0.01));
+      expect(USQuarts.toUSTablespoons(1.8), closeTo(115.2, 0.01));
+    });
+
+    test('Convert known US Quarts to US Pints', () {
+      expect(USQuarts.toUSPints(1.8), closeTo(3.6, 0.01));
+      expect(USQuarts.toUSPints(900.0), closeTo(1800.0, 0.01));
+      expect(USQuarts.toUSPints(12.45), closeTo(24.9, 0.01));
+    });
+
+    test('Convert known US Quarts to US Gallons', () {
+      expect(USQuarts.toUSGallons(12.45), closeTo(3.1125, 0.01));
+      expect(USQuarts.toUSGallons(0.8), closeTo(0.2, 0.01));
+      expect(USQuarts.toUSGallons(100.9), closeTo(25.225, 0.01));
+    });
+
+    test('Convert known US Quarts to US Fluid Ounces', () {
+      expect(USQuarts.toUSFluidOunces(100.9), closeTo(3228.8, 0.01));
+      expect(USQuarts.toUSFluidOunces(12345.0), closeTo(395040.0, 0.01));
+      expect(USQuarts.toUSFluidOunces(8.7), closeTo(278.4, 0.01));
+    });
+
+    test('Convert known US Quarts to US Cups', () {
+      expect(USQuarts.toUSCups(8.7), closeTo(34.8, 0.01));
+      expect(USQuarts.toUSCups(123.9), closeTo(495.6, 0.01));
+      expect(USQuarts.toUSCups(0.66), closeTo(2.64, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Millilitres', () {
+      expect(USTablespoons.toMillilitres(12.0), closeTo(177.441, 0.01));
+      expect(USTablespoons.toMillilitres(0.8), closeTo(11.8294, 0.01));
+      expect(USTablespoons.toMillilitres(4500.0), closeTo(66540.44, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Litres', () {
+      expect(USTablespoons.toLitres(567.0), closeTo(8.3841, 0.01));
+      expect(USTablespoons.toLitres(80.9), closeTo(1.196249, 0.01));
+      expect(USTablespoons.toLitres(10000.0), closeTo(147.8676, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Kilolitres', () {
+      expect(USTablespoons.toKilolitres(9900.0), closeTo(0.146389, 0.01));
+      expect(USTablespoons.toKilolitres(123456.0), closeTo(1.82551483, 0.01));
+      expect(USTablespoons.toKilolitres(18009.0), closeTo(0.26629485, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Teaspoons', () {
+      expect(USTablespoons.toTeaspoons(14.0), closeTo(34.9723, 0.01));
+      expect(USTablespoons.toTeaspoons(0.9), closeTo(2.24822, 0.01));
+      expect(USTablespoons.toTeaspoons(180.0), closeTo(449.644, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Tablespoons', () {
+      expect(USTablespoons.toTablespoons(109.0), closeTo(90.7614, 0.01));
+      expect(USTablespoons.toTablespoons(89.0), closeTo(74.108, 0.01));
+      expect(USTablespoons.toTablespoons(5.2), closeTo(4.3299, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Quarts', () {
+      expect(USTablespoons.toQuarts(345.0), closeTo(4.48863, 0.01));
+      expect(USTablespoons.toQuarts(89.9), closeTo(1.169647, 0.01));
+      expect(USTablespoons.toQuarts(12.88), closeTo(0.16757568, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Pints', () {
+      expect(USTablespoons.toPints(12.0), closeTo(0.312253, 0.01));
+      expect(USTablespoons.toPints(809.7), closeTo(21.069259, 0.01));
+      expect(USTablespoons.toPints(0.4), closeTo(0.0104084, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Gallons', () {
+      expect(USTablespoons.toGallons(400.0), closeTo(1.30105, 0.01));
+      expect(USTablespoons.toGallons(1200.9), closeTo(3.90608761, 0.01));
+      expect(USTablespoons.toGallons(8.0), closeTo(0.0260211, 0.01));
+    });
+
+    test('Convert known US Tablespoons to Fluid Ounces', () {
+      expect(USTablespoons.toFluidOunces(4.0), closeTo(2.08169, 0.01));
+      expect(USTablespoons.toFluidOunces(50.9), closeTo(26.48945, 0.01));
+      expect(USTablespoons.toFluidOunces(123.0), closeTo(64.0118, 0.01));
+    });
+
+    test('Convert known US Tablespoons to US Teaspoons', () {
+      expect(USTablespoons.toUSTeaspoons(90.0), closeTo(270.0, 0.01));
+      expect(USTablespoons.toUSTeaspoons(4.5), closeTo(13.5, 0.01));
+      expect(USTablespoons.toUSTeaspoons(4608.0), closeTo(13824.0, 0.01));
+    });
+
+    test('Convert known US Tablespoons to US Quarts', () {
+      expect(USTablespoons.toUSQuarts(456.0), closeTo(7.125, 0.01));
+      expect(USTablespoons.toUSQuarts(7.12), closeTo(0.11125, 0.01));
+      expect(USTablespoons.toUSQuarts(194.9), closeTo(3.0453125, 0.01));
+    });
+
+    test('Convert known US Tablespoons to US Pints', () {
+      expect(USTablespoons.toUSPints(194.9), closeTo(6.090625, 0.01));
+      expect(USTablespoons.toUSPints(2000.0), closeTo(62.5, 0.01));
+      expect(USTablespoons.toUSPints(18.7), closeTo(0.584375, 0.01));
+    });
+
+    test('Convert known US Tablespoons to US Gallons', () {
+      expect(USTablespoons.toUSGallons(18.7), closeTo(0.07304687, 0.01));
+      expect(USTablespoons.toUSGallons(1900.0), closeTo(7.421875, 0.01));
+      expect(USTablespoons.toUSGallons(12345.0), closeTo(48.222656, 0.01));
+    });
+
+    test('Convert known US Tablespoons to US Fluid Ounces', () {
+      expect(USTablespoons.toUSFluidOunces(1234.0), closeTo(617.0, 0.01));
+      expect(USTablespoons.toUSFluidOunces(89.3), closeTo(44.65, 0.01));
+      expect(USTablespoons.toUSFluidOunces(90.99), closeTo(45.495, 0.01));
+    });
+
+    test('Convert known US Tablespoons to US Cups', () {
+      expect(USTablespoons.toUSCups(90.99), closeTo(5.686875, 0.01));
+      expect(USTablespoons.toUSCups(1230.0), closeTo(76.875, 0.01));
+      expect(USTablespoons.toUSCups(9000.9), closeTo(562.55625, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Millilitres', () {
+      expect(USTeaspoons.toMillilitres(6.9), closeTo(34.0095, 0.01));
+      expect(USTeaspoons.toMillilitres(1.6), closeTo(7.88627, 0.01));
+      expect(USTeaspoons.toMillilitres(800.0), closeTo(3943.14, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Litres', () {
+      expect(USTeaspoons.toLitres(7.0), closeTo(0.0345024, 0.01));
+      expect(USTeaspoons.toLitres(90.0), closeTo(0.443603, 0.01));
+      expect(USTeaspoons.toLitres(56.7), closeTo(0.2794698, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Kilolitres', () {
+      expect(USTeaspoons.toKilolitres(10009000.0), closeTo(49.33356028, 0.01));
+      expect(USTeaspoons.toKilolitres(1234567.8), closeTo(6.08508592078, 0.01));
+      expect(USTeaspoons.toKilolitres(9800.0), closeTo(0.04830342, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Teaspoons', () {
+      expect(USTeaspoons.toTeaspoons(122.0), closeTo(101.586, 0.01));
+      expect(USTeaspoons.toTeaspoons(89.2), closeTo(74.27448, 0.01));
+      expect(USTeaspoons.toTeaspoons(900.0), closeTo(749.406, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Tablespoons', () {
+      expect(USTeaspoons.toTablespoons(500.0), closeTo(138.779, 0.01));
+      expect(USTeaspoons.toTablespoons(12.34), closeTo(3.425064, 0.01));
+      expect(USTeaspoons.toTablespoons(667.0), closeTo(185.131, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Quarts', () {
+      expect(USTeaspoons.toQuarts(78.0), closeTo(0.338274, 0.01));
+      expect(USTeaspoons.toQuarts(900.1), closeTo(3.9035927, 0.01));
+      expect(USTeaspoons.toQuarts(116.9), closeTo(0.50697698, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Pints', () {
+      expect(USTeaspoons.toPints(116.0), closeTo(1.00615, 0.01));
+      expect(USTeaspoons.toPints(59.5), closeTo(0.5160844, 0.01));
+      expect(USTeaspoons.toPints(1900.0), closeTo(16.48, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Gallons', () {
+      expect(USTeaspoons.toGallons(199.0), closeTo(0.215758, 0.01));
+      expect(USTeaspoons.toGallons(12345.0), closeTo(13.384583, 0.01));
+      expect(USTeaspoons.toGallons(90001.0), closeTo(97.580059, 0.01));
+    });
+
+    test('Convert known US Teaspoons to Fluid Ounces', () {
+      expect(USTeaspoons.toFluidOunces(123.0), closeTo(21.3373, 0.01));
+      expect(USTeaspoons.toFluidOunces(89.0), closeTo(15.4392, 0.01));
+      expect(USTeaspoons.toFluidOunces(1009.0), closeTo(175.035, 0.01));
+    });
+
+    test('Convert known US Teaspoons to US Tablespoons', () {
+      expect(USTeaspoons.toUSTablespoons(190.0), closeTo(63.3333, 0.01));
+      expect(USTeaspoons.toUSTablespoons(5.6), closeTo(1.86667, 0.01));
+      expect(USTeaspoons.toUSTablespoons(0.7), closeTo(0.233333, 0.01));
+    });
+
+    test('Convert known US Teaspoons to US Quarts', () {
+      expect(USTeaspoons.toUSQuarts(100.4), closeTo(0.5229165, 0.01));
+      expect(USTeaspoons.toUSQuarts(9000.0), closeTo(46.87498, 0.01));
+      expect(USTeaspoons.toUSQuarts(1234.0), closeTo(6.427081, 0.01));
+    });
+
+    test('Convert known US Teaspoons to US Pints', () {
+      expect(USTeaspoons.toUSPints(109.0), closeTo(1.13542, 0.01));
+      expect(USTeaspoons.toUSPints(3400.0), closeTo(35.41666, 0.01));
+      expect(USTeaspoons.toUSPints(10.7), closeTo(0.1114583, 0.01));
+    });
+
+    test('Convert known US Teaspoons to US Gallons', () {
+      expect(USTeaspoons.toUSGallons(109.0), closeTo(0.141927, 0.01));
+      expect(USTeaspoons.toUSGallons(9876.0), closeTo(12.85937, 0.01));
+      expect(USTeaspoons.toUSGallons(10900.0), closeTo(14.192704, 0.01));
+    });
+
+    test('Convert known US Teaspoons to US Fluid Ounces', () {
+      expect(USTeaspoons.toUSFluidOunces(180.0), closeTo(30.0, 0.01));
+      expect(USTeaspoons.toUSFluidOunces(5.6), closeTo(0.933333, 0.01));
+      expect(USTeaspoons.toUSFluidOunces(900.5), closeTo(150.08328, 0.01));
+    });
+
+    test('Convert known US Teaspoons to US Cups', () {
+      expect(USTeaspoons.toUSCups(90.0), closeTo(1.875, 0.01));
+      expect(USTeaspoons.toUSCups(4500.8), closeTo(93.7666363, 0.01));
+      expect(USTeaspoons.toUSCups(0.9), closeTo(0.01875, 0.01));
+    });
+  });
 }

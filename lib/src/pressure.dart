@@ -4,57 +4,87 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
+/// Atmospheres conversion functions
 class Atmospheres {
-	static double toBars(double value) =>
-		value * 1.01325;
-	static double toPascals(double value) =>
-		value * 101325.0;
-	static double toTorrs(double value) =>
-		value * 760.0;
-	static double toPsi(double value) =>
-		value * 14.69596432068;
+  Atmospheres._() {}
+
+  /// Converts the supplied Atmospheres value to Bars
+  static double toBars(double value) => value * 1.01325;
+
+  /// Converts the supplied Atmospheres value to Pascals
+  static double toPascals(double value) => value * 101325.0;
+
+  /// Converts the supplied Atmospheres value to Torrs
+  static double toTorrs(double value) => value * 760.0;
+
+  /// Converts the supplied Atmospheres value to Psi
+  static double toPsi(double value) => value * 14.69596432068;
 }
 
+/// Bars conversion functions
 class Bars {
-	static double toAtmospheres(double value) =>
-		value / 1.01325;
-	static double toPascals(double value) =>
-		value / 0.00001;
-	static double toTorrs(double value) =>
-		value * 750.0616827042;
-	static double toPsi(double value) =>
-		value * 14.50378911491;
+  Bars._() {}
+
+  /// Converts the supplied Bars value to Atmospheres
+  static double toAtmospheres(double value) => value / 1.01325;
+
+  /// Converts the supplied Bars value to Pascals
+  static double toPascals(double value) => value / 0.00001;
+
+  /// Converts the supplied Bars value to Torrs
+  static double toTorrs(double value) => value * 750.0616827042;
+
+  /// Converts the supplied Bars value to Psi
+  static double toPsi(double value) => value * 14.50378911491;
 }
 
+/// Pascals conversion functions
 class Pascals {
-	static double toAtmospheres(double value) =>
-		value / 101325.0;
-	static double toBars(double value) =>
-		value * 0.00001;
-	static double toTorrs(double value) =>
-		value * 0.007500616827042;
-	static double toPsi(double value) =>
-		value * 0.0001450378911491;
+  Pascals._() {}
+
+  /// Converts the supplied Pascals value to Atmospheres
+  static double toAtmospheres(double value) => value / 101325.0;
+
+  /// Converts the supplied Pascals value to Bars
+  static double toBars(double value) => value * 0.00001;
+
+  /// Converts the supplied Pascals value to Torrs
+  static double toTorrs(double value) => value * 0.007500616827042;
+
+  /// Converts the supplied Pascals value to Psi
+  static double toPsi(double value) => value * 0.0001450378911491;
 }
 
+/// Psi conversion functions
 class Psi {
-	static double toBars(double value) =>
-		value / 14.50378911491;
-	static double toPascals(double value) =>
-		value / 0.0001450378911491;
-	static double toAtmospheres(double value) =>
-		value / 14.69596432068;
-	static double toTorrs(double value) =>
-		value / 0.01933679515879;
+  Psi._() {}
+
+  /// Converts the supplied Psi value to Bars
+  static double toBars(double value) => value / 14.50378911491;
+
+  /// Converts the supplied Psi value to Pascals
+  static double toPascals(double value) => value / 0.0001450378911491;
+
+  /// Converts the supplied Psi value to Atmospheres
+  static double toAtmospheres(double value) => value / 14.69596432068;
+
+  /// Converts the supplied Psi value to Torrs
+  static double toTorrs(double value) => value / 0.01933679515879;
 }
 
+/// Torrs conversion functions
 class Torrs {
-	static double toBars(double value) =>
-		value / 750.0616827042;
-	static double toPascals(double value) =>
-		value / 0.007500616827042;
-	static double toAtmospheres(double value) =>
-		value / 760.0;
-	static double toPsi(double value) =>
-		value * 0.01933679515879;
+  Torrs._() {}
+
+  /// Converts the supplied Torrs value to Bars
+  static double toBars(double value) => value / 750.0616827042;
+
+  /// Converts the supplied Torrs value to Pascals
+  static double toPascals(double value) => value / 0.007500616827042;
+
+  /// Converts the supplied Torrs value to Atmospheres
+  static double toAtmospheres(double value) => value / 760.0;
+
+  /// Converts the supplied Torrs value to Psi
+  static double toPsi(double value) => value * 0.01933679515879;
 }

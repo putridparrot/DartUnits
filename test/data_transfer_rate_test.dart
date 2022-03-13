@@ -8,666 +8,936 @@ import 'package:test/test.dart';
 import 'package:conversion_units/conversion_units.dart';
 
 void main() {
-    group('Data Transfer Rate Tests', () {
-        test('Convert known Bits Per Second to KiloBits Per Second', () {
-            expect(BitsPerSecond.toKiloBitsPerSecond(100.0), closeTo(0.1, 0.01));
-            expect(BitsPerSecond.toKiloBitsPerSecond(6021.0), closeTo(6.021, 0.01));
-            expect(BitsPerSecond.toKiloBitsPerSecond(9100.0), closeTo(9.1, 0.01));
-        });
-
-        test('Convert known Bits Per Second to MegaBits Per Second', () {
-            expect(BitsPerSecond.toMegaBitsPerSecond(9000000.0), closeTo(9.0, 0.01));
-            expect(BitsPerSecond.toMegaBitsPerSecond(123456.0), closeTo(0.123456, 0.01));
-            expect(BitsPerSecond.toMegaBitsPerSecond(1900000.0), closeTo(1.9, 0.01));
-        });
-
-        test('Convert known Bits Per Second to GigaBits Per Second', () {
-            expect(BitsPerSecond.toGigaBitsPerSecond(190000000.0), closeTo(0.19, 0.01));
-            expect(BitsPerSecond.toGigaBitsPerSecond(8009.0), closeTo(8.009e-6, 0.01));
-            expect(BitsPerSecond.toGigaBitsPerSecond(987654321.0), closeTo(0.987654321, 0.01));
-        });
-
-        test('Convert known Bits Per Second to TeraBits Per Second', () {
-            expect(BitsPerSecond.toTeraBitsPerSecond(987654321234.0), closeTo(0.987654321234, 0.01));
-            expect(BitsPerSecond.toTeraBitsPerSecond(1234567890123456.0), closeTo(1234.567890123455982, 0.01));
-            expect(BitsPerSecond.toTeraBitsPerSecond(999888777666555.0), closeTo(999.888777666555029, 0.01));
-        });
-
-        test('Convert known Bits Per Second to KiloBytes Per Second', () {
-            expect(BitsPerSecond.toKiloBytesPerSecond(900.0), closeTo(0.1125, 0.01));
-            expect(BitsPerSecond.toKiloBytesPerSecond(12345.0), closeTo(1.543125, 0.01));
-            expect(BitsPerSecond.toKiloBytesPerSecond(6000.9), closeTo(0.7501125, 0.01));
-        });
-
-        test('Convert known Bits Per Second to MegaBytes Per Second', () {
-            expect(BitsPerSecond.toMegaBytesPerSecond(123456.0), closeTo(0.015432, 0.01));
-            expect(BitsPerSecond.toMegaBytesPerSecond(900800.0), closeTo(0.1126, 0.01));
-            expect(BitsPerSecond.toMegaBytesPerSecond(999888777.0), closeTo(124.986097125, 0.01));
-        });
-
-        test('Convert known Bits Per Second to GigaBytes Per Second', () {
-            expect(BitsPerSecond.toGigaBytesPerSecond(999888777.0), closeTo(0.124986097125, 0.01));
-            expect(BitsPerSecond.toGigaBytesPerSecond(1.9e+9), closeTo(0.2375, 0.01));
-            expect(BitsPerSecond.toGigaBytesPerSecond(80090077.0), closeTo(0.010011259625, 0.01));
-        });
-
-        test('Convert known Bits Per Second to TeraBytes Per Second', () {
-            expect(BitsPerSecond.toTeraBytesPerSecond(999888777666.0), closeTo(0.12498609720825, 0.01));
-            expect(BitsPerSecond.toTeraBytesPerSecond(12345678912345.0), closeTo(1.5432098640431251, 0.01));
-            expect(BitsPerSecond.toTeraBytesPerSecond(111999222888333.0), closeTo(13.9999028610416243, 0.01));
-        });
-
-        test('Convert known Bits Per Second to Kibibits Per Second', () {
-            expect(BitsPerSecond.toKibibitsPerSecond(1800.0), closeTo(1.757813, 0.01));
-            expect(BitsPerSecond.toKibibitsPerSecond(888.0), closeTo(0.867188, 0.01));
-            expect(BitsPerSecond.toKibibitsPerSecond(7687.0), closeTo(7.506836, 0.01));
-        });
-
-        test('Convert known Bits Per Second to Mebibits Per Second', () {
-            expect(BitsPerSecond.toMebibitsPerSecond(999888.0), closeTo(0.953567505, 0.01));
-            expect(BitsPerSecond.toMebibitsPerSecond(1234567.0), closeTo(1.17737484, 0.01));
-            expect(BitsPerSecond.toMebibitsPerSecond(900800.0), closeTo(0.859069824, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to Bits Per Second', () {
-            expect(GigaBitsPerSecond.toBitsPerSecond(0.0009), closeTo(900000.0, 0.01));
-            expect(GigaBitsPerSecond.toBitsPerSecond(0.00007), closeTo(70000.0, 0.01));
-            expect(GigaBitsPerSecond.toBitsPerSecond(1.2e-5), closeTo(12000.0, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to KiloBits Per Second', () {
-            expect(GigaBitsPerSecond.toKiloBitsPerSecond(0.01), closeTo(10000.0, 0.01));
-            expect(GigaBitsPerSecond.toKiloBitsPerSecond(0.91), closeTo(910000.0, 0.01));
-            expect(GigaBitsPerSecond.toKiloBitsPerSecond(6.1), closeTo(6.1e+6, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to MegaBits Per Second', () {
-            expect(GigaBitsPerSecond.toMegaBitsPerSecond(6.1), closeTo(6100.0, 0.01));
-            expect(GigaBitsPerSecond.toMegaBitsPerSecond(0.961), closeTo(961.0, 0.01));
-            expect(GigaBitsPerSecond.toMegaBitsPerSecond(1.2e-3), closeTo(1.2, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to TeraBits Per Second', () {
-            expect(GigaBitsPerSecond.toTeraBitsPerSecond(1200.0), closeTo(1.2, 0.01));
-            expect(GigaBitsPerSecond.toTeraBitsPerSecond(90012.0), closeTo(90.012, 0.01));
-            expect(GigaBitsPerSecond.toTeraBitsPerSecond(8000.0), closeTo(8.0, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to KiloBytes Per Second', () {
-            expect(GigaBitsPerSecond.toKiloBytesPerSecond(1.2), closeTo(150000.0, 0.01));
-            expect(GigaBitsPerSecond.toKiloBytesPerSecond(0.9), closeTo(112500.0, 0.01));
-            expect(GigaBitsPerSecond.toKiloBytesPerSecond(0.001), closeTo(125.0, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to MegaBytes Per Second', () {
-            expect(GigaBitsPerSecond.toMegaBytesPerSecond(0.9), closeTo(112.5, 0.01));
-            expect(GigaBitsPerSecond.toMegaBytesPerSecond(1.2), closeTo(150.0, 0.01));
-            expect(GigaBitsPerSecond.toMegaBytesPerSecond(80.1), closeTo(10012.5, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to GigaBytes Per Second', () {
-            expect(GigaBitsPerSecond.toGigaBytesPerSecond(99.0), closeTo(12.375, 0.01));
-            expect(GigaBitsPerSecond.toGigaBytesPerSecond(123.123), closeTo(15.390375, 0.01));
-            expect(GigaBitsPerSecond.toGigaBytesPerSecond(8000.9), closeTo(1000.1125, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to TeraBytes Per Second', () {
-            expect(GigaBitsPerSecond.toTeraBytesPerSecond(9000.0), closeTo(1.125, 0.01));
-            expect(GigaBitsPerSecond.toTeraBytesPerSecond(1234567.0), closeTo(154.320875, 0.01));
-            expect(GigaBitsPerSecond.toTeraBytesPerSecond(613.0), closeTo(0.076625, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to Kibibits Per Second', () {
-            expect(GigaBitsPerSecond.toKibibitsPerSecond(0.8), closeTo(781250.0, 0.01));
-            expect(GigaBitsPerSecond.toKibibitsPerSecond(0.012), closeTo(11718.75, 0.01));
-            expect(GigaBitsPerSecond.toKibibitsPerSecond(0.002), closeTo(1953.125, 0.01));
-        });
-
-        test('Convert known GigaBits Per Second to Mebibits Per Second', () {
-            expect(GigaBitsPerSecond.toMebibitsPerSecond(0.002), closeTo(1.9073486, 0.01));
-            expect(GigaBitsPerSecond.toMebibitsPerSecond(0.9), closeTo(858.3068847656, 0.01));
-            expect(GigaBitsPerSecond.toMebibitsPerSecond(6.1), closeTo(5817.413330078, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to Bits Per Second', () {
-            expect(GigaBytesPerSecond.toBitsPerSecond(0.004), closeTo(32000000.0, 0.01));
-            expect(GigaBytesPerSecond.toBitsPerSecond(0.012), closeTo(96000000.0, 0.01));
-            expect(GigaBytesPerSecond.toBitsPerSecond(3e-9), closeTo(24.0, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to KiloBits Per Second', () {
-            expect(GigaBytesPerSecond.toKiloBitsPerSecond(0.009), closeTo(72000.0, 0.01));
-            expect(GigaBytesPerSecond.toKiloBitsPerSecond(1.2e-4), closeTo(960.0, 0.01));
-            expect(GigaBytesPerSecond.toKiloBitsPerSecond(0.0078), closeTo(62400.0, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to MegaBits Per Second', () {
-            expect(GigaBytesPerSecond.toMegaBitsPerSecond(0.0078), closeTo(62.4, 0.01));
-            expect(GigaBytesPerSecond.toMegaBitsPerSecond(0.01), closeTo(80.0, 0.01));
-            expect(GigaBytesPerSecond.toMegaBitsPerSecond(0.001234), closeTo(9.872, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to GigaBits Per Second', () {
-            expect(GigaBytesPerSecond.toGigaBitsPerSecond(5.0), closeTo(40.0, 0.01));
-            expect(GigaBytesPerSecond.toGigaBitsPerSecond(1.2), closeTo(9.6, 0.01));
-            expect(GigaBytesPerSecond.toGigaBitsPerSecond(0.01), closeTo(0.08, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to TeraBits Per Second', () {
-            expect(GigaBytesPerSecond.toTeraBitsPerSecond(70.0), closeTo(0.56, 0.01));
-            expect(GigaBytesPerSecond.toTeraBitsPerSecond(9001.0), closeTo(72.008, 0.01));
-            expect(GigaBytesPerSecond.toTeraBitsPerSecond(768123.9), closeTo(6144.9912, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to KiloBytes Per Second', () {
-            expect(GigaBytesPerSecond.toKiloBytesPerSecond(0.2), closeTo(200000.0, 0.01));
-            expect(GigaBytesPerSecond.toKiloBytesPerSecond(0.009), closeTo(9000.0, 0.01));
-            expect(GigaBytesPerSecond.toKiloBytesPerSecond(0.00123), closeTo(1230.0, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to MegaBytes Per Second', () {
-            expect(GigaBytesPerSecond.toMegaBytesPerSecond(0.9), closeTo(900.0, 0.01));
-            expect(GigaBytesPerSecond.toMegaBytesPerSecond(12.0), closeTo(12000.0, 0.01));
-            expect(GigaBytesPerSecond.toMegaBytesPerSecond(35.6), closeTo(35600.0, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to TeraBytes Per Second', () {
-            expect(GigaBytesPerSecond.toTeraBytesPerSecond(35.6), closeTo(0.0356, 0.01));
-            expect(GigaBytesPerSecond.toTeraBytesPerSecond(100.23), closeTo(0.10023, 0.01));
-            expect(GigaBytesPerSecond.toTeraBytesPerSecond(900100.0), closeTo(900.1, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to Kibibits Per Second', () {
-            expect(GigaBytesPerSecond.toKibibitsPerSecond(0.05), closeTo(390625.0, 0.01));
-            expect(GigaBytesPerSecond.toKibibitsPerSecond(0.008), closeTo(62500.0, 0.01));
-            expect(GigaBytesPerSecond.toKibibitsPerSecond(0.00123), closeTo(9609.375, 0.01));
-        });
-
-        test('Convert known GigaBytes Per Second to Mebibits Per Second', () {
-            expect(GigaBytesPerSecond.toMebibitsPerSecond(0.009), closeTo(68.66451, 0.01));
-            expect(GigaBytesPerSecond.toMebibitsPerSecond(1.2), closeTo(9155.268, 0.01));
-            expect(GigaBytesPerSecond.toMebibitsPerSecond(19.2), closeTo(146484.288, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to Bits Per Second', () {
-            expect(KibibitsPerSecond.toBitsPerSecond(2.0), closeTo(2048.0, 0.01));
-            expect(KibibitsPerSecond.toBitsPerSecond(9.0), closeTo(9216.0, 0.01));
-            expect(KibibitsPerSecond.toBitsPerSecond(17.8), closeTo(18227.2, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to KiloBits Per Second', () {
-            expect(KibibitsPerSecond.toKiloBitsPerSecond(6.2), closeTo(6.3488, 0.01));
-            expect(KibibitsPerSecond.toKiloBitsPerSecond(0.9), closeTo(0.9216, 0.01));
-            expect(KibibitsPerSecond.toKiloBitsPerSecond(87.0), closeTo(89.088, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to MegaBits Per Second', () {
-            expect(KibibitsPerSecond.toMegaBitsPerSecond(87.0), closeTo(0.089088, 0.01));
-            expect(KibibitsPerSecond.toMegaBitsPerSecond(12.34), closeTo(0.01263616, 0.01));
-            expect(KibibitsPerSecond.toMegaBitsPerSecond(123456.0), closeTo(126.418879, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to GigaBits Per Second', () {
-            expect(KibibitsPerSecond.toGigaBitsPerSecond(123456.0), closeTo(0.126418944, 0.01));
-            expect(KibibitsPerSecond.toGigaBitsPerSecond(8000000.0), closeTo(8.192, 0.01));
-            expect(KibibitsPerSecond.toGigaBitsPerSecond(1276876.0), closeTo(1.307521024, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to TeraBits Per Second', () {
-            expect(KibibitsPerSecond.toTeraBitsPerSecond(800000000.0), closeTo(0.8192, 0.01));
-            expect(KibibitsPerSecond.toTeraBitsPerSecond(1.5e12), closeTo(1536.0, 0.01));
-            expect(KibibitsPerSecond.toTeraBitsPerSecond(9999999.0), closeTo(0.01023999898, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to KiloBytes Per Second', () {
-            expect(KibibitsPerSecond.toKiloBytesPerSecond(919.0), closeTo(117.632, 0.01));
-            expect(KibibitsPerSecond.toKiloBytesPerSecond(77.4), closeTo(9.9072, 0.01));
-            expect(KibibitsPerSecond.toKiloBytesPerSecond(109.109), closeTo(13.965952, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to MegaBytes Per Second', () {
-            expect(KibibitsPerSecond.toMegaBytesPerSecond(1000.0), closeTo(0.128, 0.01));
-            expect(KibibitsPerSecond.toMegaBytesPerSecond(800.123), closeTo(0.102415744, 0.01));
-            expect(KibibitsPerSecond.toMegaBytesPerSecond(123456.0), closeTo(15.802368, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to GigaBytes Per Second', () {
-            expect(KibibitsPerSecond.toGigaBytesPerSecond(12345678.0), closeTo(1.580347926, 0.01));
-            expect(KibibitsPerSecond.toGigaBytesPerSecond(8e12), closeTo(1024000.00, 0.01));
-            expect(KibibitsPerSecond.toGigaBytesPerSecond(1.2e5), closeTo(0.01536, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to TeraBytes Per Second', () {
-            expect(KibibitsPerSecond.toTeraBytesPerSecond(120000000.0), closeTo(0.01536, 0.01));
-            expect(KibibitsPerSecond.toTeraBytesPerSecond(88e12), closeTo(11264.0, 0.01));
-            expect(KibibitsPerSecond.toTeraBytesPerSecond(9000000.0), closeTo(0.009216, 0.01));
-        });
-
-        test('Convert known Kibibits Per Second to Mebibits Per Second', () {
-            expect(KibibitsPerSecond.toMebibitsPerSecond(600.0), closeTo(0.5859375, 0.01));
-            expect(KibibitsPerSecond.toMebibitsPerSecond(12345.0), closeTo(12.055664, 0.01));
-            expect(KibibitsPerSecond.toMebibitsPerSecond(101.0), closeTo(0.0986328, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to Bits Per Second', () {
-            expect(KiloBitsPerSecond.toBitsPerSecond(9.0), closeTo(9000.0, 0.01));
-            expect(KiloBitsPerSecond.toBitsPerSecond(6.7), closeTo(6700.0, 0.01));
-            expect(KiloBitsPerSecond.toBitsPerSecond(1.2345), closeTo(1234.5, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to MegaBits Per Second', () {
-            expect(KiloBitsPerSecond.toMegaBitsPerSecond(900.0), closeTo(0.9, 0.01));
-            expect(KiloBitsPerSecond.toMegaBitsPerSecond(12345.0), closeTo(12.345, 0.01));
-            expect(KiloBitsPerSecond.toMegaBitsPerSecond(9988.0), closeTo(9.988, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to GigaBits Per Second', () {
-            expect(KiloBitsPerSecond.toGigaBitsPerSecond(123456.0), closeTo(0.123456, 0.01));
-            expect(KiloBitsPerSecond.toGigaBitsPerSecond(8000700.0), closeTo(8.0007, 0.01));
-            expect(KiloBitsPerSecond.toGigaBitsPerSecond(191987578.0), closeTo(191.987578, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to TeraBits Per Second', () {
-            expect(KiloBitsPerSecond.toTeraBitsPerSecond(191987578.0), closeTo(0.191987578, 0.01));
-            expect(KiloBitsPerSecond.toTeraBitsPerSecond(9010081903.0), closeTo(9.010081903, 0.01));
-            expect(KiloBitsPerSecond.toTeraBitsPerSecond(123456789.0), closeTo(0.123456789, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to KiloBytes Per Second', () {
-            expect(KiloBitsPerSecond.toKiloBytesPerSecond(80.0), closeTo(10.0, 0.01));
-            expect(KiloBitsPerSecond.toKiloBytesPerSecond(15.67), closeTo(1.95875, 0.01));
-            expect(KiloBitsPerSecond.toKiloBytesPerSecond(8007.09), closeTo(1000.88625, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to MegaBytes Per Second', () {
-            expect(KiloBitsPerSecond.toMegaBytesPerSecond(123456.0), closeTo(15.432, 0.01));
-            expect(KiloBitsPerSecond.toMegaBytesPerSecond(998877.0), closeTo(124.859625, 0.01));
-            expect(KiloBitsPerSecond.toMegaBytesPerSecond(10090.0), closeTo(1.26125, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to GigaBytes Per Second', () {
-            expect(KiloBitsPerSecond.toGigaBytesPerSecond(1828972.0), closeTo(0.2286215, 0.01));
-            expect(KiloBitsPerSecond.toGigaBytesPerSecond(879860.8), closeTo(0.1099826, 0.01));
-            expect(KiloBitsPerSecond.toGigaBytesPerSecond(78178971.0), closeTo(9.772371375, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to TeraBytes Per Second', () {
-            expect(KiloBitsPerSecond.toTeraBytesPerSecond(1234567891.0), closeTo(0.154320986375, 0.01));
-            expect(KiloBitsPerSecond.toTeraBytesPerSecond(999999098.0), closeTo(0.12499988725, 0.01));
-            expect(KiloBitsPerSecond.toTeraBytesPerSecond(84618364142.0), closeTo(10.57729551775, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to Kibibits Per Second', () {
-            expect(KiloBitsPerSecond.toKibibitsPerSecond(89.1), closeTo(87.01172, 0.01));
-            expect(KiloBitsPerSecond.toKibibitsPerSecond(7.1), closeTo(6.93359, 0.01));
-            expect(KiloBitsPerSecond.toKibibitsPerSecond(438.0), closeTo(427.734, 0.01));
-        });
-
-        test('Convert known KiloBits Per Second to Mebibits Per Second', () {
-            expect(KiloBitsPerSecond.toMebibitsPerSecond(77790.0), closeTo(74.186325, 0.01));
-            expect(KiloBitsPerSecond.toMebibitsPerSecond(123456.0), closeTo(117.736816, 0.01));
-            expect(KiloBitsPerSecond.toMebibitsPerSecond(23972.0), closeTo(22.861481, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to Bits Per Second', () {
-            expect(KiloBytesPerSecond.toBitsPerSecond(123.456), closeTo(987648.0, 0.01));
-            expect(KiloBytesPerSecond.toBitsPerSecond(900.0), closeTo(7.2e+6, 0.01));
-            expect(KiloBytesPerSecond.toBitsPerSecond(100200.0), closeTo(801600000.0, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to KiloBits Per Second', () {
-            expect(KiloBytesPerSecond.toKiloBitsPerSecond(4.0), closeTo(32.0, 0.01));
-            expect(KiloBytesPerSecond.toKiloBitsPerSecond(1.2), closeTo(9.6, 0.01));
-            expect(KiloBytesPerSecond.toKiloBitsPerSecond(88.1), closeTo(704.8, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to MegaBits Per Second', () {
-            expect(KiloBytesPerSecond.toMegaBitsPerSecond(88.1), closeTo(0.7048, 0.01));
-            expect(KiloBytesPerSecond.toMegaBitsPerSecond(7.1), closeTo(0.0568, 0.01));
-            expect(KiloBytesPerSecond.toMegaBitsPerSecond(12.8), closeTo(0.1024, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to GigaBits Per Second', () {
-            expect(KiloBytesPerSecond.toGigaBitsPerSecond(10080.0), closeTo(0.08064, 0.01));
-            expect(KiloBytesPerSecond.toGigaBitsPerSecond(4.5e+9), closeTo(36000.0, 0.01));
-            expect(KiloBytesPerSecond.toGigaBitsPerSecond(271279.0), closeTo(2.170232, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to TeraBits Per Second', () {
-            expect(KiloBytesPerSecond.toTeraBitsPerSecond(9009000.0), closeTo(0.072072, 0.01));
-            expect(KiloBytesPerSecond.toTeraBitsPerSecond(7.2e9), closeTo(57.6, 0.01));
-            expect(KiloBytesPerSecond.toTeraBitsPerSecond(100100100900.0), closeTo(800.8008072, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to MegaBytes Per Second', () {
-            expect(KiloBytesPerSecond.toMegaBytesPerSecond(1009.0), closeTo(1.009, 0.01));
-            expect(KiloBytesPerSecond.toMegaBytesPerSecond(8899.0), closeTo(8.899, 0.01));
-            expect(KiloBytesPerSecond.toMegaBytesPerSecond(619.0), closeTo(0.619, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to GigaBytes Per Second', () {
-            expect(KiloBytesPerSecond.toGigaBytesPerSecond(900800.0), closeTo(0.9008, 0.01));
-            expect(KiloBytesPerSecond.toGigaBytesPerSecond(1234567.0), closeTo(1.234567, 0.01));
-            expect(KiloBytesPerSecond.toGigaBytesPerSecond(7.9e9), closeTo(7900.0, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to TeraBytes Per Second', () {
-            expect(KiloBytesPerSecond.toTeraBytesPerSecond(0.9), closeTo(9e-10, 0.01));
-            expect(KiloBytesPerSecond.toTeraBytesPerSecond(140000000.0), closeTo(0.14, 0.01));
-            expect(KiloBytesPerSecond.toTeraBytesPerSecond(7.0), closeTo(7e-9, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to Kibibits Per Second', () {
-            expect(KiloBytesPerSecond.toKibibitsPerSecond(0.009), closeTo(0.0703125, 0.01));
-            expect(KiloBytesPerSecond.toKibibitsPerSecond(6e+3), closeTo(46875.0, 0.01));
-            expect(KiloBytesPerSecond.toKibibitsPerSecond(1.23), closeTo(9.609375, 0.01));
-        });
-
-        test('Convert known KiloBytes Per Second to Mebibits Per Second', () {
-            expect(KiloBytesPerSecond.toMebibitsPerSecond(70.0), closeTo(0.534058, 0.01));
-            expect(KiloBytesPerSecond.toMebibitsPerSecond(9.0), closeTo(0.0686646, 0.01));
-            expect(KiloBytesPerSecond.toMebibitsPerSecond(10022.0), closeTo(76.461792, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to Bits Per Second', () {
-            expect(MebibitsPerSecond.toBitsPerSecond(0.9), closeTo(943718.4, 0.01));
-            expect(MebibitsPerSecond.toBitsPerSecond(0.006), closeTo(6291.456, 0.01));
-            expect(MebibitsPerSecond.toBitsPerSecond(2.0), closeTo(2097152.0, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to KiloBits Per Second', () {
-            expect(MebibitsPerSecond.toKiloBitsPerSecond(0.8), closeTo(838.861, 0.01));
-            expect(MebibitsPerSecond.toKiloBitsPerSecond(2.0), closeTo(2097.15, 0.01));
-            expect(MebibitsPerSecond.toKiloBitsPerSecond(0.23), closeTo(241.1725, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to MegaBits Per Second', () {
-            expect(MebibitsPerSecond.toMegaBitsPerSecond(0.9), closeTo(0.943718, 0.01));
-            expect(MebibitsPerSecond.toMegaBitsPerSecond(12.3), closeTo(12.89748, 0.01));
-            expect(MebibitsPerSecond.toMegaBitsPerSecond(8.1), closeTo(8.49347, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to GigaBits Per Second', () {
-            expect(MebibitsPerSecond.toGigaBitsPerSecond(12345.0), closeTo(12.944671, 0.01));
-            expect(MebibitsPerSecond.toGigaBitsPerSecond(100.0), closeTo(0.104858, 0.01));
-            expect(MebibitsPerSecond.toGigaBitsPerSecond(999.9), closeTo(1.0484711, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to TeraBits Per Second', () {
-            expect(MebibitsPerSecond.toTeraBitsPerSecond(100009.0), closeTo(0.104867037, 0.01));
-            expect(MebibitsPerSecond.toTeraBitsPerSecond(9876543.0), closeTo(10.35630595, 0.01));
-            expect(MebibitsPerSecond.toTeraBitsPerSecond(1000900.0), closeTo(1.049519718, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to KiloBytes Per Second', () {
-            expect(MebibitsPerSecond.toKiloBytesPerSecond(4.0), closeTo(524.288, 0.01));
-            expect(MebibitsPerSecond.toKiloBytesPerSecond(1.45), closeTo(190.0544, 0.01));
-            expect(MebibitsPerSecond.toKiloBytesPerSecond(88.11), closeTo(11548.754, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to MegaBytes Per Second', () {
-            expect(MebibitsPerSecond.toMegaBytesPerSecond(109.0), closeTo(14.2868, 0.01));
-            expect(MebibitsPerSecond.toMegaBytesPerSecond(55.67), closeTo(7.2967782, 0.01));
-            expect(MebibitsPerSecond.toMegaBytesPerSecond(45678.0), closeTo(5987.1068, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to GigaBytes Per Second', () {
-            expect(MebibitsPerSecond.toGigaBytesPerSecond(4000.0), closeTo(0.524288311, 0.01));
-            expect(MebibitsPerSecond.toGigaBytesPerSecond(90100.0), closeTo(11.80959421, 0.01));
-            expect(MebibitsPerSecond.toGigaBytesPerSecond(1009.0), closeTo(0.132251727, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to TeraBytes Per Second', () {
-            expect(MebibitsPerSecond.toTeraBytesPerSecond(1000009.0), closeTo(0.1310731796, 0.01));
-            expect(MebibitsPerSecond.toTeraBytesPerSecond(90808080.0), closeTo(11.902396662, 0.01));
-            expect(MebibitsPerSecond.toTeraBytesPerSecond(5.2e12), closeTo(681574.4, 0.01));
-        });
-
-        test('Convert known Mebibits Per Second to Kibibits Per Second', () {
-            expect(MebibitsPerSecond.toKibibitsPerSecond(5.0), closeTo(5120.0, 0.01));
-            expect(MebibitsPerSecond.toKibibitsPerSecond(1234.56), closeTo(1264189.44, 0.01));
-            expect(MebibitsPerSecond.toKibibitsPerSecond(505.0), closeTo(517120.0, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to Bits Per Second', () {
-            expect(MegaBitsPerSecond.toBitsPerSecond(0.34), closeTo(340000.0, 0.01));
-            expect(MegaBitsPerSecond.toBitsPerSecond(9.12), closeTo(9120000.0, 0.01));
-            expect(MegaBitsPerSecond.toBitsPerSecond(0.987), closeTo(987000.0, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to KiloBits Per Second', () {
-            expect(MegaBitsPerSecond.toKiloBitsPerSecond(0.77), closeTo(770.0, 0.01));
-            expect(MegaBitsPerSecond.toKiloBitsPerSecond(5.0), closeTo(5000.0, 0.01));
-            expect(MegaBitsPerSecond.toKiloBitsPerSecond(0.987), closeTo(987.0, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to GigaBits Per Second', () {
-            expect(MegaBitsPerSecond.toGigaBitsPerSecond(900.0), closeTo(0.9, 0.01));
-            expect(MegaBitsPerSecond.toGigaBitsPerSecond(12345.0), closeTo(12.345, 0.01));
-            expect(MegaBitsPerSecond.toGigaBitsPerSecond(189.1), closeTo(0.1891, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to TeraBits Per Second', () {
-            expect(MegaBitsPerSecond.toTeraBitsPerSecond(100200300.0), closeTo(100.2003, 0.01));
-            expect(MegaBitsPerSecond.toTeraBitsPerSecond(99887777.0), closeTo(99.887777, 0.01));
-            expect(MegaBitsPerSecond.toTeraBitsPerSecond(80009.0), closeTo(0.080009, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to KiloBytes Per Second', () {
-            expect(MegaBitsPerSecond.toKiloBytesPerSecond(9.0), closeTo(1125.0, 0.01));
-            expect(MegaBitsPerSecond.toKiloBytesPerSecond(1.23), closeTo(153.75, 0.01));
-            expect(MegaBitsPerSecond.toKiloBytesPerSecond(98.1), closeTo(12262.5, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to MegaBytes Per Second', () {
-            expect(MegaBitsPerSecond.toMegaBytesPerSecond(98.1), closeTo(12.2625, 0.01));
-            expect(MegaBitsPerSecond.toMegaBytesPerSecond(10.9), closeTo(1.3625, 0.01));
-            expect(MegaBitsPerSecond.toMegaBytesPerSecond(888.123), closeTo(111.015375, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to GigaBytes Per Second', () {
-            expect(MegaBitsPerSecond.toGigaBytesPerSecond(900.0), closeTo(0.1125, 0.01));
-            expect(MegaBitsPerSecond.toGigaBytesPerSecond(10123.0), closeTo(1.265375, 0.01));
-            expect(MegaBitsPerSecond.toGigaBytesPerSecond(9988.0), closeTo(1.2485, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to TeraBytes Per Second', () {
-            expect(MegaBitsPerSecond.toTeraBytesPerSecond(998877.0), closeTo(0.124859625, 0.01));
-            expect(MegaBitsPerSecond.toTeraBytesPerSecond(100200400.0), closeTo(12.5250375, 0.01));
-            expect(MegaBitsPerSecond.toTeraBytesPerSecond(9008877.0), closeTo(1.126109625, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to Kibibits Per Second', () {
-            expect(MegaBitsPerSecond.toKibibitsPerSecond(12.0), closeTo(11718.756, 0.01));
-            expect(MegaBitsPerSecond.toKibibitsPerSecond(0.9), closeTo(878.906, 0.01));
-            expect(MegaBitsPerSecond.toKibibitsPerSecond(1.23), closeTo(1201.172, 0.01));
-        });
-
-        test('Convert known MegaBits Per Second to Mebibits Per Second', () {
-            expect(MegaBitsPerSecond.toMebibitsPerSecond(4.5), closeTo(4.29153, 0.01));
-            expect(MegaBitsPerSecond.toMebibitsPerSecond(0.8), closeTo(0.762939, 0.01));
-            expect(MegaBitsPerSecond.toMebibitsPerSecond(900.0), closeTo(858.307, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to Bits Per Second', () {
-            expect(MegaBytesPerSecond.toBitsPerSecond(0.04), closeTo(320000.0, 0.01));
-            expect(MegaBytesPerSecond.toBitsPerSecond(0.0091), closeTo(72800.0, 0.01));
-            expect(MegaBytesPerSecond.toBitsPerSecond(3e-5), closeTo(240.0, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to KiloBits Per Second', () {
-            expect(MegaBytesPerSecond.toKiloBitsPerSecond(6.0), closeTo(48000.0, 0.01));
-            expect(MegaBytesPerSecond.toKiloBitsPerSecond(0.3), closeTo(2400.0, 0.01));
-            expect(MegaBytesPerSecond.toKiloBitsPerSecond(0.009), closeTo(72.0, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to MegaBits Per Second', () {
-            expect(MegaBytesPerSecond.toMegaBitsPerSecond(3.0), closeTo(24.0, 0.01));
-            expect(MegaBytesPerSecond.toMegaBitsPerSecond(0.9), closeTo(7.2, 0.01));
-            expect(MegaBytesPerSecond.toMegaBitsPerSecond(13.0), closeTo(104.0, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to GigaBits Per Second', () {
-            expect(MegaBytesPerSecond.toGigaBitsPerSecond(13.0), closeTo(0.104, 0.01));
-            expect(MegaBytesPerSecond.toGigaBitsPerSecond(900.0), closeTo(7.2, 0.01));
-            expect(MegaBytesPerSecond.toGigaBitsPerSecond(18000.0), closeTo(144.0, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to TeraBits Per Second', () {
-            expect(MegaBytesPerSecond.toTeraBitsPerSecond(18000.0), closeTo(0.144, 0.01));
-            expect(MegaBytesPerSecond.toTeraBitsPerSecond(9718290.0), closeTo(77.74632, 0.01));
-            expect(MegaBytesPerSecond.toTeraBitsPerSecond(9e12), closeTo(72000000.0, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to KiloBytes Per Second', () {
-            expect(MegaBytesPerSecond.toKiloBytesPerSecond(6.0), closeTo(6000.0, 0.01));
-            expect(MegaBytesPerSecond.toKiloBytesPerSecond(0.9), closeTo(900.0, 0.01));
-            expect(MegaBytesPerSecond.toKiloBytesPerSecond(123.4), closeTo(123400.0, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to GigaBytes Per Second', () {
-            expect(MegaBytesPerSecond.toGigaBytesPerSecond(123.4), closeTo(0.1234, 0.01));
-            expect(MegaBytesPerSecond.toGigaBytesPerSecond(900.0), closeTo(0.9, 0.01));
-            expect(MegaBytesPerSecond.toGigaBytesPerSecond(8e6), closeTo(8000.0, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to TeraBytes Per Second', () {
-            expect(MegaBytesPerSecond.toTeraBytesPerSecond(80000.0), closeTo(0.08, 0.01));
-            expect(MegaBytesPerSecond.toTeraBytesPerSecond(12345678.0), closeTo(12.345678, 0.01));
-            expect(MegaBytesPerSecond.toTeraBytesPerSecond(900800.0), closeTo(0.9008, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to Kibibits Per Second', () {
-            expect(MegaBytesPerSecond.toKibibitsPerSecond(6.0), closeTo(46875.0, 0.01));
-            expect(MegaBytesPerSecond.toKibibitsPerSecond(0.9), closeTo(7031.25, 0.01));
-            expect(MegaBytesPerSecond.toKibibitsPerSecond(0.03), closeTo(234.375, 0.01));
-        });
-
-        test('Convert known MegaBytes Per Second to Mebibits Per Second', () {
-            expect(MegaBytesPerSecond.toMebibitsPerSecond(0.03), closeTo(0.2288818, 0.01));
-            expect(MegaBytesPerSecond.toMebibitsPerSecond(4.5), closeTo(34.3323, 0.01));
-            expect(MegaBytesPerSecond.toMebibitsPerSecond(80.1), closeTo(611.1145, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to Bits Per Second', () {
-            expect(TeraBitsPerSecond.toBitsPerSecond(0.0007), closeTo(700000000.0, 0.01));
-            expect(TeraBitsPerSecond.toBitsPerSecond(1.23e-6), closeTo(1230000.0, 0.01));
-            expect(TeraBitsPerSecond.toBitsPerSecond(0.00098), closeTo(980000000.0, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to KiloBits Per Second', () {
-            expect(TeraBitsPerSecond.toKiloBitsPerSecond(0.001), closeTo(1000000.0, 0.01));
-            expect(TeraBitsPerSecond.toKiloBitsPerSecond(6.1e-6), closeTo(6100.0, 0.01));
-            expect(TeraBitsPerSecond.toKiloBitsPerSecond(0.00009), closeTo(90000.0, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to MegaBits Per Second', () {
-            expect(TeraBitsPerSecond.toMegaBitsPerSecond(0.09), closeTo(90000.0, 0.01));
-            expect(TeraBitsPerSecond.toMegaBitsPerSecond(3.5e-4), closeTo(350.0, 0.01));
-            expect(TeraBitsPerSecond.toMegaBitsPerSecond(0.0123), closeTo(12300.0, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to GigaBits Per Second', () {
-            expect(TeraBitsPerSecond.toGigaBitsPerSecond(0.9), closeTo(900.0, 0.01));
-            expect(TeraBitsPerSecond.toGigaBitsPerSecond(1.45), closeTo(1450.0, 0.01));
-            expect(TeraBitsPerSecond.toGigaBitsPerSecond(8.19), closeTo(8190.0, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to KiloBytes Per Second', () {
-            expect(TeraBitsPerSecond.toKiloBytesPerSecond(0.0009), closeTo(112500.0, 0.01));
-            expect(TeraBitsPerSecond.toKiloBytesPerSecond(3.14e-6), closeTo(392.5, 0.01));
-            expect(TeraBitsPerSecond.toKiloBytesPerSecond(0.001), closeTo(125000.0, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to MegaBytes Per Second', () {
-            expect(TeraBitsPerSecond.toMegaBytesPerSecond(0.4), closeTo(50000.0, 0.01));
-            expect(TeraBitsPerSecond.toMegaBytesPerSecond(3.9e-3), closeTo(487.5, 0.01));
-            expect(TeraBitsPerSecond.toMegaBytesPerSecond(0.007), closeTo(875.0, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to GigaBytes Per Second', () {
-            expect(TeraBitsPerSecond.toGigaBytesPerSecond(0.009), closeTo(1.125, 0.01));
-            expect(TeraBitsPerSecond.toGigaBytesPerSecond(0.00123), closeTo(0.15375, 0.01));
-            expect(TeraBitsPerSecond.toGigaBytesPerSecond(8.1e-3), closeTo(1.0125, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to TeraBytes Per Second', () {
-            expect(TeraBitsPerSecond.toTeraBytesPerSecond(0.3), closeTo(0.0375, 0.01));
-            expect(TeraBitsPerSecond.toTeraBytesPerSecond(14.0), closeTo(1.75, 0.01));
-            expect(TeraBitsPerSecond.toTeraBytesPerSecond(0.8), closeTo(0.1, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to Kibibits Per Second', () {
-            expect(TeraBitsPerSecond.toKibibitsPerSecond(0.0009), closeTo(878906.25, 0.01));
-            expect(TeraBitsPerSecond.toKibibitsPerSecond(6.1e-6), closeTo(5957.031, 0.01));
-            expect(TeraBitsPerSecond.toKibibitsPerSecond(12e-9), closeTo(11.71875, 0.01));
-        });
-
-        test('Convert known TeraBits Per Second to Mebibits Per Second', () {
-            expect(TeraBitsPerSecond.toMebibitsPerSecond(0.9), closeTo(858306.59999, 0.01));
-            expect(TeraBitsPerSecond.toMebibitsPerSecond(4.6e-3), closeTo(4386.9, 0.01));
-            expect(TeraBitsPerSecond.toMebibitsPerSecond(0.00123), closeTo(1173.0194092, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to Bits Per Second', () {
-            expect(TeraBytesPerSecond.toBitsPerSecond(0.00008), closeTo(640000000.0, 0.01));
-            expect(TeraBytesPerSecond.toBitsPerSecond(1.2e-12), closeTo(9.6, 0.01));
-            expect(TeraBytesPerSecond.toBitsPerSecond(9.0), closeTo(7.2e+13, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to KiloBits Per Second', () {
-            expect(TeraBytesPerSecond.toKiloBitsPerSecond(0.009), closeTo(72000000.0, 0.01));
-            expect(TeraBytesPerSecond.toKiloBitsPerSecond(1.4e-6), closeTo(11200.0, 0.01));
-            expect(TeraBytesPerSecond.toKiloBitsPerSecond(6.1e-5), closeTo(488000.0, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to MegaBits Per Second', () {
-            expect(TeraBytesPerSecond.toMegaBitsPerSecond(0.005), closeTo(40000.0, 0.01));
-            expect(TeraBytesPerSecond.toMegaBitsPerSecond(0.000123), closeTo(984.0, 0.01));
-            expect(TeraBytesPerSecond.toMegaBitsPerSecond(0.00006), closeTo(480.0, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to GigaBits Per Second', () {
-            expect(TeraBytesPerSecond.toGigaBitsPerSecond(0.008), closeTo(64.0, 0.01));
-            expect(TeraBytesPerSecond.toGigaBitsPerSecond(3e-7), closeTo(0.0024, 0.01));
-            expect(TeraBytesPerSecond.toGigaBitsPerSecond(0.00023), closeTo(1.84, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to TeraBits Per Second', () {
-            expect(TeraBytesPerSecond.toTeraBitsPerSecond(5.0), closeTo(40.0, 0.01));
-            expect(TeraBytesPerSecond.toTeraBitsPerSecond(1.23), closeTo(9.84, 0.01));
-            expect(TeraBytesPerSecond.toTeraBitsPerSecond(800.0), closeTo(6400.0, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to KiloBytes Per Second', () {
-            expect(TeraBytesPerSecond.toKiloBytesPerSecond(0.0009), closeTo(900000.0, 0.01));
-            expect(TeraBytesPerSecond.toKiloBytesPerSecond(3.14e-7), closeTo(314.0, 0.01));
-            expect(TeraBytesPerSecond.toKiloBytesPerSecond(0.00063), closeTo(630000.0, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to MegaBytes Per Second', () {
-            expect(TeraBytesPerSecond.toMegaBytesPerSecond(0.009), closeTo(9000.0, 0.01));
-            expect(TeraBytesPerSecond.toMegaBytesPerSecond(0.234), closeTo(234000.0, 0.01));
-            expect(TeraBytesPerSecond.toMegaBytesPerSecond(2.0), closeTo(2e+6, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to GigaBytes Per Second', () {
-            expect(TeraBytesPerSecond.toGigaBytesPerSecond(2.7), closeTo(2700.0, 0.01));
-            expect(TeraBytesPerSecond.toGigaBytesPerSecond(0.9), closeTo(900.0, 0.01));
-            expect(TeraBytesPerSecond.toGigaBytesPerSecond(0.0123), closeTo(12.3, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to Kibibits Per Second', () {
-            expect(TeraBytesPerSecond.toKibibitsPerSecond(0.0009), closeTo(7031250.0, 0.01));
-            expect(TeraBytesPerSecond.toKibibitsPerSecond(1.23e-5), closeTo(96093.75, 0.01));
-            expect(TeraBytesPerSecond.toKibibitsPerSecond(0.0001), closeTo(781250.0, 0.01));
-        });
-
-        test('Convert known TeraBytes Per Second to Mebibits Per Second', () {
-            expect(TeraBytesPerSecond.toMebibitsPerSecond(0.01), closeTo(76293.95, 0.01));
-            expect(TeraBytesPerSecond.toMebibitsPerSecond(0.008), closeTo(61035.156, 0.01));
-            expect(TeraBytesPerSecond.toMebibitsPerSecond(2.0), closeTo(15258789.0625, 0.01));
-        });
-
+  group('Data Transfer Rate Tests', () {
+    test('Convert known Bits Per Second to KiloBits Per Second', () {
+      expect(BitsPerSecond.toKiloBitsPerSecond(100.0), closeTo(0.1, 0.01));
+      expect(BitsPerSecond.toKiloBitsPerSecond(6021.0), closeTo(6.021, 0.01));
+      expect(BitsPerSecond.toKiloBitsPerSecond(9100.0), closeTo(9.1, 0.01));
     });
+
+    test('Convert known Bits Per Second to MegaBits Per Second', () {
+      expect(BitsPerSecond.toMegaBitsPerSecond(9000000.0), closeTo(9.0, 0.01));
+      expect(
+          BitsPerSecond.toMegaBitsPerSecond(123456.0), closeTo(0.123456, 0.01));
+      expect(BitsPerSecond.toMegaBitsPerSecond(1900000.0), closeTo(1.9, 0.01));
+    });
+
+    test('Convert known Bits Per Second to GigaBits Per Second', () {
+      expect(
+          BitsPerSecond.toGigaBitsPerSecond(190000000.0), closeTo(0.19, 0.01));
+      expect(
+          BitsPerSecond.toGigaBitsPerSecond(8009.0), closeTo(8.009e-6, 0.01));
+      expect(BitsPerSecond.toGigaBitsPerSecond(987654321.0),
+          closeTo(0.987654321, 0.01));
+    });
+
+    test('Convert known Bits Per Second to TeraBits Per Second', () {
+      expect(BitsPerSecond.toTeraBitsPerSecond(987654321234.0),
+          closeTo(0.987654321234, 0.01));
+      expect(BitsPerSecond.toTeraBitsPerSecond(1234567890123456.0),
+          closeTo(1234.567890123455982, 0.01));
+      expect(BitsPerSecond.toTeraBitsPerSecond(999888777666555.0),
+          closeTo(999.888777666555029, 0.01));
+    });
+
+    test('Convert known Bits Per Second to KiloBytes Per Second', () {
+      expect(BitsPerSecond.toKiloBytesPerSecond(900.0), closeTo(0.1125, 0.01));
+      expect(
+          BitsPerSecond.toKiloBytesPerSecond(12345.0), closeTo(1.543125, 0.01));
+      expect(
+          BitsPerSecond.toKiloBytesPerSecond(6000.9), closeTo(0.7501125, 0.01));
+    });
+
+    test('Convert known Bits Per Second to MegaBytes Per Second', () {
+      expect(BitsPerSecond.toMegaBytesPerSecond(123456.0),
+          closeTo(0.015432, 0.01));
+      expect(
+          BitsPerSecond.toMegaBytesPerSecond(900800.0), closeTo(0.1126, 0.01));
+      expect(BitsPerSecond.toMegaBytesPerSecond(999888777.0),
+          closeTo(124.986097125, 0.01));
+    });
+
+    test('Convert known Bits Per Second to GigaBytes Per Second', () {
+      expect(BitsPerSecond.toGigaBytesPerSecond(999888777.0),
+          closeTo(0.124986097125, 0.01));
+      expect(BitsPerSecond.toGigaBytesPerSecond(1.9e+9), closeTo(0.2375, 0.01));
+      expect(BitsPerSecond.toGigaBytesPerSecond(80090077.0),
+          closeTo(0.010011259625, 0.01));
+    });
+
+    test('Convert known Bits Per Second to TeraBytes Per Second', () {
+      expect(BitsPerSecond.toTeraBytesPerSecond(999888777666.0),
+          closeTo(0.12498609720825, 0.01));
+      expect(BitsPerSecond.toTeraBytesPerSecond(12345678912345.0),
+          closeTo(1.5432098640431251, 0.01));
+      expect(BitsPerSecond.toTeraBytesPerSecond(111999222888333.0),
+          closeTo(13.9999028610416243, 0.01));
+    });
+
+    test('Convert known Bits Per Second to Kibibits Per Second', () {
+      expect(
+          BitsPerSecond.toKibibitsPerSecond(1800.0), closeTo(1.757813, 0.01));
+      expect(BitsPerSecond.toKibibitsPerSecond(888.0), closeTo(0.867188, 0.01));
+      expect(
+          BitsPerSecond.toKibibitsPerSecond(7687.0), closeTo(7.506836, 0.01));
+    });
+
+    test('Convert known Bits Per Second to Mebibits Per Second', () {
+      expect(BitsPerSecond.toMebibitsPerSecond(999888.0),
+          closeTo(0.953567505, 0.01));
+      expect(BitsPerSecond.toMebibitsPerSecond(1234567.0),
+          closeTo(1.17737484, 0.01));
+      expect(BitsPerSecond.toMebibitsPerSecond(900800.0),
+          closeTo(0.859069824, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to Bits Per Second', () {
+      expect(
+          GigaBitsPerSecond.toBitsPerSecond(0.0009), closeTo(900000.0, 0.01));
+      expect(
+          GigaBitsPerSecond.toBitsPerSecond(0.00007), closeTo(70000.0, 0.01));
+      expect(GigaBitsPerSecond.toBitsPerSecond(1.2e-5), closeTo(12000.0, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to KiloBits Per Second', () {
+      expect(
+          GigaBitsPerSecond.toKiloBitsPerSecond(0.01), closeTo(10000.0, 0.01));
+      expect(
+          GigaBitsPerSecond.toKiloBitsPerSecond(0.91), closeTo(910000.0, 0.01));
+      expect(GigaBitsPerSecond.toKiloBitsPerSecond(6.1), closeTo(6.1e+6, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to MegaBits Per Second', () {
+      expect(GigaBitsPerSecond.toMegaBitsPerSecond(6.1), closeTo(6100.0, 0.01));
+      expect(
+          GigaBitsPerSecond.toMegaBitsPerSecond(0.961), closeTo(961.0, 0.01));
+      expect(GigaBitsPerSecond.toMegaBitsPerSecond(1.2e-3), closeTo(1.2, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to TeraBits Per Second', () {
+      expect(GigaBitsPerSecond.toTeraBitsPerSecond(1200.0), closeTo(1.2, 0.01));
+      expect(GigaBitsPerSecond.toTeraBitsPerSecond(90012.0),
+          closeTo(90.012, 0.01));
+      expect(GigaBitsPerSecond.toTeraBitsPerSecond(8000.0), closeTo(8.0, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to KiloBytes Per Second', () {
+      expect(
+          GigaBitsPerSecond.toKiloBytesPerSecond(1.2), closeTo(150000.0, 0.01));
+      expect(
+          GigaBitsPerSecond.toKiloBytesPerSecond(0.9), closeTo(112500.0, 0.01));
+      expect(
+          GigaBitsPerSecond.toKiloBytesPerSecond(0.001), closeTo(125.0, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to MegaBytes Per Second', () {
+      expect(GigaBitsPerSecond.toMegaBytesPerSecond(0.9), closeTo(112.5, 0.01));
+      expect(GigaBitsPerSecond.toMegaBytesPerSecond(1.2), closeTo(150.0, 0.01));
+      expect(
+          GigaBitsPerSecond.toMegaBytesPerSecond(80.1), closeTo(10012.5, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to GigaBytes Per Second', () {
+      expect(
+          GigaBitsPerSecond.toGigaBytesPerSecond(99.0), closeTo(12.375, 0.01));
+      expect(GigaBitsPerSecond.toGigaBytesPerSecond(123.123),
+          closeTo(15.390375, 0.01));
+      expect(GigaBitsPerSecond.toGigaBytesPerSecond(8000.9),
+          closeTo(1000.1125, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to TeraBytes Per Second', () {
+      expect(
+          GigaBitsPerSecond.toTeraBytesPerSecond(9000.0), closeTo(1.125, 0.01));
+      expect(GigaBitsPerSecond.toTeraBytesPerSecond(1234567.0),
+          closeTo(154.320875, 0.01));
+      expect(GigaBitsPerSecond.toTeraBytesPerSecond(613.0),
+          closeTo(0.076625, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to Kibibits Per Second', () {
+      expect(
+          GigaBitsPerSecond.toKibibitsPerSecond(0.8), closeTo(781250.0, 0.01));
+      expect(GigaBitsPerSecond.toKibibitsPerSecond(0.012),
+          closeTo(11718.75, 0.01));
+      expect(GigaBitsPerSecond.toKibibitsPerSecond(0.002),
+          closeTo(1953.125, 0.01));
+    });
+
+    test('Convert known GigaBits Per Second to Mebibits Per Second', () {
+      expect(GigaBitsPerSecond.toMebibitsPerSecond(0.002),
+          closeTo(1.9073486, 0.01));
+      expect(GigaBitsPerSecond.toMebibitsPerSecond(0.9),
+          closeTo(858.3068847656, 0.01));
+      expect(GigaBitsPerSecond.toMebibitsPerSecond(6.1),
+          closeTo(5817.413330078, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to Bits Per Second', () {
+      expect(
+          GigaBytesPerSecond.toBitsPerSecond(0.004), closeTo(32000000.0, 0.01));
+      expect(
+          GigaBytesPerSecond.toBitsPerSecond(0.012), closeTo(96000000.0, 0.01));
+      expect(GigaBytesPerSecond.toBitsPerSecond(3e-9), closeTo(24.0, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to KiloBits Per Second', () {
+      expect(GigaBytesPerSecond.toKiloBitsPerSecond(0.009),
+          closeTo(72000.0, 0.01));
+      expect(
+          GigaBytesPerSecond.toKiloBitsPerSecond(1.2e-4), closeTo(960.0, 0.01));
+      expect(GigaBytesPerSecond.toKiloBitsPerSecond(0.0078),
+          closeTo(62400.0, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to MegaBits Per Second', () {
+      expect(
+          GigaBytesPerSecond.toMegaBitsPerSecond(0.0078), closeTo(62.4, 0.01));
+      expect(GigaBytesPerSecond.toMegaBitsPerSecond(0.01), closeTo(80.0, 0.01));
+      expect(GigaBytesPerSecond.toMegaBitsPerSecond(0.001234),
+          closeTo(9.872, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to GigaBits Per Second', () {
+      expect(GigaBytesPerSecond.toGigaBitsPerSecond(5.0), closeTo(40.0, 0.01));
+      expect(GigaBytesPerSecond.toGigaBitsPerSecond(1.2), closeTo(9.6, 0.01));
+      expect(GigaBytesPerSecond.toGigaBitsPerSecond(0.01), closeTo(0.08, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to TeraBits Per Second', () {
+      expect(GigaBytesPerSecond.toTeraBitsPerSecond(70.0), closeTo(0.56, 0.01));
+      expect(GigaBytesPerSecond.toTeraBitsPerSecond(9001.0),
+          closeTo(72.008, 0.01));
+      expect(GigaBytesPerSecond.toTeraBitsPerSecond(768123.9),
+          closeTo(6144.9912, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to KiloBytes Per Second', () {
+      expect(GigaBytesPerSecond.toKiloBytesPerSecond(0.2),
+          closeTo(200000.0, 0.01));
+      expect(GigaBytesPerSecond.toKiloBytesPerSecond(0.009),
+          closeTo(9000.0, 0.01));
+      expect(GigaBytesPerSecond.toKiloBytesPerSecond(0.00123),
+          closeTo(1230.0, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to MegaBytes Per Second', () {
+      expect(
+          GigaBytesPerSecond.toMegaBytesPerSecond(0.9), closeTo(900.0, 0.01));
+      expect(GigaBytesPerSecond.toMegaBytesPerSecond(12.0),
+          closeTo(12000.0, 0.01));
+      expect(GigaBytesPerSecond.toMegaBytesPerSecond(35.6),
+          closeTo(35600.0, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to TeraBytes Per Second', () {
+      expect(
+          GigaBytesPerSecond.toTeraBytesPerSecond(35.6), closeTo(0.0356, 0.01));
+      expect(GigaBytesPerSecond.toTeraBytesPerSecond(100.23),
+          closeTo(0.10023, 0.01));
+      expect(GigaBytesPerSecond.toTeraBytesPerSecond(900100.0),
+          closeTo(900.1, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to Kibibits Per Second', () {
+      expect(GigaBytesPerSecond.toKibibitsPerSecond(0.05),
+          closeTo(390625.0, 0.01));
+      expect(GigaBytesPerSecond.toKibibitsPerSecond(0.008),
+          closeTo(62500.0, 0.01));
+      expect(GigaBytesPerSecond.toKibibitsPerSecond(0.00123),
+          closeTo(9609.375, 0.01));
+    });
+
+    test('Convert known GigaBytes Per Second to Mebibits Per Second', () {
+      expect(GigaBytesPerSecond.toMebibitsPerSecond(0.009),
+          closeTo(68.66451, 0.01));
+      expect(
+          GigaBytesPerSecond.toMebibitsPerSecond(1.2), closeTo(9155.268, 0.01));
+      expect(GigaBytesPerSecond.toMebibitsPerSecond(19.2),
+          closeTo(146484.288, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to Bits Per Second', () {
+      expect(KibibitsPerSecond.toBitsPerSecond(2.0), closeTo(2048.0, 0.01));
+      expect(KibibitsPerSecond.toBitsPerSecond(9.0), closeTo(9216.0, 0.01));
+      expect(KibibitsPerSecond.toBitsPerSecond(17.8), closeTo(18227.2, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to KiloBits Per Second', () {
+      expect(KibibitsPerSecond.toKiloBitsPerSecond(6.2), closeTo(6.3488, 0.01));
+      expect(KibibitsPerSecond.toKiloBitsPerSecond(0.9), closeTo(0.9216, 0.01));
+      expect(
+          KibibitsPerSecond.toKiloBitsPerSecond(87.0), closeTo(89.088, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to MegaBits Per Second', () {
+      expect(
+          KibibitsPerSecond.toMegaBitsPerSecond(87.0), closeTo(0.089088, 0.01));
+      expect(KibibitsPerSecond.toMegaBitsPerSecond(12.34),
+          closeTo(0.01263616, 0.01));
+      expect(KibibitsPerSecond.toMegaBitsPerSecond(123456.0),
+          closeTo(126.418879, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to GigaBits Per Second', () {
+      expect(KibibitsPerSecond.toGigaBitsPerSecond(123456.0),
+          closeTo(0.126418944, 0.01));
+      expect(KibibitsPerSecond.toGigaBitsPerSecond(8000000.0),
+          closeTo(8.192, 0.01));
+      expect(KibibitsPerSecond.toGigaBitsPerSecond(1276876.0),
+          closeTo(1.307521024, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to TeraBits Per Second', () {
+      expect(KibibitsPerSecond.toTeraBitsPerSecond(800000000.0),
+          closeTo(0.8192, 0.01));
+      expect(
+          KibibitsPerSecond.toTeraBitsPerSecond(1.5e12), closeTo(1536.0, 0.01));
+      expect(KibibitsPerSecond.toTeraBitsPerSecond(9999999.0),
+          closeTo(0.01023999898, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to KiloBytes Per Second', () {
+      expect(KibibitsPerSecond.toKiloBytesPerSecond(919.0),
+          closeTo(117.632, 0.01));
+      expect(
+          KibibitsPerSecond.toKiloBytesPerSecond(77.4), closeTo(9.9072, 0.01));
+      expect(KibibitsPerSecond.toKiloBytesPerSecond(109.109),
+          closeTo(13.965952, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to MegaBytes Per Second', () {
+      expect(
+          KibibitsPerSecond.toMegaBytesPerSecond(1000.0), closeTo(0.128, 0.01));
+      expect(KibibitsPerSecond.toMegaBytesPerSecond(800.123),
+          closeTo(0.102415744, 0.01));
+      expect(KibibitsPerSecond.toMegaBytesPerSecond(123456.0),
+          closeTo(15.802368, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to GigaBytes Per Second', () {
+      expect(KibibitsPerSecond.toGigaBytesPerSecond(12345678.0),
+          closeTo(1.580347926, 0.01));
+      expect(KibibitsPerSecond.toGigaBytesPerSecond(8e12),
+          closeTo(1024000.00, 0.01));
+      expect(KibibitsPerSecond.toGigaBytesPerSecond(1.2e5),
+          closeTo(0.01536, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to TeraBytes Per Second', () {
+      expect(KibibitsPerSecond.toTeraBytesPerSecond(120000000.0),
+          closeTo(0.01536, 0.01));
+      expect(KibibitsPerSecond.toTeraBytesPerSecond(88e12),
+          closeTo(11264.0, 0.01));
+      expect(KibibitsPerSecond.toTeraBytesPerSecond(9000000.0),
+          closeTo(0.009216, 0.01));
+    });
+
+    test('Convert known Kibibits Per Second to Mebibits Per Second', () {
+      expect(KibibitsPerSecond.toMebibitsPerSecond(600.0),
+          closeTo(0.5859375, 0.01));
+      expect(KibibitsPerSecond.toMebibitsPerSecond(12345.0),
+          closeTo(12.055664, 0.01));
+      expect(KibibitsPerSecond.toMebibitsPerSecond(101.0),
+          closeTo(0.0986328, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to Bits Per Second', () {
+      expect(KiloBitsPerSecond.toBitsPerSecond(9.0), closeTo(9000.0, 0.01));
+      expect(KiloBitsPerSecond.toBitsPerSecond(6.7), closeTo(6700.0, 0.01));
+      expect(KiloBitsPerSecond.toBitsPerSecond(1.2345), closeTo(1234.5, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to MegaBits Per Second', () {
+      expect(KiloBitsPerSecond.toMegaBitsPerSecond(900.0), closeTo(0.9, 0.01));
+      expect(KiloBitsPerSecond.toMegaBitsPerSecond(12345.0),
+          closeTo(12.345, 0.01));
+      expect(
+          KiloBitsPerSecond.toMegaBitsPerSecond(9988.0), closeTo(9.988, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to GigaBits Per Second', () {
+      expect(KiloBitsPerSecond.toGigaBitsPerSecond(123456.0),
+          closeTo(0.123456, 0.01));
+      expect(KiloBitsPerSecond.toGigaBitsPerSecond(8000700.0),
+          closeTo(8.0007, 0.01));
+      expect(KiloBitsPerSecond.toGigaBitsPerSecond(191987578.0),
+          closeTo(191.987578, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to TeraBits Per Second', () {
+      expect(KiloBitsPerSecond.toTeraBitsPerSecond(191987578.0),
+          closeTo(0.191987578, 0.01));
+      expect(KiloBitsPerSecond.toTeraBitsPerSecond(9010081903.0),
+          closeTo(9.010081903, 0.01));
+      expect(KiloBitsPerSecond.toTeraBitsPerSecond(123456789.0),
+          closeTo(0.123456789, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to KiloBytes Per Second', () {
+      expect(KiloBitsPerSecond.toKiloBytesPerSecond(80.0), closeTo(10.0, 0.01));
+      expect(KiloBitsPerSecond.toKiloBytesPerSecond(15.67),
+          closeTo(1.95875, 0.01));
+      expect(KiloBitsPerSecond.toKiloBytesPerSecond(8007.09),
+          closeTo(1000.88625, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to MegaBytes Per Second', () {
+      expect(KiloBitsPerSecond.toMegaBytesPerSecond(123456.0),
+          closeTo(15.432, 0.01));
+      expect(KiloBitsPerSecond.toMegaBytesPerSecond(998877.0),
+          closeTo(124.859625, 0.01));
+      expect(KiloBitsPerSecond.toMegaBytesPerSecond(10090.0),
+          closeTo(1.26125, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to GigaBytes Per Second', () {
+      expect(KiloBitsPerSecond.toGigaBytesPerSecond(1828972.0),
+          closeTo(0.2286215, 0.01));
+      expect(KiloBitsPerSecond.toGigaBytesPerSecond(879860.8),
+          closeTo(0.1099826, 0.01));
+      expect(KiloBitsPerSecond.toGigaBytesPerSecond(78178971.0),
+          closeTo(9.772371375, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to TeraBytes Per Second', () {
+      expect(KiloBitsPerSecond.toTeraBytesPerSecond(1234567891.0),
+          closeTo(0.154320986375, 0.01));
+      expect(KiloBitsPerSecond.toTeraBytesPerSecond(999999098.0),
+          closeTo(0.12499988725, 0.01));
+      expect(KiloBitsPerSecond.toTeraBytesPerSecond(84618364142.0),
+          closeTo(10.57729551775, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to Kibibits Per Second', () {
+      expect(
+          KiloBitsPerSecond.toKibibitsPerSecond(89.1), closeTo(87.01172, 0.01));
+      expect(
+          KiloBitsPerSecond.toKibibitsPerSecond(7.1), closeTo(6.93359, 0.01));
+      expect(
+          KiloBitsPerSecond.toKibibitsPerSecond(438.0), closeTo(427.734, 0.01));
+    });
+
+    test('Convert known KiloBits Per Second to Mebibits Per Second', () {
+      expect(KiloBitsPerSecond.toMebibitsPerSecond(77790.0),
+          closeTo(74.186325, 0.01));
+      expect(KiloBitsPerSecond.toMebibitsPerSecond(123456.0),
+          closeTo(117.736816, 0.01));
+      expect(KiloBitsPerSecond.toMebibitsPerSecond(23972.0),
+          closeTo(22.861481, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to Bits Per Second', () {
+      expect(
+          KiloBytesPerSecond.toBitsPerSecond(123.456), closeTo(987648.0, 0.01));
+      expect(KiloBytesPerSecond.toBitsPerSecond(900.0), closeTo(7.2e+6, 0.01));
+      expect(KiloBytesPerSecond.toBitsPerSecond(100200.0),
+          closeTo(801600000.0, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to KiloBits Per Second', () {
+      expect(KiloBytesPerSecond.toKiloBitsPerSecond(4.0), closeTo(32.0, 0.01));
+      expect(KiloBytesPerSecond.toKiloBitsPerSecond(1.2), closeTo(9.6, 0.01));
+      expect(
+          KiloBytesPerSecond.toKiloBitsPerSecond(88.1), closeTo(704.8, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to MegaBits Per Second', () {
+      expect(
+          KiloBytesPerSecond.toMegaBitsPerSecond(88.1), closeTo(0.7048, 0.01));
+      expect(
+          KiloBytesPerSecond.toMegaBitsPerSecond(7.1), closeTo(0.0568, 0.01));
+      expect(
+          KiloBytesPerSecond.toMegaBitsPerSecond(12.8), closeTo(0.1024, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to GigaBits Per Second', () {
+      expect(KiloBytesPerSecond.toGigaBitsPerSecond(10080.0),
+          closeTo(0.08064, 0.01));
+      expect(KiloBytesPerSecond.toGigaBitsPerSecond(4.5e+9),
+          closeTo(36000.0, 0.01));
+      expect(KiloBytesPerSecond.toGigaBitsPerSecond(271279.0),
+          closeTo(2.170232, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to TeraBits Per Second', () {
+      expect(KiloBytesPerSecond.toTeraBitsPerSecond(9009000.0),
+          closeTo(0.072072, 0.01));
+      expect(
+          KiloBytesPerSecond.toTeraBitsPerSecond(7.2e9), closeTo(57.6, 0.01));
+      expect(KiloBytesPerSecond.toTeraBitsPerSecond(100100100900.0),
+          closeTo(800.8008072, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to MegaBytes Per Second', () {
+      expect(KiloBytesPerSecond.toMegaBytesPerSecond(1009.0),
+          closeTo(1.009, 0.01));
+      expect(KiloBytesPerSecond.toMegaBytesPerSecond(8899.0),
+          closeTo(8.899, 0.01));
+      expect(
+          KiloBytesPerSecond.toMegaBytesPerSecond(619.0), closeTo(0.619, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to GigaBytes Per Second', () {
+      expect(KiloBytesPerSecond.toGigaBytesPerSecond(900800.0),
+          closeTo(0.9008, 0.01));
+      expect(KiloBytesPerSecond.toGigaBytesPerSecond(1234567.0),
+          closeTo(1.234567, 0.01));
+      expect(KiloBytesPerSecond.toGigaBytesPerSecond(7.9e9),
+          closeTo(7900.0, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to TeraBytes Per Second', () {
+      expect(
+          KiloBytesPerSecond.toTeraBytesPerSecond(0.9), closeTo(9e-10, 0.01));
+      expect(KiloBytesPerSecond.toTeraBytesPerSecond(140000000.0),
+          closeTo(0.14, 0.01));
+      expect(KiloBytesPerSecond.toTeraBytesPerSecond(7.0), closeTo(7e-9, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to Kibibits Per Second', () {
+      expect(KiloBytesPerSecond.toKibibitsPerSecond(0.009),
+          closeTo(0.0703125, 0.01));
+      expect(
+          KiloBytesPerSecond.toKibibitsPerSecond(6e+3), closeTo(46875.0, 0.01));
+      expect(KiloBytesPerSecond.toKibibitsPerSecond(1.23),
+          closeTo(9.609375, 0.01));
+    });
+
+    test('Convert known KiloBytes Per Second to Mebibits Per Second', () {
+      expect(KiloBytesPerSecond.toMebibitsPerSecond(70.0),
+          closeTo(0.534058, 0.01));
+      expect(KiloBytesPerSecond.toMebibitsPerSecond(9.0),
+          closeTo(0.0686646, 0.01));
+      expect(KiloBytesPerSecond.toMebibitsPerSecond(10022.0),
+          closeTo(76.461792, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to Bits Per Second', () {
+      expect(MebibitsPerSecond.toBitsPerSecond(0.9), closeTo(943718.4, 0.01));
+      expect(MebibitsPerSecond.toBitsPerSecond(0.006), closeTo(6291.456, 0.01));
+      expect(MebibitsPerSecond.toBitsPerSecond(2.0), closeTo(2097152.0, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to KiloBits Per Second', () {
+      expect(
+          MebibitsPerSecond.toKiloBitsPerSecond(0.8), closeTo(838.861, 0.01));
+      expect(
+          MebibitsPerSecond.toKiloBitsPerSecond(2.0), closeTo(2097.15, 0.01));
+      expect(
+          MebibitsPerSecond.toKiloBitsPerSecond(0.23), closeTo(241.1725, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to MegaBits Per Second', () {
+      expect(
+          MebibitsPerSecond.toMegaBitsPerSecond(0.9), closeTo(0.943718, 0.01));
+      expect(
+          MebibitsPerSecond.toMegaBitsPerSecond(12.3), closeTo(12.89748, 0.01));
+      expect(
+          MebibitsPerSecond.toMegaBitsPerSecond(8.1), closeTo(8.49347, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to GigaBits Per Second', () {
+      expect(MebibitsPerSecond.toGigaBitsPerSecond(12345.0),
+          closeTo(12.944671, 0.01));
+      expect(MebibitsPerSecond.toGigaBitsPerSecond(100.0),
+          closeTo(0.104858, 0.01));
+      expect(MebibitsPerSecond.toGigaBitsPerSecond(999.9),
+          closeTo(1.0484711, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to TeraBits Per Second', () {
+      expect(MebibitsPerSecond.toTeraBitsPerSecond(100009.0),
+          closeTo(0.104867037, 0.01));
+      expect(MebibitsPerSecond.toTeraBitsPerSecond(9876543.0),
+          closeTo(10.35630595, 0.01));
+      expect(MebibitsPerSecond.toTeraBitsPerSecond(1000900.0),
+          closeTo(1.049519718, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to KiloBytes Per Second', () {
+      expect(
+          MebibitsPerSecond.toKiloBytesPerSecond(4.0), closeTo(524.288, 0.01));
+      expect(MebibitsPerSecond.toKiloBytesPerSecond(1.45),
+          closeTo(190.0544, 0.01));
+      expect(MebibitsPerSecond.toKiloBytesPerSecond(88.11),
+          closeTo(11548.754, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to MegaBytes Per Second', () {
+      expect(MebibitsPerSecond.toMegaBytesPerSecond(109.0),
+          closeTo(14.2868, 0.01));
+      expect(MebibitsPerSecond.toMegaBytesPerSecond(55.67),
+          closeTo(7.2967782, 0.01));
+      expect(MebibitsPerSecond.toMegaBytesPerSecond(45678.0),
+          closeTo(5987.1068, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to GigaBytes Per Second', () {
+      expect(MebibitsPerSecond.toGigaBytesPerSecond(4000.0),
+          closeTo(0.524288311, 0.01));
+      expect(MebibitsPerSecond.toGigaBytesPerSecond(90100.0),
+          closeTo(11.80959421, 0.01));
+      expect(MebibitsPerSecond.toGigaBytesPerSecond(1009.0),
+          closeTo(0.132251727, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to TeraBytes Per Second', () {
+      expect(MebibitsPerSecond.toTeraBytesPerSecond(1000009.0),
+          closeTo(0.1310731796, 0.01));
+      expect(MebibitsPerSecond.toTeraBytesPerSecond(90808080.0),
+          closeTo(11.902396662, 0.01));
+      expect(MebibitsPerSecond.toTeraBytesPerSecond(5.2e12),
+          closeTo(681574.4, 0.01));
+    });
+
+    test('Convert known Mebibits Per Second to Kibibits Per Second', () {
+      expect(MebibitsPerSecond.toKibibitsPerSecond(5.0), closeTo(5120.0, 0.01));
+      expect(MebibitsPerSecond.toKibibitsPerSecond(1234.56),
+          closeTo(1264189.44, 0.01));
+      expect(MebibitsPerSecond.toKibibitsPerSecond(505.0),
+          closeTo(517120.0, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to Bits Per Second', () {
+      expect(MegaBitsPerSecond.toBitsPerSecond(0.34), closeTo(340000.0, 0.01));
+      expect(MegaBitsPerSecond.toBitsPerSecond(9.12), closeTo(9120000.0, 0.01));
+      expect(MegaBitsPerSecond.toBitsPerSecond(0.987), closeTo(987000.0, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to KiloBits Per Second', () {
+      expect(MegaBitsPerSecond.toKiloBitsPerSecond(0.77), closeTo(770.0, 0.01));
+      expect(MegaBitsPerSecond.toKiloBitsPerSecond(5.0), closeTo(5000.0, 0.01));
+      expect(
+          MegaBitsPerSecond.toKiloBitsPerSecond(0.987), closeTo(987.0, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to GigaBits Per Second', () {
+      expect(MegaBitsPerSecond.toGigaBitsPerSecond(900.0), closeTo(0.9, 0.01));
+      expect(MegaBitsPerSecond.toGigaBitsPerSecond(12345.0),
+          closeTo(12.345, 0.01));
+      expect(
+          MegaBitsPerSecond.toGigaBitsPerSecond(189.1), closeTo(0.1891, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to TeraBits Per Second', () {
+      expect(MegaBitsPerSecond.toTeraBitsPerSecond(100200300.0),
+          closeTo(100.2003, 0.01));
+      expect(MegaBitsPerSecond.toTeraBitsPerSecond(99887777.0),
+          closeTo(99.887777, 0.01));
+      expect(MegaBitsPerSecond.toTeraBitsPerSecond(80009.0),
+          closeTo(0.080009, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to KiloBytes Per Second', () {
+      expect(
+          MegaBitsPerSecond.toKiloBytesPerSecond(9.0), closeTo(1125.0, 0.01));
+      expect(
+          MegaBitsPerSecond.toKiloBytesPerSecond(1.23), closeTo(153.75, 0.01));
+      expect(
+          MegaBitsPerSecond.toKiloBytesPerSecond(98.1), closeTo(12262.5, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to MegaBytes Per Second', () {
+      expect(
+          MegaBitsPerSecond.toMegaBytesPerSecond(98.1), closeTo(12.2625, 0.01));
+      expect(
+          MegaBitsPerSecond.toMegaBytesPerSecond(10.9), closeTo(1.3625, 0.01));
+      expect(MegaBitsPerSecond.toMegaBytesPerSecond(888.123),
+          closeTo(111.015375, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to GigaBytes Per Second', () {
+      expect(
+          MegaBitsPerSecond.toGigaBytesPerSecond(900.0), closeTo(0.1125, 0.01));
+      expect(MegaBitsPerSecond.toGigaBytesPerSecond(10123.0),
+          closeTo(1.265375, 0.01));
+      expect(MegaBitsPerSecond.toGigaBytesPerSecond(9988.0),
+          closeTo(1.2485, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to TeraBytes Per Second', () {
+      expect(MegaBitsPerSecond.toTeraBytesPerSecond(998877.0),
+          closeTo(0.124859625, 0.01));
+      expect(MegaBitsPerSecond.toTeraBytesPerSecond(100200400.0),
+          closeTo(12.5250375, 0.01));
+      expect(MegaBitsPerSecond.toTeraBytesPerSecond(9008877.0),
+          closeTo(1.126109625, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to Kibibits Per Second', () {
+      expect(MegaBitsPerSecond.toKibibitsPerSecond(12.0),
+          closeTo(11718.756, 0.01));
+      expect(
+          MegaBitsPerSecond.toKibibitsPerSecond(0.9), closeTo(878.906, 0.01));
+      expect(
+          MegaBitsPerSecond.toKibibitsPerSecond(1.23), closeTo(1201.172, 0.01));
+    });
+
+    test('Convert known MegaBits Per Second to Mebibits Per Second', () {
+      expect(
+          MegaBitsPerSecond.toMebibitsPerSecond(4.5), closeTo(4.29153, 0.01));
+      expect(
+          MegaBitsPerSecond.toMebibitsPerSecond(0.8), closeTo(0.762939, 0.01));
+      expect(
+          MegaBitsPerSecond.toMebibitsPerSecond(900.0), closeTo(858.307, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to Bits Per Second', () {
+      expect(MegaBytesPerSecond.toBitsPerSecond(0.04), closeTo(320000.0, 0.01));
+      expect(
+          MegaBytesPerSecond.toBitsPerSecond(0.0091), closeTo(72800.0, 0.01));
+      expect(MegaBytesPerSecond.toBitsPerSecond(3e-5), closeTo(240.0, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to KiloBits Per Second', () {
+      expect(
+          MegaBytesPerSecond.toKiloBitsPerSecond(6.0), closeTo(48000.0, 0.01));
+      expect(
+          MegaBytesPerSecond.toKiloBitsPerSecond(0.3), closeTo(2400.0, 0.01));
+      expect(
+          MegaBytesPerSecond.toKiloBitsPerSecond(0.009), closeTo(72.0, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to MegaBits Per Second', () {
+      expect(MegaBytesPerSecond.toMegaBitsPerSecond(3.0), closeTo(24.0, 0.01));
+      expect(MegaBytesPerSecond.toMegaBitsPerSecond(0.9), closeTo(7.2, 0.01));
+      expect(
+          MegaBytesPerSecond.toMegaBitsPerSecond(13.0), closeTo(104.0, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to GigaBits Per Second', () {
+      expect(
+          MegaBytesPerSecond.toGigaBitsPerSecond(13.0), closeTo(0.104, 0.01));
+      expect(MegaBytesPerSecond.toGigaBitsPerSecond(900.0), closeTo(7.2, 0.01));
+      expect(MegaBytesPerSecond.toGigaBitsPerSecond(18000.0),
+          closeTo(144.0, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to TeraBits Per Second', () {
+      expect(MegaBytesPerSecond.toTeraBitsPerSecond(18000.0),
+          closeTo(0.144, 0.01));
+      expect(MegaBytesPerSecond.toTeraBitsPerSecond(9718290.0),
+          closeTo(77.74632, 0.01));
+      expect(MegaBytesPerSecond.toTeraBitsPerSecond(9e12),
+          closeTo(72000000.0, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to KiloBytes Per Second', () {
+      expect(
+          MegaBytesPerSecond.toKiloBytesPerSecond(6.0), closeTo(6000.0, 0.01));
+      expect(
+          MegaBytesPerSecond.toKiloBytesPerSecond(0.9), closeTo(900.0, 0.01));
+      expect(MegaBytesPerSecond.toKiloBytesPerSecond(123.4),
+          closeTo(123400.0, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to GigaBytes Per Second', () {
+      expect(MegaBytesPerSecond.toGigaBytesPerSecond(123.4),
+          closeTo(0.1234, 0.01));
+      expect(
+          MegaBytesPerSecond.toGigaBytesPerSecond(900.0), closeTo(0.9, 0.01));
+      expect(
+          MegaBytesPerSecond.toGigaBytesPerSecond(8e6), closeTo(8000.0, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to TeraBytes Per Second', () {
+      expect(MegaBytesPerSecond.toTeraBytesPerSecond(80000.0),
+          closeTo(0.08, 0.01));
+      expect(MegaBytesPerSecond.toTeraBytesPerSecond(12345678.0),
+          closeTo(12.345678, 0.01));
+      expect(MegaBytesPerSecond.toTeraBytesPerSecond(900800.0),
+          closeTo(0.9008, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to Kibibits Per Second', () {
+      expect(
+          MegaBytesPerSecond.toKibibitsPerSecond(6.0), closeTo(46875.0, 0.01));
+      expect(
+          MegaBytesPerSecond.toKibibitsPerSecond(0.9), closeTo(7031.25, 0.01));
+      expect(
+          MegaBytesPerSecond.toKibibitsPerSecond(0.03), closeTo(234.375, 0.01));
+    });
+
+    test('Convert known MegaBytes Per Second to Mebibits Per Second', () {
+      expect(MegaBytesPerSecond.toMebibitsPerSecond(0.03),
+          closeTo(0.2288818, 0.01));
+      expect(
+          MegaBytesPerSecond.toMebibitsPerSecond(4.5), closeTo(34.3323, 0.01));
+      expect(MegaBytesPerSecond.toMebibitsPerSecond(80.1),
+          closeTo(611.1145, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to Bits Per Second', () {
+      expect(TeraBitsPerSecond.toBitsPerSecond(0.0007),
+          closeTo(700000000.0, 0.01));
+      expect(
+          TeraBitsPerSecond.toBitsPerSecond(1.23e-6), closeTo(1230000.0, 0.01));
+      expect(TeraBitsPerSecond.toBitsPerSecond(0.00098),
+          closeTo(980000000.0, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to KiloBits Per Second', () {
+      expect(TeraBitsPerSecond.toKiloBitsPerSecond(0.001),
+          closeTo(1000000.0, 0.01));
+      expect(
+          TeraBitsPerSecond.toKiloBitsPerSecond(6.1e-6), closeTo(6100.0, 0.01));
+      expect(TeraBitsPerSecond.toKiloBitsPerSecond(0.00009),
+          closeTo(90000.0, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to MegaBits Per Second', () {
+      expect(
+          TeraBitsPerSecond.toMegaBitsPerSecond(0.09), closeTo(90000.0, 0.01));
+      expect(
+          TeraBitsPerSecond.toMegaBitsPerSecond(3.5e-4), closeTo(350.0, 0.01));
+      expect(TeraBitsPerSecond.toMegaBitsPerSecond(0.0123),
+          closeTo(12300.0, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to GigaBits Per Second', () {
+      expect(TeraBitsPerSecond.toGigaBitsPerSecond(0.9), closeTo(900.0, 0.01));
+      expect(
+          TeraBitsPerSecond.toGigaBitsPerSecond(1.45), closeTo(1450.0, 0.01));
+      expect(
+          TeraBitsPerSecond.toGigaBitsPerSecond(8.19), closeTo(8190.0, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to KiloBytes Per Second', () {
+      expect(TeraBitsPerSecond.toKiloBytesPerSecond(0.0009),
+          closeTo(112500.0, 0.01));
+      expect(TeraBitsPerSecond.toKiloBytesPerSecond(3.14e-6),
+          closeTo(392.5, 0.01));
+      expect(TeraBitsPerSecond.toKiloBytesPerSecond(0.001),
+          closeTo(125000.0, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to MegaBytes Per Second', () {
+      expect(
+          TeraBitsPerSecond.toMegaBytesPerSecond(0.4), closeTo(50000.0, 0.01));
+      expect(
+          TeraBitsPerSecond.toMegaBytesPerSecond(3.9e-3), closeTo(487.5, 0.01));
+      expect(
+          TeraBitsPerSecond.toMegaBytesPerSecond(0.007), closeTo(875.0, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to GigaBytes Per Second', () {
+      expect(
+          TeraBitsPerSecond.toGigaBytesPerSecond(0.009), closeTo(1.125, 0.01));
+      expect(TeraBitsPerSecond.toGigaBytesPerSecond(0.00123),
+          closeTo(0.15375, 0.01));
+      expect(TeraBitsPerSecond.toGigaBytesPerSecond(8.1e-3),
+          closeTo(1.0125, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to TeraBytes Per Second', () {
+      expect(
+          TeraBitsPerSecond.toTeraBytesPerSecond(0.3), closeTo(0.0375, 0.01));
+      expect(TeraBitsPerSecond.toTeraBytesPerSecond(14.0), closeTo(1.75, 0.01));
+      expect(TeraBitsPerSecond.toTeraBytesPerSecond(0.8), closeTo(0.1, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to Kibibits Per Second', () {
+      expect(TeraBitsPerSecond.toKibibitsPerSecond(0.0009),
+          closeTo(878906.25, 0.01));
+      expect(TeraBitsPerSecond.toKibibitsPerSecond(6.1e-6),
+          closeTo(5957.031, 0.01));
+      expect(TeraBitsPerSecond.toKibibitsPerSecond(12e-9),
+          closeTo(11.71875, 0.01));
+    });
+
+    test('Convert known TeraBits Per Second to Mebibits Per Second', () {
+      expect(TeraBitsPerSecond.toMebibitsPerSecond(0.9),
+          closeTo(858306.59999, 0.01));
+      expect(
+          TeraBitsPerSecond.toMebibitsPerSecond(4.6e-3), closeTo(4386.9, 0.01));
+      expect(TeraBitsPerSecond.toMebibitsPerSecond(0.00123),
+          closeTo(1173.0194092, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to Bits Per Second', () {
+      expect(TeraBytesPerSecond.toBitsPerSecond(0.00008),
+          closeTo(640000000.0, 0.01));
+      expect(TeraBytesPerSecond.toBitsPerSecond(1.2e-12), closeTo(9.6, 0.01));
+      expect(TeraBytesPerSecond.toBitsPerSecond(9.0), closeTo(7.2e+13, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to KiloBits Per Second', () {
+      expect(TeraBytesPerSecond.toKiloBitsPerSecond(0.009),
+          closeTo(72000000.0, 0.01));
+      expect(TeraBytesPerSecond.toKiloBitsPerSecond(1.4e-6),
+          closeTo(11200.0, 0.01));
+      expect(TeraBytesPerSecond.toKiloBitsPerSecond(6.1e-5),
+          closeTo(488000.0, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to MegaBits Per Second', () {
+      expect(TeraBytesPerSecond.toMegaBitsPerSecond(0.005),
+          closeTo(40000.0, 0.01));
+      expect(TeraBytesPerSecond.toMegaBitsPerSecond(0.000123),
+          closeTo(984.0, 0.01));
+      expect(TeraBytesPerSecond.toMegaBitsPerSecond(0.00006),
+          closeTo(480.0, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to GigaBits Per Second', () {
+      expect(
+          TeraBytesPerSecond.toGigaBitsPerSecond(0.008), closeTo(64.0, 0.01));
+      expect(
+          TeraBytesPerSecond.toGigaBitsPerSecond(3e-7), closeTo(0.0024, 0.01));
+      expect(
+          TeraBytesPerSecond.toGigaBitsPerSecond(0.00023), closeTo(1.84, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to TeraBits Per Second', () {
+      expect(TeraBytesPerSecond.toTeraBitsPerSecond(5.0), closeTo(40.0, 0.01));
+      expect(TeraBytesPerSecond.toTeraBitsPerSecond(1.23), closeTo(9.84, 0.01));
+      expect(
+          TeraBytesPerSecond.toTeraBitsPerSecond(800.0), closeTo(6400.0, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to KiloBytes Per Second', () {
+      expect(TeraBytesPerSecond.toKiloBytesPerSecond(0.0009),
+          closeTo(900000.0, 0.01));
+      expect(TeraBytesPerSecond.toKiloBytesPerSecond(3.14e-7),
+          closeTo(314.0, 0.01));
+      expect(TeraBytesPerSecond.toKiloBytesPerSecond(0.00063),
+          closeTo(630000.0, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to MegaBytes Per Second', () {
+      expect(TeraBytesPerSecond.toMegaBytesPerSecond(0.009),
+          closeTo(9000.0, 0.01));
+      expect(TeraBytesPerSecond.toMegaBytesPerSecond(0.234),
+          closeTo(234000.0, 0.01));
+      expect(TeraBytesPerSecond.toMegaBytesPerSecond(2.0), closeTo(2e+6, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to GigaBytes Per Second', () {
+      expect(
+          TeraBytesPerSecond.toGigaBytesPerSecond(2.7), closeTo(2700.0, 0.01));
+      expect(
+          TeraBytesPerSecond.toGigaBytesPerSecond(0.9), closeTo(900.0, 0.01));
+      expect(
+          TeraBytesPerSecond.toGigaBytesPerSecond(0.0123), closeTo(12.3, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to Kibibits Per Second', () {
+      expect(TeraBytesPerSecond.toKibibitsPerSecond(0.0009),
+          closeTo(7031250.0, 0.01));
+      expect(TeraBytesPerSecond.toKibibitsPerSecond(1.23e-5),
+          closeTo(96093.75, 0.01));
+      expect(TeraBytesPerSecond.toKibibitsPerSecond(0.0001),
+          closeTo(781250.0, 0.01));
+    });
+
+    test('Convert known TeraBytes Per Second to Mebibits Per Second', () {
+      expect(TeraBytesPerSecond.toMebibitsPerSecond(0.01),
+          closeTo(76293.95, 0.01));
+      expect(TeraBytesPerSecond.toMebibitsPerSecond(0.008),
+          closeTo(61035.156, 0.01));
+      expect(TeraBytesPerSecond.toMebibitsPerSecond(2.0),
+          closeTo(15258789.0625, 0.01));
+    });
+  });
 }
