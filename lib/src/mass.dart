@@ -6,208 +6,208 @@
 
 /// Carats conversion functions
 class Carats {
-  Carats._() {}
-
-  /// Converts the supplied Carats value to Milligrams
-  static double toMilligrams(double value) => value * 200.0;
-
-  /// Converts the supplied Carats value to Grams
-  static double toGrams(double value) => value / 5.0;
-
-  /// Converts the supplied Carats value to Kilograms
-  static double toKilograms(double value) => value / 5000.0;
-
-  /// Converts the supplied Carats value to Tonnes
-  static double toTonnes(double value) => value / 5e+6;
-
-  /// Converts the supplied Carats value to Ounces
-  static double toOunces(double value) => value * 0.00705479;
-
-  /// Converts the supplied Carats value to Pounds
-  static double toPounds(double value) => value * 0.000440925;
-
-  /// Converts the supplied Carats value to Stones
-  static double toStones(double value) => value * 3.1495e-5;
+	Carats._() {}
+	/// Converts the supplied Carats value to Milligrams
+	static double toMilligrams(double value) =>
+		value * 200.0;
+	/// Converts the supplied Carats value to Grams
+	static double toGrams(double value) =>
+		value / 5.0;
+	/// Converts the supplied Carats value to Kilograms
+	static double toKilograms(double value) =>
+		value / 5000.0;
+	/// Converts the supplied Carats value to Tonnes
+	static double toTonnes(double value) =>
+		value / 5e+6;
+	/// Converts the supplied Carats value to Ounces
+	static double toOunces(double value) =>
+		value * 0.00705479;
+	/// Converts the supplied Carats value to Pounds
+	static double toPounds(double value) =>
+		value * 0.000440925;
+	/// Converts the supplied Carats value to Stones
+	static double toStones(double value) =>
+		value * 3.1495e-5;
 }
 
 /// Grams conversion functions
 class Grams {
-  Grams._() {}
-
-  /// Converts the supplied Grams value to Milligrams
-  static double toMilligrams(double value) => value * 1000.0;
-
-  /// Converts the supplied Grams value to Kilograms
-  static double toKilograms(double value) => value / 1000.0;
-
-  /// Converts the supplied Grams value to Tonnes
-  static double toTonnes(double value) => value * 1e-6;
-
-  /// Converts the supplied Grams value to Ounces
-  static double toOunces(double value) => value / 28.3495231;
-
-  /// Converts the supplied Grams value to Pounds
-  static double toPounds(double value) => value / 453.59237;
-
-  /// Converts the supplied Grams value to Stones
-  static double toStones(double value) => value / 6350.29318;
-
-  /// Converts the supplied Grams value to Carats
-  static double toCarats(double value) => value * 5.0;
+	Grams._() {}
+	/// Converts the supplied Grams value to Milligrams
+	static double toMilligrams(double value) =>
+		value * 1000.0;
+	/// Converts the supplied Grams value to Kilograms
+	static double toKilograms(double value) =>
+		value / 1000.0;
+	/// Converts the supplied Grams value to Tonnes
+	static double toTonnes(double value) =>
+		value * 1e-6;
+	/// Converts the supplied Grams value to Ounces
+	static double toOunces(double value) =>
+		value / 28.3495231;
+	/// Converts the supplied Grams value to Pounds
+	static double toPounds(double value) =>
+		value / 453.59237;
+	/// Converts the supplied Grams value to Stones
+	static double toStones(double value) =>
+		value / 6350.29318;
+	/// Converts the supplied Grams value to Carats
+	static double toCarats(double value) =>
+		value * 5.0;
 }
 
 /// Kilograms conversion functions
 class Kilograms {
-  Kilograms._() {}
-
-  /// Converts the supplied Kilograms value to Milligrams
-  static double toMilligrams(double value) => value * 1e+6;
-
-  /// Converts the supplied Kilograms value to Grams
-  static double toGrams(double value) => value * 1000.0;
-
-  /// Converts the supplied Kilograms value to Tonnes
-  static double toTonnes(double value) => value * 0.001;
-
-  /// Converts the supplied Kilograms value to Ounces
-  static double toOunces(double value) => value * 35.274;
-
-  /// Converts the supplied Kilograms value to Pounds
-  static double toPounds(double value) => value * 2.20462;
-
-  /// Converts the supplied Kilograms value to Stones
-  static double toStones(double value) => value / 6.35029;
-
-  /// Converts the supplied Kilograms value to Carats
-  static double toCarats(double value) => value * 5000.0;
+	Kilograms._() {}
+	/// Converts the supplied Kilograms value to Milligrams
+	static double toMilligrams(double value) =>
+		value * 1e+6;
+	/// Converts the supplied Kilograms value to Grams
+	static double toGrams(double value) =>
+		value * 1000.0;
+	/// Converts the supplied Kilograms value to Tonnes
+	static double toTonnes(double value) =>
+		value * 0.001;
+	/// Converts the supplied Kilograms value to Ounces
+	static double toOunces(double value) =>
+		value * 35.274;
+	/// Converts the supplied Kilograms value to Pounds
+	static double toPounds(double value) =>
+		value * 2.20462;
+	/// Converts the supplied Kilograms value to Stones
+	static double toStones(double value) =>
+		value / 6.35029;
+	/// Converts the supplied Kilograms value to Carats
+	static double toCarats(double value) =>
+		value * 5000.0;
 }
 
 /// Milligrams conversion functions
 class Milligrams {
-  Milligrams._() {}
-
-  /// Converts the supplied Milligrams value to Grams
-  static double toGrams(double value) => value / 1000.0;
-
-  /// Converts the supplied Milligrams value to Kilograms
-  static double toKilograms(double value) => value / 1e+6;
-
-  /// Converts the supplied Milligrams value to Tonnes
-  static double toTonnes(double value) => value / 1e+9;
-
-  /// Converts the supplied Milligrams value to Ounces
-  static double toOunces(double value) => value / 28349.5231;
-
-  /// Converts the supplied Milligrams value to Pounds
-  static double toPounds(double value) => value / 453592.37;
-
-  /// Converts the supplied Milligrams value to Stones
-  static double toStones(double value) => value / 6350293.18;
-
-  /// Converts the supplied Milligrams value to Carats
-  static double toCarats(double value) => value / 200.0;
+	Milligrams._() {}
+	/// Converts the supplied Milligrams value to Grams
+	static double toGrams(double value) =>
+		value / 1000.0;
+	/// Converts the supplied Milligrams value to Kilograms
+	static double toKilograms(double value) =>
+		value / 1e+6;
+	/// Converts the supplied Milligrams value to Tonnes
+	static double toTonnes(double value) =>
+		value / 1e+9;
+	/// Converts the supplied Milligrams value to Ounces
+	static double toOunces(double value) =>
+		value / 28349.5231;
+	/// Converts the supplied Milligrams value to Pounds
+	static double toPounds(double value) =>
+		value / 453592.37;
+	/// Converts the supplied Milligrams value to Stones
+	static double toStones(double value) =>
+		value / 6350293.18;
+	/// Converts the supplied Milligrams value to Carats
+	static double toCarats(double value) =>
+		value / 200.0;
 }
 
 /// Ounces conversion functions
 class Ounces {
-  Ounces._() {}
-
-  /// Converts the supplied Ounces value to Milligrams
-  static double toMilligrams(double value) => value * 28349.5231;
-
-  /// Converts the supplied Ounces value to Grams
-  static double toGrams(double value) => value * 28.3495231;
-
-  /// Converts the supplied Ounces value to Kilograms
-  static double toKilograms(double value) => value / 35.274;
-
-  /// Converts the supplied Ounces value to Tonnes
-  static double toTonnes(double value) => value * 0.0000283495231;
-
-  /// Converts the supplied Ounces value to Pounds
-  static double toPounds(double value) => value * 0.0625;
-
-  /// Converts the supplied Ounces value to Stones
-  static double toStones(double value) => value / 224.0;
-
-  /// Converts the supplied Ounces value to Carats
-  static double toCarats(double value) => value / 0.00705479;
+	Ounces._() {}
+	/// Converts the supplied Ounces value to Milligrams
+	static double toMilligrams(double value) =>
+		value * 28349.5231;
+	/// Converts the supplied Ounces value to Grams
+	static double toGrams(double value) =>
+		value * 28.3495231;
+	/// Converts the supplied Ounces value to Kilograms
+	static double toKilograms(double value) =>
+		value / 35.274;
+	/// Converts the supplied Ounces value to Tonnes
+	static double toTonnes(double value) =>
+		value * 0.0000283495231;
+	/// Converts the supplied Ounces value to Pounds
+	static double toPounds(double value) =>
+		value * 0.0625;
+	/// Converts the supplied Ounces value to Stones
+	static double toStones(double value) =>
+		value / 224.0;
+	/// Converts the supplied Ounces value to Carats
+	static double toCarats(double value) =>
+		value / 0.00705479;
 }
 
 /// Pounds conversion functions
 class Pounds {
-  Pounds._() {}
-
-  /// Converts the supplied Pounds value to Milligrams
-  static double toMilligrams(double value) => value * 453592.37;
-
-  /// Converts the supplied Pounds value to Grams
-  static double toGrams(double value) => value * 453.59237;
-
-  /// Converts the supplied Pounds value to Kilograms
-  static double toKilograms(double value) => value / 2.20462;
-
-  /// Converts the supplied Pounds value to Tonnes
-  static double toTonnes(double value) => value / 2204.62;
-
-  /// Converts the supplied Pounds value to Ounces
-  static double toOunces(double value) => value * 16.0;
-
-  /// Converts the supplied Pounds value to Stones
-  static double toStones(double value) => value / 14.0;
-
-  /// Converts the supplied Pounds value to Carats
-  static double toCarats(double value) => value / 0.000440925;
+	Pounds._() {}
+	/// Converts the supplied Pounds value to Milligrams
+	static double toMilligrams(double value) =>
+		value * 453592.37;
+	/// Converts the supplied Pounds value to Grams
+	static double toGrams(double value) =>
+		value * 453.59237;
+	/// Converts the supplied Pounds value to Kilograms
+	static double toKilograms(double value) =>
+		value / 2.20462;
+	/// Converts the supplied Pounds value to Tonnes
+	static double toTonnes(double value) =>
+		value / 2204.62;
+	/// Converts the supplied Pounds value to Ounces
+	static double toOunces(double value) =>
+		value * 16.0;
+	/// Converts the supplied Pounds value to Stones
+	static double toStones(double value) =>
+		value / 14.0;
+	/// Converts the supplied Pounds value to Carats
+	static double toCarats(double value) =>
+		value / 0.000440925;
 }
 
 /// Stones conversion functions
 class Stones {
-  Stones._() {}
-
-  /// Converts the supplied Stones value to Milligrams
-  static double toMilligrams(double value) => value * 6350293.18;
-
-  /// Converts the supplied Stones value to Grams
-  static double toGrams(double value) => value * 6350.29318;
-
-  /// Converts the supplied Stones value to Kilograms
-  static double toKilograms(double value) => value * 6.35029;
-
-  /// Converts the supplied Stones value to Tonnes
-  static double toTonnes(double value) => value / 157.473;
-
-  /// Converts the supplied Stones value to Ounces
-  static double toOunces(double value) => value * 224.0;
-
-  /// Converts the supplied Stones value to Pounds
-  static double toPounds(double value) => value * 14.0;
-
-  /// Converts the supplied Stones value to Carats
-  static double toCarats(double value) => value / 3.1495e-5;
+	Stones._() {}
+	/// Converts the supplied Stones value to Milligrams
+	static double toMilligrams(double value) =>
+		value * 6350293.18;
+	/// Converts the supplied Stones value to Grams
+	static double toGrams(double value) =>
+		value * 6350.29318;
+	/// Converts the supplied Stones value to Kilograms
+	static double toKilograms(double value) =>
+		value * 6.35029;
+	/// Converts the supplied Stones value to Tonnes
+	static double toTonnes(double value) =>
+		value / 157.473;
+	/// Converts the supplied Stones value to Ounces
+	static double toOunces(double value) =>
+		value * 224.0;
+	/// Converts the supplied Stones value to Pounds
+	static double toPounds(double value) =>
+		value * 14.0;
+	/// Converts the supplied Stones value to Carats
+	static double toCarats(double value) =>
+		value / 3.1495e-5;
 }
 
 /// Tonnes conversion functions
 class Tonnes {
-  Tonnes._() {}
-
-  /// Converts the supplied Tonnes value to Milligrams
-  static double toMilligrams(double value) => value * 1e+9;
-
-  /// Converts the supplied Tonnes value to Grams
-  static double toGrams(double value) => value * 1e+6;
-
-  /// Converts the supplied Tonnes value to Kilograms
-  static double toKilograms(double value) => value * 1000.0;
-
-  /// Converts the supplied Tonnes value to Ounces
-  static double toOunces(double value) => value / 0.0000283495231;
-
-  /// Converts the supplied Tonnes value to Pounds
-  static double toPounds(double value) => value * 2204.62;
-
-  /// Converts the supplied Tonnes value to Stones
-  static double toStones(double value) => value * 157.473;
-
-  /// Converts the supplied Tonnes value to Carats
-  static double toCarats(double value) => value * 5e+6;
+	Tonnes._() {}
+	/// Converts the supplied Tonnes value to Milligrams
+	static double toMilligrams(double value) =>
+		value * 1e+9;
+	/// Converts the supplied Tonnes value to Grams
+	static double toGrams(double value) =>
+		value * 1e+6;
+	/// Converts the supplied Tonnes value to Kilograms
+	static double toKilograms(double value) =>
+		value * 1000.0;
+	/// Converts the supplied Tonnes value to Ounces
+	static double toOunces(double value) =>
+		value / 0.0000283495231;
+	/// Converts the supplied Tonnes value to Pounds
+	static double toPounds(double value) =>
+		value * 2204.62;
+	/// Converts the supplied Tonnes value to Stones
+	static double toStones(double value) =>
+		value * 157.473;
+	/// Converts the supplied Tonnes value to Carats
+	static double toCarats(double value) =>
+		value * 5e+6;
 }

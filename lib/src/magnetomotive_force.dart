@@ -6,16 +6,16 @@
 
 /// Ampere-turns conversion functions
 class Ampereturns {
-  Ampereturns._() {}
-
-  /// Converts the supplied Ampere-turns value to Gilberts
-  static double toGilberts(double value) => value / 0.7957747154595;
+	Ampereturns._() {}
+	/// Converts the supplied Ampere-turns value to Gilberts
+	static double toGilberts(double value) =>
+		value / 0.7957747154595;
 }
 
 /// Gilberts conversion functions
 class Gilberts {
-  Gilberts._() {}
-
-  /// Converts the supplied Gilberts value to Ampere-turns
-  static double toAmpereturns(double value) => value * 0.7957747154595;
+	Gilberts._() {}
+	/// Converts the supplied Gilberts value to Ampere-turns
+	static double toAmpereturns(double value) =>
+		value * 0.7957747154595;
 }

@@ -6,261 +6,261 @@
 
 /// Centimetres conversion functions
 class Centimetres {
-  Centimetres._() {}
-
-  /// Converts the supplied Centimetres value to Millimetres
-  static double toMillimetres(double value) => value * 10.0;
-
-  /// Converts the supplied Centimetres value to Metres
-  static double toMetres(double value) => value / 100.0;
-
-  /// Converts the supplied Centimetres value to Kilometres
-  static double toKilometres(double value) => value / 100000.0;
-
-  /// Converts the supplied Centimetres value to Inches
-  static double toInches(double value) => value / 2.54;
-
-  /// Converts the supplied Centimetres value to Feet
-  static double toFeet(double value) => value / 30.48;
-
-  /// Converts the supplied Centimetres value to Yards
-  static double toYards(double value) => value / 91.44;
-
-  /// Converts the supplied Centimetres value to Miles
-  static double toMiles(double value) => value / 160934.4;
-
-  /// Converts the supplied Centimetres value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 185200.0;
+	Centimetres._() {}
+	/// Converts the supplied Centimetres value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 10.0;
+	/// Converts the supplied Centimetres value to Metres
+	static double toMetres(double value) =>
+		value / 100.0;
+	/// Converts the supplied Centimetres value to Kilometres
+	static double toKilometres(double value) =>
+		value / 100000.0;
+	/// Converts the supplied Centimetres value to Inches
+	static double toInches(double value) =>
+		value / 2.54;
+	/// Converts the supplied Centimetres value to Feet
+	static double toFeet(double value) =>
+		value / 30.48;
+	/// Converts the supplied Centimetres value to Yards
+	static double toYards(double value) =>
+		value / 91.44;
+	/// Converts the supplied Centimetres value to Miles
+	static double toMiles(double value) =>
+		value / 160934.4;
+	/// Converts the supplied Centimetres value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 185200.0;
 }
 
 /// Feet conversion functions
 class Feet {
-  Feet._() {}
-
-  /// Converts the supplied Feet value to Millimetres
-  static double toMillimetres(double value) => value * 304.8;
-
-  /// Converts the supplied Feet value to Centimetres
-  static double toCentimetres(double value) => value * 30.48;
-
-  /// Converts the supplied Feet value to Metres
-  static double toMetres(double value) => value * 0.3048;
-
-  /// Converts the supplied Feet value to Kilometres
-  static double toKilometres(double value) => value * 0.0003048;
-
-  /// Converts the supplied Feet value to Inches
-  static double toInches(double value) => value * 12.0;
-
-  /// Converts the supplied Feet value to Yards
-  static double toYards(double value) => value / 3.0;
-
-  /// Converts the supplied Feet value to Miles
-  static double toMiles(double value) => value / 5280.0;
-
-  /// Converts the supplied Feet value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 6076.12;
+	Feet._() {}
+	/// Converts the supplied Feet value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 304.8;
+	/// Converts the supplied Feet value to Centimetres
+	static double toCentimetres(double value) =>
+		value * 30.48;
+	/// Converts the supplied Feet value to Metres
+	static double toMetres(double value) =>
+		value * 0.3048;
+	/// Converts the supplied Feet value to Kilometres
+	static double toKilometres(double value) =>
+		value * 0.0003048;
+	/// Converts the supplied Feet value to Inches
+	static double toInches(double value) =>
+		value * 12.0;
+	/// Converts the supplied Feet value to Yards
+	static double toYards(double value) =>
+		value / 3.0;
+	/// Converts the supplied Feet value to Miles
+	static double toMiles(double value) =>
+		value / 5280.0;
+	/// Converts the supplied Feet value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 6076.12;
 }
 
 /// Inches conversion functions
 class Inches {
-  Inches._() {}
-
-  /// Converts the supplied Inches value to Millimetres
-  static double toMillimetres(double value) => value * 25.4;
-
-  /// Converts the supplied Inches value to Centimetres
-  static double toCentimetres(double value) => value * 2.54;
-
-  /// Converts the supplied Inches value to Metres
-  static double toMetres(double value) => value / 39.37007874;
-
-  /// Converts the supplied Inches value to Kilometres
-  static double toKilometres(double value) => value / 39370.07874;
-
-  /// Converts the supplied Inches value to Feet
-  static double toFeet(double value) => value / 12.0;
-
-  /// Converts the supplied Inches value to Yards
-  static double toYards(double value) => value / 36.0;
-
-  /// Converts the supplied Inches value to Miles
-  static double toMiles(double value) => value / 63360.0;
-
-  /// Converts the supplied Inches value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 72913.4;
+	Inches._() {}
+	/// Converts the supplied Inches value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 25.4;
+	/// Converts the supplied Inches value to Centimetres
+	static double toCentimetres(double value) =>
+		value * 2.54;
+	/// Converts the supplied Inches value to Metres
+	static double toMetres(double value) =>
+		value / 39.37007874;
+	/// Converts the supplied Inches value to Kilometres
+	static double toKilometres(double value) =>
+		value / 39370.07874;
+	/// Converts the supplied Inches value to Feet
+	static double toFeet(double value) =>
+		value / 12.0;
+	/// Converts the supplied Inches value to Yards
+	static double toYards(double value) =>
+		value / 36.0;
+	/// Converts the supplied Inches value to Miles
+	static double toMiles(double value) =>
+		value / 63360.0;
+	/// Converts the supplied Inches value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 72913.4;
 }
 
 /// Kilometres conversion functions
 class Kilometres {
-  Kilometres._() {}
-
-  /// Converts the supplied Kilometres value to Millimetres
-  static double toMillimetres(double value) => value * 1000000.0;
-
-  /// Converts the supplied Kilometres value to Centimetres
-  static double toCentimetres(double value) => value * 100000.0;
-
-  /// Converts the supplied Kilometres value to Metres
-  static double toMetres(double value) => value * 1000.0;
-
-  /// Converts the supplied Kilometres value to Inches
-  static double toInches(double value) => value * 39370.07874;
-
-  /// Converts the supplied Kilometres value to Feet
-  static double toFeet(double value) => value / 0.0003048;
-
-  /// Converts the supplied Kilometres value to Yards
-  static double toYards(double value) => value / 0.0009144;
-
-  /// Converts the supplied Kilometres value to Miles
-  static double toMiles(double value) => value / 1.609344;
-
-  /// Converts the supplied Kilometres value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 1.85200;
+	Kilometres._() {}
+	/// Converts the supplied Kilometres value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 1000000.0;
+	/// Converts the supplied Kilometres value to Centimetres
+	static double toCentimetres(double value) =>
+		value * 100000.0;
+	/// Converts the supplied Kilometres value to Metres
+	static double toMetres(double value) =>
+		value * 1000.0;
+	/// Converts the supplied Kilometres value to Inches
+	static double toInches(double value) =>
+		value * 39370.07874;
+	/// Converts the supplied Kilometres value to Feet
+	static double toFeet(double value) =>
+		value / 0.0003048;
+	/// Converts the supplied Kilometres value to Yards
+	static double toYards(double value) =>
+		value / 0.0009144;
+	/// Converts the supplied Kilometres value to Miles
+	static double toMiles(double value) =>
+		value / 1.609344;
+	/// Converts the supplied Kilometres value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 1.85200;
 }
 
 /// Metres conversion functions
 class Metres {
-  Metres._() {}
-
-  /// Converts the supplied Metres value to Millimetres
-  static double toMillimetres(double value) => value * 1000.0;
-
-  /// Converts the supplied Metres value to Centimetres
-  static double toCentimetres(double value) => value * 100.0;
-
-  /// Converts the supplied Metres value to Kilometres
-  static double toKilometres(double value) => value / 1000.0;
-
-  /// Converts the supplied Metres value to Inches
-  static double toInches(double value) => value * 39.37007874;
-
-  /// Converts the supplied Metres value to Feet
-  static double toFeet(double value) => value / 0.3048;
-
-  /// Converts the supplied Metres value to Yards
-  static double toYards(double value) => value / 0.9144;
-
-  /// Converts the supplied Metres value to Miles
-  static double toMiles(double value) => value / 1609.344;
-
-  /// Converts the supplied Metres value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 1852.0;
+	Metres._() {}
+	/// Converts the supplied Metres value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 1000.0;
+	/// Converts the supplied Metres value to Centimetres
+	static double toCentimetres(double value) =>
+		value * 100.0;
+	/// Converts the supplied Metres value to Kilometres
+	static double toKilometres(double value) =>
+		value / 1000.0;
+	/// Converts the supplied Metres value to Inches
+	static double toInches(double value) =>
+		value * 39.37007874;
+	/// Converts the supplied Metres value to Feet
+	static double toFeet(double value) =>
+		value / 0.3048;
+	/// Converts the supplied Metres value to Yards
+	static double toYards(double value) =>
+		value / 0.9144;
+	/// Converts the supplied Metres value to Miles
+	static double toMiles(double value) =>
+		value / 1609.344;
+	/// Converts the supplied Metres value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 1852.0;
 }
 
 /// Miles conversion functions
 class Miles {
-  Miles._() {}
-
-  /// Converts the supplied Miles value to Millimetres
-  static double toMillimetres(double value) => value * 1609344.0;
-
-  /// Converts the supplied Miles value to Centimetres
-  static double toCentimetres(double value) => value * 160934.4;
-
-  /// Converts the supplied Miles value to Metres
-  static double toMetres(double value) => value * 1609.344;
-
-  /// Converts the supplied Miles value to Kilometres
-  static double toKilometres(double value) => value * 1.609344;
-
-  /// Converts the supplied Miles value to Inches
-  static double toInches(double value) => value * 63360.0;
-
-  /// Converts the supplied Miles value to Feet
-  static double toFeet(double value) => value * 5280.0;
-
-  /// Converts the supplied Miles value to Yards
-  static double toYards(double value) => value * 1760.0;
-
-  /// Converts the supplied Miles value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 1.15078;
+	Miles._() {}
+	/// Converts the supplied Miles value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 1609344.0;
+	/// Converts the supplied Miles value to Centimetres
+	static double toCentimetres(double value) =>
+		value * 160934.4;
+	/// Converts the supplied Miles value to Metres
+	static double toMetres(double value) =>
+		value * 1609.344;
+	/// Converts the supplied Miles value to Kilometres
+	static double toKilometres(double value) =>
+		value * 1.609344;
+	/// Converts the supplied Miles value to Inches
+	static double toInches(double value) =>
+		value * 63360.0;
+	/// Converts the supplied Miles value to Feet
+	static double toFeet(double value) =>
+		value * 5280.0;
+	/// Converts the supplied Miles value to Yards
+	static double toYards(double value) =>
+		value * 1760.0;
+	/// Converts the supplied Miles value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 1.15078;
 }
 
 /// Millimetres conversion functions
 class Millimetres {
-  Millimetres._() {}
-
-  /// Converts the supplied Millimetres value to Centimetres
-  static double toCentimetres(double value) => value / 10.0;
-
-  /// Converts the supplied Millimetres value to Metres
-  static double toMetres(double value) => value / 1000.0;
-
-  /// Converts the supplied Millimetres value to Kilometres
-  static double toKilometres(double value) => value / 1000000.0;
-
-  /// Converts the supplied Millimetres value to Inches
-  static double toInches(double value) => value / 25.4;
-
-  /// Converts the supplied Millimetres value to Feet
-  static double toFeet(double value) => value / 304.8;
-
-  /// Converts the supplied Millimetres value to Yards
-  static double toYards(double value) => value / 914.4;
-
-  /// Converts the supplied Millimetres value to Miles
-  static double toMiles(double value) => value / 1609344.0;
-
-  /// Converts the supplied Millimetres value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 1852000.0;
+	Millimetres._() {}
+	/// Converts the supplied Millimetres value to Centimetres
+	static double toCentimetres(double value) =>
+		value / 10.0;
+	/// Converts the supplied Millimetres value to Metres
+	static double toMetres(double value) =>
+		value / 1000.0;
+	/// Converts the supplied Millimetres value to Kilometres
+	static double toKilometres(double value) =>
+		value / 1000000.0;
+	/// Converts the supplied Millimetres value to Inches
+	static double toInches(double value) =>
+		value / 25.4;
+	/// Converts the supplied Millimetres value to Feet
+	static double toFeet(double value) =>
+		value / 304.8;
+	/// Converts the supplied Millimetres value to Yards
+	static double toYards(double value) =>
+		value / 914.4;
+	/// Converts the supplied Millimetres value to Miles
+	static double toMiles(double value) =>
+		value / 1609344.0;
+	/// Converts the supplied Millimetres value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 1852000.0;
 }
 
 /// Nautical Miles conversion functions
 class NauticalMiles {
-  NauticalMiles._() {}
-
-  /// Converts the supplied Nautical Miles value to Millimetres
-  static double toMillimetres(double value) => value * 1852000.0;
-
-  /// Converts the supplied Nautical Miles value to Centimetres
-  static double toCentimetres(double value) => value * 185200.0;
-
-  /// Converts the supplied Nautical Miles value to Metres
-  static double toMetres(double value) => value * 1852.0;
-
-  /// Converts the supplied Nautical Miles value to Kilometres
-  static double toKilometres(double value) => value * 1.85200;
-
-  /// Converts the supplied Nautical Miles value to Inches
-  static double toInches(double value) => value * 72913.4;
-
-  /// Converts the supplied Nautical Miles value to Feet
-  static double toFeet(double value) => value * 6076.12;
-
-  /// Converts the supplied Nautical Miles value to Yards
-  static double toYards(double value) => value * 2025.37;
-
-  /// Converts the supplied Nautical Miles value to Miles
-  static double toMiles(double value) => value * 1.15078;
+	NauticalMiles._() {}
+	/// Converts the supplied Nautical Miles value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 1852000.0;
+	/// Converts the supplied Nautical Miles value to Centimetres
+	static double toCentimetres(double value) =>
+		value * 185200.0;
+	/// Converts the supplied Nautical Miles value to Metres
+	static double toMetres(double value) =>
+		value * 1852.0;
+	/// Converts the supplied Nautical Miles value to Kilometres
+	static double toKilometres(double value) =>
+		value * 1.85200;
+	/// Converts the supplied Nautical Miles value to Inches
+	static double toInches(double value) =>
+		value * 72913.4;
+	/// Converts the supplied Nautical Miles value to Feet
+	static double toFeet(double value) =>
+		value * 6076.12;
+	/// Converts the supplied Nautical Miles value to Yards
+	static double toYards(double value) =>
+		value * 2025.37;
+	/// Converts the supplied Nautical Miles value to Miles
+	static double toMiles(double value) =>
+		value * 1.15078;
 }
 
 /// Yards conversion functions
 class Yards {
-  Yards._() {}
-
-  /// Converts the supplied Yards value to Millimetres
-  static double toMillimetres(double value) => value * 914.4;
-
-  /// Converts the supplied Yards value to Centimetres
-  static double toCentimetres(double value) => value * 91.44;
-
-  /// Converts the supplied Yards value to Metres
-  static double toMetres(double value) => value * 0.9144;
-
-  /// Converts the supplied Yards value to Kilometres
-  static double toKilometres(double value) => value * 0.0009144;
-
-  /// Converts the supplied Yards value to Inches
-  static double toInches(double value) => value * 36.0;
-
-  /// Converts the supplied Yards value to Feet
-  static double toFeet(double value) => value * 3.0;
-
-  /// Converts the supplied Yards value to Miles
-  static double toMiles(double value) => value / 1760.0;
-
-  /// Converts the supplied Yards value to Nautical Miles
-  static double toNauticalMiles(double value) => value / 2025.37;
+	Yards._() {}
+	/// Converts the supplied Yards value to Millimetres
+	static double toMillimetres(double value) =>
+		value * 914.4;
+	/// Converts the supplied Yards value to Centimetres
+	static double toCentimetres(double value) =>
+		value * 91.44;
+	/// Converts the supplied Yards value to Metres
+	static double toMetres(double value) =>
+		value * 0.9144;
+	/// Converts the supplied Yards value to Kilometres
+	static double toKilometres(double value) =>
+		value * 0.0009144;
+	/// Converts the supplied Yards value to Inches
+	static double toInches(double value) =>
+		value * 36.0;
+	/// Converts the supplied Yards value to Feet
+	static double toFeet(double value) =>
+		value * 3.0;
+	/// Converts the supplied Yards value to Miles
+	static double toMiles(double value) =>
+		value / 1760.0;
+	/// Converts the supplied Yards value to Nautical Miles
+	static double toNauticalMiles(double value) =>
+		value / 2025.37;
 }

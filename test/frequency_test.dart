@@ -8,77 +8,78 @@ import 'package:test/test.dart';
 import 'package:conversion_units/conversion_units.dart';
 
 void main() {
-  group('Frequency Tests', () {
-    test('Convert known Gigahertz to Hertz', () {
-      expect(Gigahertz.toHertz(0.009), closeTo(9000000.0, 0.01));
-      expect(Gigahertz.toHertz(0.000123), closeTo(123000.0, 0.01));
-      expect(Gigahertz.toHertz(0.0000456), closeTo(45600.0, 0.01));
-    });
+    group('Frequency Tests', () {
+        test('Convert known Gigahertz to Hertz', () {
+            expect(Gigahertz.toHertz(0.009), closeTo(9000000.0, 0.01));
+            expect(Gigahertz.toHertz(0.000123), closeTo(123000.0, 0.01));
+            expect(Gigahertz.toHertz(0.0000456), closeTo(45600.0, 0.01));
+        });
 
-    test('Convert known Gigahertz to Kilohertz', () {
-      expect(Gigahertz.toKilohertz(0.009), closeTo(9000.0, 0.01));
-      expect(Gigahertz.toKilohertz(1e-5), closeTo(10.0, 0.01));
-      expect(Gigahertz.toKilohertz(0.000065), closeTo(65.0, 0.01));
-    });
+        test('Convert known Gigahertz to Kilohertz', () {
+            expect(Gigahertz.toKilohertz(0.009), closeTo(9000.0, 0.01));
+            expect(Gigahertz.toKilohertz(1e-5), closeTo(10.0, 0.01));
+            expect(Gigahertz.toKilohertz(0.000065), closeTo(65.0, 0.01));
+        });
 
-    test('Convert known Gigahertz to Megahertz', () {
-      expect(Gigahertz.toMegahertz(0.9), closeTo(900.0, 0.01));
-      expect(Gigahertz.toMegahertz(0.0123), closeTo(12.3, 0.01));
-      expect(Gigahertz.toMegahertz(5.0), closeTo(5000.0, 0.01));
-    });
+        test('Convert known Gigahertz to Megahertz', () {
+            expect(Gigahertz.toMegahertz(0.9), closeTo(900.0, 0.01));
+            expect(Gigahertz.toMegahertz(0.0123), closeTo(12.3, 0.01));
+            expect(Gigahertz.toMegahertz(5.0), closeTo(5000.0, 0.01));
+        });
 
-    test('Convert known Hertz to Kilohertz', () {
-      expect(Hertz.toKilohertz(800.0), closeTo(0.8, 0.01));
-      expect(Hertz.toKilohertz(1506.9), closeTo(1.5069, 0.01));
-      expect(Hertz.toKilohertz(5000.0), closeTo(5.0, 0.01));
-    });
+        test('Convert known Hertz to Kilohertz', () {
+            expect(Hertz.toKilohertz(800.0), closeTo(0.8, 0.01));
+            expect(Hertz.toKilohertz(1506.9), closeTo(1.5069, 0.01));
+            expect(Hertz.toKilohertz(5000.0), closeTo(5.0, 0.01));
+        });
 
-    test('Convert known Hertz to Megahertz', () {
-      expect(Hertz.toMegahertz(900009.0), closeTo(0.900009, 0.01));
-      expect(Hertz.toMegahertz(160000.0), closeTo(0.16, 0.01));
-      expect(Hertz.toMegahertz(888888.0), closeTo(0.888888, 0.01));
-    });
+        test('Convert known Hertz to Megahertz', () {
+            expect(Hertz.toMegahertz(900009.0), closeTo(0.900009, 0.01));
+            expect(Hertz.toMegahertz(160000.0), closeTo(0.16, 0.01));
+            expect(Hertz.toMegahertz(888888.0), closeTo(0.888888, 0.01));
+        });
 
-    test('Convert known Hertz to Gigahertz', () {
-      expect(Hertz.toGigahertz(100900900.0), closeTo(0.1009009, 0.01));
-      expect(Hertz.toGigahertz(9.0), closeTo(9e-9, 0.01));
-      expect(Hertz.toGigahertz(90909090.0), closeTo(0.09090909, 0.01));
-    });
+        test('Convert known Hertz to Gigahertz', () {
+            expect(Hertz.toGigahertz(100900900.0), closeTo(0.1009009, 0.01));
+            expect(Hertz.toGigahertz(9.0), closeTo(9e-9, 0.01));
+            expect(Hertz.toGigahertz(90909090.0), closeTo(0.09090909, 0.01));
+        });
 
-    test('Convert known Kilohertz to Hertz', () {
-      expect(Kilohertz.toHertz(90.90909), closeTo(90909.09, 0.01));
-      expect(Kilohertz.toHertz(0.12345), closeTo(123.45, 0.01));
-      expect(Kilohertz.toHertz(500.0), closeTo(500000.0, 0.01));
-    });
+        test('Convert known Kilohertz to Hertz', () {
+            expect(Kilohertz.toHertz(90.90909), closeTo(90909.09, 0.01));
+            expect(Kilohertz.toHertz(0.12345), closeTo(123.45, 0.01));
+            expect(Kilohertz.toHertz(500.0), closeTo(500000.0, 0.01));
+        });
 
-    test('Convert known Kilohertz to Megahertz', () {
-      expect(Kilohertz.toMegahertz(909.0), closeTo(0.909, 0.01));
-      expect(Kilohertz.toMegahertz(123456.0), closeTo(123.456, 0.01));
-      expect(Kilohertz.toMegahertz(900.0), closeTo(0.9, 0.01));
-    });
+        test('Convert known Kilohertz to Megahertz', () {
+            expect(Kilohertz.toMegahertz(909.0), closeTo(0.909, 0.01));
+            expect(Kilohertz.toMegahertz(123456.0), closeTo(123.456, 0.01));
+            expect(Kilohertz.toMegahertz(900.0), closeTo(0.9, 0.01));
+        });
 
-    test('Convert known Kilohertz to Gigahertz', () {
-      expect(Kilohertz.toGigahertz(987654.0), closeTo(0.987654, 0.01));
-      expect(Kilohertz.toGigahertz(10000.0), closeTo(0.01, 0.01));
-      expect(Kilohertz.toGigahertz(90090.0), closeTo(0.09009, 0.01));
-    });
+        test('Convert known Kilohertz to Gigahertz', () {
+            expect(Kilohertz.toGigahertz(987654.0), closeTo(0.987654, 0.01));
+            expect(Kilohertz.toGigahertz(10000.0), closeTo(0.01, 0.01));
+            expect(Kilohertz.toGigahertz(90090.0), closeTo(0.09009, 0.01));
+        });
 
-    test('Convert known Megahertz to Hertz', () {
-      expect(Megahertz.toHertz(0.9), closeTo(900000.0, 0.01));
-      expect(Megahertz.toHertz(0.001), closeTo(1000.0, 0.01));
-      expect(Megahertz.toHertz(0.091), closeTo(91000.0, 0.01));
-    });
+        test('Convert known Megahertz to Hertz', () {
+            expect(Megahertz.toHertz(0.9), closeTo(900000.0, 0.01));
+            expect(Megahertz.toHertz(0.001), closeTo(1000.0, 0.01));
+            expect(Megahertz.toHertz(0.091), closeTo(91000.0, 0.01));
+        });
 
-    test('Convert known Megahertz to Kilohertz', () {
-      expect(Megahertz.toKilohertz(0.87), closeTo(870.0, 0.01));
-      expect(Megahertz.toKilohertz(12.0), closeTo(12000.0, 0.01));
-      expect(Megahertz.toKilohertz(88.1), closeTo(88100.0, 0.01));
-    });
+        test('Convert known Megahertz to Kilohertz', () {
+            expect(Megahertz.toKilohertz(0.87), closeTo(870.0, 0.01));
+            expect(Megahertz.toKilohertz(12.0), closeTo(12000.0, 0.01));
+            expect(Megahertz.toKilohertz(88.1), closeTo(88100.0, 0.01));
+        });
 
-    test('Convert known Megahertz to Gigahertz', () {
-      expect(Megahertz.toGigahertz(798.0), closeTo(0.798, 0.01));
-      expect(Megahertz.toGigahertz(900.0), closeTo(0.9, 0.01));
-      expect(Megahertz.toGigahertz(579.1), closeTo(0.5791, 0.01));
+        test('Convert known Megahertz to Gigahertz', () {
+            expect(Megahertz.toGigahertz(798.0), closeTo(0.798, 0.01));
+            expect(Megahertz.toGigahertz(900.0), closeTo(0.9, 0.01));
+            expect(Megahertz.toGigahertz(579.1), closeTo(0.5791, 0.01));
+        });
+
     });
-  });
 }

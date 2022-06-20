@@ -8,341 +8,342 @@ import 'package:test/test.dart';
 import 'package:conversion_units/conversion_units.dart';
 
 void main() {
-  group('Mass Tests', () {
-    test('Convert known Carats to Milligrams', () {
-      expect(Carats.toMilligrams(2.1), closeTo(420.0, 0.01));
-      expect(Carats.toMilligrams(123.0), closeTo(24600.0, 0.01));
-      expect(Carats.toMilligrams(0.8), closeTo(160.0, 0.01));
-    });
+    group('Mass Tests', () {
+        test('Convert known Carats to Milligrams', () {
+            expect(Carats.toMilligrams(2.1), closeTo(420.0, 0.01));
+            expect(Carats.toMilligrams(123.0), closeTo(24600.0, 0.01));
+            expect(Carats.toMilligrams(0.8), closeTo(160.0, 0.01));
+        });
 
-    test('Convert known Carats to Grams', () {
-      expect(Carats.toGrams(0.8), closeTo(0.16, 0.01));
-      expect(Carats.toGrams(1.5), closeTo(0.3, 0.01));
-      expect(Carats.toGrams(12.0), closeTo(2.4, 0.01));
-    });
+        test('Convert known Carats to Grams', () {
+            expect(Carats.toGrams(0.8), closeTo(0.16, 0.01));
+            expect(Carats.toGrams(1.5), closeTo(0.3, 0.01));
+            expect(Carats.toGrams(12.0), closeTo(2.4, 0.01));
+        });
 
-    test('Convert known Carats to Kilograms', () {
-      expect(Carats.toKilograms(1009.0), closeTo(0.2018, 0.01));
-      expect(Carats.toKilograms(999.0), closeTo(0.1998, 0.01));
-      expect(Carats.toKilograms(1234.5), closeTo(0.2469, 0.01));
-    });
+        test('Convert known Carats to Kilograms', () {
+            expect(Carats.toKilograms(1009.0), closeTo(0.2018, 0.01));
+            expect(Carats.toKilograms(999.0), closeTo(0.1998, 0.01));
+            expect(Carats.toKilograms(1234.5), closeTo(0.2469, 0.01));
+        });
 
-    test('Convert known Carats to Tonnes', () {
-      expect(Carats.toTonnes(1234567.0), closeTo(0.2469134, 0.01));
-      expect(Carats.toTonnes(9999999.0), closeTo(1.9999998, 0.01));
-      expect(Carats.toTonnes(998877.99), closeTo(0.199775598, 0.01));
-    });
+        test('Convert known Carats to Tonnes', () {
+            expect(Carats.toTonnes(1234567.0), closeTo(0.2469134, 0.01));
+            expect(Carats.toTonnes(9999999.0), closeTo(1.9999998, 0.01));
+            expect(Carats.toTonnes(998877.99), closeTo(0.199775598, 0.01));
+        });
 
-    test('Convert known Carats to Ounces', () {
-      expect(Carats.toOunces(900.0), closeTo(6.34931, 0.01));
-      expect(Carats.toOunces(123.45), closeTo(0.870914121, 0.01));
-      expect(Carats.toOunces(800.0), closeTo(5.64383, 0.01));
-    });
+        test('Convert known Carats to Ounces', () {
+            expect(Carats.toOunces(900.0), closeTo(6.34931, 0.01));
+            expect(Carats.toOunces(123.45), closeTo(0.870914121, 0.01));
+            expect(Carats.toOunces(800.0), closeTo(5.64383, 0.01));
+        });
 
-    test('Convert known Carats to Pounds', () {
-      expect(Carats.toPounds(1000.0), closeTo(0.440925, 0.01));
-      expect(Carats.toPounds(123456.0), closeTo(54.4347781, 0.01));
-      expect(Carats.toPounds(800.0), closeTo(0.35274, 0.01));
-    });
+        test('Convert known Carats to Pounds', () {
+            expect(Carats.toPounds(1000.0), closeTo(0.440925, 0.01));
+            expect(Carats.toPounds(123456.0), closeTo(54.4347781, 0.01));
+            expect(Carats.toPounds(800.0), closeTo(0.35274, 0.01));
+        });
 
-    test('Convert known Carats to Stones', () {
-      expect(Carats.toStones(9000.0), closeTo(0.2834515, 0.01));
-      expect(Carats.toStones(123456.0), closeTo(3.88819843, 0.01));
-      expect(Carats.toStones(80000.8), closeTo(2.519593906, 0.01));
-    });
+        test('Convert known Carats to Stones', () {
+            expect(Carats.toStones(9000.0), closeTo(0.2834515, 0.01));
+            expect(Carats.toStones(123456.0), closeTo(3.88819843, 0.01));
+            expect(Carats.toStones(80000.8), closeTo(2.519593906, 0.01));
+        });
 
-    test('Convert known Grams to Milligrams', () {
-      expect(Grams.toMilligrams(1.2), closeTo(1200.0, 0.01));
-      expect(Grams.toMilligrams(0.9), closeTo(900.0, 0.01));
-      expect(Grams.toMilligrams(2.0), closeTo(2000.0, 0.01));
-    });
+        test('Convert known Grams to Milligrams', () {
+            expect(Grams.toMilligrams(1.2), closeTo(1200.0, 0.01));
+            expect(Grams.toMilligrams(0.9), closeTo(900.0, 0.01));
+            expect(Grams.toMilligrams(2.0), closeTo(2000.0, 0.01));
+        });
 
-    test('Convert known Grams to Kilograms', () {
-      expect(Grams.toKilograms(900.0), closeTo(0.9, 0.01));
-      expect(Grams.toKilograms(12345.0), closeTo(12.345, 0.01));
-      expect(Grams.toKilograms(670.0), closeTo(0.67, 0.01));
-    });
+        test('Convert known Grams to Kilograms', () {
+            expect(Grams.toKilograms(900.0), closeTo(0.9, 0.01));
+            expect(Grams.toKilograms(12345.0), closeTo(12.345, 0.01));
+            expect(Grams.toKilograms(670.0), closeTo(0.67, 0.01));
+        });
 
-    test('Convert known Grams to Tonnes', () {
-      expect(Grams.toTonnes(6700000.0), closeTo(6.7, 0.01));
-      expect(Grams.toTonnes(123456.0), closeTo(0.123456, 0.01));
-      expect(Grams.toTonnes(9809789.0), closeTo(9.809789, 0.01));
-    });
+        test('Convert known Grams to Tonnes', () {
+            expect(Grams.toTonnes(6700000.0), closeTo(6.7, 0.01));
+            expect(Grams.toTonnes(123456.0), closeTo(0.123456, 0.01));
+            expect(Grams.toTonnes(9809789.0), closeTo(9.809789, 0.01));
+        });
 
-    test('Convert known Grams to Ounces', () {
-      expect(Grams.toOunces(4.3), closeTo(0.151678, 0.01));
-      expect(Grams.toOunces(170.0), closeTo(5.99657, 0.01));
-      expect(Grams.toOunces(9.0), closeTo(0.317466, 0.01));
-    });
+        test('Convert known Grams to Ounces', () {
+            expect(Grams.toOunces(4.3), closeTo(0.151678, 0.01));
+            expect(Grams.toOunces(170.0), closeTo(5.99657, 0.01));
+            expect(Grams.toOunces(9.0), closeTo(0.317466, 0.01));
+        });
 
-    test('Convert known Grams to Pounds', () {
-      expect(Grams.toPounds(80.0), closeTo(0.17637, 0.01));
-      expect(Grams.toPounds(190.0), closeTo(0.418878, 0.01));
-      expect(Grams.toPounds(4500.0), closeTo(9.920802, 0.01));
-    });
+        test('Convert known Grams to Pounds', () {
+            expect(Grams.toPounds(80.0), closeTo(0.17637, 0.01));
+            expect(Grams.toPounds(190.0), closeTo(0.418878, 0.01));
+            expect(Grams.toPounds(4500.0), closeTo(9.920802, 0.01));
+        });
 
-    test('Convert known Grams to Stones', () {
-      expect(Grams.toStones(8000.0), closeTo(1.259784, 0.01));
-      expect(Grams.toStones(12345.0), closeTo(1.9440047, 0.01));
-      expect(Grams.toStones(900.0), closeTo(0.141726, 0.01));
-    });
+        test('Convert known Grams to Stones', () {
+            expect(Grams.toStones(8000.0), closeTo(1.259784, 0.01));
+            expect(Grams.toStones(12345.0), closeTo(1.9440047, 0.01));
+            expect(Grams.toStones(900.0), closeTo(0.141726, 0.01));
+        });
 
-    test('Convert known Grams to Carats', () {
-      expect(Grams.toCarats(123.0), closeTo(615.0, 0.01));
-      expect(Grams.toCarats(90.1), closeTo(450.5, 0.01));
-      expect(Grams.toCarats(5000.0), closeTo(25000.0, 0.01));
-    });
+        test('Convert known Grams to Carats', () {
+            expect(Grams.toCarats(123.0), closeTo(615.0, 0.01));
+            expect(Grams.toCarats(90.1), closeTo(450.5, 0.01));
+            expect(Grams.toCarats(5000.0), closeTo(25000.0, 0.01));
+        });
 
-    test('Convert known Kilograms to Milligrams', () {
-      expect(Kilograms.toMilligrams(0.9), closeTo(900000.0, 0.01));
-      expect(Kilograms.toMilligrams(0.56), closeTo(560000.0, 0.01));
-      expect(Kilograms.toMilligrams(0.007), closeTo(7000.0, 0.01));
-    });
+        test('Convert known Kilograms to Milligrams', () {
+            expect(Kilograms.toMilligrams(0.9), closeTo(900000.0, 0.01));
+            expect(Kilograms.toMilligrams(0.56), closeTo(560000.0, 0.01));
+            expect(Kilograms.toMilligrams(0.007), closeTo(7000.0, 0.01));
+        });
 
-    test('Convert known Kilograms to Grams', () {
-      expect(Kilograms.toGrams(0.8), closeTo(800.0, 0.01));
-      expect(Kilograms.toGrams(12.0), closeTo(12000.0, 0.01));
-      expect(Kilograms.toGrams(0.2), closeTo(200.0, 0.01));
-    });
+        test('Convert known Kilograms to Grams', () {
+            expect(Kilograms.toGrams(0.8), closeTo(800.0, 0.01));
+            expect(Kilograms.toGrams(12.0), closeTo(12000.0, 0.01));
+            expect(Kilograms.toGrams(0.2), closeTo(200.0, 0.01));
+        });
 
-    test('Convert known Kilograms to Tonnes', () {
-      expect(Kilograms.toTonnes(123.0), closeTo(0.123, 0.01));
-      expect(Kilograms.toTonnes(9000.0), closeTo(9.0, 0.01));
-      expect(Kilograms.toTonnes(2300.0), closeTo(2.3, 0.01));
-    });
+        test('Convert known Kilograms to Tonnes', () {
+            expect(Kilograms.toTonnes(123.0), closeTo(0.123, 0.01));
+            expect(Kilograms.toTonnes(9000.0), closeTo(9.0, 0.01));
+            expect(Kilograms.toTonnes(2300.0), closeTo(2.3, 0.01));
+        });
 
-    test('Convert known Kilograms to Ounces', () {
-      expect(Kilograms.toOunces(2300.0), closeTo(81130.19, 0.01));
-      expect(Kilograms.toOunces(12.0), closeTo(423.288, 0.01));
-      expect(Kilograms.toOunces(3.4), closeTo(119.931, 0.01));
-    });
+        test('Convert known Kilograms to Ounces', () {
+            expect(Kilograms.toOunces(2300.0), closeTo(81130.19, 0.01));
+            expect(Kilograms.toOunces(12.0), closeTo(423.288, 0.01));
+            expect(Kilograms.toOunces(3.4), closeTo(119.931, 0.01));
+        });
 
-    test('Convert known Kilograms to Pounds', () {
-      expect(Kilograms.toPounds(3.4), closeTo(7.49572, 0.01));
-      expect(Kilograms.toPounds(0.9), closeTo(1.98416, 0.01));
-      expect(Kilograms.toPounds(3.0), closeTo(6.61387, 0.01));
-    });
+        test('Convert known Kilograms to Pounds', () {
+            expect(Kilograms.toPounds(3.4), closeTo(7.49572, 0.01));
+            expect(Kilograms.toPounds(0.9), closeTo(1.98416, 0.01));
+            expect(Kilograms.toPounds(3.0), closeTo(6.61387, 0.01));
+        });
 
-    test('Convert known Kilograms to Stones', () {
-      expect(Kilograms.toStones(3.0), closeTo(0.472419, 0.01));
-      expect(Kilograms.toStones(98.0), closeTo(15.4324, 0.01));
-      expect(Kilograms.toStones(1.2), closeTo(0.188968, 0.01));
-    });
+        test('Convert known Kilograms to Stones', () {
+            expect(Kilograms.toStones(3.0), closeTo(0.472419, 0.01));
+            expect(Kilograms.toStones(98.0), closeTo(15.4324, 0.01));
+            expect(Kilograms.toStones(1.2), closeTo(0.188968, 0.01));
+        });
 
-    test('Convert known Kilograms to Carats', () {
-      expect(Kilograms.toCarats(0.1), closeTo(500.0, 0.01));
-      expect(Kilograms.toCarats(0.08), closeTo(400.0, 0.01));
-      expect(Kilograms.toCarats(2.0), closeTo(10000.0, 0.01));
-    });
+        test('Convert known Kilograms to Carats', () {
+            expect(Kilograms.toCarats(0.1), closeTo(500.0, 0.01));
+            expect(Kilograms.toCarats(0.08), closeTo(400.0, 0.01));
+            expect(Kilograms.toCarats(2.0), closeTo(10000.0, 0.01));
+        });
 
-    test('Convert known Milligrams to Grams', () {
-      expect(Milligrams.toGrams(190.0), closeTo(0.19, 0.01));
-      expect(Milligrams.toGrams(2300.0), closeTo(2.3, 0.01));
-      expect(Milligrams.toGrams(19000.0), closeTo(19.0, 0.01));
-    });
+        test('Convert known Milligrams to Grams', () {
+            expect(Milligrams.toGrams(190.0), closeTo(0.19, 0.01));
+            expect(Milligrams.toGrams(2300.0), closeTo(2.3, 0.01));
+            expect(Milligrams.toGrams(19000.0), closeTo(19.0, 0.01));
+        });
 
-    test('Convert known Milligrams to Kilograms', () {
-      expect(Milligrams.toKilograms(1234567.0), closeTo(1.234567, 0.01));
-      expect(Milligrams.toKilograms(900800.0), closeTo(0.9008, 0.01));
-      expect(Milligrams.toKilograms(7800000.0), closeTo(7.8, 0.01));
-    });
+        test('Convert known Milligrams to Kilograms', () {
+            expect(Milligrams.toKilograms(1234567.0), closeTo(1.234567, 0.01));
+            expect(Milligrams.toKilograms(900800.0), closeTo(0.9008, 0.01));
+            expect(Milligrams.toKilograms(7800000.0), closeTo(7.8, 0.01));
+        });
 
-    test('Convert known Milligrams to Tonnes', () {
-      expect(Milligrams.toTonnes(900000000.0), closeTo(0.9, 0.01));
-      expect(Milligrams.toTonnes(60000000.0), closeTo(0.06, 0.01));
-      expect(Milligrams.toTonnes(123456789.0), closeTo(0.123456789, 0.01));
-    });
+        test('Convert known Milligrams to Tonnes', () {
+            expect(Milligrams.toTonnes(900000000.0), closeTo(0.9, 0.01));
+            expect(Milligrams.toTonnes(60000000.0), closeTo(0.06, 0.01));
+            expect(Milligrams.toTonnes(123456789.0), closeTo(0.123456789, 0.01));
+        });
 
-    test('Convert known Milligrams to Ounces', () {
-      expect(Milligrams.toOunces(6000.0), closeTo(0.2116438, 0.01));
-      expect(Milligrams.toOunces(123456.0), closeTo(4.35478225, 0.01));
-      expect(Milligrams.toOunces(8001.0), closeTo(0.282227, 0.01));
-    });
+        test('Convert known Milligrams to Ounces', () {
+            expect(Milligrams.toOunces(6000.0), closeTo(0.2116438, 0.01));
+            expect(Milligrams.toOunces(123456.0), closeTo(4.35478225, 0.01));
+            expect(Milligrams.toOunces(8001.0), closeTo(0.282227, 0.01));
+        });
 
-    test('Convert known Milligrams to Pounds', () {
-      expect(Milligrams.toPounds(123456.0), closeTo(0.27217389, 0.01));
-      expect(Milligrams.toPounds(800900.0), closeTo(1.76568226, 0.01));
-      expect(Milligrams.toPounds(666666.0), closeTo(1.46974694, 0.01));
-    });
+        test('Convert known Milligrams to Pounds', () {
+            expect(Milligrams.toPounds(123456.0), closeTo(0.27217389, 0.01));
+            expect(Milligrams.toPounds(800900.0), closeTo(1.76568226, 0.01));
+            expect(Milligrams.toPounds(666666.0), closeTo(1.46974694, 0.01));
+        });
 
-    test('Convert known Milligrams to Stones', () {
-      expect(Milligrams.toStones(900000.0), closeTo(0.14172574, 0.01));
-      expect(Milligrams.toStones(12345678.0), closeTo(1.9441115001, 0.01));
-      expect(Milligrams.toStones(800100.0), closeTo(0.125994183, 0.01));
-    });
+        test('Convert known Milligrams to Stones', () {
+            expect(Milligrams.toStones(900000.0), closeTo(0.14172574, 0.01));
+            expect(Milligrams.toStones(12345678.0), closeTo(1.9441115001, 0.01));
+            expect(Milligrams.toStones(800100.0), closeTo(0.125994183, 0.01));
+        });
 
-    test('Convert known Milligrams to Carats', () {
-      expect(Milligrams.toCarats(600.0), closeTo(3.0, 0.01));
-      expect(Milligrams.toCarats(1234.0), closeTo(6.17, 0.01));
-      expect(Milligrams.toCarats(9090.0), closeTo(45.45, 0.01));
-    });
+        test('Convert known Milligrams to Carats', () {
+            expect(Milligrams.toCarats(600.0), closeTo(3.0, 0.01));
+            expect(Milligrams.toCarats(1234.0), closeTo(6.17, 0.01));
+            expect(Milligrams.toCarats(9090.0), closeTo(45.45, 0.01));
+        });
 
-    test('Convert known Ounces to Milligrams', () {
-      expect(Ounces.toMilligrams(0.2), closeTo(5669.9, 0.01));
-      expect(Ounces.toMilligrams(12.0), closeTo(340194.2772, 0.01));
-      expect(Ounces.toMilligrams(1.8), closeTo(51029.141579, 0.01));
-    });
+        test('Convert known Ounces to Milligrams', () {
+            expect(Ounces.toMilligrams(0.2), closeTo(5669.9, 0.01));
+            expect(Ounces.toMilligrams(12.0), closeTo(340194.2772, 0.01));
+            expect(Ounces.toMilligrams(1.8), closeTo(51029.141579, 0.01));
+        });
 
-    test('Convert known Ounces to Grams', () {
-      expect(Ounces.toGrams(2.0), closeTo(56.699, 0.01));
-      expect(Ounces.toGrams(0.3), closeTo(8.50486, 0.01));
-      expect(Ounces.toGrams(7.0), closeTo(198.447, 0.01));
-    });
+        test('Convert known Ounces to Grams', () {
+            expect(Ounces.toGrams(2.0), closeTo(56.699, 0.01));
+            expect(Ounces.toGrams(0.3), closeTo(8.50486, 0.01));
+            expect(Ounces.toGrams(7.0), closeTo(198.447, 0.01));
+        });
 
-    test('Convert known Ounces to Kilograms', () {
-      expect(Ounces.toKilograms(56.0), closeTo(1.58757, 0.01));
-      expect(Ounces.toKilograms(123.0), closeTo(3.48699, 0.01));
-      expect(Ounces.toKilograms(100.9), closeTo(2.8604669, 0.01));
-    });
+        test('Convert known Ounces to Kilograms', () {
+            expect(Ounces.toKilograms(56.0), closeTo(1.58757, 0.01));
+            expect(Ounces.toKilograms(123.0), closeTo(3.48699, 0.01));
+            expect(Ounces.toKilograms(100.9), closeTo(2.8604669, 0.01));
+        });
 
-    test('Convert known Ounces to Tonnes', () {
-      expect(Ounces.toTonnes(8000.0), closeTo(0.2267962, 0.01));
-      expect(Ounces.toTonnes(1234567.0), closeTo(34.99938572, 0.01));
-      expect(Ounces.toTonnes(900800.0), closeTo(25.5372504, 0.01));
-    });
+        test('Convert known Ounces to Tonnes', () {
+            expect(Ounces.toTonnes(8000.0), closeTo(0.2267962, 0.01));
+            expect(Ounces.toTonnes(1234567.0), closeTo(34.99938572, 0.01));
+            expect(Ounces.toTonnes(900800.0), closeTo(25.5372504, 0.01));
+        });
 
-    test('Convert known Ounces to Pounds', () {
-      expect(Ounces.toPounds(90.0), closeTo(5.625, 0.01));
-      expect(Ounces.toPounds(5.2), closeTo(0.325, 0.01));
-      expect(Ounces.toPounds(12.0), closeTo(0.75, 0.01));
-    });
+        test('Convert known Ounces to Pounds', () {
+            expect(Ounces.toPounds(90.0), closeTo(5.625, 0.01));
+            expect(Ounces.toPounds(5.2), closeTo(0.325, 0.01));
+            expect(Ounces.toPounds(12.0), closeTo(0.75, 0.01));
+        });
 
-    test('Convert known Ounces to Stones', () {
-      expect(Ounces.toStones(167.0), closeTo(0.745536, 0.01));
-      expect(Ounces.toStones(800.7), closeTo(3.5745536, 0.01));
-      expect(Ounces.toStones(1234.5), closeTo(5.51116071, 0.01));
-    });
+        test('Convert known Ounces to Stones', () {
+            expect(Ounces.toStones(167.0), closeTo(0.745536, 0.01));
+            expect(Ounces.toStones(800.7), closeTo(3.5745536, 0.01));
+            expect(Ounces.toStones(1234.5), closeTo(5.51116071, 0.01));
+        });
 
-    test('Convert known Ounces to Carats', () {
-      expect(Ounces.toCarats(0.0012), closeTo(0.170097139, 0.01));
-      expect(Ounces.toCarats(4.0), closeTo(566.99, 0.01));
-      expect(Ounces.toCarats(1.4), closeTo(198.447, 0.01));
-    });
+        test('Convert known Ounces to Carats', () {
+            expect(Ounces.toCarats(0.0012), closeTo(0.170097139, 0.01));
+            expect(Ounces.toCarats(4.0), closeTo(566.99, 0.01));
+            expect(Ounces.toCarats(1.4), closeTo(198.447, 0.01));
+        });
 
-    test('Convert known Pounds to Milligrams', () {
-      expect(Pounds.toMilligrams(2.2), closeTo(997903.214, 0.01));
-      expect(Pounds.toMilligrams(0.7), closeTo(317514.6589, 0.01));
-      expect(Pounds.toMilligrams(0.32), closeTo(145149.5584, 0.01));
-    });
+        test('Convert known Pounds to Milligrams', () {
+            expect(Pounds.toMilligrams(2.2), closeTo(997903.214, 0.01));
+            expect(Pounds.toMilligrams(0.7), closeTo(317514.6589, 0.01));
+            expect(Pounds.toMilligrams(0.32), closeTo(145149.5584, 0.01));
+        });
 
-    test('Convert known Pounds to Grams', () {
-      expect(Pounds.toGrams(0.3), closeTo(136.078, 0.01));
-      expect(Pounds.toGrams(1.2), closeTo(544.311, 0.01));
-      expect(Pounds.toGrams(9.0), closeTo(4082.33, 0.01));
-    });
+        test('Convert known Pounds to Grams', () {
+            expect(Pounds.toGrams(0.3), closeTo(136.078, 0.01));
+            expect(Pounds.toGrams(1.2), closeTo(544.311, 0.01));
+            expect(Pounds.toGrams(9.0), closeTo(4082.33, 0.01));
+        });
 
-    test('Convert known Pounds to Kilograms', () {
-      expect(Pounds.toKilograms(5.0), closeTo(2.26796, 0.01));
-      expect(Pounds.toKilograms(1.1), closeTo(0.498952, 0.01));
-      expect(Pounds.toKilograms(0.7), closeTo(0.317515, 0.01));
-    });
+        test('Convert known Pounds to Kilograms', () {
+            expect(Pounds.toKilograms(5.0), closeTo(2.26796, 0.01));
+            expect(Pounds.toKilograms(1.1), closeTo(0.498952, 0.01));
+            expect(Pounds.toKilograms(0.7), closeTo(0.317515, 0.01));
+        });
 
-    test('Convert known Pounds to Tonnes', () {
-      expect(Pounds.toTonnes(1233.0), closeTo(0.5592794, 0.01));
-      expect(Pounds.toTonnes(656565.0), closeTo(297.812874, 0.01));
-      expect(Pounds.toTonnes(900.0), closeTo(0.408233, 0.01));
-    });
+        test('Convert known Pounds to Tonnes', () {
+            expect(Pounds.toTonnes(1233.0), closeTo(0.5592794, 0.01));
+            expect(Pounds.toTonnes(656565.0), closeTo(297.812874, 0.01));
+            expect(Pounds.toTonnes(900.0), closeTo(0.408233, 0.01));
+        });
 
-    test('Convert known Pounds to Ounces', () {
-      expect(Pounds.toOunces(45.0), closeTo(720.0, 0.01));
-      expect(Pounds.toOunces(6.7), closeTo(107.2, 0.01));
-      expect(Pounds.toOunces(89.1), closeTo(1425.6, 0.01));
-    });
+        test('Convert known Pounds to Ounces', () {
+            expect(Pounds.toOunces(45.0), closeTo(720.0, 0.01));
+            expect(Pounds.toOunces(6.7), closeTo(107.2, 0.01));
+            expect(Pounds.toOunces(89.1), closeTo(1425.6, 0.01));
+        });
 
-    test('Convert known Pounds to Stones', () {
-      expect(Pounds.toStones(89.1), closeTo(6.364286, 0.01));
-      expect(Pounds.toStones(1.2), closeTo(0.0857143, 0.01));
-      expect(Pounds.toStones(789.0), closeTo(56.3571, 0.01));
-    });
+        test('Convert known Pounds to Stones', () {
+            expect(Pounds.toStones(89.1), closeTo(6.364286, 0.01));
+            expect(Pounds.toStones(1.2), closeTo(0.0857143, 0.01));
+            expect(Pounds.toStones(789.0), closeTo(56.3571, 0.01));
+        });
 
-    test('Convert known Pounds to Carats', () {
-      expect(Pounds.toCarats(80.0), closeTo(181436.7522, 0.01));
-      expect(Pounds.toCarats(2.34), closeTo(5307.031, 0.01));
-      expect(Pounds.toCarats(0.9), closeTo(2041.17, 0.01));
-    });
+        test('Convert known Pounds to Carats', () {
+            expect(Pounds.toCarats(80.0), closeTo(181436.7522, 0.01));
+            expect(Pounds.toCarats(2.34), closeTo(5307.031, 0.01));
+            expect(Pounds.toCarats(0.9), closeTo(2041.17, 0.01));
+        });
 
-    test('Convert known Stones to Milligrams', () {
-      expect(Stones.toMilligrams(0.009), closeTo(57152.63861, 0.01));
-      expect(Stones.toMilligrams(0.002), closeTo(12700.586, 0.01));
-      expect(Stones.toMilligrams(0.0006), closeTo(3810.17591, 0.01));
-    });
+        test('Convert known Stones to Milligrams', () {
+            expect(Stones.toMilligrams(0.009), closeTo(57152.63861, 0.01));
+            expect(Stones.toMilligrams(0.002), closeTo(12700.586, 0.01));
+            expect(Stones.toMilligrams(0.0006), closeTo(3810.17591, 0.01));
+        });
 
-    test('Convert known Stones to Grams', () {
-      expect(Stones.toGrams(1.2), closeTo(7620.35, 0.01));
-      expect(Stones.toGrams(8.0), closeTo(50802.34543, 0.01));
-      expect(Stones.toGrams(90.0), closeTo(571526.38619, 0.01));
-    });
+        test('Convert known Stones to Grams', () {
+            expect(Stones.toGrams(1.2), closeTo(7620.35, 0.01));
+            expect(Stones.toGrams(8.0), closeTo(50802.34543, 0.01));
+            expect(Stones.toGrams(90.0), closeTo(571526.38619, 0.01));
+        });
 
-    test('Convert known Stones to Kilograms', () {
-      expect(Stones.toKilograms(90.0), closeTo(571.526, 0.01));
-      expect(Stones.toKilograms(3.4), closeTo(21.591, 0.01));
-      expect(Stones.toKilograms(66.0), closeTo(419.119, 0.01));
-    });
+        test('Convert known Stones to Kilograms', () {
+            expect(Stones.toKilograms(90.0), closeTo(571.526, 0.01));
+            expect(Stones.toKilograms(3.4), closeTo(21.591, 0.01));
+            expect(Stones.toKilograms(66.0), closeTo(419.119, 0.01));
+        });
 
-    test('Convert known Stones to Tonnes', () {
-      expect(Stones.toTonnes(100.0), closeTo(0.635029, 0.01));
-      expect(Stones.toTonnes(12345.0), closeTo(78.394369, 0.01));
-      expect(Stones.toTonnes(10099.0), closeTo(64.131611, 0.01));
-    });
+        test('Convert known Stones to Tonnes', () {
+            expect(Stones.toTonnes(100.0), closeTo(0.635029, 0.01));
+            expect(Stones.toTonnes(12345.0), closeTo(78.394369, 0.01));
+            expect(Stones.toTonnes(10099.0), closeTo(64.131611, 0.01));
+        });
 
-    test('Convert known Stones to Ounces', () {
-      expect(Stones.toOunces(34.0), closeTo(7616.0, 0.01));
-      expect(Stones.toOunces(1.2), closeTo(268.8, 0.01));
-      expect(Stones.toOunces(800.0), closeTo(179200.0, 0.01));
-    });
+        test('Convert known Stones to Ounces', () {
+            expect(Stones.toOunces(34.0), closeTo(7616.0, 0.01));
+            expect(Stones.toOunces(1.2), closeTo(268.8, 0.01));
+            expect(Stones.toOunces(800.0), closeTo(179200.0, 0.01));
+        });
 
-    test('Convert known Stones to Pounds', () {
-      expect(Stones.toPounds(800.0), closeTo(11200.0, 0.01));
-      expect(Stones.toPounds(0.5), closeTo(7.0, 0.01));
-      expect(Stones.toPounds(52.1), closeTo(729.4, 0.01));
-    });
+        test('Convert known Stones to Pounds', () {
+            expect(Stones.toPounds(800.0), closeTo(11200.0, 0.01));
+            expect(Stones.toPounds(0.5), closeTo(7.0, 0.01));
+            expect(Stones.toPounds(52.1), closeTo(729.4, 0.01));
+        });
 
-    test('Convert known Stones to Carats', () {
-      expect(Stones.toCarats(0.01), closeTo(317.5147, 0.01));
-      expect(Stones.toCarats(0.006), closeTo(190.5088, 0.01));
-      expect(Stones.toCarats(2.1), closeTo(66677.25, 0.01));
-    });
+        test('Convert known Stones to Carats', () {
+            expect(Stones.toCarats(0.01), closeTo(317.5147, 0.01));
+            expect(Stones.toCarats(0.006), closeTo(190.5088, 0.01));
+            expect(Stones.toCarats(2.1), closeTo(66677.25, 0.01));
+        });
 
-    test('Convert known Tonnes to Milligrams', () {
-      expect(Tonnes.toMilligrams(0.009), closeTo(9000000.0, 0.01));
-      expect(Tonnes.toMilligrams(0.00081), closeTo(810000.0, 0.01));
-      expect(Tonnes.toMilligrams(0.00123), closeTo(1230000.0, 0.01));
-    });
+        test('Convert known Tonnes to Milligrams', () {
+            expect(Tonnes.toMilligrams(0.009), closeTo(9000000.0, 0.01));
+            expect(Tonnes.toMilligrams(0.00081), closeTo(810000.0, 0.01));
+            expect(Tonnes.toMilligrams(0.00123), closeTo(1230000.0, 0.01));
+        });
 
-    test('Convert known Tonnes to Grams', () {
-      expect(Tonnes.toGrams(0.00123), closeTo(1230.0, 0.01));
-      expect(Tonnes.toGrams(0.8), closeTo(800000.0, 0.01));
-      expect(Tonnes.toGrams(0.03), closeTo(30000.0, 0.01));
-    });
+        test('Convert known Tonnes to Grams', () {
+            expect(Tonnes.toGrams(0.00123), closeTo(1230.0, 0.01));
+            expect(Tonnes.toGrams(0.8), closeTo(800000.0, 0.01));
+            expect(Tonnes.toGrams(0.03), closeTo(30000.0, 0.01));
+        });
 
-    test('Convert known Tonnes to Kilograms', () {
-      expect(Tonnes.toKilograms(0.03), closeTo(30.0, 0.01));
-      expect(Tonnes.toKilograms(4.0), closeTo(4000.0, 0.01));
-      expect(Tonnes.toKilograms(1.2), closeTo(1200.0, 0.01));
-    });
+        test('Convert known Tonnes to Kilograms', () {
+            expect(Tonnes.toKilograms(0.03), closeTo(30.0, 0.01));
+            expect(Tonnes.toKilograms(4.0), closeTo(4000.0, 0.01));
+            expect(Tonnes.toKilograms(1.2), closeTo(1200.0, 0.01));
+        });
 
-    test('Convert known Tonnes to Ounces', () {
-      expect(Tonnes.toOunces(1.2), closeTo(42328.754376824065, 0.01));
-      expect(Tonnes.toOunces(0.8), closeTo(28219.169584549378, 0.01));
-      expect(Tonnes.toOunces(0.001), closeTo(35.273962, 0.01));
-    });
+        test('Convert known Tonnes to Ounces', () {
+            expect(Tonnes.toOunces(1.2), closeTo(42328.754376824065, 0.01));
+            expect(Tonnes.toOunces(0.8), closeTo(28219.169584549378, 0.01));
+            expect(Tonnes.toOunces(0.001), closeTo(35.273962, 0.01));
+        });
 
-    test('Convert known Tonnes to Pounds', () {
-      expect(Tonnes.toPounds(1.2), closeTo(2645.55, 0.01));
-      expect(Tonnes.toPounds(0.9), closeTo(1984.16, 0.01));
-      expect(Tonnes.toPounds(34.0), closeTo(74957.08, 0.01));
-    });
+        test('Convert known Tonnes to Pounds', () {
+            expect(Tonnes.toPounds(1.2), closeTo(2645.55, 0.01));
+            expect(Tonnes.toPounds(0.9), closeTo(1984.16, 0.01));
+            expect(Tonnes.toPounds(34.0), closeTo(74957.08, 0.01));
+        });
 
-    test('Convert known Tonnes to Stones', () {
-      expect(Tonnes.toStones(12.0), closeTo(1889.68, 0.01));
-      expect(Tonnes.toStones(8.4), closeTo(1322.77, 0.01));
-      expect(Tonnes.toStones(0.3), closeTo(47.2419, 0.01));
-    });
+        test('Convert known Tonnes to Stones', () {
+            expect(Tonnes.toStones(12.0), closeTo(1889.68, 0.01));
+            expect(Tonnes.toStones(8.4), closeTo(1322.77, 0.01));
+            expect(Tonnes.toStones(0.3), closeTo(47.2419, 0.01));
+        });
 
-    test('Convert known Tonnes to Carats', () {
-      expect(Tonnes.toCarats(0.003), closeTo(15000.0, 0.01));
-      expect(Tonnes.toCarats(0.09), closeTo(450000.0, 0.01));
-      expect(Tonnes.toCarats(0.0012), closeTo(6000.0, 0.01));
+        test('Convert known Tonnes to Carats', () {
+            expect(Tonnes.toCarats(0.003), closeTo(15000.0, 0.01));
+            expect(Tonnes.toCarats(0.09), closeTo(450000.0, 0.01));
+            expect(Tonnes.toCarats(0.0012), closeTo(6000.0, 0.01));
+        });
+
     });
-  });
 }

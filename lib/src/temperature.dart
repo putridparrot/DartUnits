@@ -6,57 +6,56 @@
 
 /// Celsius conversion functions
 class Celsius {
-  Celsius._() {}
-
-  /// Converts the supplied Celsius value to Fahrenheit
-  static double toFahrenheit(double value) => value * 1.8 + 32.0;
-
-  /// Converts the supplied Celsius value to Kelvin
-  static double toKelvin(double value) => value + 273.15;
-
-  /// Converts the supplied Celsius value to Rankine
-  static double toRankine(double value) => value * 9.0 / 5.0 + 491.67;
+	Celsius._() {}
+	/// Converts the supplied Celsius value to Fahrenheit
+	static double toFahrenheit(double value) =>
+		value * 1.8 + 32.0;
+	/// Converts the supplied Celsius value to Kelvin
+	static double toKelvin(double value) =>
+		value + 273.15;
+	/// Converts the supplied Celsius value to Rankine
+	static double toRankine(double value) =>
+		value * 9.0/5.0 + 491.67;
 }
 
 /// Fahrenheit conversion functions
 class Fahrenheit {
-  Fahrenheit._() {}
-
-  /// Converts the supplied Fahrenheit value to Celsius
-  static double toCelsius(double value) => ((value - 32.0) * 5.0) / 9.0;
-
-  /// Converts the supplied Fahrenheit value to Kelvin
-  static double toKelvin(double value) =>
-      (((value - 32.0) * 5.0) / 9.0) + 273.15;
-
-  /// Converts the supplied Fahrenheit value to Rankine
-  static double toRankine(double value) => value + 459.67;
+	Fahrenheit._() {}
+	/// Converts the supplied Fahrenheit value to Celsius
+	static double toCelsius(double value) =>
+		((value - 32.0) * 5.0) / 9.0;
+	/// Converts the supplied Fahrenheit value to Kelvin
+	static double toKelvin(double value) =>
+		(((value - 32.0) * 5.0) / 9.0) + 273.15;
+	/// Converts the supplied Fahrenheit value to Rankine
+	static double toRankine(double value) =>
+		value + 459.67;
 }
 
 /// Kelvin conversion functions
 class Kelvin {
-  Kelvin._() {}
-
-  /// Converts the supplied Kelvin value to Celsius
-  static double toCelsius(double value) => value - 273.15;
-
-  /// Converts the supplied Kelvin value to Fahrenheit
-  static double toFahrenheit(double value) => ((value - 273.15) * 1.8) + 32.0;
-
-  /// Converts the supplied Kelvin value to Rankine
-  static double toRankine(double value) => value * 1.8;
+	Kelvin._() {}
+	/// Converts the supplied Kelvin value to Celsius
+	static double toCelsius(double value) =>
+		value - 273.15;
+	/// Converts the supplied Kelvin value to Fahrenheit
+	static double toFahrenheit(double value) =>
+		((value - 273.15) * 1.8) + 32.0;
+	/// Converts the supplied Kelvin value to Rankine
+	static double toRankine(double value) =>
+		value * 1.8;
 }
 
 /// Rankine conversion functions
 class Rankine {
-  Rankine._() {}
-
-  /// Converts the supplied Rankine value to Celsius
-  static double toCelsius(double value) => (value - 491.67) * 5.0 / 9.0;
-
-  /// Converts the supplied Rankine value to Fahrenheit
-  static double toFahrenheit(double value) => value - 459.67;
-
-  /// Converts the supplied Rankine value to Kelvin
-  static double toKelvin(double value) => value / 1.8;
+	Rankine._() {}
+	/// Converts the supplied Rankine value to Celsius
+	static double toCelsius(double value) =>
+		(value - 491.67) * 5.0/9.0;
+	/// Converts the supplied Rankine value to Fahrenheit
+	static double toFahrenheit(double value) =>
+		value - 459.67;
+	/// Converts the supplied Rankine value to Kelvin
+	static double toKelvin(double value) =>
+		value / 1.8;
 }

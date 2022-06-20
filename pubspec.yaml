@@ -1,6 +1,6 @@
 name: conversion_units
 description: Unit of measurements conversions. Convert between various units 
-version: 0.1.4
+version: 0.1.5
 homepage: https://github.com/putridparrot/DartUnits
 
 environment:

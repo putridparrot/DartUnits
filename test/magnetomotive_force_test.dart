@@ -8,17 +8,18 @@ import 'package:test/test.dart';
 import 'package:conversion_units/conversion_units.dart';
 
 void main() {
-  group('Magnetomotive Force Tests', () {
-    test('Convert known Ampere-turns to Gilberts', () {
-      expect(Ampereturns.toGilberts(400.0), closeTo(502.6548248, 0.01));
-      expect(Ampereturns.toGilberts(6.7), closeTo(8.4194683154, 0.01));
-      expect(Ampereturns.toGilberts(0.8), closeTo(1.0053096496, 0.01));
-    });
+    group('Magnetomotive Force Tests', () {
+        test('Convert known Ampere-turns to Gilberts', () {
+            expect(Ampereturns.toGilberts(400.0), closeTo(502.6548248, 0.01));
+            expect(Ampereturns.toGilberts(6.7), closeTo(8.4194683154, 0.01));
+            expect(Ampereturns.toGilberts(0.8), closeTo(1.0053096496, 0.01));
+        });
 
-    test('Convert known Gilberts to Ampere-turns', () {
-      expect(Gilberts.toAmpereturns(0.8), closeTo(0.6366197721, 0.01));
-      expect(Gilberts.toAmpereturns(67.0), closeTo(53.316905912, 0.01));
-      expect(Gilberts.toAmpereturns(2.3), closeTo(1.8302818447, 0.01));
+        test('Convert known Gilberts to Ampere-turns', () {
+            expect(Gilberts.toAmpereturns(0.8), closeTo(0.6366197721, 0.01));
+            expect(Gilberts.toAmpereturns(67.0), closeTo(53.316905912, 0.01));
+            expect(Gilberts.toAmpereturns(2.3), closeTo(1.8302818447, 0.01));
+        });
+
     });
-  });
 }
