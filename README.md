@@ -15,6 +15,7 @@ Package available via [pub.dev](https://pub.dev/packages/conversion_units)
 
 [C#](https://github.com/putridparrot/PutridParrot.Units)  
 [F#](https://github.com/putridparrot/FSharp.Units)  
+[Go](https://github.com/putridparrot/GoUnits)  
 [Java](https://github.com/putridparrot/JavaUnits)  
 [Python](https://github.com/putridparrot/PyUnits)  
 [Rust](https://github.com/putridparrot/RustUnits)   
