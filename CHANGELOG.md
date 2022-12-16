@@ -18,6 +18,6 @@ File name changes to use snake case as per Dart preferences
 
 Hide constructor as no purpose to creating an instance of these classes
 
-## 0.1.5
+## 0.1.6
 
 Added cubic metres, cubic feet, cubic inches and oil barrels to volumes.
