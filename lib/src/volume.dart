@@ -4,6 +4,192 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
+/// Cubic Feet conversion functions
+class CubicFeet {
+	CubicFeet._() {}
+	/// Converts the supplied Cubic Feet value to Millilitres
+	static double toMillilitres(double value) =>
+		value * 28316.8;
+	/// Converts the supplied Cubic Feet value to Litres
+	static double toLitres(double value) =>
+		value * 28.3168;
+	/// Converts the supplied Cubic Feet value to Kilolitres
+	static double toKilolitres(double value) =>
+		value / 35.3147;
+	/// Converts the supplied Cubic Feet value to Teaspoons
+	static double toTeaspoons(double value) =>
+		value * 4783.74;
+	/// Converts the supplied Cubic Feet value to Tablespoons
+	static double toTablespoons(double value) =>
+		value * 1594.58;
+	/// Converts the supplied Cubic Feet value to Quarts
+	static double toQuarts(double value) =>
+		value * 24.9153;
+	/// Converts the supplied Cubic Feet value to Pints
+	static double toPints(double value) =>
+		value * 49.8307;
+	/// Converts the supplied Cubic Feet value to Gallons
+	static double toGallons(double value) =>
+		value * 6.22884;
+	/// Converts the supplied Cubic Feet value to Fluid Ounces
+	static double toFluidOunces(double value) =>
+		value * 996.614;
+	/// Converts the supplied Cubic Feet value to US Teaspoons
+	static double toUSTeaspoons(double value) =>
+		value * 5745.04;
+	/// Converts the supplied Cubic Feet value to US Tablespoons
+	static double toUSTablespoons(double value) =>
+		value * 1915.01;
+	/// Converts the supplied Cubic Feet value to US Quarts
+	static double toUSQuarts(double value) =>
+		value * 29.9221;
+	/// Converts the supplied Cubic Feet value to US Pints
+	static double toUSPints(double value) =>
+		value * 59.8442;
+	/// Converts the supplied Cubic Feet value to US Gallons
+	static double toUSGallons(double value) =>
+		value * 7.48052;
+	/// Converts the supplied Cubic Feet value to US Fluid Ounces
+	static double toUSFluidOunces(double value) =>
+		value * 957.506;
+	/// Converts the supplied Cubic Feet value to US Cups
+	static double toUSCups(double value) =>
+		value * 117.987;
+	/// Converts the supplied Cubic Feet value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 35.3147;
+	/// Converts the supplied Cubic Feet value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 1728.0;
+	/// Converts the supplied Cubic Feet value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value * 0.178108;
+}
+
+/// Cubic Inches conversion functions
+class CubicInches {
+	CubicInches._() {}
+	/// Converts the supplied Cubic Inches value to Millilitres
+	static double toMillilitres(double value) =>
+		value * 16.3871;
+	/// Converts the supplied Cubic Inches value to Litres
+	static double toLitres(double value) =>
+		value / 61.024;
+	/// Converts the supplied Cubic Inches value to Kilolitres
+	static double toKilolitres(double value) =>
+		value / 61024.0;
+	/// Converts the supplied Cubic Inches value to Teaspoons
+	static double toTeaspoons(double value) =>
+		value * 2.76837;
+	/// Converts the supplied Cubic Inches value to Tablespoons
+	static double toTablespoons(double value) =>
+		value / 1.08367;
+	/// Converts the supplied Cubic Inches value to Quarts
+	static double toQuarts(double value) =>
+		value / 69.355;
+	/// Converts the supplied Cubic Inches value to Pints
+	static double toPints(double value) =>
+		value / 34.677;
+	/// Converts the supplied Cubic Inches value to Gallons
+	static double toGallons(double value) =>
+		value / 277.4;
+	/// Converts the supplied Cubic Inches value to Fluid Ounces
+	static double toFluidOunces(double value) =>
+		value / 1.73387;
+	/// Converts the supplied Cubic Inches value to US Teaspoons
+	static double toUSTeaspoons(double value) =>
+		value * 3.32468;
+	/// Converts the supplied Cubic Inches value to US Tablespoons
+	static double toUSTablespoons(double value) =>
+		value * 1.10823;
+	/// Converts the supplied Cubic Inches value to US Quarts
+	static double toUSQuarts(double value) =>
+		value / 57.75;
+	/// Converts the supplied Cubic Inches value to US Pints
+	static double toUSPints(double value) =>
+		value / 28.875;
+	/// Converts the supplied Cubic Inches value to US Gallons
+	static double toUSGallons(double value) =>
+		value / 231.0;
+	/// Converts the supplied Cubic Inches value to US Fluid Ounces
+	static double toUSFluidOunces(double value) =>
+		value / 1.80469;
+	/// Converts the supplied Cubic Inches value to US Cups
+	static double toUSCups(double value) =>
+		value / 14.6457;
+	/// Converts the supplied Cubic Inches value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 61023.7;
+	/// Converts the supplied Cubic Inches value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 1728.0;
+	/// Converts the supplied Cubic Inches value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 9702.0;
+}
+
+/// Cubic Metres conversion functions
+class CubicMetres {
+	CubicMetres._() {}
+	/// Converts the supplied Cubic Metres value to Millilitres
+	static double toMillilitres(double value) =>
+		value * 1000000.0;
+	/// Converts the supplied Cubic Metres value to Litres
+	static double toLitres(double value) =>
+		value * 1000.0;
+	/// Converts the supplied Cubic Metres value to Kilolitres
+	static double toKilolitres(double value) =>
+		value * 1.0;
+	/// Converts the supplied Cubic Metres value to Teaspoons
+	static double toTeaspoons(double value) =>
+		value * 168936.0;
+	/// Converts the supplied Cubic Metres value to Tablespoons
+	static double toTablespoons(double value) =>
+		value * 56312.1;
+	/// Converts the supplied Cubic Metres value to Quarts
+	static double toQuarts(double value) =>
+		value * 879.877;
+	/// Converts the supplied Cubic Metres value to Pints
+	static double toPints(double value) =>
+		value * 1759.75;
+	/// Converts the supplied Cubic Metres value to Gallons
+	static double toGallons(double value) =>
+		value * 219.969;
+	/// Converts the supplied Cubic Metres value to Fluid Ounces
+	static double toFluidOunces(double value) =>
+		value * 35195.1;
+	/// Converts the supplied Cubic Metres value to US Teaspoons
+	static double toUSTeaspoons(double value) =>
+		value * 202884.0;
+	/// Converts the supplied Cubic Metres value to US Tablespoons
+	static double toUSTablespoons(double value) =>
+		value * 67628.0;
+	/// Converts the supplied Cubic Metres value to US Quarts
+	static double toUSQuarts(double value) =>
+		value * 1056.69;
+	/// Converts the supplied Cubic Metres value to US Pints
+	static double toUSPints(double value) =>
+		value * 2113.38;
+	/// Converts the supplied Cubic Metres value to US Gallons
+	static double toUSGallons(double value) =>
+		value * 264.172;
+	/// Converts the supplied Cubic Metres value to US Fluid Ounces
+	static double toUSFluidOunces(double value) =>
+		value * 33814.0;
+	/// Converts the supplied Cubic Metres value to US Cups
+	static double toUSCups(double value) =>
+		value * 4166.67;
+	/// Converts the supplied Cubic Metres value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value * 35.3147;
+	/// Converts the supplied Cubic Metres value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 61023.7;
+	/// Converts the supplied Cubic Metres value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value * 6.28981;
+}
+
 /// Fluid Ounces conversion functions
 class FluidOunces {
 	FluidOunces._() {}
@@ -52,6 +238,18 @@ class FluidOunces {
 	/// Converts the supplied Fluid Ounces value to US Cups
 	static double toUSCups(double value) =>
 		value / 8.3267384046639071232;
+	/// Converts the supplied Fluid Ounces value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 35195.1;
+	/// Converts the supplied Fluid Ounces value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 996.614;
+	/// Converts the supplied Fluid Ounces value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 1.73387;
+	/// Converts the supplied Fluid Ounces value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 5595.57;
 }
 
 /// Gallons conversion functions
@@ -102,6 +300,18 @@ class Gallons {
 	/// Converts the supplied Gallons value to US Cups
 	static double toUSCups(double value) =>
 		value / 0.052042115029149417472;
+	/// Converts the supplied Gallons value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 219.969;
+	/// Converts the supplied Gallons value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 6.22884;
+	/// Converts the supplied Gallons value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 277.419;
+	/// Converts the supplied Gallons value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 34.9723;
 }
 
 /// Kilolitres conversion functions
@@ -152,6 +362,18 @@ class Kilolitres {
 	/// Converts the supplied Kilolitres value to US Cups
 	static double toUSCups(double value) =>
 		value / 0.000236588236499999989;
+	/// Converts the supplied Kilolitres value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value * 1.0;
+	/// Converts the supplied Kilolitres value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value * 35.3147;
+	/// Converts the supplied Kilolitres value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 61023.7;
+	/// Converts the supplied Kilolitres value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value * 6.28981;
 }
 
 /// Litres conversion functions
@@ -202,6 +424,18 @@ class Litres {
 	/// Converts the supplied Litres value to US Cups
 	static double toUSCups(double value) =>
 		value / 0.23658823649999998976;
+	/// Converts the supplied Litres value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 1000.0;
+	/// Converts the supplied Litres value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 28.317;
+	/// Converts the supplied Litres value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 61.0237;
+	/// Converts the supplied Litres value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 158.987;
 }
 
 /// Millilitres conversion functions
@@ -252,6 +486,80 @@ class Millilitres {
 	/// Converts the supplied Millilitres value to US Cups
 	static double toUSCups(double value) =>
 		value / 236.58823649999998976;
+	/// Converts the supplied Millilitres value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 1000000.0;
+	/// Converts the supplied Millilitres value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 28316.8;
+	/// Converts the supplied Millilitres value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value / 16.3871;
+	/// Converts the supplied Millilitres value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 158987.0;
+}
+
+/// Oil Barrels conversion functions
+class OilBarrels {
+	OilBarrels._() {}
+	/// Converts the supplied Oil Barrels value to Millilitres
+	static double toMillilitres(double value) =>
+		value * 158987.0;
+	/// Converts the supplied Oil Barrels value to Litres
+	static double toLitres(double value) =>
+		value * 158.987;
+	/// Converts the supplied Oil Barrels value to Kilolitres
+	static double toKilolitres(double value) =>
+		value / 6.28981;
+	/// Converts the supplied Oil Barrels value to Teaspoons
+	static double toTeaspoons(double value) =>
+		value * 26858.7;
+	/// Converts the supplied Oil Barrels value to Tablespoons
+	static double toTablespoons(double value) =>
+		value * 8952.91;
+	/// Converts the supplied Oil Barrels value to Quarts
+	static double toQuarts(double value) =>
+		value * 139.889;
+	/// Converts the supplied Oil Barrels value to Pints
+	static double toPints(double value) =>
+		value * 279.779;
+	/// Converts the supplied Oil Barrels value to Gallons
+	static double toGallons(double value) =>
+		value * 34.9723;
+	/// Converts the supplied Oil Barrels value to Fluid Ounces
+	static double toFluidOunces(double value) =>
+		value * 5595.57;
+	/// Converts the supplied Oil Barrels value to US Teaspoons
+	static double toUSTeaspoons(double value) =>
+		value * 32256.0;
+	/// Converts the supplied Oil Barrels value to US Tablespoons
+	static double toUSTablespoons(double value) =>
+		value * 10752.0;
+	/// Converts the supplied Oil Barrels value to US Quarts
+	static double toUSQuarts(double value) =>
+		value * 168.0;
+	/// Converts the supplied Oil Barrels value to US Pints
+	static double toUSPints(double value) =>
+		value * 336.0;
+	/// Converts the supplied Oil Barrels value to US Gallons
+	static double toUSGallons(double value) =>
+		value * 42.0;
+	/// Converts the supplied Oil Barrels value to US Fluid Ounces
+	static double toUSFluidOunces(double value) =>
+		value * 5376.0;
+	/// Converts the supplied Oil Barrels value to US Cups
+	static double toUSCups(double value) =>
+		value * 662.447;
+	/// Converts the supplied Oil Barrels value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 6.28981;
+	/// Converts the supplied Oil Barrels value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value * 5.61458;
+	/// Converts the supplied Oil Barrels value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 9702.0;
 }
 
 /// Pints conversion functions
@@ -302,6 +610,18 @@ class Pints {
 	/// Converts the supplied Pints value to US Cups
 	static double toUSCups(double value) =>
 		value / 0.41633692023319535616;
+	/// Converts the supplied Pints value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 1759.75;
+	/// Converts the supplied Pints value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 49.8307;
+	/// Converts the supplied Pints value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 34.6774;
+	/// Converts the supplied Pints value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 279.779;
 }
 
 /// Quarts conversion functions
@@ -352,6 +672,18 @@ class Quarts {
 	/// Converts the supplied Quarts value to US Cups
 	static double toUSCups(double value) =>
 		value / 0.20816846011659767808;
+	/// Converts the supplied Quarts value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 879.877;
+	/// Converts the supplied Quarts value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 24.9153;
+	/// Converts the supplied Quarts value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 69.3549;
+	/// Converts the supplied Quarts value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 139.889;
 }
 
 /// Tablespoons conversion functions
@@ -402,6 +734,18 @@ class Tablespoons {
 	/// Converts the supplied Tablespoons value to US Cups
 	static double toUSCups(double value) =>
 		value / 13.322781447462250496;
+	/// Converts the supplied Tablespoons value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 56312.1;
+	/// Converts the supplied Tablespoons value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 1594.58;
+	/// Converts the supplied Tablespoons value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 1.08367;
+	/// Converts the supplied Tablespoons value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 8952.91;
 }
 
 /// Teaspoons conversion functions
@@ -452,6 +796,18 @@ class Teaspoons {
 	/// Converts the supplied Teaspoons value to US Cups
 	static double toUSCups(double value) =>
 		value / 39.968344342386753536;
+	/// Converts the supplied Teaspoons value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 168936.0;
+	/// Converts the supplied Teaspoons value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 4783.74;
+	/// Converts the supplied Teaspoons value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value / 2.76837;
+	/// Converts the supplied Teaspoons value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 26858.7;
 }
 
 /// US Cups conversion functions
@@ -502,6 +858,18 @@ class USCups {
 	/// Converts the supplied US Cups value to US Fluid Ounces
 	static double toUSFluidOunces(double value) =>
 		value * 8.0;
+	/// Converts the supplied US Cups value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 4166.67;
+	/// Converts the supplied US Cups value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 117.987;
+	/// Converts the supplied US Cups value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 14.6457;
+	/// Converts the supplied US Cups value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 662.447;
 }
 
 /// US Fluid Ounces conversion functions
@@ -552,6 +920,18 @@ class USFluidOunces {
 	/// Converts the supplied US Fluid Ounces value to US Cups
 	static double toUSCups(double value) =>
 		value / 8.0;
+	/// Converts the supplied US Fluid Ounces value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 33814.0;
+	/// Converts the supplied US Fluid Ounces value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 957.506;
+	/// Converts the supplied US Fluid Ounces value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 1.80469;
+	/// Converts the supplied US Fluid Ounces value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 5376.0;
 }
 
 /// US Gallons conversion functions
@@ -602,6 +982,18 @@ class USGallons {
 	/// Converts the supplied US Gallons value to US Cups
 	static double toUSCups(double value) =>
 		value * 16.0;
+	/// Converts the supplied US Gallons value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 264.172;
+	/// Converts the supplied US Gallons value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 7.48052;
+	/// Converts the supplied US Gallons value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 231.0;
+	/// Converts the supplied US Gallons value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 42.0;
 }
 
 /// US Pints conversion functions
@@ -652,6 +1044,18 @@ class USPints {
 	/// Converts the supplied US Pints value to US Cups
 	static double toUSCups(double value) =>
 		value * 2.0;
+	/// Converts the supplied US Pints value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 2113.38;
+	/// Converts the supplied US Pints value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 59.8442;
+	/// Converts the supplied US Pints value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 28.875;
+	/// Converts the supplied US Pints value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 336.0;
 }
 
 /// US Quarts conversion functions
@@ -702,6 +1106,18 @@ class USQuarts {
 	/// Converts the supplied US Quarts value to US Cups
 	static double toUSCups(double value) =>
 		value * 4.0;
+	/// Converts the supplied US Quarts value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 1056.69;
+	/// Converts the supplied US Quarts value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 29.9221;
+	/// Converts the supplied US Quarts value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value * 57.75;
+	/// Converts the supplied US Quarts value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 168.0;
 }
 
 /// US Tablespoons conversion functions
@@ -752,6 +1168,18 @@ class USTablespoons {
 	/// Converts the supplied US Tablespoons value to US Cups
 	static double toUSCups(double value) =>
 		value / 16.0;
+	/// Converts the supplied US Tablespoons value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 67628.0;
+	/// Converts the supplied US Tablespoons value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 1915.01;
+	/// Converts the supplied US Tablespoons value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value / 1.10823;
+	/// Converts the supplied US Tablespoons value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 10752.0;
 }
 
 /// US Teaspoons conversion functions
@@ -802,4 +1230,16 @@ class USTeaspoons {
 	/// Converts the supplied US Teaspoons value to US Cups
 	static double toUSCups(double value) =>
 		value / 48.0;
+	/// Converts the supplied US Teaspoons value to Cubic Metres
+	static double toCubicMetres(double value) =>
+		value / 202884.0;
+	/// Converts the supplied US Teaspoons value to Cubic Feet
+	static double toCubicFeet(double value) =>
+		value / 5745.04;
+	/// Converts the supplied US Teaspoons value to Cubic Inches
+	static double toCubicInches(double value) =>
+		value / 3.32468;
+	/// Converts the supplied US Teaspoons value to Oil Barrels
+	static double toOilBarrels(double value) =>
+		value / 32256.0;
 }

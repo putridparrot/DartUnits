@@ -9,6 +9,348 @@ import 'package:conversion_units/conversion_units.dart';
 
 void main() {
     group('Volume Tests', () {
+        test('Convert known Cubic Feet to Millilitres', () {
+            expect(CubicFeet.toMillilitres(0.08), closeTo(2265.348, 0.01));
+            expect(CubicFeet.toMillilitres(6.0), closeTo(169900.79, 0.01));
+            expect(CubicFeet.toMillilitres(0.2393275), closeTo(6776.988, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Litres', () {
+            expect(CubicFeet.toLitres(0.3), closeTo(8.49505, 0.01));
+            expect(CubicFeet.toLitres(6.0), closeTo(169.901, 0.01));
+            expect(CubicFeet.toLitres(56.0), closeTo(1585.74, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Kilolitres', () {
+            expect(CubicFeet.toKilolitres(300.0), closeTo(8.49505, 0.01));
+            expect(CubicFeet.toKilolitres(141.259), closeTo(4.0, 0.01));
+            expect(CubicFeet.toKilolitres(111.0), closeTo(3.14317, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Teaspoons', () {
+            expect(CubicFeet.toTeaspoons(0.3), closeTo(1435.12, 0.01));
+            expect(CubicFeet.toTeaspoons(4.0), closeTo(19134.95, 0.01));
+            expect(CubicFeet.toTeaspoons(67.0), closeTo(320510.579, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Tablespoons', () {
+            expect(CubicFeet.toTablespoons(0.7), closeTo(1116.21, 0.01));
+            expect(CubicFeet.toTablespoons(1.1), closeTo(1754.04, 0.01));
+            expect(CubicFeet.toTablespoons(0.494174), closeTo(788.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Quarts', () {
+            expect(CubicFeet.toQuarts(0.6), closeTo(14.9492, 0.01));
+            expect(CubicFeet.toQuarts(0.20068), closeTo(5.0, 0.01));
+            expect(CubicFeet.toQuarts(0.301019), closeTo(7.5, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Pints', () {
+            expect(CubicFeet.toPints(0.6), closeTo(29.8984, 0.01));
+            expect(CubicFeet.toPints(0.88299), closeTo(44.0, 0.01));
+            expect(CubicFeet.toPints(18.0612), closeTo(900.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Gallons', () {
+            expect(CubicFeet.toGallons(3.0), closeTo(18.6865, 0.01));
+            expect(CubicFeet.toGallons(2.08707), closeTo(13.0, 0.01));
+            expect(CubicFeet.toGallons(14.1278), closeTo(88.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Fluid Ounces', () {
+            expect(CubicFeet.toFluidOunces(14.0), closeTo(13952.6, 0.01));
+            expect(CubicFeet.toFluidOunces(7.0), closeTo(6976.3, 0.01));
+            expect(CubicFeet.toFluidOunces(0.34777769), closeTo(346.6, 0.01));
+        });
+
+        test('Convert known Cubic Feet to US Teaspoons', () {
+            expect(CubicFeet.toUSTeaspoons(5.0), closeTo(28725.2, 0.01));
+            expect(CubicFeet.toUSTeaspoons(0.4), closeTo(2298.02, 0.01));
+            expect(CubicFeet.toUSTeaspoons(9.2), closeTo(52854.3679, 0.01));
+        });
+
+        test('Convert known Cubic Feet to US Tablespoons', () {
+            expect(CubicFeet.toUSTablespoons(1.4), closeTo(2681.02, 0.01));
+            expect(CubicFeet.toUSTablespoons(4.0), closeTo(7660.04, 0.01));
+            expect(CubicFeet.toUSTablespoons(0.6443821), closeTo(1234.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to US Quarts', () {
+            expect(CubicFeet.toUSQuarts(6.0), closeTo(179.532, 0.01));
+            expect(CubicFeet.toUSQuarts(12.0), closeTo(359.065, 0.01));
+            expect(CubicFeet.toUSQuarts(25.9674), closeTo(777.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to US Pints', () {
+            expect(CubicFeet.toUSPints(6.9), closeTo(412.925, 0.01));
+            expect(CubicFeet.toUSPints(23.0), closeTo(1376.42, 0.01));
+            expect(CubicFeet.toUSPints(14.8385), closeTo(888.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to US Gallons', () {
+            expect(CubicFeet.toUSGallons(77.0), closeTo(576.0, 0.01));
+            expect(CubicFeet.toUSGallons(45.0), closeTo(336.623, 0.01));
+            expect(CubicFeet.toUSGallons(4.0), closeTo(29.9221, 0.01));
+        });
+
+        test('Convert known Cubic Feet to US Fluid Ounces', () {
+            expect(CubicFeet.toUSFluidOunces(20.0), closeTo(19150.119, 0.01));
+            expect(CubicFeet.toUSFluidOunces(0.359266), closeTo(344.0, 0.01));
+            expect(CubicFeet.toUSFluidOunces(0.699734), closeTo(670.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to US Cups', () {
+            expect(CubicFeet.toUSCups(77.0), closeTo(9084.99, 0.01));
+            expect(CubicFeet.toUSCups(8.0), closeTo(943.895, 0.01));
+            expect(CubicFeet.toUSCups(4.79714), closeTo(566.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Cubic Metres', () {
+            expect(CubicFeet.toCubicMetres(28.2517), closeTo(0.8, 0.01));
+            expect(CubicFeet.toCubicMetres(45.0), closeTo(1.27426, 0.01));
+            expect(CubicFeet.toCubicMetres(2719.23), closeTo(77.0, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Cubic Inches', () {
+            expect(CubicFeet.toCubicInches(6.8), closeTo(11750.4, 0.01));
+            expect(CubicFeet.toCubicInches(5666.0), closeTo(9790848.0, 0.01));
+            expect(CubicFeet.toCubicInches(0.7), closeTo(1209.6, 0.01));
+        });
+
+        test('Convert known Cubic Feet to Oil Barrels', () {
+            expect(CubicFeet.toOilBarrels(67.0), closeTo(11.9332, 0.01));
+            expect(CubicFeet.toOilBarrels(44.0), closeTo(7.83673, 0.01));
+            expect(CubicFeet.toOilBarrels(67.375), closeTo(12.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Millilitres', () {
+            expect(CubicInches.toMillilitres(3.9), closeTo(63.9095, 0.01));
+            expect(CubicInches.toMillilitres(4.0), closeTo(65.5483, 0.01));
+            expect(CubicInches.toMillilitres(5.37009), closeTo(88.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Litres', () {
+            expect(CubicInches.toLitres(560.0), closeTo(9.17676, 0.01));
+            expect(CubicInches.toLitres(555.0), closeTo(9.09482, 0.01));
+            expect(CubicInches.toLitres(7444.9), closeTo(122.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Kilolitres', () {
+            expect(CubicInches.toKilolitres(560.0), closeTo(0.009176, 0.01));
+            expect(CubicInches.toKilolitres(5555.0), closeTo(0.09103014, 0.01));
+            expect(CubicInches.toKilolitres(100000.0), closeTo(1.6387064, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Teaspoons', () {
+            expect(CubicInches.toTeaspoons(5.0), closeTo(13.8419, 0.01));
+            expect(CubicInches.toTeaspoons(6.0), closeTo(16.6102, 0.01));
+            expect(CubicInches.toTeaspoons(11.5591), closeTo(32.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Tablespoons', () {
+            expect(CubicInches.toTablespoons(34.0), closeTo(31.3749, 0.01));
+            expect(CubicInches.toTablespoons(11.9204), closeTo(11.0, 0.01));
+            expect(CubicInches.toTablespoons(99.0), closeTo(91.3562246, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Quarts', () {
+            expect(CubicInches.toQuarts(800.0), closeTo(11.5349, 0.01));
+            expect(CubicInches.toQuarts(77.0), closeTo(1.11023, 0.01));
+            expect(CubicInches.toQuarts(4577.42), closeTo(66.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Pints', () {
+            expect(CubicInches.toPints(89.5), closeTo(2.58093, 0.01));
+            expect(CubicInches.toPints(23095.2), closeTo(666.0, 0.01));
+            expect(CubicInches.toPints(2670.16), closeTo(77.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Gallons', () {
+            expect(CubicInches.toGallons(900.0), closeTo(3.24419, 0.01));
+            expect(CubicInches.toGallons(666.0), closeTo(2.4007, 0.01));
+            expect(CubicInches.toGallons(21361.3), closeTo(77.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Fluid Ounces', () {
+            expect(CubicInches.toFluidOunces(77.0), closeTo(44.4093, 0.01));
+            expect(CubicInches.toFluidOunces(55.0), closeTo(31.7209, 0.01));
+            expect(CubicInches.toFluidOunces(27.7419), closeTo(16.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to US Teaspoons', () {
+            expect(CubicInches.toUSTeaspoons(678.0), closeTo(2254.13, 0.01));
+            expect(CubicInches.toUSTeaspoons(55.0), closeTo(182.857, 0.01));
+            expect(CubicInches.toUSTeaspoons(26.4687), closeTo(88.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to US Tablespoons', () {
+            expect(CubicInches.toUSTablespoons(66.0), closeTo(73.1429, 0.01));
+            expect(CubicInches.toUSTablespoons(55.0), closeTo(60.9524, 0.01));
+            expect(CubicInches.toUSTablespoons(10.8281), closeTo(12.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to US Quarts', () {
+            expect(CubicInches.toUSQuarts(345.0), closeTo(5.97403, 0.01));
+            expect(CubicInches.toUSQuarts(33.0), closeTo(0.571429, 0.01));
+            expect(CubicInches.toUSQuarts(3176.25), closeTo(55.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to US Pints', () {
+            expect(CubicInches.toUSPints(89.0), closeTo(3.08225, 0.01));
+            expect(CubicInches.toUSPints(3176.25), closeTo(110.0, 0.01));
+            expect(CubicInches.toUSPints(462.0), closeTo(16.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to US Gallons', () {
+            expect(CubicInches.toUSGallons(600.0), closeTo(2.5974, 0.01));
+            expect(CubicInches.toUSGallons(462), closeTo(2.0, 0.01));
+            expect(CubicInches.toUSGallons(899.0), closeTo(3.89177, 0.01));
+        });
+
+        test('Convert known Cubic Inches to US Fluid Ounces', () {
+            expect(CubicInches.toUSFluidOunces(900.0), closeTo(498.700607, 0.01));
+            expect(CubicInches.toUSFluidOunces(777.0), closeTo(430.544858, 0.01));
+            expect(CubicInches.toUSFluidOunces(178.664), closeTo(98.99982822, 0.01));
+        });
+
+        test('Convert known Cubic Inches to US Cups', () {
+            expect(CubicInches.toUSCups(7.0), closeTo(0.477956, 0.01));
+            expect(CubicInches.toUSCups(77.0), closeTo(5.25752, 0.01));
+            expect(CubicInches.toUSCups(123.0), closeTo(8.39837, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Cubic Metres', () {
+            expect(CubicInches.toCubicMetres(24409.5), closeTo(0.4, 0.01));
+            expect(CubicInches.toCubicMetres(7777.0), closeTo(0.1274422, 0.01));
+            expect(CubicInches.toCubicMetres(366142), closeTo(6.0, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Cubic Feet', () {
+            expect(CubicInches.toCubicFeet(11750.4), closeTo(6.8, 0.01));
+            expect(CubicInches.toCubicFeet(57024.0), closeTo(33.0, 0.01));
+            expect(CubicInches.toCubicFeet(1234.0), closeTo(0.7141204, 0.01));
+        });
+
+        test('Convert known Cubic Inches to Oil Barrels', () {
+            expect(CubicInches.toOilBarrels(90000.0), closeTo(9.2764378, 0.01));
+            expect(CubicInches.toOilBarrels(8888.0), closeTo(0.9160998, 0.01));
+            expect(CubicInches.toOilBarrels(11642.4), closeTo(1.2, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Millilitres', () {
+            expect(CubicMetres.toMillilitres(0.01), closeTo(10000.0, 0.01));
+            expect(CubicMetres.toMillilitres(0.2306735), closeTo(230673.5, 0.01));
+            expect(CubicMetres.toMillilitres(0.009), closeTo(9000.0, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Litres', () {
+            expect(CubicMetres.toLitres(0.1), closeTo(100.0, 0.01));
+            expect(CubicMetres.toLitres(0.009), closeTo(9.0, 0.01));
+            expect(CubicMetres.toLitres(0.08989), closeTo(89.89, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Kilolitres', () {
+            expect(CubicMetres.toKilolitres(0.9), closeTo(0.9, 0.01));
+            expect(CubicMetres.toKilolitres(100.9), closeTo(100.9, 0.01));
+            expect(CubicMetres.toKilolitres(666.9), closeTo(666.9, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Teaspoons', () {
+            expect(CubicMetres.toTeaspoons(0.1), closeTo(16893.6, 0.01));
+            expect(CubicMetres.toTeaspoons(3.0), closeTo(506808.0, 0.01));
+            expect(CubicMetres.toTeaspoons(0.91), closeTo(153731.76, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Tablespoons', () {
+            expect(CubicMetres.toTablespoons(0.9), closeTo(50680.8899, 0.01));
+            expect(CubicMetres.toTablespoons(0.1), closeTo(5631.21, 0.01));
+            expect(CubicMetres.toTablespoons(9.0), closeTo(506808.89, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Quarts', () {
+            expect(CubicMetres.toQuarts(0.8), closeTo(703.902, 0.01));
+            expect(CubicMetres.toQuarts(0.4), closeTo(351.951, 0.01));
+            expect(CubicMetres.toQuarts(6.0), closeTo(5279.26, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Pints', () {
+            expect(CubicMetres.toPints(0.7), closeTo(1231.83, 0.01));
+            expect(CubicMetres.toPints(4.5), closeTo(7918.875, 0.01));
+            expect(CubicMetres.toPints(0.06), closeTo(105.5852, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Gallons', () {
+            expect(CubicMetres.toGallons(0.2), closeTo(43.9938, 0.01));
+            expect(CubicMetres.toGallons(0.4), closeTo(87.9877, 0.01));
+            expect(CubicMetres.toGallons(0.0272765), closeTo(6.0, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Fluid Ounces', () {
+            expect(CubicMetres.toFluidOunces(0.7), closeTo(24636.569, 0.01));
+            expect(CubicMetres.toFluidOunces(0.09), closeTo(3167.557, 0.01));
+            expect(CubicMetres.toFluidOunces(4.0), closeTo(140780.399, 0.01));
+        });
+
+        test('Convert known Cubic Metres to US Teaspoons', () {
+            expect(CubicMetres.toUSTeaspoons(0.5), closeTo(101442.0, 0.01));
+            expect(CubicMetres.toUSTeaspoons(2), closeTo(405768.0, 0.01));
+            expect(CubicMetres.toUSTeaspoons(0.3), closeTo(60865.199, 0.01));
+        });
+
+        test('Convert known Cubic Metres to US Tablespoons', () {
+            expect(CubicMetres.toUSTablespoons(0.2), closeTo(13525.6, 0.01));
+            expect(CubicMetres.toUSTablespoons(0.9), closeTo(60865.2, 0.01));
+            expect(CubicMetres.toUSTablespoons(2.0), closeTo(135256.0, 0.01));
+        });
+
+        test('Convert known Cubic Metres to US Quarts', () {
+            expect(CubicMetres.toUSQuarts(0.2), closeTo(211.338, 0.01));
+            expect(CubicMetres.toUSQuarts(4.0), closeTo(4226.76, 0.01));
+            expect(CubicMetres.toUSQuarts(0.851718), closeTo(900.0, 0.01));
+        });
+
+        test('Convert known Cubic Metres to US Pints', () {
+            expect(CubicMetres.toUSPints(0.4), closeTo(845.351, 0.01));
+            expect(CubicMetres.toUSPints(7.0), closeTo(14793.66, 0.01));
+            expect(CubicMetres.toUSPints(6.0), closeTo(12680.280, 0.01));
+        });
+
+        test('Convert known Cubic Metres to US Gallons', () {
+            expect(CubicMetres.toUSGallons(0.7), closeTo(184.92, 0.01));
+            expect(CubicMetres.toUSGallons(0.851718), closeTo(225.0, 0.01));
+            expect(CubicMetres.toUSGallons(0.02), closeTo(5.283441, 0.01));
+        });
+
+        test('Convert known Cubic Metres to US Fluid Ounces', () {
+            expect(CubicMetres.toUSFluidOunces(0.9), closeTo(30432.6, 0.01));
+            expect(CubicMetres.toUSFluidOunces(0.3), closeTo(10144.2, 0.01));
+            expect(CubicMetres.toUSFluidOunces(3.3), closeTo(111586.2, 0.01));
+        });
+
+        test('Convert known Cubic Metres to US Cups', () {
+            expect(CubicMetres.toUSCups(7.0), closeTo(29166.7, 0.01));
+            expect(CubicMetres.toUSCups(11.0), closeTo(45833.37, 0.01));
+            expect(CubicMetres.toUSCups(66.0), closeTo(275000.22, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Cubic Feet', () {
+            expect(CubicMetres.toCubicFeet(0.8), closeTo(28.2517, 0.01));
+            expect(CubicMetres.toCubicFeet(5.0), closeTo(176.573, 0.01));
+            expect(CubicMetres.toCubicFeet(12.12), closeTo(428.014163, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Cubic Inches', () {
+            expect(CubicMetres.toCubicInches(0.4), closeTo(24409.48, 0.01));
+            expect(CubicMetres.toCubicInches(3.0), closeTo(183071.099, 0.01));
+            expect(CubicMetres.toCubicInches(0.99), closeTo(60413.4629, 0.01));
+        });
+
+        test('Convert known Cubic Metres to Oil Barrels', () {
+            expect(CubicMetres.toOilBarrels(0.09), closeTo(0.566083, 0.01));
+            expect(CubicMetres.toOilBarrels(5.0), closeTo(31.4491, 0.01));
+            expect(CubicMetres.toOilBarrels(1.2), closeTo(7.547772, 0.01));
+        });
+
         test('Convert known Fluid Ounces to Millilitres', () {
             expect(FluidOunces.toMillilitres(12.0), closeTo(340.957, 0.01));
             expect(FluidOunces.toMillilitres(6.01), closeTo(170.7625, 0.01));
@@ -97,6 +439,30 @@ void main() {
             expect(FluidOunces.toUSCups(6.0), closeTo(0.72057, 0.01));
             expect(FluidOunces.toUSCups(1800.0), closeTo(216.171, 0.01));
             expect(FluidOunces.toUSCups(6.9), closeTo(0.828655, 0.01));
+        });
+
+        test('Convert known Fluid Ounces to Cubic Metres', () {
+            expect(FluidOunces.toCubicMetres(316756.0), closeTo(9.00000284, 0.01));
+            expect(FluidOunces.toCubicMetres(8000.0), closeTo(0.2365882, 0.01));
+            expect(FluidOunces.toCubicMetres(123456.0), closeTo(3.5077610, 0.01));
+        });
+
+        test('Convert known Fluid Ounces to Cubic Feet', () {
+            expect(FluidOunces.toCubicFeet(888.0), closeTo(0.891017, 0.01));
+            expect(FluidOunces.toCubicFeet(100900.0), closeTo(101.242841, 0.01));
+            expect(FluidOunces.toCubicFeet(678.0), closeTo(0.680304, 0.01));
+        });
+
+        test('Convert known Fluid Ounces to Cubic Inches', () {
+            expect(FluidOunces.toCubicInches(7.0), closeTo(12.1371, 0.01));
+            expect(FluidOunces.toCubicInches(900), closeTo(1560.48, 0.01));
+            expect(FluidOunces.toCubicInches(6.0), closeTo(10.4032, 0.01));
+        });
+
+        test('Convert known Fluid Ounces to Oil Barrels', () {
+            expect(FluidOunces.toOilBarrels(430859.0), closeTo(77.0, 0.01));
+            expect(FluidOunces.toOilBarrels(777.0), closeTo(0.13886, 0.01));
+            expect(FluidOunces.toOilBarrels(1234.0), closeTo(0.2205316, 0.01));
         });
 
         test('Convert known Gallons to Millilitres', () {
@@ -189,6 +555,30 @@ void main() {
             expect(Gallons.toUSCups(890.0), closeTo(17101.534007630, 0.01));
         });
 
+        test('Convert known Gallons to Cubic Metres', () {
+            expect(Gallons.toCubicMetres(9898.62), closeTo(45.0, 0.01));
+            expect(Gallons.toCubicMetres(12345.0), closeTo(56.121481, 0.01));
+            expect(Gallons.toCubicMetres(80.0), closeTo(0.363687, 0.01));
+        });
+
+        test('Convert known Gallons to Cubic Feet', () {
+            expect(Gallons.toCubicFeet(55.0), closeTo(8.8299, 0.01));
+            expect(Gallons.toCubicFeet(90.5), closeTo(14.5292, 0.01));
+            expect(Gallons.toCubicFeet(123.0), closeTo(19.7469, 0.01));
+        });
+
+        test('Convert known Gallons to Cubic Inches', () {
+            expect(Gallons.toCubicInches(66.0), closeTo(18309.6539, 0.01));
+            expect(Gallons.toCubicInches(2.4007), closeTo(666.0, 0.01));
+            expect(Gallons.toCubicInches(77.0), closeTo(21361.2629, 0.01));
+        });
+
+        test('Convert known Gallons to Oil Barrels', () {
+            expect(Gallons.toOilBarrels(174.862), closeTo(5.0, 0.01));
+            expect(Gallons.toOilBarrels(19409.6), closeTo(555.0, 0.01));
+            expect(Gallons.toOilBarrels(24.4806), closeTo(0.7, 0.01));
+        });
+
         test('Convert known Kilolitres to Millilitres', () {
             expect(Kilolitres.toMillilitres(0.09), closeTo(90000.0, 0.01));
             expect(Kilolitres.toMillilitres(0.00123), closeTo(1230.0, 0.01));
@@ -277,6 +667,30 @@ void main() {
             expect(Kilolitres.toUSCups(12.0), closeTo(50721.03405276, 0.01));
             expect(Kilolitres.toUSCups(0.8), closeTo(3381.4, 0.01));
             expect(Kilolitres.toUSCups(6.2), closeTo(26205.86759392, 0.01));
+        });
+
+        test('Convert known Kilolitres to Cubic Metres', () {
+            expect(Kilolitres.toCubicMetres(1000.0), closeTo(1000.0, 0.01));
+            expect(Kilolitres.toCubicMetres(0.9), closeTo(0.9, 0.01));
+            expect(Kilolitres.toCubicMetres(6.09), closeTo(6.09, 0.01));
+        });
+
+        test('Convert known Kilolitres to Cubic Feet', () {
+            expect(Kilolitres.toCubicFeet(0.0566337), closeTo(2.0, 0.01));
+            expect(Kilolitres.toCubicFeet(7.9), closeTo(278.986, 0.01));
+            expect(Kilolitres.toCubicFeet(88.0), closeTo(3107.69, 0.01));
+        });
+
+        test('Convert known Kilolitres to Cubic Inches', () {
+            expect(Kilolitres.toCubicInches(6.0), closeTo(366142.19999, 0.01));
+            expect(Kilolitres.toCubicInches(0.1), closeTo(6102.37, 0.01));
+            expect(Kilolitres.toCubicInches(0.8), closeTo(48818.959, 0.01));
+        });
+
+        test('Convert known Kilolitres to Oil Barrels', () {
+            expect(Kilolitres.toOilBarrels(0.476962), closeTo(3.0, 0.01));
+            expect(Kilolitres.toOilBarrels(4.0), closeTo(25.1592, 0.01));
+            expect(Kilolitres.toOilBarrels(6.0), closeTo(37.7389, 0.01));
         });
 
         test('Convert known Litres to Millilitres', () {
@@ -369,6 +783,30 @@ void main() {
             expect(Litres.toUSCups(71.6), closeTo(302.6355, 0.01));
         });
 
+        test('Convert known Litres to Cubic Metres', () {
+            expect(Litres.toCubicMetres(400.5), closeTo(0.4005, 0.01));
+            expect(Litres.toCubicMetres(900.0), closeTo(0.9, 0.01));
+            expect(Litres.toCubicMetres(6090.0), closeTo(6.09, 0.01));
+        });
+
+        test('Convert known Litres to Cubic Feet', () {
+            expect(Litres.toCubicFeet(5.0), closeTo(0.176573, 0.01));
+            expect(Litres.toCubicFeet(84.9505), closeTo(3.0, 0.01));
+            expect(Litres.toCubicFeet(6.0), closeTo(0.211888, 0.01));
+        });
+
+        test('Convert known Litres to Cubic Inches', () {
+            expect(Litres.toCubicInches(666.0), closeTo(40641.7842, 0.01));
+            expect(Litres.toCubicInches(788.0), closeTo(48086.675599, 0.01));
+            expect(Litres.toCubicInches(4.0), closeTo(244.095, 0.01));
+        });
+
+        test('Convert known Litres to Oil Barrels', () {
+            expect(Litres.toOilBarrels(8744.3), closeTo(55.0, 0.01));
+            expect(Litres.toOilBarrels(1234.0), closeTo(7.761626, 0.01));
+            expect(Litres.toOilBarrels(953.924), closeTo(6.0, 0.01));
+        });
+
         test('Convert known Millilitres to Litres', () {
             expect(Millilitres.toLitres(1900.0), closeTo(1.9, 0.01));
             expect(Millilitres.toLitres(56789.0), closeTo(56.789, 0.01));
@@ -457,6 +895,144 @@ void main() {
             expect(Millilitres.toUSCups(348.0), closeTo(1.47091, 0.01));
             expect(Millilitres.toUSCups(12.9), closeTo(0.05452511, 0.01));
             expect(Millilitres.toUSCups(700.0), closeTo(2.95873, 0.01));
+        });
+
+        test('Convert known Millilitres to Cubic Metres', () {
+            expect(Millilitres.toCubicMetres(9999999.0), closeTo(9.999999, 0.01));
+            expect(Millilitres.toCubicMetres(123456.0), closeTo(0.123456, 0.01));
+            expect(Millilitres.toCubicMetres(400500.0), closeTo(0.4005, 0.01));
+        });
+
+        test('Convert known Millilitres to Cubic Feet', () {
+            expect(Millilitres.toCubicFeet(254852.0), closeTo(9.0, 0.01));
+            expect(Millilitres.toCubicFeet(6000.0), closeTo(0.211888, 0.01));
+            expect(Millilitres.toCubicFeet(70792.1), closeTo(2.5, 0.01));
+        });
+
+        test('Convert known Millilitres to Cubic Inches', () {
+            expect(Millilitres.toCubicInches(777.0), closeTo(47.4154, 0.01));
+            expect(Millilitres.toCubicInches(98.3224), closeTo(5.999987, 0.01));
+            expect(Millilitres.toCubicInches(12.0), closeTo(0.732285, 0.01));
+        });
+
+        test('Convert known Millilitres to Oil Barrels', () {
+            expect(Millilitres.toOilBarrels(47696.2), closeTo(0.3, 0.01));
+            expect(Millilitres.toOilBarrels(143089.0), closeTo(0.9, 0.01));
+            expect(Millilitres.toOilBarrels(317.97459), closeTo(0.002, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Millilitres', () {
+            expect(OilBarrels.toMillilitres(0.8), closeTo(127189.6, 0.01));
+            expect(OilBarrels.toMillilitres(6.0), closeTo(953922.0, 0.01));
+            expect(OilBarrels.toMillilitres(0.06289182), closeTo(9998.981786, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Litres', () {
+            expect(OilBarrels.toLitres(12.0), closeTo(1907.85, 0.01));
+            expect(OilBarrels.toLitres(6.0), closeTo(953.924, 0.01));
+            expect(OilBarrels.toLitres(77.0), closeTo(12242.0, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Kilolitres', () {
+            expect(OilBarrels.toKilolitres(12.0), closeTo(1.90785, 0.01));
+            expect(OilBarrels.toKilolitres(8.0), closeTo(1.2719, 0.01));
+            expect(OilBarrels.toKilolitres(77.0), closeTo(12.242, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Teaspoons', () {
+            expect(OilBarrels.toTeaspoons(0.6), closeTo(16115.219, 0.01));
+            expect(OilBarrels.toTeaspoons(4.0), closeTo(107434.8, 0.01));
+            expect(OilBarrels.toTeaspoons(6.7), closeTo(179953.29, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Tablespoons', () {
+            expect(OilBarrels.toTablespoons(0.7), closeTo(6267.04, 0.01));
+            expect(OilBarrels.toTablespoons(8.0), closeTo(71623.279, 0.01));
+            expect(OilBarrels.toTablespoons(10.052487), closeTo(89999.011387, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Quarts', () {
+            expect(OilBarrels.toQuarts(88.0), closeTo(12310.232, 0.01));
+            expect(OilBarrels.toQuarts(12.0), closeTo(1678.67, 0.01));
+            expect(OilBarrels.toQuarts(6.0), closeTo(839.336, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Pints', () {
+            expect(OilBarrels.toPints(8.0), closeTo(2238.23, 0.01));
+            expect(OilBarrels.toPints(6.0), closeTo(1678.67, 0.01));
+            expect(OilBarrels.toPints(0.275218), closeTo(77.0, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Gallons', () {
+            expect(OilBarrels.toGallons(4.0), closeTo(139.889, 0.01));
+            expect(OilBarrels.toGallons(6.0), closeTo(209.834, 0.01));
+            expect(OilBarrels.toGallons(18.0), closeTo(629.502, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Fluid Ounces', () {
+            expect(OilBarrels.toFluidOunces(0.5), closeTo(2797.79, 0.01));
+            expect(OilBarrels.toFluidOunces(6.0), closeTo(33573.4199, 0.01));
+            expect(OilBarrels.toFluidOunces(77.0), closeTo(430858.889, 0.01));
+        });
+
+        test('Convert known Oil Barrels to US Teaspoons', () {
+            expect(OilBarrels.toUSTeaspoons(0.3), closeTo(9676.8, 0.01));
+            expect(OilBarrels.toUSTeaspoons(7.0), closeTo(225792.0, 0.01));
+            expect(OilBarrels.toUSTeaspoons(1.5), closeTo(48384.0, 0.01));
+        });
+
+        test('Convert known Oil Barrels to US Tablespoons', () {
+            expect(OilBarrels.toUSTablespoons(0.2), closeTo(2150.4, 0.01));
+            expect(OilBarrels.toUSTablespoons(6.0), closeTo(64512.0, 0.01));
+            expect(OilBarrels.toUSTablespoons(77.0), closeTo(827904.0, 0.01));
+        });
+
+        test('Convert known Oil Barrels to US Quarts', () {
+            expect(OilBarrels.toUSQuarts(4.5), closeTo(756.0, 0.01));
+            expect(OilBarrels.toUSQuarts(77.0), closeTo(12936.0, 0.01));
+            expect(OilBarrels.toUSQuarts(0.7), closeTo(117.6, 0.01));
+        });
+
+        test('Convert known Oil Barrels to US Pints', () {
+            expect(OilBarrels.toUSPints(7.8), closeTo(2620.8, 0.01));
+            expect(OilBarrels.toUSPints(0.7), closeTo(235.2, 0.01));
+            expect(OilBarrels.toUSPints(3.0), closeTo(1008.0, 0.01));
+        });
+
+        test('Convert known Oil Barrels to US Gallons', () {
+            expect(OilBarrels.toUSGallons(78.0), closeTo(3276.0, 0.01));
+            expect(OilBarrels.toUSGallons(3.0), closeTo(126.0, 0.01));
+            expect(OilBarrels.toUSGallons(777.0), closeTo(32634.0, 0.01));
+        });
+
+        test('Convert known Oil Barrels to US Fluid Ounces', () {
+            expect(OilBarrels.toUSFluidOunces(4.9), closeTo(26342.4, 0.01));
+            expect(OilBarrels.toUSFluidOunces(0.4), closeTo(2150.4, 0.01));
+            expect(OilBarrels.toUSFluidOunces(3.0), closeTo(16128.0, 0.01));
+        });
+
+        test('Convert known Oil Barrels to US Cups', () {
+            expect(OilBarrels.toUSCups(55.0), closeTo(36434.5849, 0.01));
+            expect(OilBarrels.toUSCups(0.686847), closeTo(455.0, 0.01));
+            expect(OilBarrels.toUSCups(9.2), closeTo(6094.51, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Cubic Metres', () {
+            expect(OilBarrels.toCubicMetres(7.0), closeTo(1.1129112, 0.01));
+            expect(OilBarrels.toCubicMetres(3.0), closeTo(0.476962, 0.01));
+            expect(OilBarrels.toCubicMetres(78.0), closeTo(12.401, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Cubic Feet', () {
+            expect(OilBarrels.toCubicFeet(88.0), closeTo(494.083, 0.01));
+            expect(OilBarrels.toCubicFeet(3.0), closeTo(16.8438, 0.01));
+            expect(OilBarrels.toCubicFeet(11.0), closeTo(61.7604, 0.01));
+        });
+
+        test('Convert known Oil Barrels to Cubic Inches', () {
+            expect(OilBarrels.toCubicInches(100.4), closeTo(974080.8, 0.01));
+            expect(OilBarrels.toCubicInches(5.0), closeTo(48510.0, 0.01));
+            expect(OilBarrels.toCubicInches(66.0), closeTo(640332.0, 0.01));
         });
 
         test('Convert known Pints to Millilitres', () {
@@ -549,6 +1125,30 @@ void main() {
             expect(Pints.toUSCups(50.6), closeTo(121.5361, 0.01));
         });
 
+        test('Convert known Pints to Cubic Metres', () {
+            expect(Pints.toCubicMetres(21117.0), closeTo(12.0, 0.01));
+            expect(Pints.toCubicMetres(14078.0), closeTo(8.0, 0.01));
+            expect(Pints.toCubicMetres(9999.0), closeTo(5.682044, 0.01));
+        });
+
+        test('Convert known Pints to Cubic Feet', () {
+            expect(Pints.toCubicFeet(44.0), closeTo(0.88299, 0.01));
+            expect(Pints.toCubicFeet(1234.0), closeTo(24.76386, 0.01));
+            expect(Pints.toCubicFeet(8000.0), closeTo(160.5436, 0.01));
+        });
+
+        test('Convert known Pints to Cubic Inches', () {
+            expect(Pints.toCubicInches(5.0), closeTo(173.387, 0.01));
+            expect(Pints.toCubicInches(777.0), closeTo(26944.33979, 0.01));
+            expect(Pints.toCubicInches(35.58511), closeTo(1234.0, 0.01));
+        });
+
+        test('Convert known Pints to Oil Barrels', () {
+            expect(Pints.toOilBarrels(1398.89), closeTo(5.0, 0.01));
+            expect(Pints.toOilBarrels(122.0), closeTo(0.436059, 0.01));
+            expect(Pints.toOilBarrels(559.557), closeTo(2.0, 0.01));
+        });
+
         test('Convert known Quarts to Millilitres', () {
             expect(Quarts.toMillilitres(1.4), closeTo(1591.13, 0.01));
             expect(Quarts.toMillilitres(800.0), closeTo(909218.37579999, 0.01));
@@ -637,6 +1237,30 @@ void main() {
             expect(Quarts.toUSCups(2.0), closeTo(9.6076, 0.01));
             expect(Quarts.toUSCups(800.9), closeTo(3847.3632, 0.01));
             expect(Quarts.toUSCups(0.23), closeTo(1.104874, 0.01));
+        });
+
+        test('Convert known Quarts to Cubic Metres', () {
+            expect(Quarts.toCubicMetres(7918.89), closeTo(9.0, 0.01));
+            expect(Quarts.toCubicMetres(1200.0), closeTo(1.363827, 0.01));
+            expect(Quarts.toCubicMetres(8000.0), closeTo(9.09218, 0.01));
+        });
+
+        test('Convert known Quarts to Cubic Feet', () {
+            expect(Quarts.toCubicFeet(20.0), closeTo(0.802718, 0.01));
+            expect(Quarts.toCubicFeet(800.0), closeTo(32.1087, 0.01));
+            expect(Quarts.toCubicFeet(67.0), closeTo(2.68911, 0.01));
+        });
+
+        test('Convert known Quarts to Cubic Inches', () {
+            expect(Quarts.toCubicInches(777.0), closeTo(53888.75729, 0.01));
+            expect(Quarts.toCubicInches(8.16093), closeTo(566.0, 0.01));
+            expect(Quarts.toCubicInches(76.0), closeTo(5270.97, 0.01));
+        });
+
+        test('Convert known Quarts to Oil Barrels', () {
+            expect(Quarts.toOilBarrels(839.336), closeTo(6.0, 0.01));
+            expect(Quarts.toOilBarrels(41.9668), closeTo(0.3, 0.01));
+            expect(Quarts.toOilBarrels(22.0), closeTo(0.157267, 0.01));
         });
 
         test('Convert known Tablespoons to Millilitres', () {
@@ -729,6 +1353,30 @@ void main() {
             expect(Tablespoons.toUSCups(1000.0), closeTo(75.0594, 0.01));
         });
 
+        test('Convert known Tablespoons to Cubic Metres', () {
+            expect(Tablespoons.toCubicMetres(10000.0), closeTo(0.1775817, 0.01));
+            expect(Tablespoons.toCubicMetres(3378.726), closeTo(0.059999995422, 0.01));
+            expect(Tablespoons.toCubicMetres(800009.0), closeTo(14.2066969, 0.01));
+        });
+
+        test('Convert known Tablespoons to Cubic Feet', () {
+            expect(Tablespoons.toCubicFeet(780.0), closeTo(0.489157, 0.01));
+            expect(Tablespoons.toCubicFeet(6378.32), closeTo(4.0, 0.01));
+            expect(Tablespoons.toCubicFeet(8451.28), closeTo(5.3, 0.01));
+        });
+
+        test('Convert known Tablespoons to Cubic Inches', () {
+            expect(Tablespoons.toCubicInches(66.0), closeTo(71.5222, 0.01));
+            expect(Tablespoons.toCubicInches(123.0), closeTo(133.291, 0.01));
+            expect(Tablespoons.toCubicInches(56.0), closeTo(60.6855, 0.01));
+        });
+
+        test('Convert known Tablespoons to Oil Barrels', () {
+            expect(Tablespoons.toOilBarrels(44764.5), closeTo(5.0, 0.01));
+            expect(Tablespoons.toOilBarrels(12222.0), closeTo(1.3651429, 0.01));
+            expect(Tablespoons.toOilBarrels(800.0), closeTo(0.0893564, 0.01));
+        });
+
         test('Convert known Teaspoons to Millilitres', () {
             expect(Teaspoons.toMillilitres(0.6), closeTo(3.55163, 0.01));
             expect(Teaspoons.toMillilitres(1.3), closeTo(7.69521, 0.01));
@@ -817,6 +1465,30 @@ void main() {
             expect(Teaspoons.toUSCups(8000.0), closeTo(200.1584, 0.01));
             expect(Teaspoons.toUSCups(34.0), closeTo(0.850673, 0.01));
             expect(Teaspoons.toUSCups(109.9), closeTo(2.7496761, 0.01));
+        });
+
+        test('Convert known Teaspoons to Cubic Metres', () {
+            expect(Teaspoons.toCubicMetres(152043.0), closeTo(0.9, 0.01));
+            expect(Teaspoons.toCubicMetres(3378.726), closeTo(0.02, 0.01));
+            expect(Teaspoons.toCubicMetres(8000.0), closeTo(0.04735512, 0.01));
+        });
+
+        test('Convert known Teaspoons to Cubic Feet', () {
+            expect(Teaspoons.toCubicFeet(600.0), closeTo(0.125425, 0.01));
+            expect(Teaspoons.toCubicFeet(1234.0), closeTo(0.257957, 0.01));
+            expect(Teaspoons.toCubicFeet(880.0), closeTo(0.183956, 0.01));
+        });
+
+        test('Convert known Teaspoons to Cubic Inches', () {
+            expect(Teaspoons.toCubicInches(8.0), closeTo(2.88979, 0.01));
+            expect(Teaspoons.toCubicInches(12.0), closeTo(4.33468, 0.01));
+            expect(Teaspoons.toCubicInches(666.0), closeTo(240.575, 0.01));
+        });
+
+        test('Convert known Teaspoons to Oil Barrels', () {
+            expect(Teaspoons.toOilBarrels(10743.5), closeTo(0.4, 0.01));
+            expect(Teaspoons.toOilBarrels(107435.0), closeTo(4.0, 0.01));
+            expect(Teaspoons.toOilBarrels(134294.0), closeTo(5.0, 0.01));
         });
 
         test('Convert known US Cups to Millilitres', () {
@@ -909,6 +1581,30 @@ void main() {
             expect(USCups.toUSFluidOunces(0.9), closeTo(7.2, 0.01));
         });
 
+        test('Convert known US Cups to Cubic Metres', () {
+            expect(USCups.toCubicMetres(4555.0), closeTo(1.0932, 0.01));
+            expect(USCups.toCubicMetres(100900.0), closeTo(24.216, 0.01));
+            expect(USCups.toCubicMetres(7800.0), closeTo(1.872, 0.01));
+        });
+
+        test('Convert known US Cups to Cubic Feet', () {
+            expect(USCups.toCubicFeet(88.0), closeTo(0.745846, 0.01));
+            expect(USCups.toCubicFeet(471.947), closeTo(4.0, 0.01));
+            expect(USCups.toCubicFeet(123.0), closeTo(1.04249, 0.01));
+        });
+
+        test('Convert known US Cups to Cubic Inches', () {
+            expect(USCups.toCubicInches(6.0), closeTo(87.8742, 0.01));
+            expect(USCups.toCubicInches(2.3), closeTo(33.6851, 0.01));
+            expect(USCups.toCubicInches(0.9), closeTo(13.1811, 0.01));
+        });
+
+        test('Convert known US Cups to Oil Barrels', () {
+            expect(USCups.toOilBarrels(43721.5), closeTo(66.0, 0.01));
+            expect(USCups.toOilBarrels(1111.0), closeTo(1.677115, 0.01));
+            expect(USCups.toOilBarrels(3312.24), closeTo(5.0, 0.01));
+        });
+
         test('Convert known US Fluid Ounces to Millilitres', () {
             expect(USFluidOunces.toMillilitres(0.98), closeTo(28.98206, 0.01));
             expect(USFluidOunces.toMillilitres(8.2), closeTo(242.503, 0.01));
@@ -997,6 +1693,30 @@ void main() {
             expect(USFluidOunces.toUSCups(45.0), closeTo(5.625, 0.01));
             expect(USFluidOunces.toUSCups(66.9), closeTo(8.3625, 0.01));
             expect(USFluidOunces.toUSCups(0.29), closeTo(0.03625, 0.01));
+        });
+
+        test('Convert known US Fluid Ounces to Cubic Metres', () {
+            expect(USFluidOunces.toCubicMetres(800900.0), closeTo(23.6854398, 0.01));
+            expect(USFluidOunces.toCubicMetres(789.0), closeTo(0.0233335, 0.01));
+            expect(USFluidOunces.toCubicMetres(100100.0), closeTo(2.96031031, 0.01));
+        });
+
+        test('Convert known US Fluid Ounces to Cubic Feet', () {
+            expect(USFluidOunces.toCubicFeet(344.0), closeTo(0.359266, 0.01));
+            expect(USFluidOunces.toCubicFeet(8009.0), closeTo(8.364434, 0.01));
+            expect(USFluidOunces.toCubicFeet(3830.03), closeTo(4.0, 0.01));
+        });
+
+        test('Convert known US Fluid Ounces to Cubic Inches', () {
+            expect(USFluidOunces.toCubicInches(66.0), closeTo(119.109, 0.01));
+            expect(USFluidOunces.toCubicInches(900.0), closeTo(1624.22, 0.01));
+            expect(USFluidOunces.toCubicInches(8.0), closeTo(14.4375, 0.01));
+        });
+
+        test('Convert known US Fluid Ounces to Oil Barrels', () {
+            expect(USFluidOunces.toOilBarrels(32256.0), closeTo(6.0, 0.01));
+            expect(USFluidOunces.toOilBarrels(1899.0), closeTo(0.3532366, 0.01));
+            expect(USFluidOunces.toOilBarrels(6988.8), closeTo(1.3, 0.01));
         });
 
         test('Convert known US Gallons to Millilitres', () {
@@ -1089,6 +1809,30 @@ void main() {
             expect(USGallons.toUSCups(0.98), closeTo(15.68, 0.01));
         });
 
+        test('Convert known US Gallons to Cubic Metres', () {
+            expect(USGallons.toCubicMetres(1849.2), closeTo(7.0, 0.01));
+            expect(USGallons.toCubicMetres(87.0), closeTo(0.329331, 0.01));
+            expect(USGallons.toCubicMetres(123456.0), closeTo(467.331797, 0.01));
+        });
+
+        test('Convert known US Gallons to Cubic Feet', () {
+            expect(USGallons.toCubicFeet(6.0), closeTo(0.802083, 0.01));
+            expect(USGallons.toCubicFeet(24.0), closeTo(3.20833, 0.01));
+            expect(USGallons.toCubicFeet(5.0), closeTo(0.668403, 0.01));
+        });
+
+        test('Convert known US Gallons to Cubic Inches', () {
+            expect(USGallons.toCubicInches(6.0), closeTo(1386.0, 0.01));
+            expect(USGallons.toCubicInches(190.0), closeTo(43890.0, 0.01));
+            expect(USGallons.toCubicInches(55.0), closeTo(12705.0, 0.01));
+        });
+
+        test('Convert known US Gallons to Oil Barrels', () {
+            expect(USGallons.toOilBarrels(966.0), closeTo(23.0, 0.01));
+            expect(USGallons.toOilBarrels(1234.0), closeTo(29.38095, 0.01));
+            expect(USGallons.toOilBarrels(16.8), closeTo(0.4, 0.01));
+        });
+
         test('Convert known US Pints to Millilitres', () {
             expect(USPints.toMillilitres(0.66), closeTo(312.2965, 0.01));
             expect(USPints.toMillilitres(9.1), closeTo(4305.91, 0.01));
@@ -1177,6 +1921,30 @@ void main() {
             expect(USPints.toUSCups(23.9), closeTo(47.8, 0.01));
             expect(USPints.toUSCups(1009.0), closeTo(2018.0, 0.01));
             expect(USPints.toUSCups(45.9), closeTo(91.8, 0.01));
+        });
+
+        test('Convert known US Pints to Cubic Metres', () {
+            expect(USPints.toCubicMetres(14793.6), closeTo(7.0, 0.01));
+            expect(USPints.toCubicMetres(700.0), closeTo(0.331224, 0.01));
+            expect(USPints.toCubicMetres(123456.0), closeTo(58.4164747, 0.01));
+        });
+
+        test('Convert known US Pints to Cubic Feet', () {
+            expect(USPints.toCubicFeet(66.0), closeTo(1.10286, 0.01));
+            expect(USPints.toCubicFeet(2692.99), closeTo(45.0, 0.01));
+            expect(USPints.toCubicFeet(123.0), closeTo(2.05534, 0.01));
+        });
+
+        test('Convert known US Pints to Cubic Inches', () {
+            expect(USPints.toCubicInches(66.0), closeTo(1905.75, 0.01));
+            expect(USPints.toCubicInches(900.0), closeTo(25987.5, 0.01));
+            expect(USPints.toCubicInches(6.7), closeTo(193.463, 0.01));
+        });
+
+        test('Convert known US Pints to Oil Barrels', () {
+            expect(USPints.toOilBarrels(223776.0), closeTo(666.0, 0.01));
+            expect(USPints.toOilBarrels(1234.0), closeTo(3.672619, 0.01));
+            expect(USPints.toOilBarrels(302.4), closeTo(0.9, 0.01));
         });
 
         test('Convert known US Quarts to Millilitres', () {
@@ -1269,6 +2037,30 @@ void main() {
             expect(USQuarts.toUSCups(0.66), closeTo(2.64, 0.01));
         });
 
+        test('Convert known US Quarts to Cubic Metres', () {
+            expect(USQuarts.toCubicMetres(8453.51), closeTo(8.0, 0.01));
+            expect(USQuarts.toCubicMetres(5000.0), closeTo(4.731765, 0.01));
+            expect(USQuarts.toCubicMetres(123456.0), closeTo(116.832949, 0.01));
+        });
+
+        test('Convert known US Quarts to Cubic Feet', () {
+            expect(USQuarts.toCubicFeet(44.0), closeTo(1.47049, 0.01));
+            expect(USQuarts.toCubicFeet(2663.06), closeTo(89.0, 0.01));
+            expect(USQuarts.toCubicFeet(444.0), closeTo(14.8385, 0.01));
+        });
+
+        test('Convert known US Quarts to Cubic Inches', () {
+            expect(USQuarts.toCubicInches(44.0), closeTo(2541.0, 0.01));
+            expect(USQuarts.toCubicInches(800.0), closeTo(46200.0, 0.01));
+            expect(USQuarts.toCubicInches(6.0), closeTo(346.5, 0.01));
+        });
+
+        test('Convert known US Quarts to Oil Barrels', () {
+            expect(USQuarts.toOilBarrels(9240.0), closeTo(55.0, 0.01));
+            expect(USQuarts.toOilBarrels(1344.0), closeTo(8.0, 0.01));
+            expect(USQuarts.toOilBarrels(207312.0), closeTo(1234.0, 0.01));
+        });
+
         test('Convert known US Tablespoons to Millilitres', () {
             expect(USTablespoons.toMillilitres(12.0), closeTo(177.441, 0.01));
             expect(USTablespoons.toMillilitres(0.8), closeTo(11.8294, 0.01));
@@ -1359,6 +2151,30 @@ void main() {
             expect(USTablespoons.toUSCups(9000.9), closeTo(562.55625, 0.01));
         });
 
+        test('Convert known US Tablespoons to Cubic Metres', () {
+            expect(USTablespoons.toCubicMetres(541024.0), closeTo(8.0, 0.01));
+            expect(USTablespoons.toCubicMetres(10200.0), closeTo(0.150825, 0.01));
+            expect(USTablespoons.toCubicMetres(123456.0), closeTo(1.82551483, 0.01));
+        });
+
+        test('Convert known US Tablespoons to Cubic Feet', () {
+            expect(USTablespoons.toCubicFeet(66.0), closeTo(0.0344645, 0.01));
+            expect(USTablespoons.toCubicFeet(7660.05), closeTo(4.0, 0.01));
+            expect(USTablespoons.toCubicFeet(1234.0), closeTo(0.6443821, 0.01));
+        });
+
+        test('Convert known US Tablespoons to Cubic Inches', () {
+            expect(USTablespoons.toCubicInches(900.0), closeTo(812.109, 0.01));
+            expect(USTablespoons.toCubicInches(10.0), closeTo(9.02344, 0.01));
+            expect(USTablespoons.toCubicInches(4.0), closeTo(3.60938, 0.01));
+        });
+
+        test('Convert known US Tablespoons to Oil Barrels', () {
+            expect(USTablespoons.toOilBarrels(591360), closeTo(55.0, 0.01));
+            expect(USTablespoons.toOilBarrels(4300.8), closeTo(0.4, 0.01));
+            expect(USTablespoons.toOilBarrels(34406.4), closeTo(3.2, 0.01));
+        });
+
         test('Convert known US Teaspoons to Millilitres', () {
             expect(USTeaspoons.toMillilitres(6.9), closeTo(34.0095, 0.01));
             expect(USTeaspoons.toMillilitres(1.6), closeTo(7.88627, 0.01));
@@ -1447,6 +2263,30 @@ void main() {
             expect(USTeaspoons.toUSCups(90.0), closeTo(1.875, 0.01));
             expect(USTeaspoons.toUSCups(4500.8), closeTo(93.7666363, 0.01));
             expect(USTeaspoons.toUSCups(0.9), closeTo(0.01875, 0.01));
+        });
+
+        test('Convert known US Teaspoons to Cubic Metres', () {
+            expect(USTeaspoons.toCubicMetres(405768.0), closeTo(2.0, 0.01));
+            expect(USTeaspoons.toCubicMetres(80808.0), closeTo(0.39829617, 0.01));
+            expect(USTeaspoons.toCubicMetres(123456.0), closeTo(0.608504748, 0.01));
+        });
+
+        test('Convert known US Teaspoons to Cubic Feet', () {
+            expect(USTeaspoons.toCubicFeet(2000.0), closeTo(0.3481263, 0.01));
+            expect(USTeaspoons.toCubicFeet(6894.05), closeTo(1.2, 0.01));
+            expect(USTeaspoons.toCubicFeet(12345.0), closeTo(2.1488098, 0.01));
+        });
+
+        test('Convert known US Teaspoons to Cubic Inches', () {
+            expect(USTeaspoons.toCubicInches(23.2727), closeTo(7.0, 0.01));
+            expect(USTeaspoons.toCubicInches(219.429), closeTo(66.0, 0.01));
+            expect(USTeaspoons.toCubicInches(39.8961), closeTo(12.0, 0.01));
+        });
+
+        test('Convert known US Teaspoons to Oil Barrels', () {
+            expect(USTeaspoons.toOilBarrels(103219.0), closeTo(3.2, 0.01));
+            expect(USTeaspoons.toOilBarrels(6666.0), closeTo(0.2066592, 0.01));
+            expect(USTeaspoons.toOilBarrels(64512.0), closeTo(2.0, 0.01));
         });
 
     });
