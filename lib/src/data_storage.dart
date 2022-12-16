@@ -6,385 +6,385 @@
 
 /// Bits conversion functions
 class Bits {
-	Bits._() {}
-	/// Converts the supplied Bits value to Kilobits
-	static double toKilobits(double value) =>
-		value / 1000.0;
-	/// Converts the supplied Bits value to Megabits
-	static double toMegabits(double value) =>
-		value / 1e+6;
-	/// Converts the supplied Bits value to Gigabits
-	static double toGigabits(double value) =>
-		value / 1e+9;
-	/// Converts the supplied Bits value to Terabits
-	static double toTerabits(double value) =>
-		value / 1e+12;
-	/// Converts the supplied Bits value to Kilobytes
-	static double toKilobytes(double value) =>
-		value / 8000.0;
-	/// Converts the supplied Bits value to Megabytes
-	static double toMegabytes(double value) =>
-		value / 8e+6;
-	/// Converts the supplied Bits value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 8e+9;
-	/// Converts the supplied Bits value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 8e+12;
-	/// Converts the supplied Bits value to Kibibits
-	static double toKibibits(double value) =>
-		value / 1024.0;
-	/// Converts the supplied Bits value to Mebibits
-	static double toMebibits(double value) =>
-		value / 1048576.0;
+  Bits._() {}
+
+  /// Converts the supplied Bits value to Kilobits
+  static double toKilobits(double value) => value / 1000.0;
+
+  /// Converts the supplied Bits value to Megabits
+  static double toMegabits(double value) => value / 1e+6;
+
+  /// Converts the supplied Bits value to Gigabits
+  static double toGigabits(double value) => value / 1e+9;
+
+  /// Converts the supplied Bits value to Terabits
+  static double toTerabits(double value) => value / 1e+12;
+
+  /// Converts the supplied Bits value to Kilobytes
+  static double toKilobytes(double value) => value / 8000.0;
+
+  /// Converts the supplied Bits value to Megabytes
+  static double toMegabytes(double value) => value / 8e+6;
+
+  /// Converts the supplied Bits value to Gigabytes
+  static double toGigabytes(double value) => value / 8e+9;
+
+  /// Converts the supplied Bits value to Terabytes
+  static double toTerabytes(double value) => value / 8e+12;
+
+  /// Converts the supplied Bits value to Kibibits
+  static double toKibibits(double value) => value / 1024.0;
+
+  /// Converts the supplied Bits value to Mebibits
+  static double toMebibits(double value) => value / 1048576.0;
 }
 
 /// Gigabits conversion functions
 class Gigabits {
-	Gigabits._() {}
-	/// Converts the supplied Gigabits value to Bits
-	static double toBits(double value) =>
-		value * 1e+9;
-	/// Converts the supplied Gigabits value to Kilobits
-	static double toKilobits(double value) =>
-		value * 1e+6;
-	/// Converts the supplied Gigabits value to Megabits
-	static double toMegabits(double value) =>
-		value * 1000.0;
-	/// Converts the supplied Gigabits value to Terabits
-	static double toTerabits(double value) =>
-		value / 1000.0;
-	/// Converts the supplied Gigabits value to Kilobytes
-	static double toKilobytes(double value) =>
-		value * 125000.0;
-	/// Converts the supplied Gigabits value to Megabytes
-	static double toMegabytes(double value) =>
-		value * 125.0;
-	/// Converts the supplied Gigabits value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 8.0;
-	/// Converts the supplied Gigabits value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 8000.0;
-	/// Converts the supplied Gigabits value to Kibibits
-	static double toKibibits(double value) =>
-		value * 976562.5;
-	/// Converts the supplied Gigabits value to Mebibits
-	static double toMebibits(double value) =>
-		value * 953.67431640625;
+  Gigabits._() {}
+
+  /// Converts the supplied Gigabits value to Bits
+  static double toBits(double value) => value * 1e+9;
+
+  /// Converts the supplied Gigabits value to Kilobits
+  static double toKilobits(double value) => value * 1e+6;
+
+  /// Converts the supplied Gigabits value to Megabits
+  static double toMegabits(double value) => value * 1000.0;
+
+  /// Converts the supplied Gigabits value to Terabits
+  static double toTerabits(double value) => value / 1000.0;
+
+  /// Converts the supplied Gigabits value to Kilobytes
+  static double toKilobytes(double value) => value * 125000.0;
+
+  /// Converts the supplied Gigabits value to Megabytes
+  static double toMegabytes(double value) => value * 125.0;
+
+  /// Converts the supplied Gigabits value to Gigabytes
+  static double toGigabytes(double value) => value / 8.0;
+
+  /// Converts the supplied Gigabits value to Terabytes
+  static double toTerabytes(double value) => value / 8000.0;
+
+  /// Converts the supplied Gigabits value to Kibibits
+  static double toKibibits(double value) => value * 976562.5;
+
+  /// Converts the supplied Gigabits value to Mebibits
+  static double toMebibits(double value) => value * 953.67431640625;
 }
 
 /// Gigabytes conversion functions
 class Gigabytes {
-	Gigabytes._() {}
-	/// Converts the supplied Gigabytes value to Bits
-	static double toBits(double value) =>
-		value * 8e+9;
-	/// Converts the supplied Gigabytes value to Kilobits
-	static double toKilobits(double value) =>
-		value * 8e+6;
-	/// Converts the supplied Gigabytes value to Megabits
-	static double toMegabits(double value) =>
-		value * 8000.0;
-	/// Converts the supplied Gigabytes value to Gigabits
-	static double toGigabits(double value) =>
-		value * 8.0;
-	/// Converts the supplied Gigabytes value to Terabits
-	static double toTerabits(double value) =>
-		value / 125.0;
-	/// Converts the supplied Gigabytes value to Kilobytes
-	static double toKilobytes(double value) =>
-		value * 1e+6;
-	/// Converts the supplied Gigabytes value to Megabytes
-	static double toMegabytes(double value) =>
-		value * 1000.0;
-	/// Converts the supplied Gigabytes value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 1000.0;
-	/// Converts the supplied Gigabytes value to Kibibits
-	static double toKibibits(double value) =>
-		value * 7812500.0;
-	/// Converts the supplied Gigabytes value to Mebibits
-	static double toMebibits(double value) =>
-		value * 7629.39;
+  Gigabytes._() {}
+
+  /// Converts the supplied Gigabytes value to Bits
+  static double toBits(double value) => value * 8e+9;
+
+  /// Converts the supplied Gigabytes value to Kilobits
+  static double toKilobits(double value) => value * 8e+6;
+
+  /// Converts the supplied Gigabytes value to Megabits
+  static double toMegabits(double value) => value * 8000.0;
+
+  /// Converts the supplied Gigabytes value to Gigabits
+  static double toGigabits(double value) => value * 8.0;
+
+  /// Converts the supplied Gigabytes value to Terabits
+  static double toTerabits(double value) => value / 125.0;
+
+  /// Converts the supplied Gigabytes value to Kilobytes
+  static double toKilobytes(double value) => value * 1e+6;
+
+  /// Converts the supplied Gigabytes value to Megabytes
+  static double toMegabytes(double value) => value * 1000.0;
+
+  /// Converts the supplied Gigabytes value to Terabytes
+  static double toTerabytes(double value) => value / 1000.0;
+
+  /// Converts the supplied Gigabytes value to Kibibits
+  static double toKibibits(double value) => value * 7812500.0;
+
+  /// Converts the supplied Gigabytes value to Mebibits
+  static double toMebibits(double value) => value * 7629.39;
 }
 
 /// Kibibits conversion functions
 class Kibibits {
-	Kibibits._() {}
-	/// Converts the supplied Kibibits value to Bits
-	static double toBits(double value) =>
-		value * 1024.0;
-	/// Converts the supplied Kibibits value to Kilobits
-	static double toKilobits(double value) =>
-		value * 1.024;
-	/// Converts the supplied Kibibits value to Megabits
-	static double toMegabits(double value) =>
-		value / 976.563;
-	/// Converts the supplied Kibibits value to Gigabits
-	static double toGigabits(double value) =>
-		value / 976562.5;
-	/// Converts the supplied Kibibits value to Terabits
-	static double toTerabits(double value) =>
-		value / 976562500.0;
-	/// Converts the supplied Kibibits value to Kilobytes
-	static double toKilobytes(double value) =>
-		value / 7.8125;
-	/// Converts the supplied Kibibits value to Megabytes
-	static double toMegabytes(double value) =>
-		value / 7812.5;
-	/// Converts the supplied Kibibits value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 7812500.0;
-	/// Converts the supplied Kibibits value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 7812500000.0;
-	/// Converts the supplied Kibibits value to Mebibits
-	static double toMebibits(double value) =>
-		value / 1024.0;
+  Kibibits._() {}
+
+  /// Converts the supplied Kibibits value to Bits
+  static double toBits(double value) => value * 1024.0;
+
+  /// Converts the supplied Kibibits value to Kilobits
+  static double toKilobits(double value) => value * 1.024;
+
+  /// Converts the supplied Kibibits value to Megabits
+  static double toMegabits(double value) => value / 976.563;
+
+  /// Converts the supplied Kibibits value to Gigabits
+  static double toGigabits(double value) => value / 976562.5;
+
+  /// Converts the supplied Kibibits value to Terabits
+  static double toTerabits(double value) => value / 976562500.0;
+
+  /// Converts the supplied Kibibits value to Kilobytes
+  static double toKilobytes(double value) => value / 7.8125;
+
+  /// Converts the supplied Kibibits value to Megabytes
+  static double toMegabytes(double value) => value / 7812.5;
+
+  /// Converts the supplied Kibibits value to Gigabytes
+  static double toGigabytes(double value) => value / 7812500.0;
+
+  /// Converts the supplied Kibibits value to Terabytes
+  static double toTerabytes(double value) => value / 7812500000.0;
+
+  /// Converts the supplied Kibibits value to Mebibits
+  static double toMebibits(double value) => value / 1024.0;
 }
 
 /// Kilobits conversion functions
 class Kilobits {
-	Kilobits._() {}
-	/// Converts the supplied Kilobits value to Bits
-	static double toBits(double value) =>
-		value * 1000.0;
-	/// Converts the supplied Kilobits value to Megabits
-	static double toMegabits(double value) =>
-		value / 1000.0;
-	/// Converts the supplied Kilobits value to Gigabits
-	static double toGigabits(double value) =>
-		value / 1e+6;
-	/// Converts the supplied Kilobits value to Terabits
-	static double toTerabits(double value) =>
-		value / 1e+9;
-	/// Converts the supplied Kilobits value to Kilobytes
-	static double toKilobytes(double value) =>
-		value / 8.0;
-	/// Converts the supplied Kilobits value to Megabytes
-	static double toMegabytes(double value) =>
-		value / 8000.0;
-	/// Converts the supplied Kilobits value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 8e+6;
-	/// Converts the supplied Kilobits value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 8e+9;
-	/// Converts the supplied Kilobits value to Kibibits
-	static double toKibibits(double value) =>
-		value / 1.024;
-	/// Converts the supplied Kilobits value to Mebibits
-	static double toMebibits(double value) =>
-		value / 1048.58;
+  Kilobits._() {}
+
+  /// Converts the supplied Kilobits value to Bits
+  static double toBits(double value) => value * 1000.0;
+
+  /// Converts the supplied Kilobits value to Megabits
+  static double toMegabits(double value) => value / 1000.0;
+
+  /// Converts the supplied Kilobits value to Gigabits
+  static double toGigabits(double value) => value / 1e+6;
+
+  /// Converts the supplied Kilobits value to Terabits
+  static double toTerabits(double value) => value / 1e+9;
+
+  /// Converts the supplied Kilobits value to Kilobytes
+  static double toKilobytes(double value) => value / 8.0;
+
+  /// Converts the supplied Kilobits value to Megabytes
+  static double toMegabytes(double value) => value / 8000.0;
+
+  /// Converts the supplied Kilobits value to Gigabytes
+  static double toGigabytes(double value) => value / 8e+6;
+
+  /// Converts the supplied Kilobits value to Terabytes
+  static double toTerabytes(double value) => value / 8e+9;
+
+  /// Converts the supplied Kilobits value to Kibibits
+  static double toKibibits(double value) => value / 1.024;
+
+  /// Converts the supplied Kilobits value to Mebibits
+  static double toMebibits(double value) => value / 1048.58;
 }
 
 /// Kilobytes conversion functions
 class Kilobytes {
-	Kilobytes._() {}
-	/// Converts the supplied Kilobytes value to Bits
-	static double toBits(double value) =>
-		value * 8000.0;
-	/// Converts the supplied Kilobytes value to Kilobits
-	static double toKilobits(double value) =>
-		value * 8.0;
-	/// Converts the supplied Kilobytes value to Megabits
-	static double toMegabits(double value) =>
-		value / 125.0;
-	/// Converts the supplied Kilobytes value to Gigabits
-	static double toGigabits(double value) =>
-		value / 125000.0;
-	/// Converts the supplied Kilobytes value to Terabits
-	static double toTerabits(double value) =>
-		value / 1.25e+8;
-	/// Converts the supplied Kilobytes value to Megabytes
-	static double toMegabytes(double value) =>
-		value / 1000.0;
-	/// Converts the supplied Kilobytes value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 1e+6;
-	/// Converts the supplied Kilobytes value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 1e+9;
-	/// Converts the supplied Kilobytes value to Kibibits
-	static double toKibibits(double value) =>
-		value * 7.8125;
-	/// Converts the supplied Kilobytes value to Mebibits
-	static double toMebibits(double value) =>
-		value * 0.00762939;
+  Kilobytes._() {}
+
+  /// Converts the supplied Kilobytes value to Bits
+  static double toBits(double value) => value * 8000.0;
+
+  /// Converts the supplied Kilobytes value to Kilobits
+  static double toKilobits(double value) => value * 8.0;
+
+  /// Converts the supplied Kilobytes value to Megabits
+  static double toMegabits(double value) => value / 125.0;
+
+  /// Converts the supplied Kilobytes value to Gigabits
+  static double toGigabits(double value) => value / 125000.0;
+
+  /// Converts the supplied Kilobytes value to Terabits
+  static double toTerabits(double value) => value / 1.25e+8;
+
+  /// Converts the supplied Kilobytes value to Megabytes
+  static double toMegabytes(double value) => value / 1000.0;
+
+  /// Converts the supplied Kilobytes value to Gigabytes
+  static double toGigabytes(double value) => value / 1e+6;
+
+  /// Converts the supplied Kilobytes value to Terabytes
+  static double toTerabytes(double value) => value / 1e+9;
+
+  /// Converts the supplied Kilobytes value to Kibibits
+  static double toKibibits(double value) => value * 7.8125;
+
+  /// Converts the supplied Kilobytes value to Mebibits
+  static double toMebibits(double value) => value * 0.00762939;
 }
 
 /// Mebibits conversion functions
 class Mebibits {
-	Mebibits._() {}
-	/// Converts the supplied Mebibits value to Bits
-	static double toBits(double value) =>
-		value * 1048576.0;
-	/// Converts the supplied Mebibits value to Kilobits
-	static double toKilobits(double value) =>
-		value * 1048.58;
-	/// Converts the supplied Mebibits value to Megabits
-	static double toMegabits(double value) =>
-		value * 1.04858;
-	/// Converts the supplied Mebibits value to Gigabits
-	static double toGigabits(double value) =>
-		value / 953.67431640625;
-	/// Converts the supplied Mebibits value to Terabits
-	static double toTerabits(double value) =>
-		value / 953674.0;
-	/// Converts the supplied Mebibits value to Kilobytes
-	static double toKilobytes(double value) =>
-		value / 0.00762939;
-	/// Converts the supplied Mebibits value to Megabytes
-	static double toMegabytes(double value) =>
-		value / 7.62939;
-	/// Converts the supplied Mebibits value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 7629.39;
-	/// Converts the supplied Mebibits value to Terabytes
-	static double toTerabytes(double value) =>
-		value * 0.000000131072;
-	/// Converts the supplied Mebibits value to Kibibits
-	static double toKibibits(double value) =>
-		value * 1024.0;
+  Mebibits._() {}
+
+  /// Converts the supplied Mebibits value to Bits
+  static double toBits(double value) => value * 1048576.0;
+
+  /// Converts the supplied Mebibits value to Kilobits
+  static double toKilobits(double value) => value * 1048.58;
+
+  /// Converts the supplied Mebibits value to Megabits
+  static double toMegabits(double value) => value * 1.04858;
+
+  /// Converts the supplied Mebibits value to Gigabits
+  static double toGigabits(double value) => value / 953.67431640625;
+
+  /// Converts the supplied Mebibits value to Terabits
+  static double toTerabits(double value) => value / 953674.0;
+
+  /// Converts the supplied Mebibits value to Kilobytes
+  static double toKilobytes(double value) => value / 0.00762939;
+
+  /// Converts the supplied Mebibits value to Megabytes
+  static double toMegabytes(double value) => value / 7.62939;
+
+  /// Converts the supplied Mebibits value to Gigabytes
+  static double toGigabytes(double value) => value / 7629.39;
+
+  /// Converts the supplied Mebibits value to Terabytes
+  static double toTerabytes(double value) => value * 0.000000131072;
+
+  /// Converts the supplied Mebibits value to Kibibits
+  static double toKibibits(double value) => value * 1024.0;
 }
 
 /// Megabits conversion functions
 class Megabits {
-	Megabits._() {}
-	/// Converts the supplied Megabits value to Bits
-	static double toBits(double value) =>
-		value * 1e+6;
-	/// Converts the supplied Megabits value to Kilobits
-	static double toKilobits(double value) =>
-		value * 1000.0;
-	/// Converts the supplied Megabits value to Gigabits
-	static double toGigabits(double value) =>
-		value / 1000.0;
-	/// Converts the supplied Megabits value to Terabits
-	static double toTerabits(double value) =>
-		value / 1e+6;
-	/// Converts the supplied Megabits value to Kilobytes
-	static double toKilobytes(double value) =>
-		value * 125.0;
-	/// Converts the supplied Megabits value to Megabytes
-	static double toMegabytes(double value) =>
-		value / 8.0;
-	/// Converts the supplied Megabits value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 8000.0;
-	/// Converts the supplied Megabits value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 8e+6;
-	/// Converts the supplied Megabits value to Kibibits
-	static double toKibibits(double value) =>
-		value * 976.563;
-	/// Converts the supplied Megabits value to Mebibits
-	static double toMebibits(double value) =>
-		value / 1.04858;
+  Megabits._() {}
+
+  /// Converts the supplied Megabits value to Bits
+  static double toBits(double value) => value * 1e+6;
+
+  /// Converts the supplied Megabits value to Kilobits
+  static double toKilobits(double value) => value * 1000.0;
+
+  /// Converts the supplied Megabits value to Gigabits
+  static double toGigabits(double value) => value / 1000.0;
+
+  /// Converts the supplied Megabits value to Terabits
+  static double toTerabits(double value) => value / 1e+6;
+
+  /// Converts the supplied Megabits value to Kilobytes
+  static double toKilobytes(double value) => value * 125.0;
+
+  /// Converts the supplied Megabits value to Megabytes
+  static double toMegabytes(double value) => value / 8.0;
+
+  /// Converts the supplied Megabits value to Gigabytes
+  static double toGigabytes(double value) => value / 8000.0;
+
+  /// Converts the supplied Megabits value to Terabytes
+  static double toTerabytes(double value) => value / 8e+6;
+
+  /// Converts the supplied Megabits value to Kibibits
+  static double toKibibits(double value) => value * 976.563;
+
+  /// Converts the supplied Megabits value to Mebibits
+  static double toMebibits(double value) => value / 1.04858;
 }
 
 /// Megabytes conversion functions
 class Megabytes {
-	Megabytes._() {}
-	/// Converts the supplied Megabytes value to Bits
-	static double toBits(double value) =>
-		value * 8e+6;
-	/// Converts the supplied Megabytes value to Kilobits
-	static double toKilobits(double value) =>
-		value * 8000.0;
-	/// Converts the supplied Megabytes value to Megabits
-	static double toMegabits(double value) =>
-		value * 8.0;
-	/// Converts the supplied Megabytes value to Gigabits
-	static double toGigabits(double value) =>
-		value / 125.0;
-	/// Converts the supplied Megabytes value to Terabits
-	static double toTerabits(double value) =>
-		value / 125000.0;
-	/// Converts the supplied Megabytes value to Kilobytes
-	static double toKilobytes(double value) =>
-		value * 1000.0;
-	/// Converts the supplied Megabytes value to Gigabytes
-	static double toGigabytes(double value) =>
-		value / 1000.0;
-	/// Converts the supplied Megabytes value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 1e+6;
-	/// Converts the supplied Megabytes value to Kibibits
-	static double toKibibits(double value) =>
-		value * 7812.5;
-	/// Converts the supplied Megabytes value to Mebibits
-	static double toMebibits(double value) =>
-		value * 7.62939;
+  Megabytes._() {}
+
+  /// Converts the supplied Megabytes value to Bits
+  static double toBits(double value) => value * 8e+6;
+
+  /// Converts the supplied Megabytes value to Kilobits
+  static double toKilobits(double value) => value * 8000.0;
+
+  /// Converts the supplied Megabytes value to Megabits
+  static double toMegabits(double value) => value * 8.0;
+
+  /// Converts the supplied Megabytes value to Gigabits
+  static double toGigabits(double value) => value / 125.0;
+
+  /// Converts the supplied Megabytes value to Terabits
+  static double toTerabits(double value) => value / 125000.0;
+
+  /// Converts the supplied Megabytes value to Kilobytes
+  static double toKilobytes(double value) => value * 1000.0;
+
+  /// Converts the supplied Megabytes value to Gigabytes
+  static double toGigabytes(double value) => value / 1000.0;
+
+  /// Converts the supplied Megabytes value to Terabytes
+  static double toTerabytes(double value) => value / 1e+6;
+
+  /// Converts the supplied Megabytes value to Kibibits
+  static double toKibibits(double value) => value * 7812.5;
+
+  /// Converts the supplied Megabytes value to Mebibits
+  static double toMebibits(double value) => value * 7.62939;
 }
 
 /// Terabits conversion functions
 class Terabits {
-	Terabits._() {}
-	/// Converts the supplied Terabits value to Bits
-	static double toBits(double value) =>
-		value * 1e+12;
-	/// Converts the supplied Terabits value to Kilobits
-	static double toKilobits(double value) =>
-		value * 1e+9;
-	/// Converts the supplied Terabits value to Megabits
-	static double toMegabits(double value) =>
-		value * 1e+6;
-	/// Converts the supplied Terabits value to Gigabits
-	static double toGigabits(double value) =>
-		value * 1000.0;
-	/// Converts the supplied Terabits value to Kilobytes
-	static double toKilobytes(double value) =>
-		value * 1.25e+8;
-	/// Converts the supplied Terabits value to Megabytes
-	static double toMegabytes(double value) =>
-		value * 125000.0;
-	/// Converts the supplied Terabits value to Gigabytes
-	static double toGigabytes(double value) =>
-		value * 125.0;
-	/// Converts the supplied Terabits value to Terabytes
-	static double toTerabytes(double value) =>
-		value / 8.0;
-	/// Converts the supplied Terabits value to Kibibits
-	static double toKibibits(double value) =>
-		value * 976562500.0;
-	/// Converts the supplied Terabits value to Mebibits
-	static double toMebibits(double value) =>
-		value * 953674.0;
+  Terabits._() {}
+
+  /// Converts the supplied Terabits value to Bits
+  static double toBits(double value) => value * 1e+12;
+
+  /// Converts the supplied Terabits value to Kilobits
+  static double toKilobits(double value) => value * 1e+9;
+
+  /// Converts the supplied Terabits value to Megabits
+  static double toMegabits(double value) => value * 1e+6;
+
+  /// Converts the supplied Terabits value to Gigabits
+  static double toGigabits(double value) => value * 1000.0;
+
+  /// Converts the supplied Terabits value to Kilobytes
+  static double toKilobytes(double value) => value * 1.25e+8;
+
+  /// Converts the supplied Terabits value to Megabytes
+  static double toMegabytes(double value) => value * 125000.0;
+
+  /// Converts the supplied Terabits value to Gigabytes
+  static double toGigabytes(double value) => value * 125.0;
+
+  /// Converts the supplied Terabits value to Terabytes
+  static double toTerabytes(double value) => value / 8.0;
+
+  /// Converts the supplied Terabits value to Kibibits
+  static double toKibibits(double value) => value * 976562500.0;
+
+  /// Converts the supplied Terabits value to Mebibits
+  static double toMebibits(double value) => value * 953674.0;
 }
 
 /// Terabytes conversion functions
 class Terabytes {
-	Terabytes._() {}
-	/// Converts the supplied Terabytes value to Bits
-	static double toBits(double value) =>
-		value * 8e+12;
-	/// Converts the supplied Terabytes value to Kilobits
-	static double toKilobits(double value) =>
-		value * 8e+9;
-	/// Converts the supplied Terabytes value to Megabits
-	static double toMegabits(double value) =>
-		value * 8e+6;
-	/// Converts the supplied Terabytes value to Gigabits
-	static double toGigabits(double value) =>
-		value * 8000.0;
-	/// Converts the supplied Terabytes value to Terabits
-	static double toTerabits(double value) =>
-		value * 8.0;
-	/// Converts the supplied Terabytes value to Kilobytes
-	static double toKilobytes(double value) =>
-		value * 1e+9;
-	/// Converts the supplied Terabytes value to Megabytes
-	static double toMegabytes(double value) =>
-		value * 1e+6;
-	/// Converts the supplied Terabytes value to Gigabytes
-	static double toGigabytes(double value) =>
-		value * 1000.0;
-	/// Converts the supplied Terabytes value to Kibibits
-	static double toKibibits(double value) =>
-		value * 7812500000.0;
-	/// Converts the supplied Terabytes value to Mebibits
-	static double toMebibits(double value) =>
-		value / 0.000000131072;
+  Terabytes._() {}
+
+  /// Converts the supplied Terabytes value to Bits
+  static double toBits(double value) => value * 8e+12;
+
+  /// Converts the supplied Terabytes value to Kilobits
+  static double toKilobits(double value) => value * 8e+9;
+
+  /// Converts the supplied Terabytes value to Megabits
+  static double toMegabits(double value) => value * 8e+6;
+
+  /// Converts the supplied Terabytes value to Gigabits
+  static double toGigabits(double value) => value * 8000.0;
+
+  /// Converts the supplied Terabytes value to Terabits
+  static double toTerabits(double value) => value * 8.0;
+
+  /// Converts the supplied Terabytes value to Kilobytes
+  static double toKilobytes(double value) => value * 1e+9;
+
+  /// Converts the supplied Terabytes value to Megabytes
+  static double toMegabytes(double value) => value * 1e+6;
+
+  /// Converts the supplied Terabytes value to Gigabytes
+  static double toGigabytes(double value) => value * 1000.0;
+
+  /// Converts the supplied Terabytes value to Kibibits
+  static double toKibibits(double value) => value * 7812500000.0;
+
+  /// Converts the supplied Terabytes value to Mebibits
+  static double toMebibits(double value) => value / 0.000000131072;
 }

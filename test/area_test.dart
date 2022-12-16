@@ -8,342 +8,365 @@ import 'package:test/test.dart';
 import 'package:conversion_units/conversion_units.dart';
 
 void main() {
-    group('Area Tests', () {
-        test('Convert known Acres to Square Kilometres', () {
-            expect(Acres.toSquareKilometres(100.0), closeTo(0.404686, 0.01));
-            expect(Acres.toSquareKilometres(90.0), closeTo(0.364217, 0.01));
-            expect(Acres.toSquareKilometres(1800.0), closeTo(7.284342, 0.01));
-        });
-
-        test('Convert known Acres to Square Metres', () {
-            expect(Acres.toSquareMetres(1.2), closeTo(4856.23, 0.01));
-            expect(Acres.toSquareMetres(0.8), closeTo(3237.49, 0.01));
-            expect(Acres.toSquareMetres(5.6), closeTo(22662.416, 0.01));
-        });
-
-        test('Convert known Acres to Square Miles', () {
-            expect(Acres.toSquareMiles(1009.0), closeTo(1.576562, 0.01));
-            expect(Acres.toSquareMiles(90.0), closeTo(0.140625, 0.01));
-            expect(Acres.toSquareMiles(765.0), closeTo(1.19531, 0.01));
-        });
-
-        test('Convert known Acres to Square Yards', () {
-            expect(Acres.toSquareYards(3.4), closeTo(16456.0, 0.01));
-            expect(Acres.toSquareYards(0.7), closeTo(3388.0, 0.01));
-            expect(Acres.toSquareYards(0.01), closeTo(48.4, 0.01));
-        });
-
-        test('Convert known Acres to Square Feet', () {
-            expect(Acres.toSquareFeet(0.01), closeTo(435.6, 0.01));
-            expect(Acres.toSquareFeet(12.0), closeTo(522720.0, 0.01));
-            expect(Acres.toSquareFeet(0.67), closeTo(29185.2, 0.01));
-        });
-
-        test('Convert known Acres to Square Inches', () {
-            expect(Acres.toSquareInches(0.09), closeTo(564537.6, 0.01));
-            expect(Acres.toSquareInches(0.005), closeTo(31363.2, 0.01));
-            expect(Acres.toSquareInches(0.012), closeTo(75271.68, 0.01));
-        });
-
-        test('Convert known Acres to Hectares', () {
-            expect(Acres.toHectares(1109.0), closeTo(448.7964, 0.01));
-            expect(Acres.toHectares(5.6), closeTo(2.26624, 0.01));
-            expect(Acres.toHectares(1.23), closeTo(0.4977633, 0.01));
-        });
-
-        test('Convert known Hectares to Square Kilometres', () {
-            expect(Hectares.toSquareKilometres(15000.0), closeTo(150.0, 0.01));
-            expect(Hectares.toSquareKilometres(300.0), closeTo(3.0, 0.01));
-            expect(Hectares.toSquareKilometres(45.6), closeTo(0.456, 0.01));
-        });
-
-        test('Convert known Hectares to Square Metres', () {
-            expect(Hectares.toSquareMetres(1.4), closeTo(14000.0, 0.01));
-            expect(Hectares.toSquareMetres(0.9), closeTo(9000.0, 0.01));
-            expect(Hectares.toSquareMetres(0.012), closeTo(120.0, 0.01));
-        });
-
-        test('Convert known Hectares to Square Miles', () {
-            expect(Hectares.toSquareMiles(1102.0), closeTo(4.254846, 0.01));
-            expect(Hectares.toSquareMiles(4500.0), closeTo(17.3746, 0.01));
-            expect(Hectares.toSquareMiles(90.0), closeTo(0.347492, 0.01));
-        });
-
-        test('Convert known Hectares to Square Yards', () {
-            expect(Hectares.toSquareYards(1.2), closeTo(14351.8805556, 0.01));
-            expect(Hectares.toSquareYards(0.8), closeTo(9567.92, 0.01));
-            expect(Hectares.toSquareYards(34.0), closeTo(406636.615, 0.01));
-        });
-
-        test('Convert known Hectares to Square Feet', () {
-            expect(Hectares.toSquareFeet(3.4), closeTo(365972.599, 0.01));
-            expect(Hectares.toSquareFeet(0.09), closeTo(9687.519, 0.01));
-            expect(Hectares.toSquareFeet(1.2), closeTo(129166.7999, 0.01));
-        });
-
-        test('Convert known Hectares to Square Inches', () {
-            expect(Hectares.toSquareInches(0.009), closeTo(139500.28, 0.01));
-            expect(Hectares.toSquareInches(0.01), closeTo(155000.31, 0.01));
-            expect(Hectares.toSquareInches(0.0061), closeTo(94550.1891, 0.01));
-        });
-
-        test('Convert known Hectares to Acres', () {
-            expect(Hectares.toAcres(1.2), closeTo(2.96526, 0.01));
-            expect(Hectares.toAcres(0.8), closeTo(1.97684, 0.01));
-            expect(Hectares.toAcres(4.2), closeTo(10.3784, 0.01));
-        });
-
-        test('Convert known Square Feet to Square Kilometres', () {
-            expect(SquareFeet.toSquareKilometres(88997766.0), closeTo(8.2681630146, 0.01));
-            expect(SquareFeet.toSquareKilometres(10009002.0), closeTo(0.92986671317, 0.01));
-            expect(SquareFeet.toSquareKilometres(987654321.0), closeTo(91.75608889, 0.01));
-        });
-
-        test('Convert known Square Feet to Square Metres', () {
-            expect(SquareFeet.toSquareMetres(900.0), closeTo(83.6127, 0.01));
-            expect(SquareFeet.toSquareMetres(799.123), closeTo(74.24095603, 0.01));
-            expect(SquareFeet.toSquareMetres(500.0), closeTo(46.4515, 0.01));
-        });
-
-        test('Convert known Square Feet to Square Miles', () {
-            expect(SquareFeet.toSquareMiles(12000000.0), closeTo(0.43044077135, 0.01));
-            expect(SquareFeet.toSquareMiles(987654321.0), closeTo(35.4272239799, 0.01));
-            expect(SquareFeet.toSquareMiles(900800700.0), closeTo(32.3117790117, 0.01));
-        });
-
-        test('Convert known Square Feet to Square Yards', () {
-            expect(SquareFeet.toSquareYards(909.0), closeTo(101.0, 0.01));
-            expect(SquareFeet.toSquareYards(123.456), closeTo(13.71733333, 0.01));
-            expect(SquareFeet.toSquareYards(8009.0), closeTo(889.8889, 0.01));
-        });
-
-        test('Convert known Square Feet to Square Inches', () {
-            expect(SquareFeet.toSquareInches(6.7), closeTo(964.8, 0.01));
-            expect(SquareFeet.toSquareInches(1.5), closeTo(216.0, 0.01));
-            expect(SquareFeet.toSquareInches(0.9), closeTo(129.6, 0.01));
-        });
-
-        test('Convert known Square Feet to Hectares', () {
-            expect(SquareFeet.toHectares(90000.0), closeTo(0.83612736, 0.01));
-            expect(SquareFeet.toHectares(120120.0), closeTo(1.11595132, 0.01));
-            expect(SquareFeet.toHectares(90071.0), closeTo(0.83678697, 0.01));
-        });
-
-        test('Convert known Square Feet to Acres', () {
-            expect(SquareFeet.toAcres(90000.0), closeTo(2.0661157, 0.01));
-            expect(SquareFeet.toAcres(123456.0), closeTo(2.83415978, 0.01));
-            expect(SquareFeet.toAcres(8809.0), closeTo(0.2022268, 0.01));
-        });
-
-        test('Convert known Square Inches to Square Kilometres', () {
-            expect(SquareInches.toSquareKilometres(678900000.0), closeTo(0.437999124, 0.01));
-            expect(SquareInches.toSquareKilometres(10000000000.0), closeTo(6.4516, 0.01));
-            expect(SquareInches.toSquareKilometres(9e12), closeTo(5806.44, 0.01));
-        });
-
-        test('Convert known Square Inches to Square Metres', () {
-            expect(SquareInches.toSquareMetres(1090.0), closeTo(0.7032244, 0.01));
-            expect(SquareInches.toSquareMetres(1.3e6), closeTo(838.708, 0.01));
-            expect(SquareInches.toSquareMetres(9988.0), closeTo(6.443858, 0.01));
-        });
-
-        test('Convert known Square Inches to Square Miles', () {
-            expect(SquareInches.toSquareMiles(1007008000.0), closeTo(0.2508433450668, 0.01));
-            expect(SquareInches.toSquareMiles(1.2e12), closeTo(298.9172023262932, 0.01));
-            expect(SquareInches.toSquareMiles(250e7), closeTo(0.6227441715131, 0.01));
-        });
-
-        test('Convert known Square Inches to Square Yards', () {
-            expect(SquareInches.toSquareYards(900.0), closeTo(0.694444, 0.01));
-            expect(SquareInches.toSquareYards(15000.0), closeTo(11.574074, 0.01));
-            expect(SquareInches.toSquareYards(3e6), closeTo(2314.814815, 0.01));
-        });
-
-        test('Convert known Square Inches to Square Feet', () {
-            expect(SquareInches.toSquareFeet(34.0), closeTo(0.236111, 0.01));
-            expect(SquareInches.toSquareFeet(1002.0), closeTo(6.958333, 0.01));
-            expect(SquareInches.toSquareFeet(890.0), closeTo(6.18056, 0.01));
-        });
-
-        test('Convert known Square Inches to Hectares', () {
-            expect(SquareInches.toHectares(9000000.0), closeTo(0.580644, 0.01));
-            expect(SquareInches.toHectares(12345678.0), closeTo(0.79649376185, 0.01));
-            expect(SquareInches.toHectares(99887766.0), closeTo(6.4443591113, 0.01));
-        });
-
-        test('Convert known Square Inches to Acres', () {
-            expect(SquareInches.toAcres(900100.0), closeTo(0.143496199, 0.01));
-            expect(SquareInches.toAcres(5e6), closeTo(0.7971125395, 0.01));
-            expect(SquareInches.toAcres(12345678.0), closeTo(1.9681789486, 0.01));
-        });
-
-        test('Convert known Square Kilometres to Square Metres', () {
-            expect(SquareKilometres.toSquareMetres(0.12), closeTo(120000.0, 0.01));
-            expect(SquareKilometres.toSquareMetres(0.9), closeTo(900000.0, 0.01));
-            expect(SquareKilometres.toSquareMetres(8.123456), closeTo(8123456.0, 0.01));
-        });
-
-        test('Convert known Square Kilometres to Square Miles', () {
-            expect(SquareKilometres.toSquareMiles(492.098), closeTo(190.0, 0.01));
-            expect(SquareKilometres.toSquareMiles(23.3099), closeTo(9.0, 0.01));
-            expect(SquareKilometres.toSquareMiles(4661.979), closeTo(1800.0, 0.01));
-        });
-
-        test('Convert known Square Kilometres to Square Yards', () {
-            expect(SquareKilometres.toSquareYards(0.158028071), closeTo(189000.0005, 0.01));
-            expect(SquareKilometres.toSquareYards(8.361272764), closeTo(9999999.0310, 0.01));
-            expect(SquareKilometres.toSquareYards(0.6), closeTo(717594.030, 0.01));
-        });
-
-        test('Convert known Square Kilometres to Square Feet', () {
-            expect(SquareKilometres.toSquareFeet(0.009), closeTo(96875.194, 0.01));
-            expect(SquareKilometres.toSquareFeet(0.08), closeTo(861112.833, 0.01));
-            expect(SquareKilometres.toSquareFeet(0.123), closeTo(1323960.9812553, 0.01));
-        });
-
-        test('Convert known Square Kilometres to Square Inches', () {
-            expect(SquareKilometres.toSquareInches(0.0008), closeTo(1240002.48, 0.01));
-            expect(SquareKilometres.toSquareInches(0.00123), closeTo(1906503.813, 0.01));
-            expect(SquareKilometres.toSquareInches(0.000045), closeTo(69750.1395, 0.01));
-        });
-
-        test('Convert known Square Kilometres to Hectares', () {
-            expect(SquareKilometres.toHectares(190.0), closeTo(19000.0, 0.01));
-            expect(SquareKilometres.toHectares(55.67), closeTo(5567.0, 0.01));
-            expect(SquareKilometres.toHectares(0.9), closeTo(90.0, 0.01));
-        });
-
-        test('Convert known Square Kilometres to Acres', () {
-            expect(SquareKilometres.toAcres(30.393962), closeTo(7510.4999900100, 0.01));
-            expect(SquareKilometres.toAcres(54.1), closeTo(13368.3805, 0.01));
-            expect(SquareKilometres.toAcres(90.67), closeTo(22405.0103, 0.01));
-        });
-
-        test('Convert known Square Metres to Square Kilometres', () {
-            expect(SquareMetres.toSquareKilometres(19000.0), closeTo(0.019, 0.01));
-            expect(SquareMetres.toSquareKilometres(123456.0), closeTo(0.123456, 0.01));
-            expect(SquareMetres.toSquareKilometres(900100.0), closeTo(0.9001, 0.01));
-        });
-
-        test('Convert known Square Metres to Square Miles', () {
-            expect(SquareMetres.toSquareMiles(190009.0), closeTo(0.073362885, 0.01));
-            expect(SquareMetres.toSquareMiles(12345678.0), closeTo(4.7666929245, 0.01));
-            expect(SquareMetres.toSquareMiles(777666.0), closeTo(0.300258521, 0.01));
-        });
-
-        test('Convert known Square Metres to Square Yards', () {
-            expect(SquareMetres.toSquareYards(5.0), closeTo(5.97995, 0.01));
-            expect(SquareMetres.toSquareYards(1.23), closeTo(1.471068, 0.01));
-            expect(SquareMetres.toSquareYards(700.0), closeTo(837.193, 0.01));
-        });
-
-        test('Convert known Square Metres to Square Feet', () {
-            expect(SquareMetres.toSquareFeet(90.0), closeTo(968.7519375, 0.01));
-            expect(SquareMetres.toSquareFeet(180.0), closeTo(1937.503875, 0.01));
-            expect(SquareMetres.toSquareFeet(123.4), closeTo(1328.2665454, 0.01));
-        });
-
-        test('Convert known Square Metres to Square Inches', () {
-            expect(SquareMetres.toSquareInches(8.0), closeTo(12400.0, 0.01));
-            expect(SquareMetres.toSquareInches(1.23), closeTo(1906.504, 0.01));
-            expect(SquareMetres.toSquareInches(0.9), closeTo(1395.0, 0.01));
-        });
-
-        test('Convert known Square Metres to Hectares', () {
-            expect(SquareMetres.toHectares(1234.0), closeTo(0.1234, 0.01));
-            expect(SquareMetres.toHectares(560.9), closeTo(0.05609, 0.01));
-            expect(SquareMetres.toHectares(100900.0), closeTo(10.09, 0.01));
-        });
-
-        test('Convert known Square Metres to Acres', () {
-            expect(SquareMetres.toAcres(986.0), closeTo(0.243646, 0.01));
-            expect(SquareMetres.toAcres(1020.0), closeTo(0.2520475, 0.01));
-            expect(SquareMetres.toAcres(666111.0), closeTo(164.599613, 0.01));
-        });
-
-        test('Convert known Square Miles to Square Kilometres', () {
-            expect(SquareMiles.toSquareKilometres(3.0), closeTo(7.76996, 0.01));
-            expect(SquareMiles.toSquareKilometres(0.9), closeTo(2.33099, 0.01));
-            expect(SquareMiles.toSquareKilometres(100.0), closeTo(258.999, 0.01));
-        });
-
-        test('Convert known Square Miles to Square Metres', () {
-            expect(SquareMiles.toSquareMetres(0.009), closeTo(23309.893, 0.01));
-            expect(SquareMiles.toSquareMetres(0.010), closeTo(25899.88, 0.01));
-            expect(SquareMiles.toSquareMetres(0.0006), closeTo(1553.99287, 0.01));
-        });
-
-        test('Convert known Square Miles to Square Yards', () {
-            expect(SquareMiles.toSquareYards(0.01), closeTo(30976.0, 0.01));
-            expect(SquareMiles.toSquareYards(0.00123), closeTo(3810.048, 0.01));
-            expect(SquareMiles.toSquareYards(0.09), closeTo(278784.0, 0.01));
-        });
-
-        test('Convert known Square Miles to Square Feet', () {
-            expect(SquareMiles.toSquareFeet(0.01), closeTo(278784.0, 0.01));
-            expect(SquareMiles.toSquareFeet(0.005), closeTo(139392.0, 0.01));
-            expect(SquareMiles.toSquareFeet(0.08), closeTo(2230272.0, 0.01));
-        });
-
-        test('Convert known Square Miles to Square Inches', () {
-            expect(SquareMiles.toSquareInches(0.0001), closeTo(401448.96, 0.01));
-            expect(SquareMiles.toSquareInches(0.00098), closeTo(3934199.808, 0.01));
-            expect(SquareMiles.toSquareInches(0.000007), closeTo(28101.4272, 0.01));
-        });
-
-        test('Convert known Square Miles to Hectares', () {
-            expect(SquareMiles.toHectares(100.0), closeTo(25899.881103, 0.01));
-            expect(SquareMiles.toHectares(2.3), closeTo(595.697, 0.01));
-            expect(SquareMiles.toHectares(0.9), closeTo(233.099, 0.01));
-        });
-
-        test('Convert known Square Miles to Acres', () {
-            expect(SquareMiles.toAcres(2.0), closeTo(1280.0, 0.01));
-            expect(SquareMiles.toAcres(0.1), closeTo(64.0, 0.01));
-            expect(SquareMiles.toAcres(4.6), closeTo(2944.0, 0.01));
-        });
-
-        test('Convert known Square Yards to Square Kilometres', () {
-            expect(SquareYards.toSquareKilometres(900000.0), closeTo(0.752514624, 0.01));
-            expect(SquareYards.toSquareKilometres(190190.0), closeTo(0.159023063, 0.01));
-            expect(SquareYards.toSquareKilometres(7000000.0), closeTo(5.85289152, 0.01));
-        });
-
-        test('Convert known Square Yards to Square Metres', () {
-            expect(SquareYards.toSquareMetres(700.0), closeTo(585.289, 0.01));
-            expect(SquareYards.toSquareMetres(12.0), closeTo(10.0335, 0.01));
-            expect(SquareYards.toSquareMetres(9.1), closeTo(7.60876, 0.01));
-        });
-
-        test('Convert known Square Yards to Square Miles', () {
-            expect(SquareYards.toSquareMiles(98700.0), closeTo(0.031863378, 0.01));
-            expect(SquareYards.toSquareMiles(8888888.0), closeTo(2.869604855, 0.01));
-            expect(SquareYards.toSquareMiles(100200300.0), closeTo(32.3477208161, 0.01));
-        });
-
-        test('Convert known Square Yards to Square Feet', () {
-            expect(SquareYards.toSquareFeet(12.0), closeTo(108.0, 0.01));
-            expect(SquareYards.toSquareFeet(5.6), closeTo(50.4, 0.01));
-            expect(SquareYards.toSquareFeet(102.5), closeTo(922.5, 0.01));
-        });
-
-        test('Convert known Square Yards to Square Inches', () {
-            expect(SquareYards.toSquareInches(56.7), closeTo(73483.2, 0.01));
-            expect(SquareYards.toSquareInches(1.8), closeTo(2332.8, 0.01));
-            expect(SquareYards.toSquareInches(0.2), closeTo(259.2, 0.01));
-        });
-
-        test('Convert known Square Yards to Hectares', () {
-            expect(SquareYards.toHectares(10090.0), closeTo(0.84365251, 0.01));
-            expect(SquareYards.toHectares(98765.0), closeTo(8.2580119, 0.01));
-            expect(SquareYards.toHectares(3090.09), closeTo(0.2583634, 0.01));
-        });
-
-        test('Convert known Square Yards to Acres', () {
-            expect(SquareYards.toAcres(1000.0), closeTo(0.206612, 0.01));
-            expect(SquareYards.toAcres(899.0), closeTo(0.185744, 0.01));
-            expect(SquareYards.toAcres(5678.0), closeTo(1.17314, 0.01));
-        });
-
+  group('Area Tests', () {
+    test('Convert known Acres to Square Kilometres', () {
+      expect(Acres.toSquareKilometres(100.0), closeTo(0.404686, 0.01));
+      expect(Acres.toSquareKilometres(90.0), closeTo(0.364217, 0.01));
+      expect(Acres.toSquareKilometres(1800.0), closeTo(7.284342, 0.01));
     });
+
+    test('Convert known Acres to Square Metres', () {
+      expect(Acres.toSquareMetres(1.2), closeTo(4856.23, 0.01));
+      expect(Acres.toSquareMetres(0.8), closeTo(3237.49, 0.01));
+      expect(Acres.toSquareMetres(5.6), closeTo(22662.416, 0.01));
+    });
+
+    test('Convert known Acres to Square Miles', () {
+      expect(Acres.toSquareMiles(1009.0), closeTo(1.576562, 0.01));
+      expect(Acres.toSquareMiles(90.0), closeTo(0.140625, 0.01));
+      expect(Acres.toSquareMiles(765.0), closeTo(1.19531, 0.01));
+    });
+
+    test('Convert known Acres to Square Yards', () {
+      expect(Acres.toSquareYards(3.4), closeTo(16456.0, 0.01));
+      expect(Acres.toSquareYards(0.7), closeTo(3388.0, 0.01));
+      expect(Acres.toSquareYards(0.01), closeTo(48.4, 0.01));
+    });
+
+    test('Convert known Acres to Square Feet', () {
+      expect(Acres.toSquareFeet(0.01), closeTo(435.6, 0.01));
+      expect(Acres.toSquareFeet(12.0), closeTo(522720.0, 0.01));
+      expect(Acres.toSquareFeet(0.67), closeTo(29185.2, 0.01));
+    });
+
+    test('Convert known Acres to Square Inches', () {
+      expect(Acres.toSquareInches(0.09), closeTo(564537.6, 0.01));
+      expect(Acres.toSquareInches(0.005), closeTo(31363.2, 0.01));
+      expect(Acres.toSquareInches(0.012), closeTo(75271.68, 0.01));
+    });
+
+    test('Convert known Acres to Hectares', () {
+      expect(Acres.toHectares(1109.0), closeTo(448.7964, 0.01));
+      expect(Acres.toHectares(5.6), closeTo(2.26624, 0.01));
+      expect(Acres.toHectares(1.23), closeTo(0.4977633, 0.01));
+    });
+
+    test('Convert known Hectares to Square Kilometres', () {
+      expect(Hectares.toSquareKilometres(15000.0), closeTo(150.0, 0.01));
+      expect(Hectares.toSquareKilometres(300.0), closeTo(3.0, 0.01));
+      expect(Hectares.toSquareKilometres(45.6), closeTo(0.456, 0.01));
+    });
+
+    test('Convert known Hectares to Square Metres', () {
+      expect(Hectares.toSquareMetres(1.4), closeTo(14000.0, 0.01));
+      expect(Hectares.toSquareMetres(0.9), closeTo(9000.0, 0.01));
+      expect(Hectares.toSquareMetres(0.012), closeTo(120.0, 0.01));
+    });
+
+    test('Convert known Hectares to Square Miles', () {
+      expect(Hectares.toSquareMiles(1102.0), closeTo(4.254846, 0.01));
+      expect(Hectares.toSquareMiles(4500.0), closeTo(17.3746, 0.01));
+      expect(Hectares.toSquareMiles(90.0), closeTo(0.347492, 0.01));
+    });
+
+    test('Convert known Hectares to Square Yards', () {
+      expect(Hectares.toSquareYards(1.2), closeTo(14351.8805556, 0.01));
+      expect(Hectares.toSquareYards(0.8), closeTo(9567.92, 0.01));
+      expect(Hectares.toSquareYards(34.0), closeTo(406636.615, 0.01));
+    });
+
+    test('Convert known Hectares to Square Feet', () {
+      expect(Hectares.toSquareFeet(3.4), closeTo(365972.599, 0.01));
+      expect(Hectares.toSquareFeet(0.09), closeTo(9687.519, 0.01));
+      expect(Hectares.toSquareFeet(1.2), closeTo(129166.7999, 0.01));
+    });
+
+    test('Convert known Hectares to Square Inches', () {
+      expect(Hectares.toSquareInches(0.009), closeTo(139500.28, 0.01));
+      expect(Hectares.toSquareInches(0.01), closeTo(155000.31, 0.01));
+      expect(Hectares.toSquareInches(0.0061), closeTo(94550.1891, 0.01));
+    });
+
+    test('Convert known Hectares to Acres', () {
+      expect(Hectares.toAcres(1.2), closeTo(2.96526, 0.01));
+      expect(Hectares.toAcres(0.8), closeTo(1.97684, 0.01));
+      expect(Hectares.toAcres(4.2), closeTo(10.3784, 0.01));
+    });
+
+    test('Convert known Square Feet to Square Kilometres', () {
+      expect(SquareFeet.toSquareKilometres(88997766.0),
+          closeTo(8.2681630146, 0.01));
+      expect(SquareFeet.toSquareKilometres(10009002.0),
+          closeTo(0.92986671317, 0.01));
+      expect(SquareFeet.toSquareKilometres(987654321.0),
+          closeTo(91.75608889, 0.01));
+    });
+
+    test('Convert known Square Feet to Square Metres', () {
+      expect(SquareFeet.toSquareMetres(900.0), closeTo(83.6127, 0.01));
+      expect(SquareFeet.toSquareMetres(799.123), closeTo(74.24095603, 0.01));
+      expect(SquareFeet.toSquareMetres(500.0), closeTo(46.4515, 0.01));
+    });
+
+    test('Convert known Square Feet to Square Miles', () {
+      expect(
+          SquareFeet.toSquareMiles(12000000.0), closeTo(0.43044077135, 0.01));
+      expect(
+          SquareFeet.toSquareMiles(987654321.0), closeTo(35.4272239799, 0.01));
+      expect(
+          SquareFeet.toSquareMiles(900800700.0), closeTo(32.3117790117, 0.01));
+    });
+
+    test('Convert known Square Feet to Square Yards', () {
+      expect(SquareFeet.toSquareYards(909.0), closeTo(101.0, 0.01));
+      expect(SquareFeet.toSquareYards(123.456), closeTo(13.71733333, 0.01));
+      expect(SquareFeet.toSquareYards(8009.0), closeTo(889.8889, 0.01));
+    });
+
+    test('Convert known Square Feet to Square Inches', () {
+      expect(SquareFeet.toSquareInches(6.7), closeTo(964.8, 0.01));
+      expect(SquareFeet.toSquareInches(1.5), closeTo(216.0, 0.01));
+      expect(SquareFeet.toSquareInches(0.9), closeTo(129.6, 0.01));
+    });
+
+    test('Convert known Square Feet to Hectares', () {
+      expect(SquareFeet.toHectares(90000.0), closeTo(0.83612736, 0.01));
+      expect(SquareFeet.toHectares(120120.0), closeTo(1.11595132, 0.01));
+      expect(SquareFeet.toHectares(90071.0), closeTo(0.83678697, 0.01));
+    });
+
+    test('Convert known Square Feet to Acres', () {
+      expect(SquareFeet.toAcres(90000.0), closeTo(2.0661157, 0.01));
+      expect(SquareFeet.toAcres(123456.0), closeTo(2.83415978, 0.01));
+      expect(SquareFeet.toAcres(8809.0), closeTo(0.2022268, 0.01));
+    });
+
+    test('Convert known Square Inches to Square Kilometres', () {
+      expect(SquareInches.toSquareKilometres(678900000.0),
+          closeTo(0.437999124, 0.01));
+      expect(SquareInches.toSquareKilometres(10000000000.0),
+          closeTo(6.4516, 0.01));
+      expect(SquareInches.toSquareKilometres(9e12), closeTo(5806.44, 0.01));
+    });
+
+    test('Convert known Square Inches to Square Metres', () {
+      expect(SquareInches.toSquareMetres(1090.0), closeTo(0.7032244, 0.01));
+      expect(SquareInches.toSquareMetres(1.3e6), closeTo(838.708, 0.01));
+      expect(SquareInches.toSquareMetres(9988.0), closeTo(6.443858, 0.01));
+    });
+
+    test('Convert known Square Inches to Square Miles', () {
+      expect(SquareInches.toSquareMiles(1007008000.0),
+          closeTo(0.2508433450668, 0.01));
+      expect(
+          SquareInches.toSquareMiles(1.2e12), closeTo(298.9172023262932, 0.01));
+      expect(SquareInches.toSquareMiles(250e7), closeTo(0.6227441715131, 0.01));
+    });
+
+    test('Convert known Square Inches to Square Yards', () {
+      expect(SquareInches.toSquareYards(900.0), closeTo(0.694444, 0.01));
+      expect(SquareInches.toSquareYards(15000.0), closeTo(11.574074, 0.01));
+      expect(SquareInches.toSquareYards(3e6), closeTo(2314.814815, 0.01));
+    });
+
+    test('Convert known Square Inches to Square Feet', () {
+      expect(SquareInches.toSquareFeet(34.0), closeTo(0.236111, 0.01));
+      expect(SquareInches.toSquareFeet(1002.0), closeTo(6.958333, 0.01));
+      expect(SquareInches.toSquareFeet(890.0), closeTo(6.18056, 0.01));
+    });
+
+    test('Convert known Square Inches to Hectares', () {
+      expect(SquareInches.toHectares(9000000.0), closeTo(0.580644, 0.01));
+      expect(SquareInches.toHectares(12345678.0), closeTo(0.79649376185, 0.01));
+      expect(SquareInches.toHectares(99887766.0), closeTo(6.4443591113, 0.01));
+    });
+
+    test('Convert known Square Inches to Acres', () {
+      expect(SquareInches.toAcres(900100.0), closeTo(0.143496199, 0.01));
+      expect(SquareInches.toAcres(5e6), closeTo(0.7971125395, 0.01));
+      expect(SquareInches.toAcres(12345678.0), closeTo(1.9681789486, 0.01));
+    });
+
+    test('Convert known Square Kilometres to Square Metres', () {
+      expect(SquareKilometres.toSquareMetres(0.12), closeTo(120000.0, 0.01));
+      expect(SquareKilometres.toSquareMetres(0.9), closeTo(900000.0, 0.01));
+      expect(
+          SquareKilometres.toSquareMetres(8.123456), closeTo(8123456.0, 0.01));
+    });
+
+    test('Convert known Square Kilometres to Square Miles', () {
+      expect(SquareKilometres.toSquareMiles(492.098), closeTo(190.0, 0.01));
+      expect(SquareKilometres.toSquareMiles(23.3099), closeTo(9.0, 0.01));
+      expect(SquareKilometres.toSquareMiles(4661.979), closeTo(1800.0, 0.01));
+    });
+
+    test('Convert known Square Kilometres to Square Yards', () {
+      expect(SquareKilometres.toSquareYards(0.158028071),
+          closeTo(189000.0005, 0.01));
+      expect(SquareKilometres.toSquareYards(8.361272764),
+          closeTo(9999999.0310, 0.01));
+      expect(SquareKilometres.toSquareYards(0.6), closeTo(717594.030, 0.01));
+    });
+
+    test('Convert known Square Kilometres to Square Feet', () {
+      expect(SquareKilometres.toSquareFeet(0.009), closeTo(96875.194, 0.01));
+      expect(SquareKilometres.toSquareFeet(0.08), closeTo(861112.833, 0.01));
+      expect(
+          SquareKilometres.toSquareFeet(0.123), closeTo(1323960.9812553, 0.01));
+    });
+
+    test('Convert known Square Kilometres to Square Inches', () {
+      expect(
+          SquareKilometres.toSquareInches(0.0008), closeTo(1240002.48, 0.01));
+      expect(
+          SquareKilometres.toSquareInches(0.00123), closeTo(1906503.813, 0.01));
+      expect(
+          SquareKilometres.toSquareInches(0.000045), closeTo(69750.1395, 0.01));
+    });
+
+    test('Convert known Square Kilometres to Hectares', () {
+      expect(SquareKilometres.toHectares(190.0), closeTo(19000.0, 0.01));
+      expect(SquareKilometres.toHectares(55.67), closeTo(5567.0, 0.01));
+      expect(SquareKilometres.toHectares(0.9), closeTo(90.0, 0.01));
+    });
+
+    test('Convert known Square Kilometres to Acres', () {
+      expect(
+          SquareKilometres.toAcres(30.393962), closeTo(7510.4999900100, 0.01));
+      expect(SquareKilometres.toAcres(54.1), closeTo(13368.3805, 0.01));
+      expect(SquareKilometres.toAcres(90.67), closeTo(22405.0103, 0.01));
+    });
+
+    test('Convert known Square Metres to Square Kilometres', () {
+      expect(SquareMetres.toSquareKilometres(19000.0), closeTo(0.019, 0.01));
+      expect(
+          SquareMetres.toSquareKilometres(123456.0), closeTo(0.123456, 0.01));
+      expect(SquareMetres.toSquareKilometres(900100.0), closeTo(0.9001, 0.01));
+    });
+
+    test('Convert known Square Metres to Square Miles', () {
+      expect(SquareMetres.toSquareMiles(190009.0), closeTo(0.073362885, 0.01));
+      expect(
+          SquareMetres.toSquareMiles(12345678.0), closeTo(4.7666929245, 0.01));
+      expect(SquareMetres.toSquareMiles(777666.0), closeTo(0.300258521, 0.01));
+    });
+
+    test('Convert known Square Metres to Square Yards', () {
+      expect(SquareMetres.toSquareYards(5.0), closeTo(5.97995, 0.01));
+      expect(SquareMetres.toSquareYards(1.23), closeTo(1.471068, 0.01));
+      expect(SquareMetres.toSquareYards(700.0), closeTo(837.193, 0.01));
+    });
+
+    test('Convert known Square Metres to Square Feet', () {
+      expect(SquareMetres.toSquareFeet(90.0), closeTo(968.7519375, 0.01));
+      expect(SquareMetres.toSquareFeet(180.0), closeTo(1937.503875, 0.01));
+      expect(SquareMetres.toSquareFeet(123.4), closeTo(1328.2665454, 0.01));
+    });
+
+    test('Convert known Square Metres to Square Inches', () {
+      expect(SquareMetres.toSquareInches(8.0), closeTo(12400.0, 0.01));
+      expect(SquareMetres.toSquareInches(1.23), closeTo(1906.504, 0.01));
+      expect(SquareMetres.toSquareInches(0.9), closeTo(1395.0, 0.01));
+    });
+
+    test('Convert known Square Metres to Hectares', () {
+      expect(SquareMetres.toHectares(1234.0), closeTo(0.1234, 0.01));
+      expect(SquareMetres.toHectares(560.9), closeTo(0.05609, 0.01));
+      expect(SquareMetres.toHectares(100900.0), closeTo(10.09, 0.01));
+    });
+
+    test('Convert known Square Metres to Acres', () {
+      expect(SquareMetres.toAcres(986.0), closeTo(0.243646, 0.01));
+      expect(SquareMetres.toAcres(1020.0), closeTo(0.2520475, 0.01));
+      expect(SquareMetres.toAcres(666111.0), closeTo(164.599613, 0.01));
+    });
+
+    test('Convert known Square Miles to Square Kilometres', () {
+      expect(SquareMiles.toSquareKilometres(3.0), closeTo(7.76996, 0.01));
+      expect(SquareMiles.toSquareKilometres(0.9), closeTo(2.33099, 0.01));
+      expect(SquareMiles.toSquareKilometres(100.0), closeTo(258.999, 0.01));
+    });
+
+    test('Convert known Square Miles to Square Metres', () {
+      expect(SquareMiles.toSquareMetres(0.009), closeTo(23309.893, 0.01));
+      expect(SquareMiles.toSquareMetres(0.010), closeTo(25899.88, 0.01));
+      expect(SquareMiles.toSquareMetres(0.0006), closeTo(1553.99287, 0.01));
+    });
+
+    test('Convert known Square Miles to Square Yards', () {
+      expect(SquareMiles.toSquareYards(0.01), closeTo(30976.0, 0.01));
+      expect(SquareMiles.toSquareYards(0.00123), closeTo(3810.048, 0.01));
+      expect(SquareMiles.toSquareYards(0.09), closeTo(278784.0, 0.01));
+    });
+
+    test('Convert known Square Miles to Square Feet', () {
+      expect(SquareMiles.toSquareFeet(0.01), closeTo(278784.0, 0.01));
+      expect(SquareMiles.toSquareFeet(0.005), closeTo(139392.0, 0.01));
+      expect(SquareMiles.toSquareFeet(0.08), closeTo(2230272.0, 0.01));
+    });
+
+    test('Convert known Square Miles to Square Inches', () {
+      expect(SquareMiles.toSquareInches(0.0001), closeTo(401448.96, 0.01));
+      expect(SquareMiles.toSquareInches(0.00098), closeTo(3934199.808, 0.01));
+      expect(SquareMiles.toSquareInches(0.000007), closeTo(28101.4272, 0.01));
+    });
+
+    test('Convert known Square Miles to Hectares', () {
+      expect(SquareMiles.toHectares(100.0), closeTo(25899.881103, 0.01));
+      expect(SquareMiles.toHectares(2.3), closeTo(595.697, 0.01));
+      expect(SquareMiles.toHectares(0.9), closeTo(233.099, 0.01));
+    });
+
+    test('Convert known Square Miles to Acres', () {
+      expect(SquareMiles.toAcres(2.0), closeTo(1280.0, 0.01));
+      expect(SquareMiles.toAcres(0.1), closeTo(64.0, 0.01));
+      expect(SquareMiles.toAcres(4.6), closeTo(2944.0, 0.01));
+    });
+
+    test('Convert known Square Yards to Square Kilometres', () {
+      expect(
+          SquareYards.toSquareKilometres(900000.0), closeTo(0.752514624, 0.01));
+      expect(
+          SquareYards.toSquareKilometres(190190.0), closeTo(0.159023063, 0.01));
+      expect(
+          SquareYards.toSquareKilometres(7000000.0), closeTo(5.85289152, 0.01));
+    });
+
+    test('Convert known Square Yards to Square Metres', () {
+      expect(SquareYards.toSquareMetres(700.0), closeTo(585.289, 0.01));
+      expect(SquareYards.toSquareMetres(12.0), closeTo(10.0335, 0.01));
+      expect(SquareYards.toSquareMetres(9.1), closeTo(7.60876, 0.01));
+    });
+
+    test('Convert known Square Yards to Square Miles', () {
+      expect(SquareYards.toSquareMiles(98700.0), closeTo(0.031863378, 0.01));
+      expect(SquareYards.toSquareMiles(8888888.0), closeTo(2.869604855, 0.01));
+      expect(
+          SquareYards.toSquareMiles(100200300.0), closeTo(32.3477208161, 0.01));
+    });
+
+    test('Convert known Square Yards to Square Feet', () {
+      expect(SquareYards.toSquareFeet(12.0), closeTo(108.0, 0.01));
+      expect(SquareYards.toSquareFeet(5.6), closeTo(50.4, 0.01));
+      expect(SquareYards.toSquareFeet(102.5), closeTo(922.5, 0.01));
+    });
+
+    test('Convert known Square Yards to Square Inches', () {
+      expect(SquareYards.toSquareInches(56.7), closeTo(73483.2, 0.01));
+      expect(SquareYards.toSquareInches(1.8), closeTo(2332.8, 0.01));
+      expect(SquareYards.toSquareInches(0.2), closeTo(259.2, 0.01));
+    });
+
+    test('Convert known Square Yards to Hectares', () {
+      expect(SquareYards.toHectares(10090.0), closeTo(0.84365251, 0.01));
+      expect(SquareYards.toHectares(98765.0), closeTo(8.2580119, 0.01));
+      expect(SquareYards.toHectares(3090.09), closeTo(0.2583634, 0.01));
+    });
+
+    test('Convert known Square Yards to Acres', () {
+      expect(SquareYards.toAcres(1000.0), closeTo(0.206612, 0.01));
+      expect(SquareYards.toAcres(899.0), closeTo(0.185744, 0.01));
+      expect(SquareYards.toAcres(5678.0), closeTo(1.17314, 0.01));
+    });
+  });
 }

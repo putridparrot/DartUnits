@@ -6,56 +6,56 @@
 
 /// Kilometre Per Litre conversion functions
 class KilometrePerLitre {
-	KilometrePerLitre._() {}
-	/// Converts the supplied Kilometre Per Litre value to US Miles Per Gallon
-	static double toUSMilesPerGallon(double value) =>
-		value * 2.35215;
-	/// Converts the supplied Kilometre Per Litre value to Miles Per Gallon
-	static double toMilesPerGallon(double value) =>
-		value * 2.82481;
-	/// Converts the supplied Kilometre Per Litre value to Litres Per 100 Kilometres
-	static double toLitresPer100Kilometres(double value) =>
-		100.0 / value;
+  KilometrePerLitre._() {}
+
+  /// Converts the supplied Kilometre Per Litre value to US Miles Per Gallon
+  static double toUSMilesPerGallon(double value) => value * 2.35215;
+
+  /// Converts the supplied Kilometre Per Litre value to Miles Per Gallon
+  static double toMilesPerGallon(double value) => value * 2.82481;
+
+  /// Converts the supplied Kilometre Per Litre value to Litres Per 100 Kilometres
+  static double toLitresPer100Kilometres(double value) => 100.0 / value;
 }
 
 /// Litres Per 100 Kilometres conversion functions
 class LitresPer100Kilometres {
-	LitresPer100Kilometres._() {}
-	/// Converts the supplied Litres Per 100 Kilometres value to Kilometre Per Litre
-	static double toKilometrePerLitre(double value) =>
-		100.0 / value;
-	/// Converts the supplied Litres Per 100 Kilometres value to Miles Per Gallon
-	static double toMilesPerGallon(double value) =>
-		282.481 / value;
-	/// Converts the supplied Litres Per 100 Kilometres value to US Miles Per Gallon
-	static double toUSMilesPerGallon(double value) =>
-		235.215 / value;
+  LitresPer100Kilometres._() {}
+
+  /// Converts the supplied Litres Per 100 Kilometres value to Kilometre Per Litre
+  static double toKilometrePerLitre(double value) => 100.0 / value;
+
+  /// Converts the supplied Litres Per 100 Kilometres value to Miles Per Gallon
+  static double toMilesPerGallon(double value) => 282.481 / value;
+
+  /// Converts the supplied Litres Per 100 Kilometres value to US Miles Per Gallon
+  static double toUSMilesPerGallon(double value) => 235.215 / value;
 }
 
 /// Miles Per Gallon conversion functions
 class MilesPerGallon {
-	MilesPerGallon._() {}
-	/// Converts the supplied Miles Per Gallon value to Kilometre Per Litre
-	static double toKilometrePerLitre(double value) =>
-		value / 2.82481;
-	/// Converts the supplied Miles Per Gallon value to US Miles Per Gallon
-	static double toUSMilesPerGallon(double value) =>
-		value / 1.20095;
-	/// Converts the supplied Miles Per Gallon value to Litres Per 100 Kilometres
-	static double toLitresPer100Kilometres(double value) =>
-		282.481 / value;
+  MilesPerGallon._() {}
+
+  /// Converts the supplied Miles Per Gallon value to Kilometre Per Litre
+  static double toKilometrePerLitre(double value) => value / 2.82481;
+
+  /// Converts the supplied Miles Per Gallon value to US Miles Per Gallon
+  static double toUSMilesPerGallon(double value) => value / 1.20095;
+
+  /// Converts the supplied Miles Per Gallon value to Litres Per 100 Kilometres
+  static double toLitresPer100Kilometres(double value) => 282.481 / value;
 }
 
 /// US Miles Per Gallon conversion functions
 class USMilesPerGallon {
-	USMilesPerGallon._() {}
-	/// Converts the supplied US Miles Per Gallon value to Kilometre Per Litre
-	static double toKilometrePerLitre(double value) =>
-		value / 2.35215;
-	/// Converts the supplied US Miles Per Gallon value to Miles Per Gallon
-	static double toMilesPerGallon(double value) =>
-		value * 1.20095;
-	/// Converts the supplied US Miles Per Gallon value to Litres Per 100 Kilometres
-	static double toLitresPer100Kilometres(double value) =>
-		235.215 / value;
+  USMilesPerGallon._() {}
+
+  /// Converts the supplied US Miles Per Gallon value to Kilometre Per Litre
+  static double toKilometrePerLitre(double value) => value / 2.35215;
+
+  /// Converts the supplied US Miles Per Gallon value to Miles Per Gallon
+  static double toMilesPerGallon(double value) => value * 1.20095;
+
+  /// Converts the supplied US Miles Per Gallon value to Litres Per 100 Kilometres
+  static double toLitresPer100Kilometres(double value) => 235.215 / value;
 }
