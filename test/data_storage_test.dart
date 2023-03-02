@@ -244,7 +244,7 @@ void main() {
     test('Convert known Kibibits to Terabytes', () {
       expect(Kibibits.toTerabytes(120000000.0), closeTo(0.01536, 0.01));
       expect(Kibibits.toTerabytes(88e12), closeTo(11264.0, 0.01));
-      expect(Kibibits.toTerabytes(9000000.0), closeTo(0.009216, 0.01));
+      expect(Kibibits.toTerabytes(9000000.0), closeTo(0.001152, 0.01));
     });
 
     test('Convert known Kibibits to Mebibits', () {

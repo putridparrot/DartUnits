@@ -203,7 +203,7 @@ void main() {
 
     test('Convert known Cubic Inches to US Gallons', () {
       expect(CubicInches.toUSGallons(600.0), closeTo(2.5974, 0.01));
-      expect(CubicInches.toUSGallons(462), closeTo(2.0, 0.01));
+      expect(CubicInches.toUSGallons(462.0), closeTo(2.0, 0.01));
       expect(CubicInches.toUSGallons(899.0), closeTo(3.89177, 0.01));
     });
 
@@ -222,7 +222,7 @@ void main() {
     test('Convert known Cubic Inches to Cubic Metres', () {
       expect(CubicInches.toCubicMetres(24409.5), closeTo(0.4, 0.01));
       expect(CubicInches.toCubicMetres(7777.0), closeTo(0.1274422, 0.01));
-      expect(CubicInches.toCubicMetres(366142), closeTo(6.0, 0.01));
+      expect(CubicInches.toCubicMetres(366142.0), closeTo(6.0, 0.01));
     });
 
     test('Convert known Cubic Inches to Cubic Feet', () {
@@ -293,7 +293,7 @@ void main() {
 
     test('Convert known Cubic Metres to US Teaspoons', () {
       expect(CubicMetres.toUSTeaspoons(0.5), closeTo(101442.0, 0.01));
-      expect(CubicMetres.toUSTeaspoons(2), closeTo(405768.0, 0.01));
+      expect(CubicMetres.toUSTeaspoons(2.0), closeTo(405768.0, 0.01));
       expect(CubicMetres.toUSTeaspoons(0.3), closeTo(60865.199, 0.01));
     });
 
@@ -443,7 +443,7 @@ void main() {
 
     test('Convert known Fluid Ounces to Cubic Metres', () {
       expect(FluidOunces.toCubicMetres(316756.0), closeTo(9.00000284, 0.01));
-      expect(FluidOunces.toCubicMetres(8000.0), closeTo(0.2365882, 0.01));
+      expect(FluidOunces.toCubicMetres(8000.0), closeTo(0.2273043690, 0.01));
       expect(FluidOunces.toCubicMetres(123456.0), closeTo(3.5077610, 0.01));
     });
 
@@ -455,7 +455,7 @@ void main() {
 
     test('Convert known Fluid Ounces to Cubic Inches', () {
       expect(FluidOunces.toCubicInches(7.0), closeTo(12.1371, 0.01));
-      expect(FluidOunces.toCubicInches(900), closeTo(1560.48, 0.01));
+      expect(FluidOunces.toCubicInches(900.0), closeTo(1560.48, 0.01));
       expect(FluidOunces.toCubicInches(6.0), closeTo(10.4032, 0.01));
     });
 
@@ -1447,7 +1447,7 @@ void main() {
     test('Convert known Teaspoons to US Pints', () {
       expect(Teaspoons.toUSPints(106.0), closeTo(1.32605, 0.01));
       expect(Teaspoons.toUSPints(34.0), closeTo(0.425337, 0.01));
-      expect(Teaspoons.toUSPints(6.21), closeTo(0.07656059, 0.01));
+      expect(Teaspoons.toUSPints(6.21), closeTo(0.07768648, 0.01));
     });
 
     test('Convert known Teaspoons to US Gallons', () {
@@ -2171,7 +2171,7 @@ void main() {
     });
 
     test('Convert known US Tablespoons to Oil Barrels', () {
-      expect(USTablespoons.toOilBarrels(591360), closeTo(55.0, 0.01));
+      expect(USTablespoons.toOilBarrels(591360.0), closeTo(55.0, 0.01));
       expect(USTablespoons.toOilBarrels(4300.8), closeTo(0.4, 0.01));
       expect(USTablespoons.toOilBarrels(34406.4), closeTo(3.2, 0.01));
     });

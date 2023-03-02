@@ -330,7 +330,7 @@ void main() {
       expect(KibibitsPerSecond.toTeraBytesPerSecond(88e12),
           closeTo(11264.0, 0.01));
       expect(KibibitsPerSecond.toTeraBytesPerSecond(9000000.0),
-          closeTo(0.009216, 0.01));
+          closeTo(0.001152, 0.01));
     });
 
     test('Convert known Kibibits Per Second to Mebibits Per Second', () {

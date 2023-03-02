@@ -17,3 +17,4 @@ export 'src/speed.dart';
 export 'src/temperature.dart';
 export 'src/time.dart';
 export 'src/volume.dart';
+export 'src/power.dart';

@@ -63,7 +63,7 @@ class CubicFeet {
   static double toCubicInches(double value) => value * 1728.0;
 
   /// Converts the supplied Cubic Feet value to Oil Barrels
-  static double toOilBarrels(double value) => value * 0.178108;
+  static double toOilBarrels(double value) => value / 5.61458;
 }
 
 /// Cubic Inches conversion functions
@@ -74,10 +74,10 @@ class CubicInches {
   static double toMillilitres(double value) => value * 16.3871;
 
   /// Converts the supplied Cubic Inches value to Litres
-  static double toLitres(double value) => value / 61.024;
+  static double toLitres(double value) => value / 61.0237;
 
   /// Converts the supplied Cubic Inches value to Kilolitres
-  static double toKilolitres(double value) => value / 61024.0;
+  static double toKilolitres(double value) => value / 61023.7;
 
   /// Converts the supplied Cubic Inches value to Teaspoons
   static double toTeaspoons(double value) => value * 2.76837;
@@ -86,13 +86,13 @@ class CubicInches {
   static double toTablespoons(double value) => value / 1.08367;
 
   /// Converts the supplied Cubic Inches value to Quarts
-  static double toQuarts(double value) => value / 69.355;
+  static double toQuarts(double value) => value / 69.3549;
 
   /// Converts the supplied Cubic Inches value to Pints
-  static double toPints(double value) => value / 34.677;
+  static double toPints(double value) => value / 34.6774;
 
   /// Converts the supplied Cubic Inches value to Gallons
-  static double toGallons(double value) => value / 277.4;
+  static double toGallons(double value) => value / 277.419;
 
   /// Converts the supplied Cubic Inches value to Fluid Ounces
   static double toFluidOunces(double value) => value / 1.73387;
@@ -434,7 +434,7 @@ class Litres {
   static double toCubicMetres(double value) => value / 1000.0;
 
   /// Converts the supplied Litres value to Cubic Feet
-  static double toCubicFeet(double value) => value / 28.317;
+  static double toCubicFeet(double value) => value / 28.3168;
 
   /// Converts the supplied Litres value to Cubic Inches
   static double toCubicInches(double value) => value * 61.0237;
