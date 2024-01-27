@@ -25,3 +25,7 @@ Added cubic metres, cubic feet, cubic inches and oil barrels to volumes.
 ## 0.1.7
 
 Added power, mechanical horse power and metric horse power
+
+## 0.1.8
+
+Add Reaumur to temperature
