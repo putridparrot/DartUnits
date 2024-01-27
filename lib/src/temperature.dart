@@ -16,6 +16,9 @@ class Celsius {
 
   /// Converts the supplied Celsius value to Rankine
   static double toRankine(double value) => value * 9.0 / 5.0 + 491.67;
+
+  /// Converts the supplied Celsius value to Reaumur
+  static double toReaumur(double value) => value / 1.25;
 }
 
 /// Fahrenheit conversion functions
@@ -31,6 +34,9 @@ class Fahrenheit {
 
   /// Converts the supplied Fahrenheit value to Rankine
   static double toRankine(double value) => value + 459.67;
+
+  /// Converts the supplied Fahrenheit value to Reaumur
+  static double toReaumur(double value) => (value - 32.0) / 2.25;
 }
 
 /// Kelvin conversion functions
@@ -45,6 +51,9 @@ class Kelvin {
 
   /// Converts the supplied Kelvin value to Rankine
   static double toRankine(double value) => value * 1.8;
+
+  /// Converts the supplied Kelvin value to Reaumur
+  static double toReaumur(double value) => (value - 273.15) / 1.25;
 }
 
 /// Rankine conversion functions
@@ -59,4 +68,24 @@ class Rankine {
 
   /// Converts the supplied Rankine value to Kelvin
   static double toKelvin(double value) => value / 1.8;
+
+  /// Converts the supplied Rankine value to Reaumur
+  static double toReaumur(double value) => (value - 491.67) / 2.25;
+}
+
+/// Reaumur conversion functions
+class Reaumur {
+  Reaumur._() {}
+
+  /// Converts the supplied Reaumur value to Kelvin
+  static double toKelvin(double value) => value * 1.25 + 273.15;
+
+  /// Converts the supplied Reaumur value to Celsius
+  static double toCelsius(double value) => value * 1.25;
+
+  /// Converts the supplied Reaumur value to Fahrenheit
+  static double toFahrenheit(double value) => value * 2.25 + 32.0;
+
+  /// Converts the supplied Reaumur value to Rankine
+  static double toRankine(double value) => value * 2.25 + 491.67;
 }

@@ -27,6 +27,12 @@ void main() {
       expect(Celsius.toRankine(-3.0), closeTo(486.27, 0.01));
     });
 
+    test('Convert known Celsius to Reaumur', () {
+      expect(Celsius.toReaumur(123.0), closeTo(98.4, 0.01));
+      expect(Celsius.toReaumur(15.67), closeTo(12.536, 0.01));
+      expect(Celsius.toReaumur(87.0), closeTo(69.6, 0.01));
+    });
+
     test('Convert known Fahrenheit to Celsius', () {
       expect(Fahrenheit.toCelsius(109.0), closeTo(42.7778, 0.01));
       expect(Fahrenheit.toCelsius(56.9), closeTo(13.83333, 0.01));
@@ -43,6 +49,12 @@ void main() {
       expect(Fahrenheit.toRankine(123.0), closeTo(582.67, 0.01));
       expect(Fahrenheit.toRankine(9.2), closeTo(468.87, 0.01));
       expect(Fahrenheit.toRankine(0.2), closeTo(459.87, 0.01));
+    });
+
+    test('Convert known Fahrenheit to Reaumur', () {
+      expect(Fahrenheit.toReaumur(67.0), closeTo(15.555555556, 0.01));
+      expect(Fahrenheit.toReaumur(1.6), closeTo(-13.511111111, 0.01));
+      expect(Fahrenheit.toReaumur(900.0), closeTo(385.77777778, 0.01));
     });
 
     test('Convert known Kelvin to Celsius', () {
@@ -63,6 +75,12 @@ void main() {
       expect(Kelvin.toRankine(0.8), closeTo(1.44, 0.01));
     });
 
+    test('Convert known Kelvin to Reaumur', () {
+      expect(Kelvin.toReaumur(900.0), closeTo(501.48, 0.01));
+      expect(Kelvin.toReaumur(1.3), closeTo(-217.48, 0.01));
+      expect(Kelvin.toReaumur(60.0), closeTo(-170.52, 0.01));
+    });
+
     test('Convert known Rankine to Celsius', () {
       expect(Rankine.toCelsius(190.0), closeTo(-167.59444444, 0.01));
       expect(Rankine.toCelsius(0.7), closeTo(-272.76111111, 0.01));
@@ -79,6 +97,36 @@ void main() {
       expect(Rankine.toKelvin(123.0), closeTo(68.333333333, 0.01));
       expect(Rankine.toKelvin(0.9), closeTo(0.5, 0.01));
       expect(Rankine.toKelvin(23.0), closeTo(12.777777778, 0.01));
+    });
+
+    test('Convert known Rankine to Reaumur', () {
+      expect(Rankine.toReaumur(900.0), closeTo(181.48, 0.01));
+      expect(Rankine.toReaumur(34.9), closeTo(-203.00888889, 0.01));
+      expect(Rankine.toReaumur(0.7), closeTo(-218.20888889, 0.01));
+    });
+
+    test('Convert known Reaumur to Kelvin', () {
+      expect(Reaumur.toKelvin(128.0), closeTo(433.15, 0.01));
+      expect(Reaumur.toKelvin(7.4), closeTo(282.4, 0.01));
+      expect(Reaumur.toKelvin(1.5), closeTo(275.025, 0.01));
+    });
+
+    test('Convert known Reaumur to Celsius', () {
+      expect(Reaumur.toCelsius(1.5), closeTo(1.875, 0.01));
+      expect(Reaumur.toCelsius(23.9), closeTo(29.875, 0.01));
+      expect(Reaumur.toCelsius(0.3), closeTo(0.375, 0.01));
+    });
+
+    test('Convert known Reaumur to Fahrenheit', () {
+      expect(Reaumur.toFahrenheit(0.3), closeTo(32.675, 0.01));
+      expect(Reaumur.toFahrenheit(87.0), closeTo(227.75, 0.01));
+      expect(Reaumur.toFahrenheit(34.1), closeTo(108.725, 0.01));
+    });
+
+    test('Convert known Reaumur to Rankine', () {
+      expect(Reaumur.toRankine(34.1), closeTo(568.395, 0.01));
+      expect(Reaumur.toRankine(10.6), closeTo(515.52, 0.01));
+      expect(Reaumur.toRankine(1.9), closeTo(495.945, 0.01));
     });
   });
 }
